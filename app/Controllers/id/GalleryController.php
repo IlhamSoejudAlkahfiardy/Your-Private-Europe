@@ -4,21 +4,21 @@ namespace App\Controllers\id;
 
 use App\Controllers\BaseController;
 
-class ArticleController extends BaseController
+class GalleryController extends BaseController
 {
     public function index(): void
     {
-        $data['title'] = 'Article – Astrip';
+        $data['title'] = 'Gallery – Astrip';
         $data['language'] = 'id';
 
-        echo view('pages/id/article', $data);
+        echo view('pages/id/gallery', $data);
     }
 
     public function detail(): void
     {
-        $data['title'] = 'Article – Astrip';
+        $data['title'] = 'Gallery – Astrip';
         $data['language'] = 'id';
 
-        echo view('pages/id/detail_article', $data);
+        echo view('pages/id/detail_gallery', $data);
     }
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Controllers\id;
+namespace App\Controllers\en;
 
 use App\Controllers\BaseController;
 
@@ -9,16 +9,16 @@ class ArticleController extends BaseController
     public function index(): void
     {
         $data['title'] = 'Article – Astrip';
-        $data['language'] = 'id';
+        $data['language'] = 'en';
 
-        echo view('pages/id/article', $data);
+        echo view('pages/en/article', $data);
     }
 
     public function detail(): void
     {
         $data['title'] = 'Article – Astrip';
-        $data['language'] = 'id';
+        $data['language'] = 'en';
 
-        echo view('pages/id/detail_article', $data);
+        echo view('pages/en/detail_article', $data);
     }
 }
