@@ -26,7 +26,7 @@
                     </div>
                     <div class="error-text">
                         <p class="para">It looks like you've reached a URL that doesn’t exist. Please use the navigation above or search below to find your way back to our amazing website.</p>
-                        <a href="<?= base_url('/'), $language ?>" class="eg-btn btn--outline sibling3 btn--lg capsule btn--primary"><i class="bi bi-house-door"></i> Back To Home</a>
+                        <a href="<?= base_url('/') ?>" class="eg-btn btn--outline sibling3 btn--lg capsule btn--primary"><i class="bi bi-house-door"></i> Back To Home</a>
                     </div>
                 </div>
             </div>
