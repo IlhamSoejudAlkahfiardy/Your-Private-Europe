@@ -4,7 +4,8 @@
   --primary-color2: #F2AA4CFF;
   --primary-color3: #D55437;
 
-  --primary-color1-light: rgba(144, 185, 86, 0.7);
+  /* --primary-color1-light: rgba(144, 185, 86, 0.7); */
+  --primary-color1-light: rgba(224, 188, 109, 0.7);
   --primary1-dark: #359D9E;
 
   --white: #fff;

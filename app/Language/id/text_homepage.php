@@ -6,12 +6,13 @@ return [
     'article' => 'Artikel',
     'help_support_navbar' => 'Pusat Bantuan',
     'language' => 'Bahasa',
+    'services' => 'Layanan',
 
     // text for homepage
     'banner_button' => 'Mulai Perjalananmu',
     'trending_destination' => 'Jelajahi Sekarang',
     'all_destination' => 'Lihat Semua Destinasi',
-    'about_us' => 'Baca Lebih Lanjut',
+    'about_us' => 'Read More',
     'all_faq' => 'Baca Pertanyaan Lainnya',
 
     // text for footer -> information

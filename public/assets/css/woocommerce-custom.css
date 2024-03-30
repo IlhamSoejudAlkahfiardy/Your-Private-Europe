@@ -1,10 +1,12 @@
 :root {
     /*color Variable*/
-    --primary-color1: #90b956;
+    /* --primary-color1: #90b956; */
+    --primary-color1: #e0bc6d;
     --primary-color2: #f2aa4cff;
     --primary-color3: #d55437;
 
-    --primary-color1-light: rgba(144, 185, 86, 0.7);
+    /* --primary-color1-light: rgba(144, 185, 86, 0.7); */
+    --primary-color1-light: rgba(224, 188, 109, 0.7);
     --primary1-dark: #359d9e;
 
     --white: #fff;

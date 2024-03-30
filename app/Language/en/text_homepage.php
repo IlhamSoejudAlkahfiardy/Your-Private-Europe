@@ -6,6 +6,7 @@ return [
     'article' => 'Article',
     'help_support_navbar' => 'Help & Support',
     'language' => 'Language',
+    'services' => 'Services',
 
     // text for homepage
     'banner_button' => 'Start Now',

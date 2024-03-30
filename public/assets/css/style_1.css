@@ -6,10 +6,12 @@
 
 :root {
   /*color Variable*/
-  --primary-color1: #90b956;
+  /* --primary-color1: #90b956; */
+  --primary-color1: #e0bc6d;
   --primary-color2: #f2aa4cff;
   --primary-color3: #d55437;
-  --primary-color1-light: rgba(144, 185, 86, 0.7);
+  /* --primary-color1-light: rgba(144, 185, 86, 0.7); */
+  --primary-color1-light: rgba(224, 188, 109, 0.7);
   --primary-color1-light2: #a8cd758c;
   --primary1-dark: #359d9e;
   --white: #fff;
@@ -18,7 +20,8 @@
   --text-light: #878787;
   --border-color: #dddddd;
   --font-satisfy: "Satisfy";
-  --font-merriw: "Merriweather", serif;
+  /* --font-merriw: "Merriweather", serif; */
+  --font-merriw: "Oswald", Helvetica, Arial, Lucida, sans-serif;
   --font-work-sans: "Work Sans", sans-serif;
 }
 
@@ -8548,7 +8551,7 @@ h3.blog-details-subtitle {
 }
 .testimonial-section .testimonial-wrapper .newsletter-area {
   min-height: 660px;
-  background: url("../images/newsletter-bg.jpg");
+  background: url("../images/bg/newsletter-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-size: cover;

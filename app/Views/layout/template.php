@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id-ID">
+<html lang="<?= $language == 'id' ? 'id-ID' : 'en-US' ?>">
 
 <head>
     <meta charset="UTF-8" />
@@ -7,13 +7,28 @@
     <link rel="profile" href="http://gmpg.org/xfn/11" />
     <link rel="pingback" href="https://www.astrip-wp.egenslab.com/xmlrpc.php" />
     <link rel="dns-prefetch" href="//astrip-wp.b-cdn.net" />
-    <title><?= $title ?></title>
+
+    <title><?= $language == 'id' ? $title['seo_tag_title_id'] : $title['seo_tag_title_en']   ?></title>
+    <!-- hreflang, fetchpriority -->
+    <link rel="fetch" hreflang="<?= $language ?>" href="<?= $currentUrl ?>" />
+    <!-- hreflang, fetchpriority -->
+
+    <!-- canonical tag -->
+    <link rel="canonical" href="<?= $currentUrl ?>" />
+    <!-- canonical tag -->
+
+    <!-- meta description -->
+    <meta name="description" content="<?= $language == 'id' ? $description['seo_description_id'] : $description['seo_description_en'] ?>">
+    <!-- meta description -->
+
     <meta name="robots" content="max-image-preview:large" />
     <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="dns-prefetch" href="//use.fontawesome.com" />
     <link rel="alternate" type="application/rss+xml" title="Astrip » Feed" href="https://www.astrip-wp.egenslab.com/feed/" />
     <link rel="alternate" type="application/rss+xml" title="Astrip » Comments Feed" href="https://www.astrip-wp.egenslab.com/comments/feed/" />
     <script src="https://kit.fontawesome.com/278b3e3446.js" crossorigin="anonymous"></script>
+
     <script>
         window._wpemojiSettings = {
             baseUrl: "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/",
@@ -819,7 +834,8 @@
             visibility: visible;
         }
     </style>
-    <link rel="stylesheet" id="google-fonts-css" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&amp;family=Satisfy&amp;family=Work+Sans:wght@300;400;500;600;700;800;900&amp;display=swap" media="all" />
+    <!-- <link rel="stylesheet" id="google-fonts-css" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&amp;family=Satisfy&amp;family=Work+Sans:wght@300;400;500;600;700;800;900&amp;display=swap" media="all" /> -->
+    <link rel="stylesheet" id="google-fonts-css" href=href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" media="all" />
     <link rel="stylesheet" id="animate-css" href="<?= base_url('assets/css/animate.css') ?>" media="all" />
     <link rel="stylesheet" id="bootstrap-css" href="<?= base_url('assets/css/bootstrap.min.css') ?>" media="all" />
     <link rel="stylesheet" id="boxicons-css" href="<?= base_url('assets/css/boxicons.min.css') ?>" media="all" />
@@ -847,7 +863,7 @@
 
         .inner-banner-section .breadcrumb-area h2,
         .woocommerce-products-header h1 {
-            font-family: Merriweather;
+            font-family: Oswald;
         }
 
         .inner-banner-section .breadcrumb-area h2,
@@ -1032,22 +1048,22 @@
     <header class="header-area style-2">
         <div class="container d-flex gap-4 justify-content-between align-items-center">
             <div class="header-logo">
-                <a href="index.html" title="Astrip">
-                    <img class="img-fluid" src="<?= base_url('assets/images/YPE-LOGO-FULL-BLUE-GOLD-2.png') ?>" alt="Astrip" style="
+                <a href="<?= base_url('/') ?>" title="Astrip">
+                    <img loading="lazy" class="img-fluid" src="<?= base_url('assets/images/YPE-LOGO-FULL-BLUE-GOLD-2.png') ?>" alt="Astrip" style="
             width: 300px;
             " /></a>
             </div>
             <div class="header-logo header-sticky-logo">
-                <a href="index.html" title="Astrip">
-                    <img class="img-fluid" src="<?= base_url('assets/images/YPE-LOGO-FULL-BLUE-GOLD-2.png') ?>" alt="Astrip" style="
+                <a href="<?= base_url('/') ?>" title="Astrip">
+                    <img loading="lazy" class="img-fluid" src="<?= base_url('assets/images/YPE-LOGO-FULL-BLUE-GOLD-2.png') ?>" alt="Astrip" style="
             width: 200px;
             " /></a>
             </div>
             <div class="main-nav">
                 <div class="mobile-logo-area d-lg-none d-flex justify-content-between align-items-center">
                     <div class="mobile-logo-wrap">
-                        <a href="index.html" title="Astrip">
-                            <img class="img-fluid" src="<?= base_url('assets/images/YPE-LOGO-FULL-BLUE-GOLD-2.png') ?>" alt="Astrip" style="
+                        <a href="<?= base_url('/') ?>" title="Astrip">
+                            <img loading="lazy" class="img-fluid" src="<?= base_url('assets/images/YPE-LOGO-FULL-BLUE-GOLD-2.png') ?>" alt="Astrip" style="
                 width: 200px;
                 " /></a>
                     </div>
@@ -1104,20 +1120,29 @@
                 </ul>
               </li> -->
                         <li id="menu-item-2339" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2339">
-                            <a href="#"><?= lang("Text.destination") ?></a><i class="bi bi-chevron-down"></i>
+                            <a href="#"><?= lang("text_homepage.services") ?></a><i class="bi bi-chevron-down"></i>
                             <ul class="sub-menu">
+
                                 <li id="menu-item-2370" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2370">
-                                    <a href="https://www.astrip-wp.egenslab.com/destination/">Destination</a><i class="bi bi-chevron-down"></i>
+                                    <a href="#">VIP Services</a><i class="bi bi-chevron-down"></i>
                                 </li>
-                                <li id="menu-item-2342" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2342">
-                                    <a href="https://www.astrip-wp.egenslab.com/destination-two/">Destination Two</a><i class="bi bi-chevron-down"></i>
+                                <li id="menu-item-2370" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2370">
+                                    <a href="#">Private Tour</a><i class="bi bi-chevron-down"></i>
                                 </li>
-                                <li id="menu-item-2341" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2341">
-                                    <a href="https://www.astrip-wp.egenslab.com/destination-three/">Destination Three</a><i class="bi bi-chevron-down"></i>
+                                <li id="menu-item-2370" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2370">
+                                    <a href="#">MICE</a><i class="bi bi-chevron-down"></i>
                                 </li>
-                                <li id="menu-item-2414" class="menu-item menu-item-type-post_type menu-item-object-astrip-destination menu-item-2414">
-                                    <a href="https://www.astrip-wp.egenslab.com/destination/sudan/">Destination Details</a><i class="bi bi-chevron-down"></i>
-                                </li>
+
+                            </ul>
+                        </li>
+                        <li id="menu-item-2339" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2339">
+                            <a href="/destination"><?= lang("text_homepage.destination") ?></a><i class="bi bi-chevron-down"></i>
+                            <ul class="sub-menu">
+                                <?php foreach ($destinations as $destination) : ?>
+                                    <li id="menu-item-2370" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2370">
+                                        <a href="#"><?= $destination['title'] ?></a><i class="bi bi-chevron-down"></i>
+                                    </li>
+                                <?php endforeach; ?>
                             </ul>
                         </li>
                         <!-- <li
@@ -1164,7 +1189,7 @@
               </li> -->
 
                         <li id="menu-item-2015" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2015">
-                            <a href="#"><?= lang("Text.article") ?></a><i class="bi bi-chevron-down"></i>
+                            <a href="#"><?= lang("text_homepage.article") ?></a><i class="bi bi-chevron-down"></i>
                             <ul class="sub-menu">
                                 <li id="menu-item-1987" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1987">
                                     <a href="https://www.astrip-wp.egenslab.com/blog-grid/">Blog Grid</a><i class="bi bi-chevron-down"></i>
@@ -1187,7 +1212,7 @@
                             <a href="https://www.astrip-wp.egenslab.com/contact-us/">Corporate & Travel Agent</a><i class="bi bi-chevron-down"></i>
                         </li>
                         <li id="menu-item-2013" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2013">
-                            <a href="#"><?= lang("Text.help_support_navbar") ?></a><i class="bi bi-chevron-down"></i>
+                            <a href="#"><?= lang("text_homepage.help_support_navbar") ?></a><i class="bi bi-chevron-down"></i>
                             <ul class="sub-menu">
                                 <li id="menu-item-1984" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1984">
                                     <a href="https://www.astrip-wp.egenslab.com/about-us/">Tentang Kami</a><i class="bi bi-chevron-down"></i>
@@ -1222,7 +1247,7 @@
                             </ul>
                         </li>
                         <li id="menu-item-2013" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2013">
-                            <a href="#"><?= lang("Text.language") ?></a><i class="bi bi-chevron-down"></i>
+                            <a href="#"><?= lang("text_homepage.language") ?></a><i class="bi bi-chevron-down"></i>
                             <ul class="sub-menu">
                                 <li id="menu-item-1984" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1984">
                                     <a href="<?= site_url('lang/id'); ?>">Indonesian</a><i class="bi bi-chevron-down"></i>
@@ -1238,7 +1263,7 @@
 
                 <div class="phone-call sibling2 d-flex justify-content-start align-items-center flex-row d-lg-none d-block mt-5">
                     <!-- <div class="icon">
-              <img src="images/cell-icon.svg" alt="image" />
+              <img loading="lazy" src="images/cell-icon.svg" alt="image" />
             </div>
             <div class="number">
               <span>Call Now</span>
@@ -1257,7 +1282,7 @@
             <div class="nav-right d-flex jsutify-content-end align-items-center gap-5">
                 <div class="phone-call sibling2 justify-content-start align-items-center flex-row d-xl-flex d-none">
                     <!-- <div class="icon">
-              <img src="images/cell-icon.svg" alt="image" />
+              <img loading="lazy" src="images/cell-icon.svg" alt="image" />
             </div>
             <div class="number">
               <span>Call Now</span>
@@ -1295,13 +1320,13 @@
                             class="destination-widget-item widget_block"
                           >
                             <div class="footer-about">
-                              <img
+                              <img loading="lazy"
                                 src="images/footer-plane.svg"
                                 class="footer-plane"
                                 alt="image"
                               />
                               <div class="footer1-logo">
-                                <img src="images/footer1-logo.svg" alt="image" />
+                                <img loading="lazy" src="images/footer1-logo.svg" alt="image" />
                                 <p>Since: 2023</p>
                               </div>
                               <svg
@@ -1345,12 +1370,12 @@
                         <div class="footer-item">
                             <div id="nav_menu-2" class="destination-widget-item widget_nav_menu">
                                 <div class="destination-widget-title">
-                                    <h3><?= lang("Text.information") ?></h3>
+                                    <h3><?= lang("text_homepage.information") ?></h3>
                                 </div>
                                 <div class="menu-information-container">
                                     <ul id="menu-information" class="menu">
                                         <li id="menu-item-1932" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1932">
-                                            <a href="https://www.astrip-wp.egenslab.com/about-us/"><?= lang("Text.about_us") ?></a>
+                                            <a href="https://www.astrip-wp.egenslab.com/about-us/"><?= lang("text_homepage.about_us") ?></a>
                                         </li>
                                         <!-- <li
                             id="menu-item-1933"
@@ -1365,10 +1390,10 @@
                             <a href="#">Become Partner</a>
                           </li> -->
                                         <li id="menu-item-1935" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1935">
-                                            <a href="#"><?= lang("Text.help_support") ?></a>
+                                            <a href="#"><?= lang("text_homepage.help_support") ?></a>
                                         </li>
                                         <li id="menu-item-1936" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1936">
-                                            <a href="https://www.astrip-wp.egenslab.com/contact-us/"><?= lang("Text.contact_us") ?></a>
+                                            <a href="https://www.astrip-wp.egenslab.com/contact-us/"><?= lang("text_homepage.contact_us") ?></a>
                                         </li>
                                     </ul>
                                 </div>
@@ -1379,7 +1404,7 @@
                         <div class="footer-item">
                             <div id="nav_menu-3" class="destination-widget-item widget_nav_menu">
                                 <div class="destination-widget-title">
-                                    <h3><?= lang("Text.destination") ?></h3>
+                                    <h3><?= lang("text_homepage.destination") ?></h3>
                                 </div>
                                 <div class="menu-destination-container">
                                     <ul id="menu-destination" class="menu">
@@ -1407,7 +1432,7 @@
                         <div class="footer-item">
                             <div id="egens_contacts-3" class="destination-widget-item widget_egens_contacts">
                                 <div class="destination-widget-title">
-                                    <h3><?= lang("Text.reach_us") ?></h3>
+                                    <h3><?= lang("text_homepage.reach_us") ?></h3>
                                 </div>
                                 <ul class="contact-list">
                                     <li>
@@ -1466,10 +1491,10 @@
                         <h4>Pay Safely With Us!</h4>
 
                         <ul class="pay-list">
-                            <li><img src="images/pay1.svg" alt="" /></li>
-                            <li><img src="images/pay2.svg" alt="" /></li>
-                            <li><img src="images/pay3.svg" alt="" /></li>
-                            <li><img src="images/pay4.svg" alt="" /></li>
+                            <li><img loading="lazy" src="images/pay1.svg" alt="" /></li>
+                            <li><img loading="lazy" src="images/pay2.svg" alt="" /></li>
+                            <li><img loading="lazy" src="images/pay3.svg" alt="" /></li>
+                            <li><img loading="lazy" src="images/pay4.svg" alt="" /></li>
                         </ul>
                     </div>
                 </div>

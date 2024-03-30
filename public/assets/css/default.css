@@ -21,11 +21,11 @@
 # Document Setup
 --------------------------------------------------------------*/
 :root {
-  --primary_color: #dea057;
+  /* --primary_color: #dea057; */
+  --primary_color: #e0bc6d;
 }
 
 *,
-
 table * {
   word-break: initial;
 }
@@ -43,12 +43,12 @@ body.logged-in.admin-bar .main-nav-wrapper .main-box {
   top: 32px;
 }
 
-@media only screen and (max-width:780px) {
+@media only screen and (max-width: 780px) {
   body.logged-in.admin-bar header.sticky {
     top: 32px;
   }
 }
-@media only screen and (max-width:575px) {
+@media only screen and (max-width: 575px) {
   body.logged-in.admin-bar header.sticky {
     top: 0;
   }
@@ -130,13 +130,12 @@ input[type="submit"]::after {
   background: var(--white);
   width: 100%;
   height: 100%;
-  transition: .5s;
+  transition: 0.5s;
   z-index: -1;
-  transform: scale(.6);
+  transform: scale(0.6);
   border-radius: 0;
   opacity: 0;
 }
-
 
 input[type="button"]:hover::after,
 input[type="reset"]:hover::after,
@@ -177,7 +176,7 @@ input[type="color"] {
   border-bottom: 1px solid #eee;
   border-radius: 0;
   padding: 10px;
-  transition: all .45s ease;
+  transition: all 0.45s ease;
   font-size: 16px;
   color: var(--text-primary);
 }
@@ -208,9 +207,9 @@ select {
 textarea {
   border-radius: 3px 0px 0px 3px;
   width: 100%;
-  border: 1px solid #F0F0F0;
+  border: 1px solid #f0f0f0;
   padding: 20px;
-  background: #F0F0F0;
+  background: #f0f0f0;
   resize: none;
 }
 
@@ -513,7 +512,9 @@ object {
   left: 0;
 }
 
-.single-widgets area form.wp-block-search__button-outside.wp-block-search__text-button.wp-block-search {
+.single-widgets
+  area
+  form.wp-block-search__button-outside.wp-block-search__text-button.wp-block-search {
   margin-bottom: 10px;
 }
 
@@ -541,7 +542,6 @@ object {
   body.logged-in.admin-bar header.sticky .main-menu.show-menu {
     margin-top: 0;
   }
-
 }
 
 /*--------------------------------------------------------------
@@ -573,7 +573,6 @@ object {
   .widget-area.right-sidebar {
     margin-bottom: 0;
   }
-
 }
 
 body.logged-in.admin-bar .header-area.sticky {
