@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
+use App\Models\AboutUsModel;
 use App\Models\CommitmentModel;
 use App\Models\HomepageModel;
 use App\Models\ThreePillarsModel;
@@ -11,11 +12,15 @@ use App\Models\InstagramPartnersModel;
 use App\Models\TestimonialModel;
 use App\Models\DestinationModel;
 use App\Models\ImageDestinationModel;
+use App\Models\USPModel;
+use App\Models\FAQModel;
 use CodeIgniter\HTTP\URI;
 
 class HomepageController extends BaseController
 {
     protected $homepageModel;
+    protected $aboutUsModel;
+    protected $USPModel;
     protected $commitmentModel;
     protected $threePillarsModel;
     protected $howItWorksModel;
@@ -23,6 +28,7 @@ class HomepageController extends BaseController
     protected $instagramPartnersModel;
     protected $destinationModel;
     protected $imageDestinationModel;
+    protected $FAQModel;
 
     protected $currentUrl;
     protected $language;
@@ -30,6 +36,8 @@ class HomepageController extends BaseController
     public function __construct()
     {
         $this->homepageModel = new HomepageModel();
+        $this->aboutUsModel = new AboutUsModel();
+        $this->USPModel = new USPModel();
         $this->commitmentModel = new CommitmentModel();
         $this->threePillarsModel = new ThreePillarsModel();
         $this->howItWorksModel = new HowItWorksModel();
@@ -37,6 +45,7 @@ class HomepageController extends BaseController
         $this->instagramPartnersModel = new InstagramPartnersModel();
         $this->destinationModel = new DestinationModel();
         $this->imageDestinationModel = new ImageDestinationModel();
+        $this->FAQModel = new FAQModel();
 
         $this->currentUrl = current_url();
         $this->language = session()->get('lang');
@@ -49,12 +58,16 @@ class HomepageController extends BaseController
             'description' => $this->homepageModel->select(['seo_description_id', 'seo_description_en'])->first(),
             'currentUrl' => $this->currentUrl,
             'language' => $this->language,
+            'navbarDestinations' => $this->destinationModel->select(['title', 'slug'])->findAll(),
             'homepage' => $this->homepageModel->first(),
+            'aboutUs' => $this->aboutUsModel->first(),
+            'usp' => $this->USPModel->findAll(),
             'commitments' => $this->commitmentModel->findAll(),
             'threePillars' => $this->threePillarsModel->findAll(),
             'howItWorks' => $this->howItWorksModel->findAll(),
             'testimonials' => $this->testimonialModel->findAll(),
-            'instagramPartners' => $this->instagramPartnersModel->findAll(),
+            // 'instagramPartners' => $this->instagramPartnersModel->findAll(),
+            'faqs' => $this->FAQModel->findAll(),
             'destinations' => $this->destinationModel->select([
                 'destination.title',
                 'destination.slug',
@@ -67,7 +80,7 @@ class HomepageController extends BaseController
 
         ];
 
-        // dd($data['title']);
+        // dd($data['faq']);
 
         echo view('pages/homepage', $data);
     }

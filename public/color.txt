@@ -1,0 +1,3 @@
+warna primary: #e0bc6d
+font primary: Oswald
+font secondary: ???

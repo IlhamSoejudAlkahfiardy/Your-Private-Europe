@@ -897,7 +897,7 @@
     <link rel="stylesheet" id="elementor-post-8-css" href="<?= base_url('assets/css/post-8.css') ?>" media="all" />
     <link rel="stylesheet" id="elementor-global-css" href="<?= base_url('assets/css/global.css') ?>" media="all" />
     <link rel="stylesheet" id="elementor-post-234-css" href="<?= base_url('assets/css/post-234.css') ?>" media="all" />
-    <link rel="stylesheet" id="google-fonts-1-css" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CWork+Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;display=auto&amp;ver=6.4.3" media="all" />
+    <!-- <link rel="stylesheet" id="google-fonts-1-css" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CWork+Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;display=auto&amp;ver=6.4.3" media="all" /> -->
     <link rel="stylesheet" id="elementor-icons-shared-0-css" href="<?= base_url('assets/css/fontawesome.min.css') ?>" media="all" />
     <link rel="stylesheet" id="elementor-icons-fa-solid-css" href="<?= base_url('assets/css/solid.min.css') ?>" media="all" />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
@@ -1138,9 +1138,9 @@
                         <li id="menu-item-2339" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2339">
                             <a href="/destination"><?= lang("text_homepage.destination") ?></a><i class="bi bi-chevron-down"></i>
                             <ul class="sub-menu">
-                                <?php foreach ($destinations as $destination) : ?>
+                                <?php foreach ($navbarDestinations as $navbarDestination) : ?>
                                     <li id="menu-item-2370" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2370">
-                                        <a href="#"><?= $destination['title'] ?></a><i class="bi bi-chevron-down"></i>
+                                        <a href="<?= base_url('/destination/' . $navbarDestination['slug']) ?>"><?= $navbarDestination['title'] ?></a><i class="bi bi-chevron-down"></i>
                                     </li>
                                 <?php endforeach; ?>
                             </ul>
@@ -1189,8 +1189,9 @@
               </li> -->
 
                         <li id="menu-item-2015" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2015">
-                            <a href="#"><?= lang("text_homepage.article") ?></a><i class="bi bi-chevron-down"></i>
-                            <ul class="sub-menu">
+                            <a href="/article"><?= lang("text_homepage.article") ?></a>
+                            <!-- <i class="bi bi-chevron-down"></i> -->
+                            <!-- <ul class="sub-menu">
                                 <li id="menu-item-1987" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1987">
                                     <a href="https://www.astrip-wp.egenslab.com/blog-grid/">Blog Grid</a><i class="bi bi-chevron-down"></i>
                                 </li>
@@ -1206,22 +1207,22 @@
                                 <li id="menu-item-2586" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2586">
                                     <a href="https://www.astrip-wp.egenslab.com/what-to-know-before-you-travel-plan-a-trip/">Blog Details</a><i class="bi bi-chevron-down"></i>
                                 </li>
-                            </ul>
+                            </ul> -->
                         </li>
                         <li id="menu-item-1995" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1995">
-                            <a href="https://www.astrip-wp.egenslab.com/contact-us/">Corporate & Travel Agent</a><i class="bi bi-chevron-down"></i>
+                            <a href="#">Corporate & Travel Agent</a><i class="bi bi-chevron-down"></i>
                         </li>
                         <li id="menu-item-2013" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2013">
                             <a href="#"><?= lang("text_homepage.help_support_navbar") ?></a><i class="bi bi-chevron-down"></i>
                             <ul class="sub-menu">
                                 <li id="menu-item-1984" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1984">
-                                    <a href="https://www.astrip-wp.egenslab.com/about-us/">Tentang Kami</a><i class="bi bi-chevron-down"></i>
+                                    <a href="#">Tentang Kami</a><i class="bi bi-chevron-down"></i>
                                 </li>
                                 <li id="menu-item-2017" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2017">
-                                    <a href="https://www.astrip-wp.egenslab.com/tour-guide/">Hubungi Kami</a><i class="bi bi-chevron-down"></i>
+                                    <a href="#">Hubungi Kami</a><i class="bi bi-chevron-down"></i>
                                 </li>
                                 <li id="menu-item-1999" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1999">
-                                    <a href="https://www.astrip-wp.egenslab.com/gallery/">FAQ</a><i class="bi bi-chevron-down"></i>
+                                    <a href="#">FAQ</a><i class="bi bi-chevron-down"></i>
                                 </li>
                                 <!-- <li
                   id="menu-item-2005"
@@ -1231,19 +1232,19 @@
                     href="https://www.astrip-wp.egenslab.com/questions-answers/"
                     >FAQ’s</a
                   ><i class="bi bi-chevron-down"></i>
-                </li> -->
+                </li>
                                 <li id="menu-item-2396" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2396">
-                                    <a href="https://www.astrip-wp.egenslab.com/my-account/">My account</a><i class="bi bi-chevron-down"></i>
+                                    <a href="#">My account</a><i class="bi bi-chevron-down"></i>
                                 </li>
                                 <li id="menu-item-2394" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2394">
-                                    <a href="https://www.astrip-wp.egenslab.com/cart/">Cart</a><i class="bi bi-chevron-down"></i>
+                                    <a href="#">Cart</a><i class="bi bi-chevron-down"></i>
                                 </li>
                                 <li id="menu-item-2395" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2395">
-                                    <a href="https://www.astrip-wp.egenslab.com/checkout/">Checkout</a><i class="bi bi-chevron-down"></i>
+                                    <a href="#">Checkout</a><i class="bi bi-chevron-down"></i>
                                 </li>
                                 <li id="menu-item-2018" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2018">
                                     <a href="/error">Error</a><i class="bi bi-chevron-down"></i>
-                                </li>
+                                </li> -->
                             </ul>
                         </li>
                         <li id="menu-item-2013" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2013">

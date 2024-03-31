@@ -8,7 +8,8 @@
             <div class="col-xl-8 col-md-10 col-sm-12">
                 <div class="breadcrumb-area">
                     <h2>
-                        Blog </h2>
+                        Blog
+                    </h2>
                 </div>
             </div>
         </div>
@@ -19,246 +20,54 @@
         <div class="row ">
             <div class="col-lg-8">
                 <div class="blog-standard-area">
-                    <div class="blog-standard-single">
-                        <article aria-label="article" id="post-2537" class="post-2537 post type-post status-publish format-standard has-post-thumbnail hentry category-adventure category-couple-tour tag-hotel tag-tours tag-travel tag-vacation">
-                            <div>
-                                <div class="blog-format">
-                                    <a href="https://www.astrip-wp.egenslab.com/2023/02/18">
-                                        <span class="blog-date">February 18, 2023</span>
-                                    </a>
-                                    <div class="blog-image">
-                                        <a href="https://www.astrip-wp.egenslab.com/li-river-chinas-orignial-postcard-landcaspe/">
-                                            <img width="870" height="500" src="images/blog-dt8.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" fetchpriority="high" srcset="images/blog-dt8.jpg 870w, images/blog-dt8-600x345.jpg 600w, images/blog-dt8-300x172.jpg 300w, images/blog-dt8-768x441.jpg 768w, images/blog-dt8-370x213.jpg 370w" sizes="(max-width: 870px) 100vw, 870px"> </a>
+
+                    <?php foreach ($articles as $article) : ?>
+                        <div class="blog-standard-single">
+                            <article aria-label="article" id="post-2537" class="post-2537 post type-post status-publish format-standard has-post-thumbnail hentry category-adventure category-couple-tour tag-hotel tag-tours tag-travel tag-vacation">
+                                <div>
+                                    <div class="blog-format">
+                                        <a href="#">
+                                            <span class="blog-date">
+                                                <?= $article['date'] ?>
+                                            </span>
+                                        </a>
+                                        <div class="blog-image">
+                                            <a href="#">
+                                                <img loading="lazy" width="870" height="500" src="<?= base_url('assets/images/blogs/' . $article['cover_image']) ?>" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" fetchpriority="high" sizes="(max-width: 870px) 100vw, 870px"> </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="blog-content">
+                                        <h3>
+                                            <a href="/article/<?= $article['slug'] . '/' . $article['id'] ?>">
+                                                <?= $language == 'id' ? $article['title_id'] : $article['title_en'] ?>
+                                            </a>
+                                        </h3>
+                                        <div class="author-area">
+                                            <p>By <a href="#"><?= $article['writer'] ?></p>
+                                        </div>
+                                        <p>
+                                            <?= $language == 'id' ? substr($article['description_id'], 0, strpos($article['description_id'], '</p>', 150)) . '...' : substr($article['description_id'], 0, strpos($article['description_en'], '</p>', 150)) . '...'  ?>
+                                        </p>
+
+                                        <div class="blog-meta">
+                                            <a href="/article/<?= $article['slug'] . '/' . $article['id']  ?>" class="read-more-btn">Continue Reading<i class="bi bi-arrow-right"></i></a>
+                                            <ul class="share-list">
+                                                <li><i class="bi bi-share"></i>SHARE: <ul class="blog-social">
+                                                        <li><a href="http://www.facebook.com/sharer/sharer.php?u=https://www.astrip-wp.egenslab.com/li-river-chinas-orignial-postcard-landcaspe/"><i class="bx bxl-facebook"></i></a></li>
+                                                        <li><a href="http://www.twitter.com/share?url=https://www.astrip-wp.egenslab.com/li-river-chinas-orignial-postcard-landcaspe/"><i class="bx bxl-twitter"></i></a></li>
+                                                        <li><a href="https://www.instagram.com/pin/create/button/?url=https://www.astrip-wp.egenslab.com/li-river-chinas-orignial-postcard-landcaspe/"><i class="bx bxl-instagram"></i></a></li>
+                                                        <li><a href="http://www.pinterest.com/share?url=https://www.astrip-wp.egenslab.com/li-river-chinas-orignial-postcard-landcaspe/"><i class="bx bxl-pinterest"></i></a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
+                            </article>
+                        </div>
+                    <?php endforeach; ?>
 
-                                <div class="blog-content">
-                                    <h3>
-                                        <a href="https://www.astrip-wp.egenslab.com/li-river-chinas-orignial-postcard-landcaspe/">
-                                            Li river, China’s orignial postcard landcaspe </a>
-                                    </h3>
-                                    <div class="author-area">
-                                        <p>By <a href="https://www.astrip-wp.egenslab.com/author/shafiqul/">Shafiqul -</a> Comments (0) </p>
-                                    </div>
-                                    <p>
-                                        At nearly one million acres, Olympic National Park is one of the largest national parks in the lower 48 and is home to a wide range of biodiverse ecos [...] </p>
-
-                                    <div class="blog-meta">
-                                        <a href="https://www.astrip-wp.egenslab.com/li-river-chinas-orignial-postcard-landcaspe/" class="read-more-btn">Continue Reading<i class="bi bi-arrow-right"></i></a>
-                                        <ul class="share-list">
-                                            <li><i class="bi bi-share"></i>SHARE: <ul class="blog-social">
-                                                    <li><a href="http://www.facebook.com/sharer/sharer.php?u=https://www.astrip-wp.egenslab.com/li-river-chinas-orignial-postcard-landcaspe/"><i class="bx bxl-facebook"></i></a></li>
-                                                    <li><a href="http://www.twitter.com/share?url=https://www.astrip-wp.egenslab.com/li-river-chinas-orignial-postcard-landcaspe/"><i class="bx bxl-twitter"></i></a></li>
-                                                    <li><a href="https://www.instagram.com/pin/create/button/?url=https://www.astrip-wp.egenslab.com/li-river-chinas-orignial-postcard-landcaspe/"><i class="bx bxl-instagram"></i></a></li>
-                                                    <li><a href="http://www.pinterest.com/share?url=https://www.astrip-wp.egenslab.com/li-river-chinas-orignial-postcard-landcaspe/"><i class="bx bxl-pinterest"></i></a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="blog-standard-single">
-                        <article aria-label="article" id="post-2534" class="post-2534 post type-post status-publish format-standard has-post-thumbnail hentry category-adventure tag-honeymoon tag-tours tag-travel">
-                            <div>
-                                <div class="blog-format">
-                                    <a href="https://www.astrip-wp.egenslab.com/2023/02/18">
-                                        <span class="blog-date">February 18, 2023</span>
-                                    </a>
-                                    <div class="blog-image">
-                                        <a href="https://www.astrip-wp.egenslab.com/the-social-art-of-zaha-hadid-architectures-presence/">
-                                            <img width="870" height="500" src="images/blog-dt9.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" srcset="images/blog-dt9.jpg 870w, images/blog-dt9-600x345.jpg 600w, images/blog-dt9-300x172.jpg 300w, images/blog-dt9-768x441.jpg 768w, images/blog-dt9-370x213.jpg 370w" sizes="(max-width: 870px) 100vw, 870px"> </a>
-                                    </div>
-                                </div>
-
-                                <div class="blog-content">
-                                    <h3>
-                                        <a href="https://www.astrip-wp.egenslab.com/the-social-art-of-zaha-hadid-architectures-presence/">
-                                            The social art of zaha Hadid, architecture’s presence </a>
-                                    </h3>
-                                    <div class="author-area">
-                                        <p>By <a href="https://www.astrip-wp.egenslab.com/author/shafiqul/">Shafiqul -</a> Comments (0) </p>
-                                    </div>
-                                    <p>
-                                        At nearly one million acres, Olympic National Park is one of the largest national parks in the lower 48 and is home to a wide range of biodiverse ecos [...] </p>
-
-                                    <div class="blog-meta">
-                                        <a href="https://www.astrip-wp.egenslab.com/the-social-art-of-zaha-hadid-architectures-presence/" class="read-more-btn">Continue Reading<i class="bi bi-arrow-right"></i></a>
-                                        <ul class="share-list">
-                                            <li><i class="bi bi-share"></i>SHARE: <ul class="blog-social">
-                                                    <li><a href="http://www.facebook.com/sharer/sharer.php?u=https://www.astrip-wp.egenslab.com/the-social-art-of-zaha-hadid-architectures-presence/"><i class="bx bxl-facebook"></i></a></li>
-                                                    <li><a href="http://www.twitter.com/share?url=https://www.astrip-wp.egenslab.com/the-social-art-of-zaha-hadid-architectures-presence/"><i class="bx bxl-twitter"></i></a></li>
-                                                    <li><a href="https://www.instagram.com/pin/create/button/?url=https://www.astrip-wp.egenslab.com/the-social-art-of-zaha-hadid-architectures-presence/"><i class="bx bxl-instagram"></i></a></li>
-                                                    <li><a href="http://www.pinterest.com/share?url=https://www.astrip-wp.egenslab.com/the-social-art-of-zaha-hadid-architectures-presence/"><i class="bx bxl-pinterest"></i></a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="blog-standard-single">
-                        <article aria-label="article" id="post-2529" class="post-2529 post type-post status-publish format-standard has-post-thumbnail hentry category-popular-tours category-travel-vaction tag-hotel tag-tours tag-travel tag-travelblog">
-                            <div>
-                                <div class="blog-format">
-                                    <a href="https://www.astrip-wp.egenslab.com/2023/02/18">
-                                        <span class="blog-date">February 18, 2023</span>
-                                    </a>
-                                    <div class="blog-image">
-                                        <a href="https://www.astrip-wp.egenslab.com/jungles-in-paris-vermonts-rugged-retro-ski-mountain/">
-                                            <img width="870" height="500" src="images/blog-dt10.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" srcset="images/blog-dt10.jpg 870w, images/blog-dt10-600x345.jpg 600w, images/blog-dt10-300x172.jpg 300w, images/blog-dt10-768x441.jpg 768w, images/blog-dt10-370x213.jpg 370w" sizes="(max-width: 870px) 100vw, 870px"> </a>
-                                    </div>
-                                </div>
-
-                                <div class="blog-content">
-                                    <h3>
-                                        <a href="https://www.astrip-wp.egenslab.com/jungles-in-paris-vermonts-rugged-retro-ski-mountain/">
-                                            Jungles in Paris vermont’s rugged, retro Ski mountain </a>
-                                    </h3>
-                                    <div class="author-area">
-                                        <p>By <a href="https://www.astrip-wp.egenslab.com/author/shafiqul/">Shafiqul -</a> Comments (0) </p>
-                                    </div>
-                                    <p>
-                                        At nearly one million acres, Olympic National Park is one of the largest national parks in the lower 48 and is home to a wide range of biodiverse ecos [...] </p>
-
-                                    <div class="blog-meta">
-                                        <a href="https://www.astrip-wp.egenslab.com/jungles-in-paris-vermonts-rugged-retro-ski-mountain/" class="read-more-btn">Continue Reading<i class="bi bi-arrow-right"></i></a>
-                                        <ul class="share-list">
-                                            <li><i class="bi bi-share"></i>SHARE: <ul class="blog-social">
-                                                    <li><a href="http://www.facebook.com/sharer/sharer.php?u=https://www.astrip-wp.egenslab.com/jungles-in-paris-vermonts-rugged-retro-ski-mountain/"><i class="bx bxl-facebook"></i></a></li>
-                                                    <li><a href="http://www.twitter.com/share?url=https://www.astrip-wp.egenslab.com/jungles-in-paris-vermonts-rugged-retro-ski-mountain/"><i class="bx bxl-twitter"></i></a></li>
-                                                    <li><a href="https://www.instagram.com/pin/create/button/?url=https://www.astrip-wp.egenslab.com/jungles-in-paris-vermonts-rugged-retro-ski-mountain/"><i class="bx bxl-instagram"></i></a></li>
-                                                    <li><a href="http://www.pinterest.com/share?url=https://www.astrip-wp.egenslab.com/jungles-in-paris-vermonts-rugged-retro-ski-mountain/"><i class="bx bxl-pinterest"></i></a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="blog-standard-single">
-                        <article aria-label="article" id="post-1572" class="post-1572 post type-post status-publish format-standard has-post-thumbnail hentry category-adventure tag-hotel tag-memories tag-tours tag-travel">
-                            <div>
-                                <div class="blog-format">
-                                    <a href="https://www.astrip-wp.egenslab.com/2023/01/10">
-                                        <span class="blog-date">January 10, 2023</span>
-                                    </a>
-                                    <div class="blog-image">
-                                        <a href="https://www.astrip-wp.egenslab.com/day-out-on-the-ile-de-re-getting-hotter-and-hotter-2/">
-                                            <img width="870" height="500" src="images/blog-dt7.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="images/blog-dt7.jpg 870w, images/blog-dt7-600x345.jpg 600w, images/blog-dt7-300x172.jpg 300w, images/blog-dt7-768x441.jpg 768w, images/blog-dt7-370x213.jpg 370w" sizes="(max-width: 870px) 100vw, 870px"> </a>
-                                    </div>
-                                </div>
-
-                                <div class="blog-content">
-                                    <h3>
-                                        <a href="https://www.astrip-wp.egenslab.com/day-out-on-the-ile-de-re-getting-hotter-and-hotter-2/">
-                                            Day out on the Ile de Re. Getting hotter and hotter. </a>
-                                    </h3>
-                                    <div class="author-area">
-                                        <p>By <a href="https://www.astrip-wp.egenslab.com/author/shafiqul/">Shafiqul -</a> Comments (0) </p>
-                                    </div>
-                                    <p>
-                                        At nearly one million acres, Olympic National Park is one of the largest national parks in the lower 48 and is home to a wide range of biodiverse ecos [...] </p>
-
-                                    <div class="blog-meta">
-                                        <a href="https://www.astrip-wp.egenslab.com/day-out-on-the-ile-de-re-getting-hotter-and-hotter-2/" class="read-more-btn">Continue Reading<i class="bi bi-arrow-right"></i></a>
-                                        <ul class="share-list">
-                                            <li><i class="bi bi-share"></i>SHARE: <ul class="blog-social">
-                                                    <li><a href="http://www.facebook.com/sharer/sharer.php?u=https://www.astrip-wp.egenslab.com/day-out-on-the-ile-de-re-getting-hotter-and-hotter-2/"><i class="bx bxl-facebook"></i></a></li>
-                                                    <li><a href="http://www.twitter.com/share?url=https://www.astrip-wp.egenslab.com/day-out-on-the-ile-de-re-getting-hotter-and-hotter-2/"><i class="bx bxl-twitter"></i></a></li>
-                                                    <li><a href="https://www.instagram.com/pin/create/button/?url=https://www.astrip-wp.egenslab.com/day-out-on-the-ile-de-re-getting-hotter-and-hotter-2/"><i class="bx bxl-instagram"></i></a></li>
-                                                    <li><a href="http://www.pinterest.com/share?url=https://www.astrip-wp.egenslab.com/day-out-on-the-ile-de-re-getting-hotter-and-hotter-2/"><i class="bx bxl-pinterest"></i></a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="blog-standard-single">
-                        <article aria-label="article" id="post-776" class="post-776 post type-post status-publish format-standard has-post-thumbnail hentry category-travel-vaction tag-roadtrip tag-tours tag-travel">
-                            <div>
-                                <div class="blog-format">
-                                    <a href="https://www.astrip-wp.egenslab.com/2022/10/12">
-                                        <span class="blog-date">October 12, 2022</span>
-                                    </a>
-                                    <div class="blog-image">
-                                        <a href="https://www.astrip-wp.egenslab.com/benefit-from-a-15-discount-to-make-your-reservations/">
-                                            <img width="870" height="500" src="images/blog-dt1.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="images/blog-dt1.jpg 870w, images/blog-dt1-600x345.jpg 600w, images/blog-dt1-300x172.jpg 300w, images/blog-dt1-768x441.jpg 768w, images/blog-dt1-370x213.jpg 370w" sizes="(max-width: 870px) 100vw, 870px"> </a>
-                                    </div>
-                                </div>
-
-                                <div class="blog-content">
-                                    <h3>
-                                        <a href="https://www.astrip-wp.egenslab.com/benefit-from-a-15-discount-to-make-your-reservations/">
-                                            Benefit from a 15% discount to make your reservations. </a>
-                                    </h3>
-                                    <div class="author-area">
-                                        <p>By <a href="https://www.astrip-wp.egenslab.com/author/shafiqul/">Shafiqul -</a> Comments (0) </p>
-                                    </div>
-                                    <p>
-                                        At nearly one million acres, Olympic National Park is one of the largest national parks in the lower 48 and is home to a wide range of biodiverse ecos [...] </p>
-
-                                    <div class="blog-meta">
-                                        <a href="https://www.astrip-wp.egenslab.com/benefit-from-a-15-discount-to-make-your-reservations/" class="read-more-btn">Continue Reading<i class="bi bi-arrow-right"></i></a>
-                                        <ul class="share-list">
-                                            <li><i class="bi bi-share"></i>SHARE: <ul class="blog-social">
-                                                    <li><a href="http://www.facebook.com/sharer/sharer.php?u=https://www.astrip-wp.egenslab.com/benefit-from-a-15-discount-to-make-your-reservations/"><i class="bx bxl-facebook"></i></a></li>
-                                                    <li><a href="http://www.twitter.com/share?url=https://www.astrip-wp.egenslab.com/benefit-from-a-15-discount-to-make-your-reservations/"><i class="bx bxl-twitter"></i></a></li>
-                                                    <li><a href="https://www.instagram.com/pin/create/button/?url=https://www.astrip-wp.egenslab.com/benefit-from-a-15-discount-to-make-your-reservations/"><i class="bx bxl-instagram"></i></a></li>
-                                                    <li><a href="http://www.pinterest.com/share?url=https://www.astrip-wp.egenslab.com/benefit-from-a-15-discount-to-make-your-reservations/"><i class="bx bxl-pinterest"></i></a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="blog-standard-single">
-                        <article aria-label="article" id="post-700" class="post-700 post type-post status-publish format-standard has-post-thumbnail hentry category-family-adventure tag-destinations tag-hotel tag-tours tag-travel">
-                            <div>
-                                <div class="blog-format">
-                                    <a href="https://www.astrip-wp.egenslab.com/2022/10/11">
-                                        <span class="blog-date">October 11, 2022</span>
-                                    </a>
-                                    <div class="blog-image">
-                                        <a href="https://www.astrip-wp.egenslab.com/how-to-select-the-perfect-quality-camping-tent/">
-                                            <img width="870" height="500" src="images/blog-dt2.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="images/blog-dt2.jpg 870w, images/blog-dt2-600x345.jpg 600w, images/blog-dt2-300x172.jpg 300w, images/blog-dt2-768x441.jpg 768w, images/blog-dt2-370x213.jpg 370w" sizes="(max-width: 870px) 100vw, 870px"> </a>
-                                    </div>
-                                </div>
-
-                                <div class="blog-content">
-                                    <h3>
-                                        <a href="https://www.astrip-wp.egenslab.com/how-to-select-the-perfect-quality-camping-tent/">
-                                            How to select the perfect quality camping tent. </a>
-                                    </h3>
-                                    <div class="author-area">
-                                        <p>By <a href="https://www.astrip-wp.egenslab.com/author/shafiqul/">Shafiqul -</a> Comments (0) </p>
-                                    </div>
-                                    <p>
-                                        At nearly one million acres, Olympic National Park is one of the largest national parks in the lower 48 and is home to a wide range of biodiverse ecos [...] </p>
-
-                                    <div class="blog-meta">
-                                        <a href="https://www.astrip-wp.egenslab.com/how-to-select-the-perfect-quality-camping-tent/" class="read-more-btn">Continue Reading<i class="bi bi-arrow-right"></i></a>
-                                        <ul class="share-list">
-                                            <li><i class="bi bi-share"></i>SHARE: <ul class="blog-social">
-                                                    <li><a href="http://www.facebook.com/sharer/sharer.php?u=https://www.astrip-wp.egenslab.com/how-to-select-the-perfect-quality-camping-tent/"><i class="bx bxl-facebook"></i></a></li>
-                                                    <li><a href="http://www.twitter.com/share?url=https://www.astrip-wp.egenslab.com/how-to-select-the-perfect-quality-camping-tent/"><i class="bx bxl-twitter"></i></a></li>
-                                                    <li><a href="https://www.instagram.com/pin/create/button/?url=https://www.astrip-wp.egenslab.com/how-to-select-the-perfect-quality-camping-tent/"><i class="bx bxl-instagram"></i></a></li>
-                                                    <li><a href="http://www.pinterest.com/share?url=https://www.astrip-wp.egenslab.com/how-to-select-the-perfect-quality-camping-tent/"><i class="bx bxl-pinterest"></i></a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
                 </div>
                 <nav aria-label="Page navigation" class="pagination-wrap">
                     <ul class="pagination d-flex justify-content-center gap-md-3 gap-2">
@@ -272,28 +81,33 @@
                 <div class="blog-sidebar ps-lg-4">
                     <div id="block-2" class="blog-widget-item widget_block widget_search">
                         <form role="search" method="get" action="https://www.astrip-wp.egenslab.com/" class="wp-block-search__button-outside wp-block-search__text-button wp-block-search"><label class="wp-block-search__label" for="wp-block-search__input-1">Search</label>
-                            <div class="wp-block-search__inside-wrapper "><input class="wp-block-search__input" id="wp-block-search__input-1" placeholder="Search Here ..." value="" type="search" name="s" required=""><button aria-label="Search" class="wp-block-search__button wp-element-button" type="submit">Search</button></div>
+                            <div class="wp-block-search__inside-wrapper "><input class="wp-block-search__input" id="wp-block-search__input-1" placeholder="<?= lang('text_article.search_field') ?>" value="" type="search" name="s" required=""><button aria-label="Search" class="wp-block-search__button wp-element-button" type="submit"><?= lang('text_article.search_button') ?></button></div>
                         </form>
                     </div>
                     <div id="block-3" class="blog-widget-item widget_block">
                         <div class="wp-block-group is-layout-flow wp-block-group-is-layout-flow">
                             <div class="wp-block-group__inner-container">
-                                <h2 class="wp-block-heading">Trending Stories</h2>
+                                <h2 class="wp-block-heading">
+                                    <?= lang('text_article.latest_article') ?>
+                                </h2>
 
 
                                 <ul class="wp-block-latest-posts__list has-dates wp-block-latest-posts">
-                                    <li>
-                                        <div class="wp-block-latest-posts__featured-image alignleft"><img loading="lazy" decoding="async" width="150" height="150" src="images/blog-dt8-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" style="max-width:110px;max-height:110px;" srcset="images/blog-dt8-150x150.jpg 150w, images/blog-dt8-300x300.jpg 300w, images/blog-dt8-100x100.jpg 100w" sizes="(max-width: 150px) 100vw, 150px"></div><a class="wp-block-latest-posts__post-title" href="https://www.astrip-wp.egenslab.com/li-river-chinas-orignial-postcard-landcaspe/">Li river, China’s orignial postcard landcaspe</a><time datetime="2023-02-18T09:42:49+00:00" class="wp-block-latest-posts__post-date">February 18, 2023</time>
-                                    </li>
-                                    <li>
-                                        <div class="wp-block-latest-posts__featured-image alignleft"><img loading="lazy" decoding="async" width="150" height="150" src="images/blog-dt9-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" style="max-width:110px;max-height:110px;" srcset="images/blog-dt9-150x150.jpg 150w, images/blog-dt9-300x300.jpg 300w, images/blog-dt9-100x100.jpg 100w" sizes="(max-width: 150px) 100vw, 150px"></div><a class="wp-block-latest-posts__post-title" href="https://www.astrip-wp.egenslab.com/the-social-art-of-zaha-hadid-architectures-presence/">The social art of zaha Hadid, architecture’s presence</a><time datetime="2023-02-18T09:41:04+00:00" class="wp-block-latest-posts__post-date">February 18, 2023</time>
-                                    </li>
-                                    <li>
-                                        <div class="wp-block-latest-posts__featured-image alignleft"><img loading="lazy" decoding="async" width="150" height="150" src="images/blog-dt10-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" style="max-width:110px;max-height:110px;" srcset="images/blog-dt10-150x150.jpg 150w, images/blog-dt10-300x300.jpg 300w, images/blog-dt10-100x100.jpg 100w" sizes="(max-width: 150px) 100vw, 150px"></div><a class="wp-block-latest-posts__post-title" href="https://www.astrip-wp.egenslab.com/jungles-in-paris-vermonts-rugged-retro-ski-mountain/">Jungles in Paris vermont’s rugged, retro Ski mountain</a><time datetime="2023-02-18T09:39:59+00:00" class="wp-block-latest-posts__post-date">February 18, 2023</time>
-                                    </li>
-                                    <li>
-                                        <div class="wp-block-latest-posts__featured-image alignleft"><img loading="lazy" decoding="async" width="150" height="150" src="images/blog-dt7-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" style="max-width:110px;max-height:110px;" srcset="images/blog-dt7-150x150.jpg 150w, images/blog-dt7-300x300.jpg 300w, images/blog-dt7-100x100.jpg 100w" sizes="(max-width: 150px) 100vw, 150px"></div><a class="wp-block-latest-posts__post-title" href="https://www.astrip-wp.egenslab.com/day-out-on-the-ile-de-re-getting-hotter-and-hotter-2/">Day out on the Ile de Re. Getting hotter and hotter.</a><time datetime="2023-01-10T06:34:49+00:00" class="wp-block-latest-posts__post-date">January 10, 2023</time>
-                                    </li>
+
+                                    <?php foreach ($latestArticle as $article) : ?>
+                                        <li>
+                                            <div class="wp-block-latest-posts__featured-image alignleft">
+                                                <img loading="lazy" decoding="async" width="150" height="150" src="assets/images/blogs/<?= $article['cover_image'] ?>" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" style="max-width:110px;max-height:110px;" sizes="(max-width: 150px) 100vw, 150px">
+                                            </div>
+                                            <a class="wp-block-latest-posts__post-title" href="">
+                                                <?= $language == 'id' ? $article['title_id'] : $article['title_en'] ?>
+                                            </a>
+                                            <time datetime="2023-02-18T09:42:49+00:00" class="wp-block-latest-posts__post-date">
+                                                <?= $article['date']  ?>
+                                            </time>
+                                        </li>
+                                    <?php endforeach; ?>
+
                                 </ul>
                             </div>
                         </div>
@@ -301,7 +115,9 @@
                     <div id="block-21" class="blog-widget-item widget_block">
                         <div class="wp-block-group is-layout-flow wp-block-group-is-layout-flow">
                             <div class="wp-block-group__inner-container">
-                                <h2 class="wp-block-heading">Travel Categories</h2>
+                                <h2 class="wp-block-heading">
+                                    <?= lang('text_article.destination_category') ?>
+                                </h2>
 
 
                                 <ul class="wp-block-categories-list wp-block-categories">
@@ -322,7 +138,9 @@
                     <div id="block-23" class="blog-widget-item widget_block">
                         <div class="wp-block-group is-layout-flow wp-block-group-is-layout-flow">
                             <div class="wp-block-group__inner-container">
-                                <h2 class="wp-block-heading">Follow us Astrip</h2>
+                                <h2 class="wp-block-heading">
+                                    <?= lang('text_article.follow') ?>
+                                </h2>
 
 
 

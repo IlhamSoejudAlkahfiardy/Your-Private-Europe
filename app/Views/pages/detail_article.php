@@ -5,13 +5,14 @@
 <!-- ========== header end============= -->
 
 
-<div class="inner-banner-section">
+<div class="inner-banner-section" style="background-image: url(<?= base_url('assets/images/blogs/') . $article['cover_image'] ?>);">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-xl-8 col-md-10 col-sm-12">
                 <div class="breadcrumb-area">
                     <h2>
-                        Li river, China’s orignial postcard landcaspe </h2>
+                        <?= $language == 'id' ? $article['title_id'] : $article['title_en'] ?>
+                    </h2>
                 </div>
             </div>
         </div>
@@ -26,83 +27,25 @@
                     <article aria-label="article" id="post-2537" class="post-2537 post type-post status-publish format-standard has-post-thumbnail hentry category-adventure category-couple-tour tag-hotel tag-tours tag-travel tag-vacation">
                         <div class="blog-details">
                             <div class="blog-details-single">
-                                <div class="blog-thum-image">
-                                    <img width="870" height="500" src="images/blog-dt8.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" fetchpriority="high" srcset="images/blog-dt8.jpg 870w, images/blog-dt8-600x345.jpg 600w, images/blog-dt8-300x172.jpg 300w, images/blog-dt8-768x441.jpg 768w, images/blog-dt8-370x213.jpg 370w" sizes="(max-width: 870px) 100vw, 870px">
-                                </div>
+
+                                <figure class="wp-block-gallery has-nested-images columns-default is-cropped wp-block-gallery-1 is-layout-flex wp-block-gallery-is-layout-flex">
+                                    <?php foreach ($imageArticles as $imageArticle) : ?>
+                                        <figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="319" height="300" data-id="1665" src="<?= base_url('assets/images/blogs/' . $imageArticle['url']) ?>" alt="" class="wp-image-1665" sizes="(max-width: 319px) 100vw, 319px"></figure>
+                                    <?php endforeach; ?>
+                                </figure>
 
                                 <div class="blog-details-single">
 
-                                    <p>At nearly one million acres, Olympic National Park is one of the largest national parks in the lower 48 and is home to a wide range of biodiverse ecosystems. From the moss-laden Hoh Rainforest to the psychedelic tide pools of Rialto Beach and the far-flung glaciated peaks that hug the skyline, choosing just one place to hang your hat at the end of the day can feel overwhelming.</p>
+                                    <?= $language == 'id' ? $article['description_id'] : $article['description_en'] ?>
 
-
-
-                                    <p>This is all good for beginners but when these blogs grow, most bloggers forgot about design and instead doubled down on SEO and marketing.</p>
-
-
-
-                                    <blockquote class="wp-block-quote">
-                                        <p>There is a way out of every box, a solution to every puzzle it’s just a matter of finding it.</p>
-                                    </blockquote>
-
-
-
-                                    <h2 class="wp-block-heading"><strong>Why You Shouldn’t Ride Elephants France.</strong></h2>
-
-
-
-                                    <div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
-
-
-
-                                    <p>geism in the web development field is certainly out there. Though it needn’t prevent you from embarking on an intellectually rewarding (and well-paid) career path! A willingness to learn, and some creative thinking to tie in your past experience goes a long way.</p>
-
-
-
-                                    <figure class="wp-block-gallery has-nested-images columns-default is-cropped wp-block-gallery-1 is-layout-flex wp-block-gallery-is-layout-flex">
-                                        <figure class="wp-block-image size-large"><img decoding="async" width="319" height="300" data-id="1665" src="images/blog-details-img2.png" alt="" class="wp-image-1665" srcset="images/blog-details-img2.png 319w, images/blog-details-img2-300x282.png 300w" sizes="(max-width: 319px) 100vw, 319px"></figure>
-
-
-
-                                        <figure class="wp-block-image size-large"><img decoding="async" width="319" height="300" data-id="1664" src="images/blog-details-img3.png" alt="" class="wp-image-1664" srcset="images/blog-details-img3.png 319w, images/blog-details-img3-300x282.png 300w" sizes="(max-width: 319px) 100vw, 319px"></figure>
-
-
-
-                                        <figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="319" height="300" data-id="1663" src="images/blog-details-img4.png" alt="" class="wp-image-1663" srcset="images/blog-details-img4.png 319w, images/blog-details-img4-300x282.png 300w" sizes="(max-width: 319px) 100vw, 319px"></figure>
-                                    </figure>
-
-
-
-                                    <p>Add on the fact that the park has nearly a dozen entrance stations, and picking a location for your home base feels even trickier. Whether you’re looking to explore the rocky Pacific coastline, go forest bathing in the Hall of Mosses, or enjoy the sounds of a rushing river, our picks for the best Olympic National Park lodging have you covered. Below, 15 Airbnbs, Vrbos.</p>
-
-
-
-                                    <h2 class="wp-block-heading"><strong>Solo Traveler Learns On The Road,</strong></h2>
-
-
-
-                                    <ul>
-                                        <li>You’ll use these concepts in whichever programming language you learn in the future.</li>
-
-
-
-                                        <li>That way you have an overview before you start mastering a dedicated language..</li>
-
-
-
-                                        <li>Amazing Timing and Experience</li>
-                                    </ul>
-
-
-
-                                    <p>Orem ipsum dolor sit &amp;, sdt consectetu adipiscing elit. Aenean commodo ligula eget dolor. Cum socis Theme sed natoque ut penatibus Etiam ultricies nisi vel augue. Cura bitur an ultricies dictum felis eu pede sit. Etiam rhoncus. Maecenas tempus, tellus eget penatibus Rtiam.</p>
                                 </div>
                                 <div class="blog-share-area">
                                     <div class="row">
                                         <div class="col-md-9">
-                                            <div class="blog-tag-area">
+                                            <!-- <div class="blog-tag-area">
                                                 <h6>Tags:</h6>
                                                 <a href="https://www.astrip-wp.egenslab.com/tag/hotel/" rel="tag">Hotel</a><a href="https://www.astrip-wp.egenslab.com/tag/tours/" rel="tag">Tours</a><a href="https://www.astrip-wp.egenslab.com/tag/travel/" rel="tag">Travel</a><a href="https://www.astrip-wp.egenslab.com/tag/vacation/" rel="tag">Vacation</a>
-                                            </div>
+                                            </div> -->
                                         </div>
                                         <div class="col-md-3">
                                             <div class="blog-share">
@@ -122,7 +65,7 @@
                                     </div>
                                 </div>
 
-                                <div class="blog-details-author">
+                                <!-- <div class="blog-details-author">
                                     <div class="author-image">
                                         <img alt="" src="https://secure.gravatar.com/avatar/2ac0b89ced4ce2e492cab4aaf8529ac5?s=80&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/2ac0b89ced4ce2e492cab4aaf8529ac5?s=160&amp;d=mm&amp;r=g 2x" class="avatar avatar-80 photo" height="80" width="80" loading="lazy" decoding="async">
                                     </div>
@@ -135,13 +78,13 @@
                                             <li><a href="https://www.instagram.com/"><i class="bx bxl-instagram"></i></a></li>
                                         </ul>
                                     </div>
-                                </div>
+                                </div> -->
 
                             </div>
                         </div>
                     </article>
 
-                    <div class="blog-comment-form">
+                    <!-- <div class="blog-comment-form">
                         <div class="contact-from-wrapper">
 
                             <div id="respond" class="comment-respond">
@@ -160,38 +103,41 @@
                                         <input type="hidden" name="comment_parent" id="comment_parent" value="0">
                                     </p>
                                 </form>
-                            </div><!-- #respond -->
+                            </div>
                         </div>
 
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-10">
                 <div class="blog-sidebar ps-lg-4">
                     <div id="block-2" class="blog-widget-item widget_block widget_search">
                         <form role="search" method="get" action="https://www.astrip-wp.egenslab.com/" class="wp-block-search__button-outside wp-block-search__text-button wp-block-search"><label class="wp-block-search__label" for="wp-block-search__input-2">Search</label>
-                            <div class="wp-block-search__inside-wrapper "><input class="wp-block-search__input" id="wp-block-search__input-2" placeholder="Search Here ..." value="" type="search" name="s" required=""><button aria-label="Search" class="wp-block-search__button wp-element-button" type="submit">Search</button></div>
+                            <div class="wp-block-search__inside-wrapper "><input class="wp-block-search__input" id="wp-block-search__input-2" placeholder="<?= lang('text_article.search_field') ?>" value="" type="search" name="s" required=""><button aria-label="Search" class="wp-block-search__button wp-element-button" type="submit"><?= lang('text_article.search_button') ?></button></div>
                         </form>
                     </div>
                     <div id="block-3" class="blog-widget-item widget_block">
                         <div class="wp-block-group is-layout-flow wp-block-group-is-layout-flow">
                             <div class="wp-block-group__inner-container">
-                                <h2 class="wp-block-heading">Trending Stories</h2>
+                                <h2 class="wp-block-heading">
+                                    <?= lang('text_article.latest_article') ?>
+                                </h2>
 
 
                                 <ul class="wp-block-latest-posts__list has-dates wp-block-latest-posts">
-                                    <li>
-                                        <div class="wp-block-latest-posts__featured-image alignleft"><img loading="lazy" decoding="async" width="150" height="150" src="images/blog-dt8-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" style="max-width:110px;max-height:110px;" srcset="images/blog-dt8-150x150.jpg 150w, images/blog-dt8-300x300.jpg 300w, images/blog-dt8-100x100.jpg 100w" sizes="(max-width: 150px) 100vw, 150px"></div><a class="wp-block-latest-posts__post-title" href="https://www.astrip-wp.egenslab.com/li-river-chinas-orignial-postcard-landcaspe/">Li river, China’s orignial postcard landcaspe</a><time datetime="2023-02-18T09:42:49+00:00" class="wp-block-latest-posts__post-date">February 18, 2023</time>
-                                    </li>
-                                    <li>
-                                        <div class="wp-block-latest-posts__featured-image alignleft"><img loading="lazy" decoding="async" width="150" height="150" src="images/blog-dt9-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" style="max-width:110px;max-height:110px;" srcset="images/blog-dt9-150x150.jpg 150w, images/blog-dt9-300x300.jpg 300w, images/blog-dt9-100x100.jpg 100w" sizes="(max-width: 150px) 100vw, 150px"></div><a class="wp-block-latest-posts__post-title" href="https://www.astrip-wp.egenslab.com/the-social-art-of-zaha-hadid-architectures-presence/">The social art of zaha Hadid, architecture’s presence</a><time datetime="2023-02-18T09:41:04+00:00" class="wp-block-latest-posts__post-date">February 18, 2023</time>
-                                    </li>
-                                    <li>
-                                        <div class="wp-block-latest-posts__featured-image alignleft"><img loading="lazy" decoding="async" width="150" height="150" src="images/blog-dt10-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" style="max-width:110px;max-height:110px;" srcset="images/blog-dt10-150x150.jpg 150w, images/blog-dt10-300x300.jpg 300w, images/blog-dt10-100x100.jpg 100w" sizes="(max-width: 150px) 100vw, 150px"></div><a class="wp-block-latest-posts__post-title" href="https://www.astrip-wp.egenslab.com/jungles-in-paris-vermonts-rugged-retro-ski-mountain/">Jungles in Paris vermont’s rugged, retro Ski mountain</a><time datetime="2023-02-18T09:39:59+00:00" class="wp-block-latest-posts__post-date">February 18, 2023</time>
-                                    </li>
-                                    <li>
-                                        <div class="wp-block-latest-posts__featured-image alignleft"><img loading="lazy" decoding="async" width="150" height="150" src="images/blog-dt7-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" style="max-width:110px;max-height:110px;" srcset="images/blog-dt7-150x150.jpg 150w, images/blog-dt7-300x300.jpg 300w, images/blog-dt7-100x100.jpg 100w" sizes="(max-width: 150px) 100vw, 150px"></div><a class="wp-block-latest-posts__post-title" href="https://www.astrip-wp.egenslab.com/day-out-on-the-ile-de-re-getting-hotter-and-hotter-2/">Day out on the Ile de Re. Getting hotter and hotter.</a><time datetime="2023-01-10T06:34:49+00:00" class="wp-block-latest-posts__post-date">January 10, 2023</time>
-                                    </li>
+                                    <?php foreach ($latestArticle as $article) : ?>
+                                        <li>
+                                            <div class="wp-block-latest-posts__featured-image alignleft">
+                                                <img loading="lazy" decoding="async" width="150" height="150" src="<?= base_url('assets/images/blogs/' . $article['cover_image']) ?>" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" style="max-width:110px;max-height:110px;" sizes="(max-width: 150px) 100vw, 150px">
+                                            </div>
+                                            <a class="wp-block-latest-posts__post-title" href="">
+                                                <?= $language == 'id' ? $article['title_id'] : $article['title_en'] ?>
+                                            </a>
+                                            <time datetime="2023-02-18T09:42:49+00:00" class="wp-block-latest-posts__post-date">
+                                                <?= $article['date']  ?>
+                                            </time>
+                                        </li>
+                                    <?php endforeach; ?>
                                 </ul>
                             </div>
                         </div>
@@ -199,7 +145,9 @@
                     <div id="block-21" class="blog-widget-item widget_block">
                         <div class="wp-block-group is-layout-flow wp-block-group-is-layout-flow">
                             <div class="wp-block-group__inner-container">
-                                <h2 class="wp-block-heading">Travel Categories</h2>
+                                <h2 class="wp-block-heading">
+                                    <?= lang('text_article.destination_category') ?>
+                                </h2>
 
 
                                 <ul class="wp-block-categories-list wp-block-categories">
@@ -220,7 +168,9 @@
                     <div id="block-23" class="blog-widget-item widget_block">
                         <div class="wp-block-group is-layout-flow wp-block-group-is-layout-flow">
                             <div class="wp-block-group__inner-container">
-                                <h2 class="wp-block-heading">Follow us Astrip</h2>
+                                <h2 class="wp-block-heading">
+                                    <?= lang('text_article.follow') ?>
+                                </h2>
 
 
 

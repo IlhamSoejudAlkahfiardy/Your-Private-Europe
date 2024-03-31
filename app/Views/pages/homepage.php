@@ -288,14 +288,18 @@
             elementor-element elementor-element-e142efa elementor-section-boxed
             elementor-section-height-default elementor-section-height-default" data-id="e142efa" data-element_type="section" data-settings="{" background_background":"classic"}"="">
                         <div class="elementor-container elementor-column-gap-default">
-                            <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-5fffbce" data-id="5fffbce" data-element_type="column">
+                            <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-5fffbce" data-id="5fffbce" data-element_type="column" style="width: 100% !important;">
                                 <div class="elementor-widget-wrap elementor-element-populated">
                                     <div class="elementor-element elementor-element-6ac66df elementor-widget elementor-widget-astrip_heading" data-id="6ac66df" data-element_type="widget" data-widget_type="astrip_heading.default">
                                         <div class="elementor-widget-container">
                                             <div class="justify-content-center">
                                                 <div class="section-title2 d-flex flex-column justify-content-center">
-                                                    <span>TENTANG KAMI</span>
-                                                    <h2>Traveling & Destination Expert di Eropa</h2>
+                                                    <span>
+                                                        <?= $language == 'id' ? $aboutUs['heading_id'] : $aboutUs['heading_en'] ?>
+                                                    </span>
+                                                    <h2>
+                                                        <?= $language == 'id' ? $aboutUs['title_id'] : $aboutUs['title_en'] ?>
+                                                    </h2>
                                                 </div>
                                             </div>
                                         </div>
@@ -336,10 +340,7 @@
                                                 }
                                             </style>
                                             <p>
-                                                Kami adalah Tour Organizer dan Destination Management Company yang menyediakan pelayanan VIP Services, MICE, private tour & group tour di Eropa, khususnya untuk pelaku perjalanan dan wisatawan dari Indonesia dan Asia.
-                                                <br>
-                                                <br>
-                                                Komitmen kami adalah mengutamakan keinginan dan kebutuhan Anda selama berkunjung di Eropa, dan memberikan Anda pelayanan yang extra maksimal.
+                                                <?= $language == 'id' ? $aboutUs['description_id'] : $aboutUs['description_en'] ?>
                                             </p>
                                         </div>
                                     </div>
@@ -404,8 +405,12 @@
 
                             <div class=" justify-content-center">
                                 <div class="section-title1">
-                                    <span>LAYANAN KAMI</span>
-                                    <h2>Temukan pengalaman eksklusif tak terlupakan bersama kami</h2>
+                                    <span>
+                                        <?= $language == 'id' ? $homepage['our_services_section_id'] : $homepage['our_services_section_en'] ?>
+                                    </span>
+                                    <h2>
+                                        <?= $language == 'id' ? $homepage['our_services_title_id'] : $homepage['our_services_title_en'] ?>
+                                    </h2>
                                     <div class="heading-ribbon flex justify-center">
                                         <svg width="370" height="18" viewBox="0 0 370 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M184.946 0.780971C183.9 1.11998 183.054 1.98633 182.734 3.03348L182.601 3.46289L182 3.48549L181.391 3.50809L181.02 3.16908C180.508 2.70201 179.944 2.33287 179.15 1.95619C176.648 0.750837 173.62 0.999442 171.305 2.59654C170.629 3.05608 169.746 3.94503 169.308 4.59291C167.074 7.86998 167.408 12.1716 170.117 14.9515C171.668 16.5485 173.613 17.3622 175.847 17.3622C178.823 17.3622 181.599 15.6219 182.905 12.94L183.209 12.3223L183.914 12.1867C184.909 11.9983 187.091 11.9983 188.086 12.1867L188.791 12.3223L189.073 12.9023C190.401 15.637 193.14 17.3622 196.153 17.3622C199.894 17.3622 203.004 14.9063 203.924 11.2299C204.584 8.57813 203.85 5.73047 201.979 3.71903C201.296 2.98828 200.643 2.50614 199.693 2.03153C198.758 1.56445 198.053 1.36105 196.97 1.24051C194.81 0.999442 192.427 1.79046 190.891 3.25195C190.631 3.50809 190.616 3.50809 190.008 3.48549L189.399 3.46289L189.266 3.03348C188.939 1.95619 188.048 1.07478 186.972 0.758371C186.43 0.600167 185.48 0.607701 184.946 0.780971ZM186.868 2.0692C187.581 2.3856 188.108 3.11635 188.197 3.9149C188.227 4.14844 188.308 4.41964 188.39 4.51758C188.516 4.68331 188.59 4.70592 189.05 4.70592C189.332 4.70592 189.563 4.72098 189.563 4.73605C189.563 4.75865 189.444 4.97712 189.295 5.23326C188.939 5.85854 188.642 6.59682 188.442 7.39537C188.308 7.92271 188.271 8.26925 188.271 9.113C188.264 9.69308 188.293 10.3485 188.323 10.5745L188.382 10.9813L188.138 10.9286C188.004 10.8984 187.47 10.8457 186.95 10.8005C186.045 10.7176 184.575 10.7854 183.855 10.9286C183.61 10.9813 183.603 10.9813 183.655 10.7628C183.759 10.2732 183.788 8.85686 183.707 8.20898C183.595 7.3577 183.195 6.12974 182.786 5.39146C182.616 5.07506 182.467 4.79632 182.452 4.76618C182.437 4.72852 182.66 4.70592 182.942 4.70592C183.41 4.70592 183.484 4.68331 183.61 4.51758C183.692 4.41964 183.773 4.14844 183.803 3.9149C183.981 2.3856 185.51 1.45898 186.868 2.0692ZM177.532 2.67188C180.76 3.60603 182.831 6.65709 182.504 9.96429C182.148 13.4674 179.268 16.1116 175.795 16.1116C173.925 16.1116 172.359 15.4336 171.008 14.055C169.746 12.7667 169.078 11.1169 169.078 9.30887C169.078 7.48577 169.709 5.89621 170.948 4.58538C171.928 3.54576 173.079 2.88281 174.407 2.58901C175.268 2.40067 176.73 2.43834 177.532 2.67188ZM197.541 2.58901C198.907 2.87528 200.042 3.51563 201.037 4.57031C204.273 7.99051 203.211 13.5276 198.944 15.524C197.675 16.1191 196.02 16.2849 194.654 15.9459C192.746 15.4637 191.166 14.2132 190.238 12.4503C188.709 9.54241 189.511 5.85854 192.108 3.8697C193.014 3.17662 194.075 2.70201 195.07 2.52874C195.76 2.41574 196.829 2.43834 197.541 2.58901Z" fill="#e0bc6d"></path>
@@ -564,62 +569,25 @@
                         <div class="elementor-widget-container">
                             <div class="faq-wrap">
                                 <div class="accordion" id="accordionExample">
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="heading0">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse0" aria-expanded="true" aria-controls="collapse0">
-                                                <p>
-                                                    01. PELAYANAN YANG FLEXIBEL & MAKSIMAL
-                                                </p>
-                                            </button>
-                                        </h2>
-                                        <div id="collapse0" class="accordion-collapse collapse " aria-labelledby="heading0" data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
 
-                                                <p><strong>Flexibel</strong> berarti Anda pegang kendali 100%:</p>
-                                                <ul>
-                                                    <li>Bebas memilih dari 3 pilar di atas pelayanan apa yang Anda inginkan dari kami: tiket pesawat, transportasi &amp; guide, akomodasi. Atau Anda percayakan ketiga-tiganya kepada kami</li>
-                                                    <li>Tentukan <em>travel itinerary</em>&nbsp;Anda sendiri, termasuk&nbsp;tempat-tempat yang ingin dituju, durasi, budget dan jadwal tour bisa Anda ditentukan sendiri dengan <strong>bebas menurut keinginan Anda</strong>.</li>
-                                                </ul>
-                                                <p><strong>Maximal (totalitas)</strong> berarti:</p>
-                                                <ul>
-                                                    <li>Kami selalu <strong>“go the extra mile”</strong></li>
-                                                    <li>Kami selalu mengedepankan keinginan, kenyamanan dan kebutuhan Anda selama di Eropa.</li>
-                                                </ul>
-                                                <p>2 hal inilah yang kami banggakan dari pelayanan kami!</p>
+                                    <?php foreach ($usp as $dataUsp) : ?>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="heading<?= $dataUsp['id'] ?>">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse<?= $dataUsp['id'] ?>" aria-expanded="true" aria-controls="collapse<?= $dataUsp['id'] ?>">
+                                                    <p>
+                                                        <?= $language == 'id' ? $dataUsp['title_id'] : $dataUsp['title_en'] ?>
+                                                    </p>
+                                                </button>
+                                            </h2>
+                                            <div id="collapse<?= $dataUsp['id'] ?>" class="accordion-collapse collapse " aria-labelledby="heading<?= $dataUsp['id'] ?>" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
 
+                                                    <?= $language == 'id' ? $dataUsp['description_id'] : $dataUsp['description_en'] ?>
+
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="heading1">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
-                                                <p>
-                                                    02. JAMINAN KEBERANGKATAN TANPA MINIMAL JUMLAH PESERTA
-                                                </p>
-                                            </button>
-                                        </h2>
-                                        <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
-                                                <p>Kami selalu <strong>jamin keberangkatan</strong> Anda ke Eropa, tanpa adanya<strong><span>&nbsp;</span></strong>kuota atau minimal jumlah peserta tour. Konsep pelayanan kami malah sangat ideal untuk group kecil yang terdiri dari 2 – 8 orang.</p>
-                                                <p>Anda juga tidak perlu khawatir dengan pembatalan atau kenaikan harga tour secara tiba-tiba.&nbsp;Kami selalu pegang komitmen untuk memberikan pelayanan yang maksimal!</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="heading2">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
-                                                <p>
-                                                    03. PELAYANAN DALAM BAHASA INDONESIA
-                                                </p>
-                                            </button>
-                                        </h2>
-                                        <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
-                                                <p>Selama di Eropa, Anda akan dilayani oleh team kami yang mengenal Eropa dengan baik dan fasih&nbsp;<strong>berbahasa Indonesia</strong>.</p>
-                                                <p>Selain itu, team kami juga fasih berbahasa asing lainnya (seperti bahasa Jerman, Perancis, Spanyol) dan banyak mengerti tentang sejarah dan perbedaan budaya antara Eropa, Asia dan Indonesia.&nbsp;Dengan begitu, Anda bisa berkomunikasi dan beradaptasi di Eropa dengan mudah, tanpa adanya hambatan bahasa atau budaya.&nbsp;<em>We speak your language!</em></p>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <?php endforeach; ?>
 
                                 </div>
                             </div>
@@ -707,12 +675,13 @@
                 <div class="elementor-widget-wrap elementor-element-populated">
                     <div class="elementor-element elementor-element-fdaed90 elementor-widget elementor-widget-egens_newsletter" data-id="fdaed90" data-element_type="widget" data-widget_type="egens_newsletter.default">
                         <div class="elementor-widget-container">
-                            <div class="newsletter-area">
+                            <!-- <div class="newsletter-area">
                                 <div class="banner-form-box">
                                     <h3>Join Newsletter</h3>
                                     <p>
                                         Etiam rhoncus. Maecenas temp us, tellus eget condimentum rho
                                     </p>
+                                    <img src="https://www.instagram.com/s/aGlnaGxpZ2h0OjE3OTczMzUyODcwMjI0NDcz?story_media_id=2009030736713142718_8733889866&igsh=YTRnb2N6Y2xucjhi" alt="" srcset="">
                                     <form class="newsletter-form">
                                         <script>
                                             (function() {
@@ -729,7 +698,7 @@
                                                 };
                                             })();
                                         </script>
-                                        <!-- Mailchimp for WordPress v4.9.10 - https://wordpress.org/plugins/mailchimp-for-wp/ -->
+                                        
                                         <div class="mc4wp-form-fields">
                                             <div class="form-inner mt-40 mb-40">
                                                 <p>
@@ -749,9 +718,8 @@
                                             <input type="text" name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off" /></label><input type="hidden" name="_mc4wp_timestamp" value="1711033319" /><input type="hidden" name="_mc4wp_form_id" value="115" /><input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-1" />
                                         <div class="mc4wp-response"></div>
                                     </form>
-                                    <!-- / Mailchimp for WordPress Plugin -->
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -1517,7 +1485,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-10">
                     <div class="blog-single2">
                         <div class="image">
-                            <img loading="lazy" width="870" height="500" src="<?= base_url('assets/images/blog-dt9.jpg') ?>" class="img-fluid wp-post-image" alt="" decoding="async"srcset="
+                            <img loading="lazy" width="870" height="500" src="<?= base_url('assets/images/blog-dt9.jpg') ?>" class="img-fluid wp-post-image" alt="" decoding="async" srcset="
                     <?= base_url('assets/images/blog-dt9.jpg') ?>         870w,
                     <?= base_url('assets/images/blog-dt9-600x345.jpg') ?> 600w,
                     <?= base_url('assets/images/blog-dt9-300x172.jpg') ?> 300w,
@@ -1543,7 +1511,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-10">
                     <div class="blog-single2">
                         <div class="image">
-                            <img loading="lazy" width="870" height="500" src="<?= base_url('assets/images/blog-dt10.jpg') ?>" class="img-fluid wp-post-image" alt="" decoding="async"  srcset="
+                            <img loading="lazy" width="870" height="500" src="<?= base_url('assets/images/blog-dt10.jpg') ?>" class="img-fluid wp-post-image" alt="" decoding="async" srcset="
                     <?= base_url('assets/images/blog-dt10.jpg') ?>         870w,
                     <?= base_url('assets/images/blog-dt10-600x345.jpg') ?> 600w,
                     <?= base_url('assets/images/blog-dt10-300x172.jpg') ?> 300w,
@@ -1971,12 +1939,12 @@
                             <div class="elementor-image-carousel-wrapper swiper-container" dir="ltr">
                                 <div class="elementor-image-carousel swiper-wrapper" aria-live="polite">
 
-                                    <?php foreach ($instagramPartners as $instagramPartner) : ?>
+                                    
                                         <div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="1 of 6">
 
-                                            <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="<?= $instagramPartner['link'] ?>" data-instgrm-version="14">
+                                            <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="#" data-instgrm-version="14">
                                                 <div style="padding: 16px;">
-                                                    <a href="<?= $instagramPartner['link'] ?>" style="background: #FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
+                                                    <a href="#" style="background: #FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
                                                         <div style="display: flex; flex-direction: row; align-items: center;">
                                                             <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div>
                                                             <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
@@ -2028,7 +1996,7 @@
                                             </blockquote>
 
                                         </div>
-                                    <?php endforeach; ?>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -2091,79 +2059,23 @@
                     <div class="elementor-widget-container">
                         <div class="faq-wrap">
                             <div class="accordion" id="accordionExample">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="heading0">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse0" aria-expanded="true" aria-controls="collapse0">
-                                            Bagaimana caranya untuk memesan pelayanan tour di Your Private Europe?
-                                        </button>
-                                    </h2>
-                                    <div id="collapse0" class="accordion-collapse collapse" aria-labelledby="heading0" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            <p>Untuk pemesanan pelayanan, silakan hubungi kami melalui cara kontak di halaman <strong><a href="https://yourprivateeurope.eu/hubungi-kami/">Hubungi Kami</a></strong>.
-                                            <p></p>
-                                            <p>Jangan ragu untuk menghubungi kami juga, apabila Anda ingin bertanya lebih lanjut tentang layanan kami.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="heading1">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
-                                            Apakah saya bisa memesan pelayanan secara mendadak?
-                                        </button>
-                                    </h2>
-                                    <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            <p>Ya tentu saja, tetapi dengan syarat Anda harus sudah memiliki visa Schengen yang masih berlaku. Selambat-lambatnya Anda bisa memesan pelayanan kami sampai <strong>7 hari kerja</strong> sebelum tanggal keberangkatan.&nbsp;</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="heading2">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
-                                            Bagaimana cara sistem pembayaran untuk pelayanan Your Private Europe?
-                                        </button>
-                                    </h2>
-                                    <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            <p>Sistem pembayaran untuk pelayanan kami terdiri dari 2 tahap:</p>
-                                            <ul>
-                                                <li>Pembayaran uang muka (DP) sebesar 50% setelah persetujuan proposal</li>
-                                                <li>Pembayaran sisa 50%</li>
-                                            </ul>
-                                            <p>Pembayaran uang muka (DP) sebesar 50% harus dilunasi <strong>dalam 3 hari kerja</strong> setelah persetujuan proposal. Sedangkan pembayaran sisa 50% bisa dicicil/dilunasi sampai <strong>3 hari kerja sebelum </strong>tanggal keberangkatan tour.</p>
-                                        </div>
-                                    </div>
-                                </div>
 
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="heading2">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="true" aria-controls="collapse2">
-                                            Apakah pembayaran harus dalam bentuk Euro?
-                                        </button>
-                                    </h2>
-                                    <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            <p>Tidak. Proposal harga kami memang dalam mata uang Euro, tetapi Anda bisa membayar dalam bentuk Euro maupun Rupiah. Kami akan menentukan jumlah pembayaran dalam Rupiah menurut kurs EUR/IDR yang berlaku pada hari pembayaran..</p>
+                                <?php foreach ($faqs as $faq) : ?>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="heading<?= $faq['id'] ?>">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse<?= $faq['id'] ?>" aria-expanded="true" aria-controls="collapse<?= $faq['id'] ?>">
+                                                <p>
+                                                    <?= $language == 'id' ? $faq['title_id'] : $faq['title_en'] ?>
+                                                </p>
+                                            </button>
+                                        </h2>
+                                        <div id="collapse<?= $faq['id'] ?>" class="accordion-collapse collapse" aria-labelledby="heading<?= $faq['id'] ?>" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <?= $language == 'id' ? $faq['description_id'] : $faq['description_en'] ?>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="heading2">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="true" aria-controls="collapse2">
-                                            Apa saja cara pembayaran yang bisa diterima?
-                                        </button>
-                                    </h2>
-                                    <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            <p>Untuk sekarang, pembayaran hanya bisa diterima melalui bank transfer.&nbsp;Pembayaran dapat dilakukan melalui bank transfer ke nomor rekening dibawah ini.</p>
-                                            <p><strong>Euro Account</strong></p>
-                                            <p>Nama bank:&nbsp; &nbsp; &nbsp; OCBC NISP<br>No. rekening:&nbsp; &nbsp; 52800014830<br>Atas nama:&nbsp; &nbsp; &nbsp; &nbsp; PT. Mitrawisata Jelajah Buana<br>Alamat:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Jl. Dharmahusada Mas VII AB-22, 60115 Surabaya</p>
-                                            <p><strong>Rupiah Account</strong></p>
-                                            <p>Nama bank:&nbsp; &nbsp; &nbsp; Bank Central Asia<br>No. rekening:&nbsp; &nbsp; 7230537555<br>Atas nama:&nbsp; &nbsp; &nbsp; &nbsp; PT. Mitrawisata Jelajah Buana<br>Alamat:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Jl. Dharmahusada Mas VII AB-22, 60115 Surabaya</p>
-                                        </div>
-                                    </div>
-                                </div>
+                                <?php endforeach; ?>
 
                             </div>
                         </div>
@@ -2175,7 +2087,7 @@
                         <div class="elementor-widget-container">
                             <div class="row justify-content-center">
                                 <div class="btn-align" style="display: flex;justify-content: center;">
-                                    <a href="https://www.astrip-wp.egenslab.com/destination" target="_blank" rel="nofollow" class="eg-btn btn--primary-outline btn--lg">
+                                    <a href="#" target="_blank" rel="nofollow" class="eg-btn btn--primary-outline btn--lg">
                                         <?= lang("text_homepage.all_faq") ?>
                                     </a>
                                 </div>
