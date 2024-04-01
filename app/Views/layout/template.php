@@ -1222,7 +1222,7 @@
                                     <a href="#">Hubungi Kami</a><i class="bi bi-chevron-down"></i>
                                 </li>
                                 <li id="menu-item-1999" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1999">
-                                    <a href="#">FAQ</a><i class="bi bi-chevron-down"></i>
+                                    <a href="/<?= $language ?>/faq">FAQ</a><i class="bi bi-chevron-down"></i>
                                 </li>
                                 <!-- <li
                   id="menu-item-2005"

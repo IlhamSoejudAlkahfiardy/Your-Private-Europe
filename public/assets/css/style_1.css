@@ -4751,7 +4751,8 @@ header.style-5 .main-nav ul li.menu-item-has-children > i {
   margin-bottom: 5px;
   letter-spacing: 3px;
 }
-.inner-banner-section .breadcrumb-area h2 {
+.inner-banner-section .breadcrumb-area h2 ,
+.inner-banner-section .breadcrumb-area h1 {
   font-size: 5rem;
   font-weight: 800;
   color: var(--white);
@@ -4761,7 +4762,8 @@ header.style-5 .main-nav ul li.menu-item-has-children > i {
   word-wrap: break-word;
 }
 @media (max-width: 767px) {
-  .inner-banner-section .breadcrumb-area h2 {
+  .inner-banner-section .breadcrumb-area h2 ,
+  .inner-banner-section .breadcrumb-area h1 {
     font-size: 34px;
   }
 }

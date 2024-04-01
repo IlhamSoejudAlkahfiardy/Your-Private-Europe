@@ -67,7 +67,7 @@ class HomepageController extends BaseController
             'howItWorks' => $this->howItWorksModel->findAll(),
             'testimonials' => $this->testimonialModel->findAll(),
             // 'instagramPartners' => $this->instagramPartnersModel->findAll(),
-            'faqs' => $this->FAQModel->findAll(),
+            'faqs' => $this->FAQModel->orderBy('id', 'DESC')->limit(5)->findAll(),
             'destinations' => $this->destinationModel->select([
                 'destination.title',
                 'destination.slug',
@@ -81,7 +81,7 @@ class HomepageController extends BaseController
 
         ];
 
-        // dd($data['destinations']);
+        // dd($data['faqs']);
 
         echo view('pages/homepage', $data);
     }

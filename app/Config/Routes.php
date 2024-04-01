@@ -20,7 +20,8 @@ $routes->get('/en/destination/(:segment)', 'DestinationController::detail/$1');
 
 $routes->get('/contact-us', 'ContactUsController::index');
 $routes->get('/about-us', 'AboutUsController::index');
-$routes->get('/faq', 'FAQController::index');
+$routes->get('/id/faq', 'FAQController::index');
+$routes->get('/en/faq', 'FAQController::index');
 
 $routes->get('/id/article', 'ArticleController::index');
 $routes->get('/id/article/(:segment)/(:segment)', 'ArticleController::detail/$1/$2');
