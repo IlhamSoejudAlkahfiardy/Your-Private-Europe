@@ -693,7 +693,7 @@
                     <h3 class="tour-details-subtitle">Write a review:</h3>
                     <div class="contact-from-wrapper">
                       <form
-                        action="https://www.astrip-wp.egenslab.com/tour/south-america/"
+                        action="#tour/south-america/"
                         method="post"
                         id="review_rating"
                         name="review_rating"
@@ -1123,7 +1123,7 @@
                 <input id="productId" type="hidden" value="2401" />
                 <!-- <hr class="separate-line2" /> -->
 
-                <form class="cart" action="https://www.astrip-wp.egenslab.com/product/south-america/" name="review-rating-from" method="post" enctype="multipart/form-data">
+                <form class="cart" action="#" name="review-rating-from" method="post" enctype="multipart/form-data">
                   <!-- <div class="booking-form-item-type mb-40">
                         <input type="hidden" value="2472" name="tour_id" />
                         <h5>Select Your Tour Date</h5>
@@ -1415,7 +1415,7 @@
                   <div class="review-area"></div>
                   <h4>
                     <a
-                      href="https://www.astrip-wp.egenslab.com/tour/aegean-beach/"
+                      href="#tour/aegean-beach/"
                       >Aegean Beach</a
                     >
                   </h4>

@@ -199,7 +199,7 @@
                                         <img width="435" height="556" src="images/tour-pack-4.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="images/tour-pack-4.jpg 435w, images/tour-pack-4-235x300.jpg 235w, images/tour-pack-4-253x323.jpg 253w" sizes="(max-width: 435px) 100vw, 435px">
                                     </div>
                                     <div class="package-content">
-                                        <h5><a href="https://www.astrip-wp.egenslab.com/tour/south-america/">South America</a></h5>
+                                        <h5><a href="#">South America</a></h5>
                                         <span class="duration"><i class="bi bi-clock"></i> 7 Days / 8 Night </span>
                                         <p class="package-price">From $625</p>
                                     </div>
@@ -211,7 +211,7 @@
                                         <img width="435" height="556" src="images/tour-pack-9.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="images/tour-pack-9.jpg 435w, images/tour-pack-9-235x300.jpg 235w, images/tour-pack-9-253x323.jpg 253w" sizes="(max-width: 435px) 100vw, 435px">
                                     </div>
                                     <div class="package-content">
-                                        <h5><a href="https://www.astrip-wp.egenslab.com/tour/paris-frnace/">Paris, Frnace</a></h5>
+                                        <h5><a href="#">Paris, Frnace</a></h5>
                                         <span class="duration"><i class="bi bi-clock"></i> 8 Days / 9 Night </span>
                                         <p class="package-price">From $189</p>
                                     </div>
@@ -223,7 +223,7 @@
                                         <img width="435" height="556" src="images/tour-pack-2.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="images/tour-pack-2.jpg 435w, images/tour-pack-2-235x300.jpg 235w, images/tour-pack-2-253x323.jpg 253w" sizes="(max-width: 435px) 100vw, 435px">
                                     </div>
                                     <div class="package-content">
-                                        <h5><a href="https://www.astrip-wp.egenslab.com/tour/hill-city-poland/">Hill City, poland</a></h5>
+                                        <h5><a href="#">Hill City, poland</a></h5>
                                         <span class="duration"><i class="bi bi-clock"></i> 12 Days / 13 Night </span>
                                         <p class="package-price">From $462</p>
                                     </div>
@@ -235,7 +235,7 @@
                                         <img width="435" height="556" src="images/tour-pack-5.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="images/tour-pack-5.jpg 435w, images/tour-pack-5-235x300.jpg 235w, images/tour-pack-5-253x323.jpg 253w" sizes="(max-width: 435px) 100vw, 435px">
                                     </div>
                                     <div class="package-content">
-                                        <h5><a href="https://www.astrip-wp.egenslab.com/tour/dubai-desert/">Dubai Desert</a></h5>
+                                        <h5><a href="#">Dubai Desert</a></h5>
                                         <span class="duration"><i class="bi bi-clock"></i> 6 Days / 7 Night </span>
                                         <p class="package-price">From $365</p>
                                     </div>

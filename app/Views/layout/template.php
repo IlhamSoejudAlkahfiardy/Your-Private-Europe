@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
     <link rel="profile" href="http://gmpg.org/xfn/11" />
-    <link rel="pingback" href="https://www.astrip-wp.egenslab.com/xmlrpc.php" />
+    <!-- <link rel="pingback" href="#xmlrpc.php" /> -->
     <link rel="dns-prefetch" href="//astrip-wp.b-cdn.net" />
 
     <title><?= $language == 'id' ? $title['seo_tag_title_id'] : $title['seo_tag_title_en']   ?></title>
@@ -25,8 +25,8 @@
     <link rel="dns-prefetch" href="//fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="dns-prefetch" href="//use.fontawesome.com" />
-    <link rel="alternate" type="application/rss+xml" title="Astrip » Feed" href="https://www.astrip-wp.egenslab.com/feed/" />
-    <link rel="alternate" type="application/rss+xml" title="Astrip » Comments Feed" href="https://www.astrip-wp.egenslab.com/comments/feed/" />
+    <!-- <link rel="alternate" type="application/rss+xml" title="Astrip » Feed" href="#feed/" /> -->
+    <!-- <link rel="alternate" type="application/rss+xml" title="Astrip » Comments Feed" href="#comments/feed/" /> -->
     <script src="https://kit.fontawesome.com/278b3e3446.js" crossorigin="anonymous"></script>
 
     <script>
@@ -929,15 +929,15 @@
     </script>
     <script src="<?= base_url('assets/js/woocommerce.min.js') ?>" id="jquery-core-js"></script>
     <!-- <script src="js/woocommerce.min.js" id="woocommerce-js" defer="" data-wp-strategy="defer"></script> -->
-    <link rel="https://api.w.org/" href="https://www.astrip-wp.egenslab.com/wp-json/" />
-    <link rel="alternate" type="application/json" href="https://www.astrip-wp.egenslab.com/wp-json/wp/v2/pages/234" />
-    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.astrip-wp.egenslab.com/xmlrpc.php?rsd" />
+    <!-- <link rel="https://api.w.org/" href="#wp-json/" /> -->
+    <!-- <link rel="alternate" type="application/json" href="#wp-json/wp/v2/pages/234" /> -->
+    <!-- <link rel="EditURI" type="application/rsd+xml" title="RSD" href="#xmlrpc.php?rsd" /> -->
     <meta name="generator" content="WordPress 6.4.3" />
     <meta name="generator" content="WooCommerce 8.3.0" />
-    <link rel="canonical" href="https://www.astrip-wp.egenslab.com/" />
-    <link rel="shortlink" href="https://www.astrip-wp.egenslab.com/" />
-    <link rel="alternate" type="application/json+oembed" href="https://www.astrip-wp.egenslab.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.astrip-wp.egenslab.com%2F" />
-    <link rel="alternate" type="text/xml+oembed" href="https://www.astrip-wp.egenslab.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.astrip-wp.egenslab.com%2F&amp;format=xml" />
+    <!-- <link rel="canonical" href="#" /> -->
+    <!-- <link rel="shortlink" href="#" /> -->
+    <!-- <link rel="alternate" type="application/json+oembed" href="#wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.astrip-wp.egenslab.com%2F" /> -->
+    <!-- <link rel="alternate" type="text/xml+oembed" href="#wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.astrip-wp.egenslab.com%2F&amp;format=xml" /> -->
     <noscript>
         <style>
             .woocommerce-product-gallery {
@@ -981,7 +981,7 @@
                         <div class="main-nav-wrapper">
                             <ul id="menu-topbar-menu" class="topbar-menu">
                                 <li id="menu-item-1938" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1938">
-                                    <a href="https://www.astrip-wp.egenslab.com/my-account/">My Account</a>
+                                    <a href="#my-account/">My Account</a>
                                 </li>
                             </ul>
                         </div>
@@ -1078,7 +1078,7 @@
                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-234 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-1982"
               >
                 <a
-                  href="https://www.astrip-wp.egenslab.com/"
+                  href="#"
                   aria-current="page"
                   >Home</a
                 ><i class="bi bi-chevron-down"></i>
@@ -1088,7 +1088,7 @@
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-234 current_page_item menu-item-2016"
                   >
                     <a
-                      href="https://www.astrip-wp.egenslab.com/"
+                      href="#"
                       aria-current="page"
                       >Travel Agency 01</a
                     ><i class="bi bi-chevron-down"></i>
@@ -1097,7 +1097,7 @@
                     id="menu-item-2000"
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2000"
                   >
-                    <a href="https://www.astrip-wp.egenslab.com/home-02/"
+                    <a href="#home-02/"
                       >Travel Agency 02</a
                     ><i class="bi bi-chevron-down"></i>
                   </li>
@@ -1105,7 +1105,7 @@
                     id="menu-item-1994"
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1994"
                   >
-                    <a href="https://www.astrip-wp.egenslab.com/city-tour/"
+                    <a href="#city-tour/"
                       >City Tour</a
                     ><i class="bi bi-chevron-down"></i>
                   </li>
@@ -1113,7 +1113,7 @@
                     id="menu-item-1985"
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1985"
                   >
-                    <a href="https://www.astrip-wp.egenslab.com/adventure/"
+                    <a href="#adventure/"
                       >Adventure</a
                     ><i class="bi bi-chevron-down"></i>
                   </li>
@@ -1155,7 +1155,7 @@
                     id="menu-item-2064"
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2064"
                   >
-                    <a href="https://www.astrip-wp.egenslab.com/tour/"
+                    <a href="#tour/"
                       >Tour Package 01</a
                     ><i class="bi bi-chevron-down"></i>
                   </li>
@@ -1163,7 +1163,7 @@
                     id="menu-item-1993"
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1993"
                   >
-                    <a href="https://www.astrip-wp.egenslab.com/package-grid-2/"
+                    <a href="#package-grid-2/"
                       >Tour Package 02</a
                     ><i class="bi bi-chevron-down"></i>
                   </li>
@@ -1172,7 +1172,7 @@
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2003"
                   >
                     <a
-                      href="https://www.astrip-wp.egenslab.com/package-sidebar/"
+                      href="#package-sidebar/"
                       >Package Sidebar</a
                     ><i class="bi bi-chevron-down"></i>
                   </li>
@@ -1181,7 +1181,7 @@
                     class="menu-item menu-item-type-post_type menu-item-object-astrip-tour menu-item-2065"
                   >
                     <a
-                      href="https://www.astrip-wp.egenslab.com/tour/aegean-adventure/"
+                      href="#tour/aegean-adventure/"
                       >Package Details</a
                     ><i class="bi bi-chevron-down"></i>
                   </li>
@@ -1193,19 +1193,19 @@
                             <!-- <i class="bi bi-chevron-down"></i> -->
                             <!-- <ul class="sub-menu">
                                 <li id="menu-item-1987" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1987">
-                                    <a href="https://www.astrip-wp.egenslab.com/blog-grid/">Blog Grid</a><i class="bi bi-chevron-down"></i>
+                                    <a href="#blog-grid/">Blog Grid</a><i class="bi bi-chevron-down"></i>
                                 </li>
                                 <li id="menu-item-1983" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1983">
-                                    <a href="https://www.astrip-wp.egenslab.com/blog-standard/">Blog Standard</a><i class="bi bi-chevron-down"></i>
+                                    <a href="#blog-standard/">Blog Standard</a><i class="bi bi-chevron-down"></i>
                                 </li>
                                 <li id="menu-item-1988" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1988">
-                                    <a href="https://www.astrip-wp.egenslab.com/blog-left-sidebar/">Blog Left-Sidebar</a><i class="bi bi-chevron-down"></i>
+                                    <a href="#blog-left-sidebar/">Blog Left-Sidebar</a><i class="bi bi-chevron-down"></i>
                                 </li>
                                 <li id="menu-item-1989" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1989">
-                                    <a href="https://www.astrip-wp.egenslab.com/blog-right-sidebar/">Blog Right-Sidebar</a><i class="bi bi-chevron-down"></i>
+                                    <a href="#blog-right-sidebar/">Blog Right-Sidebar</a><i class="bi bi-chevron-down"></i>
                                 </li>
                                 <li id="menu-item-2586" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2586">
-                                    <a href="https://www.astrip-wp.egenslab.com/what-to-know-before-you-travel-plan-a-trip/">Blog Details</a><i class="bi bi-chevron-down"></i>
+                                    <a href="#what-to-know-before-you-travel-plan-a-trip/">Blog Details</a><i class="bi bi-chevron-down"></i>
                                 </li>
                             </ul> -->
                         </li>
@@ -1229,7 +1229,7 @@
                   class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2005"
                 >
                   <a
-                    href="https://www.astrip-wp.egenslab.com/questions-answers/"
+                    href="#questions-answers/"
                     >FAQ’s</a
                   ><i class="bi bi-chevron-down"></i>
                 </li>
@@ -1376,7 +1376,7 @@
                                 <div class="menu-information-container">
                                     <ul id="menu-information" class="menu">
                                         <li id="menu-item-1932" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1932">
-                                            <a href="https://www.astrip-wp.egenslab.com/about-us/"><?= lang("text_homepage.about_us") ?></a>
+                                            <a href="#"><?= lang("text_homepage.about_us") ?></a>
                                         </li>
                                         <!-- <li
                             id="menu-item-1933"
@@ -1394,7 +1394,7 @@
                                             <a href="#"><?= lang("text_homepage.help_support") ?></a>
                                         </li>
                                         <li id="menu-item-1936" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1936">
-                                            <a href="https://www.astrip-wp.egenslab.com/contact-us/"><?= lang("text_homepage.contact_us") ?></a>
+                                            <a href="#contact-us/"><?= lang("text_homepage.contact_us") ?></a>
                                         </li>
                                     </ul>
                                 </div>

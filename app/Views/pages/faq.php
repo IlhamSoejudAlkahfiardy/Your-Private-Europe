@@ -268,7 +268,7 @@
                                                 vertical-align: middle;
                                                 display: inline-block
                                             }
-                                        </style> <a href="https://www.astrip-wp.egenslab.com/tour/">
+                                        </style> <a href="#tour/">
                                             <img fetchpriority="high" decoding="async" width="370" height="500" src="<?= base_url('assets/images/s') ?>" class="attachment-full size-full wp-image-2169" alt="" srcset="<?= base_url('assets/images/side-banner.jpg') ?> 370w, <?= base_url('assets/images/side-banner-222x300.jpg') ?> 222w, <?= base_url('assets/images/side-banner-239x323.jpg') ?> 239w" sizes="(max-width: 370px) 100vw, 370px"> </a>
                                     </div>
                                 </div>

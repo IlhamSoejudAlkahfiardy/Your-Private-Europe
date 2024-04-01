@@ -2,7 +2,6 @@
 
 <?= $this->section('content') ?>
 <style>
-
     /* Responsiveness for mobile (375px) */
     @media (min-width: 425px) {
         #heading1-homepage {
@@ -144,7 +143,7 @@
 
                                                                 <div class="btn-group">
                                                                     <div class="dsc-btn">
-                                                                        <a href="https://www.astrip-wp.egenslab.com/tour/">
+                                                                        <a href="#tour/">
                                                                             <i aria-hidden="true" class="fab fa-telegram-plane"></i>
                                                                             <?= lang("text_homepage.banner_button") ?>
                                                                         </a>
@@ -182,7 +181,7 @@
 
                                                                 <div class="btn-group">
                                                                     <div class="dsc-btn">
-                                                                        <a href="https://www.astrip-wp.egenslab.com/tour/">
+                                                                        <a href="#tour/">
                                                                             <i aria-hidden="true" class="fab fa-telegram-plane"></i>
                                                                             <?= lang("text_homepage.banner_button") ?>
                                                                         </a>
@@ -210,7 +209,7 @@
                                 </div>
                                 <!-- <div class="searchbar-section">
                       <div class="container">
-                        <form action="https://www.astrip-wp.egenslab.com/tour/">
+                        <form action="#tour/">
                           <div class="multi-main-search">
                             <div class="row align-items-center g-4">
                               <div class="col-lg-10">
@@ -420,7 +419,7 @@
                                         <div class="elementor-widget-container">
                                             <div class="row justify-content-center">
                                                 <div class="btn-align">
-                                                    <a href="https://www.astrip-wp.egenslab.com/destination" target="_blank" rel="nofollow" class="eg-btn btn--primary-outline btn--lg" style="background-color: #e0bc6d;" onmouseover="this.style.color='#e0bc6d'" onmouseout="this.style.color='white'">
+                                                    <a href="#" target="_blank" rel="nofollow" class="eg-btn btn--primary-outline btn--lg" style="background-color: #e0bc6d;" onmouseover="this.style.color='#e0bc6d'" onmouseout="this.style.color='white'">
                                                         <?= lang("text_homepage.about_us") ?>
                                                     </a>
                                                 </div>
@@ -528,7 +527,7 @@
                                             <div class="image">
                                                 <img loading="lazy" decoding="async" width="870" height="500" src="<?= base_url('assets/images/blog-dt8.jpg') ?>" class="img-fluid wp-post-image" alt="our-service" srcset="<?= base_url('assets/images/blog-dt8.jpg') ?> 870w, <?= base_url('assets/images/blog-dt8-600x345.jpg') ?> 600w, <?= base_url('assets/images/blog-dt8-300x172.jpg') ?> 300w, <?= base_url('assets/images/blog-dt8-768x441.jpg') ?> 768w, <?= base_url('assets/images/blog-dt8-370x213.jpg') ?> 370w" sizes="(max-width: 870px) 100vw, 870px">
                                                 <!-- <span class="blog-date">
-                                                    <a href="https://www.astrip-wp.egenslab.com/2023/02/18"></a>
+                                                    <a href="#2023/02/18"></a>
                                                 </span> -->
                                             </div>
                                             <div class="content">
@@ -546,7 +545,7 @@
                                             <div class="image">
                                                 <img loading="lazy" decoding="async" width="870" height="500" src="<?= base_url('assets/images/blog-dt9.jpg') ?>" class="img-fluid wp-post-image" alt="our-service" srcset="<?= base_url('assets/images/blog-dt9.jpg') ?> 870w, <?= base_url('assets/images/blog-dt9-600x345.jpg') ?> 600w, <?= base_url('assets/images/blog-dt9-300x172.jpg') ?> 300w, <?= base_url('assets/images/blog-dt9-768x441.jpg') ?> 768w, <?= base_url('assets/images/blog-dt9-370x213.jpg') ?> 370w" sizes="(max-width: 870px) 100vw, 870px">
                                                 <!-- <span class="blog-date">
-                                                    <a href="https://www.astrip-wp.egenslab.com/2023/02/18"></a>
+                                                    <a href="#2023/02/18"></a>
                                                 </span> -->
                                             </div>
                                             <div class="content">
@@ -564,7 +563,7 @@
                                             <div class="image">
                                                 <img loading="lazy" decoding="async" width="870" height="500" src="<?= base_url('assets/images/blog-dt10.jpg') ?>" class="img-fluid wp-post-image" alt="our-service" srcset="<?= base_url('assets/images/blog-dt10.jpg') ?> 870w, <?= base_url('assets/images/blog-dt10-600x345.jpg') ?> 600w, <?= base_url('assets/images/blog-dt10-300x172.jpg') ?> 300w, <?= base_url('assets/images/blog-dt10-768x441.jpg') ?> 768w, <?= base_url('assets/images/blog-dt10-370x213.jpg') ?> 370w" sizes="(max-width: 870px) 100vw, 870px">
                                                 <!-- <span class="blog-date">
-                                                    <a href="https://www.astrip-wp.egenslab.com/2023/02/18"></a>
+                                                    <a href="#2023/02/18"></a>
                                                 </span> -->
                                             </div>
                                             <div class="content">
@@ -970,7 +969,7 @@
                                             <div class="elementor-widget-container">
                                                 <div class="row justify-content-center">
                                                     <div class="btn-align">
-                                                        <a href="/destination" target="_blank" rel="nofollow" class="eg-btn btn--primary-outline btn--lg">
+                                                        <a href="/<?= $language ?>/destination" target="_blank" rel="nofollow" class="eg-btn btn--primary-outline btn--lg">
                                                             <?= lang("text_homepage.all_destination") ?>
                                                         </a>
                                                     </div>
@@ -1049,7 +1048,7 @@
                                             <div class="content">
                                                 <div class="text-wrap">
                                                     <h4>
-                                                        <a href="https://www.astrip-wp.egenslab.com/destination/caribbean/">Keluarga</a>
+                                                        <a href="#destination/caribbean/">Keluarga</a>
                                                     </h4>
                                                     <p style="color: #fff;">Nikmati liburan atau honeymoon Anda dengan orang-orang tercinta, baik yang muda maupun tua</p>
                                                 </div>
@@ -1064,7 +1063,7 @@
                                             <div class="content">
                                                 <div class="text-wrap">
                                                     <h4>
-                                                        <a href="https://www.astrip-wp.egenslab.com/destination/aegean/">Teman & Rekan Kerja</a>
+                                                        <a href="#destination/aegean/">Teman & Rekan Kerja</a>
                                                     </h4>
                                                     <p style="color: #fff;">Jalan-jalan dan berlibur bareng dengan kelompok teman, arisan, group band atau rekan sekerja? Kami siapa melayani Anda</p>
                                                 </div>
@@ -1079,7 +1078,7 @@
                                             <div class="content">
                                                 <div class="text-wrap">
                                                     <h4>
-                                                        <a href="https://www.astrip-wp.egenslab.com/destination/dubai-desert/">Corporate & Insentives</a>
+                                                        <a href="#destination/dubai-desert/">Corporate & Insentives</a>
                                                     </h4>
                                                     <p style="color: #fff;">Kami punya solusi yang terbaik untuk merencanakan <strong>Incentives Tour, Events, Meeting & Site Visit</strong> untuk perusahaan Anda</p>
                                                 </div>
@@ -1116,7 +1115,7 @@
                   <div class="row justify-content-center">
                     <div class="btn-align">
                       <a
-                        href="https://www.astrip-wp.egenslab.com/destination"
+                        href="#destination"
                         target="_blank"
                         rel="nofollow"
                         class="eg-btn btn--primary-outline btn--lg"
@@ -1539,17 +1538,17 @@
                     <?= base_url('assets/images/blog-dt8-370x213.jpg') ?> 370w
                   " sizes="(max-width: 870px) 100vw, 870px" />
                             <span class="blog-category">
-                                <a href="https://www.astrip-wp.egenslab.com/category/adventure/">
+                                <a href="#">
                                     Adventure
                                 </a>
                             </span>
                         </div>
                         <div class="content">
                             <h5>
-                                <a href="https://www.astrip-wp.egenslab.com/li-river-chinas-orignial-postcard-landcaspe/">Li river, China’s orignial postcard landcaspe</a>
+                                <a href="#">Li river, China’s orignial postcard landcaspe</a>
                             </h5>
                             <div class="blog-date">
-                                <i class="bi bi-calendar-check"></i><span><a href="https://www.astrip-wp.egenslab.com/2023/02/18">February 18, 2023</a></span>
+                                <i class="bi bi-calendar-check"></i><span><a href="#">February 18, 2023</a></span>
                             </div>
                         </div>
                     </div>
@@ -1565,17 +1564,17 @@
                     <?= base_url('assets/images/blog-dt9-370x213.jpg') ?> 370w
                   " sizes="(max-width: 870px) 100vw, 870px" />
                             <span class="blog-category">
-                                <a href="https://www.astrip-wp.egenslab.com/category/adventure/">
+                                <a href="#">
                                     Adventure
                                 </a>
                             </span>
                         </div>
                         <div class="content">
                             <h5>
-                                <a href="https://www.astrip-wp.egenslab.com/the-social-art-of-zaha-hadid-architectures-presence/">The social art of zaha Hadid, architecture’s presence</a>
+                                <a href="#">The social art of zaha Hadid, architecture’s presence</a>
                             </h5>
                             <div class="blog-date">
-                                <i class="bi bi-calendar-check"></i><span><a href="https://www.astrip-wp.egenslab.com/2023/02/18">February 18, 2023</a></span>
+                                <i class="bi bi-calendar-check"></i><span><a href="#">February 18, 2023</a></span>
                             </div>
                         </div>
                     </div>
@@ -1591,17 +1590,17 @@
                     <?= base_url('assets/images/blog-dt10-370x213.jpg') ?> 370w
                   " sizes="(max-width: 870px) 100vw, 870px" />
                             <span class="blog-category">
-                                <a href="https://www.astrip-wp.egenslab.com/category/popular-tours/">
+                                <a href="#">
                                     Popular Tours
                                 </a>
                             </span>
                         </div>
                         <div class="content">
                             <h5>
-                                <a href="https://www.astrip-wp.egenslab.com/jungles-in-paris-vermonts-rugged-retro-ski-mountain/">Jungles in Paris vermont’s rugged, retro Ski mountain</a>
+                                <a href="#">Jungles in Paris vermont’s rugged, retro Ski mountain</a>
                             </h5>
                             <div class="blog-date">
-                                <i class="bi bi-calendar-check"></i><span><a href="https://www.astrip-wp.egenslab.com/2023/02/18">February 18, 2023</a></span>
+                                <i class="bi bi-calendar-check"></i><span><a href="#">February 18, 2023</a></span>
                             </div>
                         </div>
                     </div>
@@ -1617,17 +1616,17 @@
                     <?= base_url('assets/images/blog-dt7-370x213.jpg') ?> 370w
                   " sizes="(max-width: 870px) 100vw, 870px" />
                             <span class="blog-category">
-                                <a href="https://www.astrip-wp.egenslab.com/category/adventure/">
+                                <a href="#">
                                     Adventure
                                 </a>
                             </span>
                         </div>
                         <div class="content">
                             <h5>
-                                <a href="https://www.astrip-wp.egenslab.com/day-out-on-the-ile-de-re-getting-hotter-and-hotter-2/">Day out on the Ile de Re. Getting hotter and hotter.</a>
+                                <a href="#">Day out on the Ile de Re. Getting hotter and hotter.</a>
                             </h5>
                             <div class="blog-date">
-                                <i class="bi bi-calendar-check"></i><span><a href="https://www.astrip-wp.egenslab.com/2023/01/10">January 10, 2023</a></span>
+                                <i class="bi bi-calendar-check"></i><span><a href="#">January 10, 2023</a></span>
                             </div>
                         </div>
                     </div>
@@ -1643,17 +1642,17 @@
                     <?= base_url('assets/images/blog-dt1-370x213.jpg') ?> 370w
                   " sizes="(max-width: 870px) 100vw, 870px" />
                             <span class="blog-category">
-                                <a href="https://www.astrip-wp.egenslab.com/category/travel-vaction/">
+                                <a href="#">
                                     Travel Vaction
                                 </a>
                             </span>
                         </div>
                         <div class="content">
                             <h5>
-                                <a href="https://www.astrip-wp.egenslab.com/benefit-from-a-15-discount-to-make-your-reservations/">Benefit from a 15% discount to make your reservations.</a>
+                                <a href="#">Benefit from a 15% discount to make your reservations.</a>
                             </h5>
                             <div class="blog-date">
-                                <i class="bi bi-calendar-check"></i><span><a href="https://www.astrip-wp.egenslab.com/2022/10/12">October 12, 2022</a></span>
+                                <i class="bi bi-calendar-check"></i><span><a href="#2022/10/12">October 12, 2022</a></span>
                             </div>
                         </div>
                     </div>
@@ -1669,17 +1668,17 @@
                     <?= base_url('assets/images/blog-dt2-370x213.jpg') ?> 370w
                   " sizes="(max-width: 870px) 100vw, 870px" />
                             <span class="blog-category">
-                                <a href="https://www.astrip-wp.egenslab.com/category/family-adventure/">
+                                <a href="#">
                                     Family Adventure
                                 </a>
                             </span>
                         </div>
                         <div class="content">
                             <h5>
-                                <a href="https://www.astrip-wp.egenslab.com/how-to-select-the-perfect-quality-camping-tent/">How to select the perfect quality camping tent.</a>
+                                <a href="#">How to select the perfect quality camping tent.</a>
                             </h5>
                             <div class="blog-date">
-                                <i class="bi bi-calendar-check"></i><span><a href="https://www.astrip-wp.egenslab.com/2022/10/11">October 11, 2022</a></span>
+                                <i class="bi bi-calendar-check"></i><span><a href="#2022/10/11">October 11, 2022</a></span>
                             </div>
                         </div>
                     </div>
@@ -1694,10 +1693,10 @@
                                     <a aria-current="page" class="current">01</a>
                                 </li>
                                 <li>
-                                    <a class="" href="https://www.astrip-wp.egenslab.com/blog-grid/page/2/">02</a>
+                                    <a class="" href="#">02</a>
                                 </li>
                                 <li>
-                                    <a class="next" href="https://www.astrip-wp.egenslab.com/blog-grid/page/2/">NEXT <i class="bi bi-arrow-right"></i>
+                                    <a class="next" href="#">NEXT <i class="bi bi-arrow-right"></i>
                                     </a>
                                 </li>
                             </ul>

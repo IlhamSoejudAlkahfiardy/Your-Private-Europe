@@ -54,10 +54,10 @@
                                             <a href="/<?= $language ?>/article/<?= $article['slug'] . '/' . $article['id']  ?>" class="read-more-btn">Continue Reading<i class="bi bi-arrow-right"></i></a>
                                             <ul class="share-list">
                                                 <li><i class="bi bi-share"></i>SHARE: <ul class="blog-social">
-                                                        <li><a href="http://www.facebook.com/sharer/sharer.php?u=https://www.astrip-wp.egenslab.com/li-river-chinas-orignial-postcard-landcaspe/"><i class="bx bxl-facebook"></i></a></li>
-                                                        <li><a href="http://www.twitter.com/share?url=https://www.astrip-wp.egenslab.com/li-river-chinas-orignial-postcard-landcaspe/"><i class="bx bxl-twitter"></i></a></li>
-                                                        <li><a href="https://www.instagram.com/pin/create/button/?url=https://www.astrip-wp.egenslab.com/li-river-chinas-orignial-postcard-landcaspe/"><i class="bx bxl-instagram"></i></a></li>
-                                                        <li><a href="http://www.pinterest.com/share?url=https://www.astrip-wp.egenslab.com/li-river-chinas-orignial-postcard-landcaspe/"><i class="bx bxl-pinterest"></i></a></li>
+                                                        <li><a href="#"><i class="bx bxl-facebook"></i></a></li>
+                                                        <li><a href="#"><i class="bx bxl-twitter"></i></a></li>
+                                                        <li><a href="#"><i class="bx bxl-instagram"></i></a></li>
+                                                        <li><a href="#"><i class="bx bxl-pinterest"></i></a></li>
                                                     </ul>
                                                 </li>
                                             </ul>
@@ -72,15 +72,15 @@
                 <nav aria-label="Page navigation" class="pagination-wrap">
                     <ul class="pagination d-flex justify-content-center gap-md-3 gap-2">
                         <li class="active"><a aria-current="page" class=" current">01</a></li>
-                        <li><a class="" href="https://www.astrip-wp.egenslab.com/blog-standard/page/2/">02</a></li>
-                        <li><a class="next " href="https://www.astrip-wp.egenslab.com/blog-standard/page/2/">NEXT <i class="bi bi-arrow-right"></i> </a></li>
+                        <li><a class="" href="#">02</a></li>
+                        <li><a class="next " href="#">NEXT <i class="bi bi-arrow-right"></i> </a></li>
                     </ul>
                 </nav>
             </div>
             <div class="col-lg-4">
                 <div class="blog-sidebar ps-lg-4">
                     <div id="block-2" class="blog-widget-item widget_block widget_search">
-                        <form role="search" method="get" action="https://www.astrip-wp.egenslab.com/" class="wp-block-search__button-outside wp-block-search__text-button wp-block-search"><label class="wp-block-search__label" for="wp-block-search__input-1">Search</label>
+                        <form role="search" method="get" action="#" class="wp-block-search__button-outside wp-block-search__text-button wp-block-search"><label class="wp-block-search__label" for="wp-block-search__input-1">Search</label>
                             <div class="wp-block-search__inside-wrapper "><input class="wp-block-search__input" id="wp-block-search__input-1" placeholder="<?= lang('text_article.search_field') ?>" value="" type="search" name="s" required=""><button aria-label="Search" class="wp-block-search__button wp-element-button" type="submit"><?= lang('text_article.search_button') ?></button></div>
                         </form>
                     </div>
@@ -121,15 +121,15 @@
 
 
                                 <ul class="wp-block-categories-list wp-block-categories">
-                                    <li class="cat-item cat-item-4"><a href="https://www.astrip-wp.egenslab.com/category/adventure/">Adventure</a>
+                                    <li class="cat-item cat-item-4"><a href="#">Adventure</a>
                                     </li>
-                                    <li class="cat-item cat-item-6"><a href="https://www.astrip-wp.egenslab.com/category/couple-tour/">Couple Tour</a>
+                                    <li class="cat-item cat-item-6"><a href="#">Couple Tour</a>
                                     </li>
-                                    <li class="cat-item cat-item-7"><a href="https://www.astrip-wp.egenslab.com/category/family-adventure/">Family Adventure</a>
+                                    <li class="cat-item cat-item-7"><a href="#">Family Adventure</a>
                                     </li>
-                                    <li class="cat-item cat-item-5"><a href="https://www.astrip-wp.egenslab.com/category/popular-tours/">Popular Tours</a>
+                                    <li class="cat-item cat-item-5"><a href="#">Popular Tours</a>
                                     </li>
-                                    <li class="cat-item cat-item-24"><a href="https://www.astrip-wp.egenslab.com/category/travel-vaction/">Travel Vaction</a>
+                                    <li class="cat-item cat-item-24"><a href="#">Travel Vaction</a>
                                     </li>
                                 </ul>
                             </div>

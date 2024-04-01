@@ -78,7 +78,7 @@ class HomepageController extends BaseController
             'howItWorks' => $this->howItWorksModel->findAll(),
             'testimonials' => $this->testimonialModel->findAll(),
             // 'instagramPartners' => $this->instagramPartnersModel->findAll(),
-            'faqs' => $this->FAQModel->orderBy('id', 'DESC')->limit(5)->findAll(),
+            'faqs' => $this->FAQModel->limit(5)->orderBy('id', 'ASC')->findAll(),
             'destinations' => $this->destinationModel->select([
                 'destination.title',
                 'destination.slug',

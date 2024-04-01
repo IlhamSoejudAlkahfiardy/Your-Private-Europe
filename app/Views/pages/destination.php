@@ -107,10 +107,10 @@
                             <a aria-current="page" class="current">01</a>
                         </li>
                         <li>
-                            <a class="" href="https://www.astrip-wp.egenslab.com/tour/page/2/">02</a>
+                            <a class="" href="#">02</a>
                         </li>
                         <li>
-                            <a class="next" href="https://www.astrip-wp.egenslab.com/tour/page/2/">NEXT <i class="bi bi-arrow-right"></i>
+                            <a class="next" href="#">NEXT <i class="bi bi-arrow-right"></i>
                             </a>
                         </li>
                     </ul>

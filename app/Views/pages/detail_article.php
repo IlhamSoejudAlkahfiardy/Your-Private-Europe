@@ -95,7 +95,7 @@
                                         <div class="col-md-9">
                                             <!-- <div class="blog-tag-area">
                                                 <h6>Tags:</h6>
-                                                <a href="https://www.astrip-wp.egenslab.com/tag/hotel/" rel="tag">Hotel</a><a href="https://www.astrip-wp.egenslab.com/tag/tours/" rel="tag">Tours</a><a href="https://www.astrip-wp.egenslab.com/tag/travel/" rel="tag">Travel</a><a href="https://www.astrip-wp.egenslab.com/tag/vacation/" rel="tag">Vacation</a>
+                                                <a href="#tag/hotel/" rel="tag">Hotel</a><a href="#tag/tours/" rel="tag">Tours</a><a href="#tag/travel/" rel="tag">Travel</a><a href="#tag/vacation/" rel="tag">Vacation</a>
                                             </div> -->
                                         </div>
                                         <div class="col-md-3">
@@ -105,10 +105,10 @@
                                                 </div>
                                                 <div class="back">
                                                     <ul class="share-list d-flex justify-content-end flex-row align-items-center gap-3">
-                                                        <li><a href="http://www.facebook.com/sharer/sharer.php?u=https://www.astrip-wp.egenslab.com/li-river-chinas-orignial-postcard-landcaspe/"><i class="bx bxl-facebook"></i></a></li>
-                                                        <li><a href="http://www.twitter.com/share?url=https://www.astrip-wp.egenslab.com/li-river-chinas-orignial-postcard-landcaspe/"><i class="bx bxl-twitter"></i></a></li>
-                                                        <li><a href="https://www.instagram.com/pin/create/button/?url=https://www.astrip-wp.egenslab.com/li-river-chinas-orignial-postcard-landcaspe/"><i class="bx bxl-instagram"></i></a></li>
-                                                        <li><a href="http://www.pinterest.com/share?url=https://www.astrip-wp.egenslab.com/li-river-chinas-orignial-postcard-landcaspe/"><i class="bx bxl-pinterest"></i></a></li>
+                                                        <li><a href="#"><i class="bx bxl-facebook"></i></a></li>
+                                                        <li><a href="#"><i class="bx bxl-twitter"></i></a></li>
+                                                        <li><a href="#"><i class="bx bxl-instagram"></i></a></li>
+                                                        <li><a href="#"><i class="bx bxl-pinterest"></i></a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -121,7 +121,7 @@
                                         <img alt="" src="https://secure.gravatar.com/avatar/2ac0b89ced4ce2e492cab4aaf8529ac5?s=80&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/2ac0b89ced4ce2e492cab4aaf8529ac5?s=160&amp;d=mm&amp;r=g 2x" class="avatar avatar-80 photo" height="80" width="80" loading="lazy" decoding="async">
                                     </div>
                                     <div class="author-content">
-                                        <h5><a href="https://www.astrip-wp.egenslab.com/author/shafiqul/">Shafiqul</a></h5>
+                                        <h5><a href="#author/shafiqul/">Shafiqul</a></h5>
                                         <p>Orem ipsum dolor sit &amp;, sdt consectetu adipiscing elit. Aenean commodo ligula eget dolor. Cum socis Theme sed natoque ut Etiam ultricies nisi vel augue.</p>
                                         <ul class="blog-author-social d-flex justify-content-lg-start justify-content-center flex-row align-items-center gap-4">
                                             <li><a href="https://www.facebook.com/"><i class="bx bxl-facebook"></i></a></li>
@@ -140,7 +140,7 @@
 
                             <div id="respond" class="comment-respond">
                                 <h3 id="reply-title" class="comment-reply-title">Leave a Comment <small><a rel="nofollow" id="cancel-comment-reply-link" href="/li-river-chinas-orignial-postcard-landcaspe/#respond" style="display:none;">Cancel reply</a></small></h3>
-                                <form action="https://www.astrip-wp.egenslab.com/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+                                <form action="#wp-comments-post.php" method="post" id="commentform" class="comment-form">
                                     <p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> <span class="required-field-message">Required fields are marked <span class="required">*</span></span></p>
                                     <div class="row">
                                         <div class="col-md-6"><input id="author" name="author" type="text" value="" placeholder="Your Name" aria-required="'true'"></div>
@@ -163,7 +163,7 @@
             <div class="col-lg-4 col-md-6 col-sm-10">
                 <div class="blog-sidebar ps-lg-4">
                     <div id="block-2" class="blog-widget-item widget_block widget_search">
-                        <form role="search" method="get" action="https://www.astrip-wp.egenslab.com/" class="wp-block-search__button-outside wp-block-search__text-button wp-block-search"><label class="wp-block-search__label" for="wp-block-search__input-2">Search</label>
+                        <form role="search" method="get" action="#" class="wp-block-search__button-outside wp-block-search__text-button wp-block-search"><label class="wp-block-search__label" for="wp-block-search__input-2">Search</label>
                             <div class="wp-block-search__inside-wrapper "><input class="wp-block-search__input" id="wp-block-search__input-2" placeholder="<?= lang('text_article.search_field') ?>" value="" type="search" name="s" required=""><button aria-label="Search" class="wp-block-search__button wp-element-button" type="submit"><?= lang('text_article.search_button') ?></button></div>
                         </form>
                     </div>
@@ -202,15 +202,15 @@
 
 
                                 <ul class="wp-block-categories-list wp-block-categories">
-                                    <li class="cat-item cat-item-4"><a href="https://www.astrip-wp.egenslab.com/category/adventure/">Adventure</a>
+                                    <li class="cat-item cat-item-4"><a href="#category/adventure/">Adventure</a>
                                     </li>
-                                    <li class="cat-item cat-item-6"><a href="https://www.astrip-wp.egenslab.com/category/couple-tour/">Couple Tour</a>
+                                    <li class="cat-item cat-item-6"><a href="#category/couple-tour/">Couple Tour</a>
                                     </li>
-                                    <li class="cat-item cat-item-7"><a href="https://www.astrip-wp.egenslab.com/category/family-adventure/">Family Adventure</a>
+                                    <li class="cat-item cat-item-7"><a href="#category/family-adventure/">Family Adventure</a>
                                     </li>
-                                    <li class="cat-item cat-item-5"><a href="https://www.astrip-wp.egenslab.com/category/popular-tours/">Popular Tours</a>
+                                    <li class="cat-item cat-item-5"><a href="#category/popular-tours/">Popular Tours</a>
                                     </li>
-                                    <li class="cat-item cat-item-24"><a href="https://www.astrip-wp.egenslab.com/category/travel-vaction/">Travel Vaction</a>
+                                    <li class="cat-item cat-item-24"><a href="#category/travel-vaction/">Travel Vaction</a>
                                     </li>
                                 </ul>
                             </div>
