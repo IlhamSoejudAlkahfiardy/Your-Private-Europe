@@ -104,7 +104,7 @@
                 <nav aria-label="Page navigation" class="pagination-wrap">
                     <ul class="pagination d-flex justify-content-center gap-md-3 gap-2">
                         <li class="active">
-                            <a aria-current="page" class="current">01</a>
+                            <a href="#" aria-current="page" class="current">01</a>
                         </li>
                         <li>
                             <a class="" href="#">02</a>

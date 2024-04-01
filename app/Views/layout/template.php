@@ -25,8 +25,6 @@
     <link rel="dns-prefetch" href="//fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="dns-prefetch" href="//use.fontawesome.com" />
-    <!-- <link rel="alternate" type="application/rss+xml" title="Astrip » Feed" href="#feed/" /> -->
-    <!-- <link rel="alternate" type="application/rss+xml" title="Astrip » Comments Feed" href="#comments/feed/" /> -->
     <script src="https://kit.fontawesome.com/278b3e3446.js" crossorigin="anonymous"></script>
 
     <script>
@@ -1013,37 +1011,6 @@
             </div>
         </div>
     </div>
-    <!-- <div id="progress">
-        <span id="progress-value"><i class="bi bi-arrow-up-short"></i></span>
-    </div> -->
-    <!--Start preloader area -->
-    <!-- <div class="egns-preloader">
-        <div class="container">
-            <div class="row d-flex justify-content-center">
-                <div class="col-6">
-                    <div class="circle-border">
-                        <div class="moving-circle"></div>
-                        <div class="moving-circle"></div>
-                        <div class="moving-circle"></div>
-                        <svg width="180px" height="150px" viewBox="0 0 187.3 93.7" preserveAspectRatio="xMidYMid meet" style="
-              left: 50%;
-              top: 50%;
-              position: absolute;
-              transform: translate(-50%, -50%) matrix(1, 0, 0, 1, 0, 0);
-            ">
-                            <path stroke="#D90A2C" id="outline" fill="none" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1 c-8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z"></path>
-                            <path id="outline-bg" opacity="0.05" fill="none" stroke="#959595" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1 c-8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z"></path>
-                        </svg>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="close-btn">
-            <span><i class="bi bi-x-lg"></i> Close</span>
-        </div>
-    </div> -->
-    <!--End preloader area  -->
-    <!-- ========== header============= -->
 
     <header class="header-area style-2">
         <div class="container d-flex gap-4 justify-content-between align-items-center">
@@ -1073,52 +1040,7 @@
                 </div>
                 <div class="main-nav-wrapper">
                     <ul id="menu-main-menu" class="ul">
-                        <!-- <li
-                id="menu-item-1982"
-                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-234 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-1982"
-              >
-                <a
-                  href="#"
-                  aria-current="page"
-                  >Home</a
-                ><i class="bi bi-chevron-down"></i>
-                <ul class="sub-menu">
-                  <li
-                    id="menu-item-2016"
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-234 current_page_item menu-item-2016"
-                  >
-                    <a
-                      href="#"
-                      aria-current="page"
-                      >Travel Agency 01</a
-                    ><i class="bi bi-chevron-down"></i>
-                  </li>
-                  <li
-                    id="menu-item-2000"
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2000"
-                  >
-                    <a href="#home-02/"
-                      >Travel Agency 02</a
-                    ><i class="bi bi-chevron-down"></i>
-                  </li>
-                  <li
-                    id="menu-item-1994"
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1994"
-                  >
-                    <a href="#city-tour/"
-                      >City Tour</a
-                    ><i class="bi bi-chevron-down"></i>
-                  </li>
-                  <li
-                    id="menu-item-1985"
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1985"
-                  >
-                    <a href="#adventure/"
-                      >Adventure</a
-                    ><i class="bi bi-chevron-down"></i>
-                  </li>
-                </ul>
-              </li> -->
+
                         <li id="menu-item-2339" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2339">
                             <a href="#"><?= lang("text_homepage.services") ?></a><i class="bi bi-chevron-down"></i>
                             <ul class="sub-menu">
@@ -1145,69 +1067,11 @@
                                 <?php endforeach; ?>
                             </ul>
                         </li>
-                        <!-- <li
-                id="menu-item-2012"
-                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2012"
-              >
-                <a href="#">Tour</a><i class="bi bi-chevron-down"></i>
-                <ul class="sub-menu">
-                  <li
-                    id="menu-item-2064"
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2064"
-                  >
-                    <a href="#tour/"
-                      >Tour Package 01</a
-                    ><i class="bi bi-chevron-down"></i>
-                  </li>
-                  <li
-                    id="menu-item-1993"
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1993"
-                  >
-                    <a href="#package-grid-2/"
-                      >Tour Package 02</a
-                    ><i class="bi bi-chevron-down"></i>
-                  </li>
-                  <li
-                    id="menu-item-2003"
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2003"
-                  >
-                    <a
-                      href="#package-sidebar/"
-                      >Package Sidebar</a
-                    ><i class="bi bi-chevron-down"></i>
-                  </li>
-                  <li
-                    id="menu-item-2065"
-                    class="menu-item menu-item-type-post_type menu-item-object-astrip-tour menu-item-2065"
-                  >
-                    <a
-                      href="#tour/aegean-adventure/"
-                      >Package Details</a
-                    ><i class="bi bi-chevron-down"></i>
-                  </li>
-                </ul>
-              </li> -->
+                        
 
                         <li id="menu-item-2015" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2015">
                             <a href="/<?= $language ?>/article"><?= lang("text_homepage.blog") ?></a>
-                            <!-- <i class="bi bi-chevron-down"></i> -->
-                            <!-- <ul class="sub-menu">
-                                <li id="menu-item-1987" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1987">
-                                    <a href="#blog-grid/">Blog Grid</a><i class="bi bi-chevron-down"></i>
-                                </li>
-                                <li id="menu-item-1983" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1983">
-                                    <a href="#blog-standard/">Blog Standard</a><i class="bi bi-chevron-down"></i>
-                                </li>
-                                <li id="menu-item-1988" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1988">
-                                    <a href="#blog-left-sidebar/">Blog Left-Sidebar</a><i class="bi bi-chevron-down"></i>
-                                </li>
-                                <li id="menu-item-1989" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1989">
-                                    <a href="#blog-right-sidebar/">Blog Right-Sidebar</a><i class="bi bi-chevron-down"></i>
-                                </li>
-                                <li id="menu-item-2586" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2586">
-                                    <a href="#what-to-know-before-you-travel-plan-a-trip/">Blog Details</a><i class="bi bi-chevron-down"></i>
-                                </li>
-                            </ul> -->
+                            
                         </li>
                         <li id="menu-item-1995" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1995">
                             <a href="#">Corporate & Travel Agent</a><i class="bi bi-chevron-down"></i>
@@ -1224,27 +1088,7 @@
                                 <li id="menu-item-1999" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1999">
                                     <a href="/<?= $language ?>/faq">FAQ</a><i class="bi bi-chevron-down"></i>
                                 </li>
-                                <!-- <li
-                  id="menu-item-2005"
-                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2005"
-                >
-                  <a
-                    href="#questions-answers/"
-                    >FAQ’s</a
-                  ><i class="bi bi-chevron-down"></i>
-                </li>
-                                <li id="menu-item-2396" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2396">
-                                    <a href="#">My account</a><i class="bi bi-chevron-down"></i>
-                                </li>
-                                <li id="menu-item-2394" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2394">
-                                    <a href="#">Cart</a><i class="bi bi-chevron-down"></i>
-                                </li>
-                                <li id="menu-item-2395" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2395">
-                                    <a href="#">Checkout</a><i class="bi bi-chevron-down"></i>
-                                </li>
-                                <li id="menu-item-2018" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2018">
-                                    <a href="/error">Error</a><i class="bi bi-chevron-down"></i>
-                                </li> -->
+                                
                             </ul>
                         </li>
                         <li id="menu-item-2013" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2013">
@@ -1263,32 +1107,13 @@
                 <!-- mobile-search-area -->
 
                 <div class="phone-call sibling2 d-flex justify-content-start align-items-center flex-row d-lg-none d-block mt-5">
-                    <!-- <div class="icon">
-              <img loading="lazy" src="images/cell-icon.svg" alt="image" />
-            </div>
-            <div class="number">
-              <span>Call Now</span>
-
-              <h5><a href="tel:+8801701111000">+(62) 0895-1425-3344</a></h5>
-            </div> -->
+                    
                 </div>
-
-                <!-- <a
-            href="https://www.example.com"
-            class="eg-btn btn--primary btn--lg d-lg-none d-flex mt-5"
-            >Please add Button Text</a
-          > -->
             </div>
 
             <div class="nav-right d-flex jsutify-content-end align-items-center gap-5">
                 <div class="phone-call sibling2 justify-content-start align-items-center flex-row d-xl-flex d-none">
-                    <!-- <div class="icon">
-              <img loading="lazy" src="images/cell-icon.svg" alt="image" />
-            </div>
-            <div class="number">
-              <span>Call Now</span>
-              <h5><a href="tel:+8801701111000">+880 170 1111 000</a></h5>
-            </div> -->
+                    
                 </div>
                 <div class="mobile-menu-btn d-lg-none d-block">
                     <i class="bi bi-list text-dark"></i>
@@ -1307,66 +1132,6 @@
             <div class="container-xl container-lg-fluid container">
                 <div class="row gy-5">
 
-
-                    <!-- <div class="col-lg-3 col-md-6">
-                  <div class="footer-item">
-                    <div class="footer-item">
-                      <div
-                        id="block-7"
-                        class="destination-widget-item widget_block"
-                      >
-                        <div class="footer-item">
-                          <div
-                            id="block-7"
-                            class="destination-widget-item widget_block"
-                          >
-                            <div class="footer-about">
-                              <img loading="lazy"
-                                src="images/footer-plane.svg"
-                                class="footer-plane"
-                                alt="image"
-                              />
-                              <div class="footer1-logo">
-                                <img loading="lazy" src="images/footer1-logo.svg" alt="image" />
-                                <p>Since: 2023</p>
-                              </div>
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink"
-                                version="1.1"
-                                viewBox="0 0 400 400"
-                              >
-                                <defs>
-                                  
-                                  <path
-                                    d="M0, 200a200, 200 0 1, 0 400, 0a200, 200 0 1, 0 -400, 0"
-                                    id="txt-path"
-                                    fill="white"
-                                  ></path>
-                                </defs>
-    
-                                <text
-                                  fill="#DDDDDD"
-                                  font-size="35.5"
-                                  font-family="Helvetica Neue"
-                                  font-weight="600"
-                                >
-                                  
-                                  <textPath startOffset="0" xlink:href="#txt-path">
-                                    Astrip Travel Agency �&nbsp; Astrip Travel
-                                    Agency
-                                  </textPath>
-                                </text>
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div> -->
-
-
                     <div class="col-lg-3 col-md-6 d-flex justify-content-lg-center">
                         <div class="footer-item">
                             <div id="nav_menu-2" class="destination-widget-item widget_nav_menu">
@@ -1378,18 +1143,7 @@
                                         <li id="menu-item-1932" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1932">
                                             <a href="#"><?= lang("text_homepage.about_us") ?></a>
                                         </li>
-                                        <!-- <li
-                            id="menu-item-1933"
-                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1933"
-                          >
-                            <a href="#">Online Query</a>
-                          </li> -->
-                                        <!-- <li
-                            id="menu-item-1934"
-                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1934"
-                          >
-                            <a href="#">Become Partner</a>
-                          </li> -->
+                                        
                                         <li id="menu-item-1935" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1935">
                                             <a href="#"><?= lang("text_homepage.help_support") ?></a>
                                         </li>
