@@ -53,6 +53,17 @@ class HomepageController extends BaseController
 
     public function index(): void
     {
+        $session = session();
+        $activeLanguage = session()->get('lang');
+
+        if ($activeLanguage == null) {
+            $session->remove('lang');
+            $session->set('lang', 'id');
+            $activeLanguage = session()->get('lang');
+            $this->language = $activeLanguage;
+            redirect()->to(base_url());
+        }
+
         $data = [
             'title' => $this->homepageModel->select(['seo_tag_title_id', 'seo_tag_title_en'])->first(),
             'description' => $this->homepageModel->select(['seo_description_id', 'seo_description_en'])->first(),

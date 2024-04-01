@@ -97,7 +97,7 @@
                                     <?php foreach ($latestArticle as $article) : ?>
                                         <li>
                                             <div class="wp-block-latest-posts__featured-image alignleft">
-                                                <img loading="lazy" decoding="async" width="150" height="150" src="assets/images/blogs/<?= $article['cover_image'] ?>" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" style="max-width:110px;max-height:110px;" sizes="(max-width: 150px) 100vw, 150px">
+                                                <img loading="lazy" decoding="async" width="150" height="150" src="<?= base_url('assets/images/blogs/' . $article['cover_image']) ?>" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" style="max-width:110px;max-height:110px;" sizes="(max-width: 150px) 100vw, 150px">
                                             </div>
                                             <a class="wp-block-latest-posts__post-title" href="">
                                                 <?= $language == 'id' ? $article['title_id'] : $article['title_en'] ?>
