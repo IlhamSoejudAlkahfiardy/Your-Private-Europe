@@ -3474,33 +3474,33 @@ header.style-5 .main-nav ul li.menu-item-has-children > i {
 }
 
 .swiper-slide-active span {
-  animation: fadeInDown 1.7s;
+  /* animation: fadeInDown 1.7s; */
 }
 
 .swiper-slide-active h1 {
-  animation: fadeInDown 1.7s;
+  /* animation: fadeInDown 1.7s; */
 }
 
 .swiper-slide-active h2 {
-  animation: fadeInDown 1.7s;
+  /* animation: fadeInDown 1.7s; */
 }
 
 .swiper-slide-active p,
 .swiper-slide-active .info-single .info-text a,
 .info-single .info-text .swiper-slide-active a {
-  animation: fadeInUp 1.7s;
+  /* animation: fadeInUp 1.7s; */
 }
 
 .swiper-slide-active .trip-rating {
-  animation: fadeInUp 1.7s;
+  /* animation: fadeInUp 1.7s; */
 }
 
 .swiper-slide-active .dsc-btn {
-  animation: fadeInUp 1.7s;
+  /* animation: fadeInUp 1.7s; */
 }
 
 .swiper-slide-active .eg-btn {
-  animation: fadeInUp 1.7s;
+  /* animation: fadeInUp 1.7s; */
 }
 
 .banner-section1 {

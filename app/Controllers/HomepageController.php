@@ -75,12 +75,13 @@ class HomepageController extends BaseController
                 'destination.duration_en',
                 'MIN(image_destination.image) as image',
                 'MIN(image_destination.image_name_id) as image_name_id',
-                'MIN(image_destination.image_name_en) as image_name_en'
+                'MIN(image_destination.image_name_en) as image_name_en',
+                'MIN(image_destination.alt_image) as alt_image',
             ])->join('image_destination', 'image_destination.destination_id = destination.id', 'left')->groupBy('destination.id')->findAll(),
 
         ];
 
-        // dd($data['faq']);
+        // dd($data['destinations']);
 
         echo view('pages/homepage', $data);
     }

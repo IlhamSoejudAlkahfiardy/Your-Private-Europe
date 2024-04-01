@@ -3,7 +3,7 @@
 return [
     // text for navbar
     'destination' => 'Destination',
-    'article' => 'Article',
+    'blog' => 'Blog',
     'help_support_navbar' => 'Help & Support',
     'language' => 'Language',
     'services' => 'Services',

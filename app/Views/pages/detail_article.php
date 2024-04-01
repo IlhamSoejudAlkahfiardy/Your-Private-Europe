@@ -2,17 +2,68 @@
 
 <?= $this->section('content') ?>
 
-<!-- ========== header end============= -->
+<style>
+    /* Responsiveness for mobile (375px) */
+    @media (min-width: 425px) {
+        #heading1-detail-article {
+            font-size: 1rem;
+            font-weight: 600;
+            color: white;
+            text-shadow: 2px 2px #e0bc6d;
+        }
+    }
 
+    /* Responsiveness for tablet (768px) */
+    @media (min-width: 376px) and (max-width: 768px) {
+        #heading1-detail-article {
+            font-size: 3.5rem;
+            font-weight: 600;
+            color: white;
+            text-shadow: 2px 2px #e0bc6d;
+        }
+    }
+
+    /* Responsiveness for laptop (1024px) */
+    @media (min-width: 769px) and (max-width: 1024px) {
+        #heading1-detail-article {
+            font-size: 4.5rem;
+            font-weight: 700;
+            color: white;
+            text-shadow: 2px 2px #e0bc6d;
+        }
+    }
+
+    /* Responsiveness for large laptop (1440px) */
+    @media (min-width: 1025px) and (max-width: 1440px) {
+        #heading1-detail-article {
+            font-size: 5.5rem;
+            font-weight: 700;
+            color: white;
+            text-shadow: 2px 2px #e0bc6d;
+        }
+    }
+
+    /* Responsiveness for large desktop (1441px and above) */
+    @media (min-width: 1441px) {
+        #heading1-detail-article {
+            font-size: 5.5rem;
+            font-weight: 700;
+            color: white;
+            text-shadow: 2px 2px #e0bc6d;
+        }
+    }
+</style>
+
+<!-- ========== header end============= -->
 
 <div class="inner-banner-section" style="background-image: url(<?= base_url('assets/images/blogs/') . $article['cover_image'] ?>);">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-xl-8 col-md-10 col-sm-12">
                 <div class="breadcrumb-area">
-                    <h2>
+                    <h1 id="heading1-detail-article">
                         <?= $language == 'id' ? $article['title_id'] : $article['title_en'] ?>
-                    </h2>
+                    </h1>
                 </div>
             </div>
         </div>

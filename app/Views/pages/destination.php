@@ -68,13 +68,13 @@
                 <div class="col-lg-4 col-md-6 col-sm-12" id="card-destination">
                     <div class="best-plan-single1 d-flex flex-column h-100">
                         <div class="image">
-                            <img width="425" height="345" src="<?= base_url('assets/images/destinations/') . $destination['image'] ?>" class="attachment-egns-img-one size-egns-img-one wp-post-image" alt="<?= $destination['slug'] ?>" decoding="async" loading="lazy" />
+                            <img width="425" height="345" src="<?= base_url('assets/images/destinations/') . $destination['image'] ?>" class="attachment-egns-img-one size-egns-img-one wp-post-image" alt="<?= $destination['alt_image'] ?>" decoding="async" loading="lazy" />
                         </div>
                         <div class="content h-100 d-flex flex-column" style="justify-content: space-between;">
                             <div>
                                 <p> <?= $language == 'id' ? 'Mulai dari Rp' . number_format($destination['price_id'], 2, ',', '.') : 'Start from $' . $destination['price_en'] ?></p>
                                 <h4>
-                                    <a href="detail-destinasi.html">
+                                    <a href="/<?= $language ?>/destination/<?= $destination['slug'] ?>">
                                         <?= $destination['title'] ?>
                                     </a>
                                 </h4>
@@ -91,7 +91,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <a href="/destination/<?= $destination['slug'] ?>" class="eg-btn btn--primary-outline btn--md"><?= lang('text_destination.explore_button') ?></a>
+                            <a href="/<?= $language ?>/destination/<?= $destination['slug'] ?>" class="eg-btn btn--primary-outline btn--md"><?= lang('text_destination.explore_button') ?></a>
                         </div>
                     </div>
                 </div>

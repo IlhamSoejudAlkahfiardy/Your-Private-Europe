@@ -33,13 +33,13 @@
                                         </a>
                                         <div class="blog-image">
                                             <a href="#">
-                                                <img loading="lazy" width="870" height="500" src="<?= base_url('assets/images/blogs/' . $article['cover_image']) ?>" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" fetchpriority="high" sizes="(max-width: 870px) 100vw, 870px"> </a>
+                                                <img loading="lazy" width="870" height="500" src="<?= base_url('assets/images/blogs/' . $article['cover_image']) ?>" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="<?= $article['alt_image'] ?>" decoding="async" fetchpriority="high" sizes="(max-width: 870px) 100vw, 870px"> </a>
                                         </div>
                                     </div>
 
                                     <div class="blog-content">
                                         <h3>
-                                            <a href="/article/<?= $article['slug'] . '/' . $article['id'] ?>">
+                                            <a href="/<?= $language ?>/article/<?= $article['slug'] . '/' . $article['id'] ?>">
                                                 <?= $language == 'id' ? $article['title_id'] : $article['title_en'] ?>
                                             </a>
                                         </h3>
@@ -47,11 +47,11 @@
                                             <p>By <a href="#"><?= $article['writer'] ?></p>
                                         </div>
                                         <p>
-                                            <?= $language == 'id' ? substr($article['description_id'], 0, strpos($article['description_id'], '</p>', 150)) . '...' : substr($article['description_id'], 0, strpos($article['description_en'], '</p>', 150)) . '...'  ?>
+                                            <?= $language == 'id' ? substr($article['description_id'], 0, strpos($article['description_id'], '</p>', 150)) . '...' : substr($article['description_en'], 0, strpos($article['description_en'], '</p>', 150)) . '...'  ?>
                                         </p>
 
                                         <div class="blog-meta">
-                                            <a href="/article/<?= $article['slug'] . '/' . $article['id']  ?>" class="read-more-btn">Continue Reading<i class="bi bi-arrow-right"></i></a>
+                                            <a href="/<?= $language ?>/article/<?= $article['slug'] . '/' . $article['id']  ?>" class="read-more-btn">Continue Reading<i class="bi bi-arrow-right"></i></a>
                                             <ul class="share-list">
                                                 <li><i class="bi bi-share"></i>SHARE: <ul class="blog-social">
                                                         <li><a href="http://www.facebook.com/sharer/sharer.php?u=https://www.astrip-wp.egenslab.com/li-river-chinas-orignial-postcard-landcaspe/"><i class="bx bxl-facebook"></i></a></li>

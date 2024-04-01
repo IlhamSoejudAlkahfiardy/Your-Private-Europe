@@ -3,7 +3,7 @@
 return [
     // text for navbar
     'destination' => 'Destinasi',
-    'article' => 'Artikel',
+    'blog' => 'Blog',
     'help_support_navbar' => 'Pusat Bantuan',
     'language' => 'Bahasa',
     'services' => 'Layanan',

@@ -1,6 +1,83 @@
 <?= $this->extend('layout/template') ?>
 
 <?= $this->section('content') ?>
+<style>
+
+    /* Responsiveness for mobile (375px) */
+    @media (min-width: 425px) {
+        #heading1-homepage {
+            font-size: 1rem;
+            font-weight: 600;
+            text-shadow: 2px 2px #e0bc6d;
+        }
+
+        #heading2-banner-homepage {
+            font-size: 1rem;
+            font-weight: 400;
+            color: #fff
+        }
+    }
+
+    /* Responsiveness for tablet (768px) */
+    @media (min-width: 376px) and (max-width: 768px) {
+        #heading1-homepage {
+            font-size: 3.5rem;
+            font-weight: 600;
+            text-shadow: 2px 2px #e0bc6d;
+        }
+
+        #heading2-banner-homepage {
+            font-size: 2.25rem;
+            font-weight: 400;
+            color: #fff
+        }
+    }
+
+    /* Responsiveness for laptop (1024px) */
+    @media (min-width: 769px) and (max-width: 1024px) {
+        #heading1-homepage {
+            font-size: 4.5rem;
+            font-weight: 700;
+            text-shadow: 2px 2px #e0bc6d;
+        }
+
+        #heading2-banner-homepage {
+            font-size: 3.25rem;
+            font-weight: 500;
+            color: #fff
+        }
+    }
+
+    /* Responsiveness for large laptop (1440px) */
+    @media (min-width: 1025px) and (max-width: 1440px) {
+        #heading1-homepage {
+            font-size: 5.5rem;
+            font-weight: 700;
+            text-shadow: 2px 2px #e0bc6d;
+        }
+
+        #heading2-banner-homepage {
+            font-size: 3.25rem;
+            font-weight: 500;
+            color: #fff
+        }
+    }
+
+    /* Responsiveness for large desktop (1441px and above) */
+    @media (min-width: 1441px) {
+        #heading1-homepage {
+            font-size: 5.5rem;
+            font-weight: 700;
+            text-shadow: 2px 2px #e0bc6d;
+        }
+
+        #heading2-banner-homepage {
+            font-size: 3.25rem;
+            font-weight: 500;
+            color: #fff
+        }
+    }
+</style>
 
 <!-- ========== header end============= -->
 <div data-elementor-type="wp-page" data-elementor-id="234" class="elementor elementor-234">
@@ -20,9 +97,9 @@
                                                     <div class="row">
                                                         <div class="col-12 col-lg-9">
                                                             <div class="hero-content">
-                                                                <span><?= $language == 'id' ? $homepage['sub_title_id'] : $homepage['sub_title_en'] ?></span>
-                                                                <h1 style="text-shadow: 2px 2px #e0bc6d"><?= $language == 'id' ? $homepage['title_id'] : $homepage['title_en']  ?></h1>
-                                                                <h2 style="color: #fff;">
+                                                                <!-- <span id="subtitle-banner-homepage"><?= $language == 'id' ? $homepage['sub_title_id'] : $homepage['sub_title_en'] ?></span> -->
+                                                                <h1 id="heading1-homepage"><?= $language == 'id' ? $homepage['title_id'] : $homepage['title_en']  ?></h1>
+                                                                <h2 id="heading2-banner-homepage">
                                                                     <?= $language == 'id' ? $homepage['description_id'] : $homepage['description_en'] ?>
                                                                 </h2>
 
@@ -33,19 +110,14 @@
                                                                             <?= lang("text_homepage.banner_button") ?>
                                                                         </a>
                                                                     </div>
-                                                                    <a href="#" class="rating-wrap">
+                                                                    <a target="_blank" href="https://www.trustpilot.com/review/yourprivateeurope.eu?utm_medium=trustbox&utm_source=MicroReviewCount" class="rating-wrap">
                                                                         <div class="trip-rating">
-                                                                            <div class="icon" style="background-color: transparent !important;">
-                                                                                <!-- <i
-                                              aria-hidden="true"
-                                              class="fab fa-tripadvisor"
-                                            ></i> -->
-                                                                                <img loading="lazy" src="<?= base_url('assets/images/trustpilot.svg') ?>" alt="" style="
-                                            height: fit-content;
-                                            ">
-                                                                            </div>
+                                                                            <!-- <div class="icon" style="background-color: transparent !important;">
+                                                                                <img loading="lazy" src="<?= base_url('assets/images/trustpilot.svg') ?>" alt="" style="height: fit-content;">
+                                                                            </div> -->
                                                                             <div class="cnt">
-                                                                                <h4>Trustpilot</h4>
+                                                                                <!-- <h4>Trustpilot</h4> -->
+                                                                                <img loading="lazy" src="<?= base_url('assets/images/trustpilot.svg') ?>" alt="trustpilot-rating" style="height: 30px !important;width: 130px ;">
                                                                                 <p>See our <span>37</span> reviews on Trustpilot</p>
                                                                             </div>
                                                                         </div>
@@ -454,7 +526,7 @@
                                     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-10">
                                         <div class="blog-single1">
                                             <div class="image">
-                                                <img loading="lazy" decoding="async" width="870" height="500" src="images/blog-dt8.jpg" class="img-fluid wp-post-image" alt="" srcset="<?= base_url('assets/images/blog-dt8.jpg') ?> 870w, <?= base_url('assets/images/blog-dt8-600x345.jpg') ?> 600w, <?= base_url('assets/images/blog-dt8-300x172.jpg') ?> 300w, <?= base_url('assets/images/blog-dt8-768x441.jpg') ?> 768w, <?= base_url('assets/images/blog-dt8-370x213.jpg') ?> 370w" sizes="(max-width: 870px) 100vw, 870px">
+                                                <img loading="lazy" decoding="async" width="870" height="500" src="<?= base_url('assets/images/blog-dt8.jpg') ?>" class="img-fluid wp-post-image" alt="our-service" srcset="<?= base_url('assets/images/blog-dt8.jpg') ?> 870w, <?= base_url('assets/images/blog-dt8-600x345.jpg') ?> 600w, <?= base_url('assets/images/blog-dt8-300x172.jpg') ?> 300w, <?= base_url('assets/images/blog-dt8-768x441.jpg') ?> 768w, <?= base_url('assets/images/blog-dt8-370x213.jpg') ?> 370w" sizes="(max-width: 870px) 100vw, 870px">
                                                 <!-- <span class="blog-date">
                                                     <a href="https://www.astrip-wp.egenslab.com/2023/02/18"></a>
                                                 </span> -->
@@ -472,7 +544,7 @@
                                     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-10">
                                         <div class="blog-single1">
                                             <div class="image">
-                                                <img loading="lazy" decoding="async" width="870" height="500" src="<?= base_url('assets/images/blog-dt9.jpg') ?>" class="img-fluid wp-post-image" alt="" srcset="<?= base_url('assets/images/blog-dt9.jpg') ?> 870w, <?= base_url('assets/images/blog-dt9-600x345.jpg') ?> 600w, <?= base_url('assets/images/blog-dt9-300x172.jpg') ?> 300w, <?= base_url('assets/images/blog-dt9-768x441.jpg') ?> 768w, <?= base_url('assets/images/blog-dt9-370x213.jpg') ?> 370w" sizes="(max-width: 870px) 100vw, 870px">
+                                                <img loading="lazy" decoding="async" width="870" height="500" src="<?= base_url('assets/images/blog-dt9.jpg') ?>" class="img-fluid wp-post-image" alt="our-service" srcset="<?= base_url('assets/images/blog-dt9.jpg') ?> 870w, <?= base_url('assets/images/blog-dt9-600x345.jpg') ?> 600w, <?= base_url('assets/images/blog-dt9-300x172.jpg') ?> 300w, <?= base_url('assets/images/blog-dt9-768x441.jpg') ?> 768w, <?= base_url('assets/images/blog-dt9-370x213.jpg') ?> 370w" sizes="(max-width: 870px) 100vw, 870px">
                                                 <!-- <span class="blog-date">
                                                     <a href="https://www.astrip-wp.egenslab.com/2023/02/18"></a>
                                                 </span> -->
@@ -490,7 +562,7 @@
                                     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-10">
                                         <div class="blog-single1">
                                             <div class="image">
-                                                <img loading="lazy" decoding="async" width="870" height="500" src="<?= base_url('assets/images/blog-dt10.jpg') ?>" class="img-fluid wp-post-image" alt="" srcset="<?= base_url('assets/images/blog-dt10.jpg') ?> 870w, <?= base_url('assets/images/blog-dt10-600x345.jpg') ?> 600w, <?= base_url('assets/images/blog-dt10-300x172.jpg') ?> 300w, <?= base_url('assets/images/blog-dt10-768x441.jpg') ?> 768w, <?= base_url('assets/images/blog-dt10-370x213.jpg') ?> 370w" sizes="(max-width: 870px) 100vw, 870px">
+                                                <img loading="lazy" decoding="async" width="870" height="500" src="<?= base_url('assets/images/blog-dt10.jpg') ?>" class="img-fluid wp-post-image" alt="our-service" srcset="<?= base_url('assets/images/blog-dt10.jpg') ?> 870w, <?= base_url('assets/images/blog-dt10-600x345.jpg') ?> 600w, <?= base_url('assets/images/blog-dt10-300x172.jpg') ?> 300w, <?= base_url('assets/images/blog-dt10-768x441.jpg') ?> 768w, <?= base_url('assets/images/blog-dt10-370x213.jpg') ?> 370w" sizes="(max-width: 870px) 100vw, 870px">
                                                 <!-- <span class="blog-date">
                                                     <a href="https://www.astrip-wp.egenslab.com/2023/02/18"></a>
                                                 </span> -->
@@ -644,7 +716,7 @@
                                                                     </div>
                                                                     <div class="testi-author1">
                                                                         <div class="image">
-                                                                            <img loading="lazy" decoding="async" src="<?= base_url('assets/images/testimonials/') . $testimonial['image'] ?>" alt="" />
+                                                                            <img loading="lazy" decoding="async" src="<?= base_url('assets/images/testimonials/') . $testimonial['image'] ?>" alt="<?= $testimonial['alt_image'] ?>" />
                                                                         </div>
                                                                         <div class="author-text">
                                                                             <h5>
@@ -783,7 +855,7 @@
                                         <div class="col-xl-3 col-lg-3 col-md-6 col-sm-10">
                                             <div class="category-single1">
                                                 <div class="icon">
-                                                    <img loading="lazy" style="max-width: 44px;" src="<?= base_url('assets/images/commitments/') . $commitment['image'] ?>" alt="" srcset="">
+                                                    <img loading="lazy" style="max-width: 44px;" src="<?= base_url('assets/images/commitments/') . $commitment['image'] ?>" alt="<?= $commitment['alt_image'] ?>" srcset="">
                                                 </div>
                                                 <div class="content">
                                                     <h4>
@@ -864,7 +936,7 @@
                                             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
                                                 <div class="deal-single1">
                                                     <div class="deal-image">
-                                                        <img loading="lazy" fetchpriority="high" decoding="async" width="425" height="345" src="<?= base_url('assets/images/destinations/') . $destination['image'] ?>" class="img-fluid wp-post-image" alt="" />
+                                                        <img loading="lazy" fetchpriority="high" decoding="async" width="425" height="345" src="<?= base_url('assets/images/destinations/') . $destination['image'] ?>" class="img-fluid wp-post-image" alt="<?= $destination['alt_image'] ?>" />
                                                     </div>
                                                     <div class="deal-content">
                                                         <div class="review-area"></div>
@@ -1700,7 +1772,7 @@
 
                                                                     <div style="width:225px;height: 145px; display: flex;justify-content: center; align-items: center;" class="img-fluid wp-post-image">
                                                                         <!-- <i class="fa-solid fa-envelope fa-2xl" style="color: #e0bc6d; "></i> -->
-                                                                        <img loading="lazy" style="max-width: 44px;" src="<?= base_url('assets/images/how_it_works/') . $howItWork['image'] ?>" alt="" srcset="">
+                                                                        <img loading="lazy" style="max-width: 44px;" src="<?= base_url('assets/images/how_it_works/') . $howItWork['image'] ?>" alt="<?= $howItWork['alt_image'] ?>" srcset="">
                                                                     </div>
                                                                 </div>
                                                                 <div class="content">

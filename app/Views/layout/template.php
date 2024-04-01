@@ -861,10 +861,10 @@
             font-size: 50px;
         }
 
-        .inner-banner-section .breadcrumb-area h2,
+        /* .inner-banner-section .breadcrumb-area h2,
         .woocommerce-products-header h1 {
             font-family: Oswald;
-        }
+        } */
 
         .inner-banner-section .breadcrumb-area h2,
         .woocommerce-products-header h1 {
@@ -1048,13 +1048,13 @@
     <header class="header-area style-2">
         <div class="container d-flex gap-4 justify-content-between align-items-center">
             <div class="header-logo">
-                <a href="<?= base_url('/') ?>" title="Astrip">
+                <a href="/<?= $language ?>" title="Astrip">
                     <img loading="lazy" class="img-fluid" src="<?= base_url('assets/images/YPE-LOGO-FULL-BLUE-GOLD-2.png') ?>" alt="Astrip" style="
             width: 300px;
             " /></a>
             </div>
             <div class="header-logo header-sticky-logo">
-                <a href="<?= base_url('/') ?>" title="Astrip">
+                <a href="/<?= $language ?>" title="Astrip">
                     <img loading="lazy" class="img-fluid" src="<?= base_url('assets/images/YPE-LOGO-FULL-BLUE-GOLD-2.png') ?>" alt="Astrip" style="
             width: 200px;
             " /></a>
@@ -1062,7 +1062,7 @@
             <div class="main-nav">
                 <div class="mobile-logo-area d-lg-none d-flex justify-content-between align-items-center">
                     <div class="mobile-logo-wrap">
-                        <a href="<?= base_url('/') ?>" title="Astrip">
+                        <a href="/<?= $language ?>  " title="Astrip">
                             <img loading="lazy" class="img-fluid" src="<?= base_url('assets/images/YPE-LOGO-FULL-BLUE-GOLD-2.png') ?>" alt="Astrip" style="
                 width: 200px;
                 " /></a>
@@ -1136,11 +1136,11 @@
                             </ul>
                         </li>
                         <li id="menu-item-2339" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2339">
-                            <a href="/destination"><?= lang("text_homepage.destination") ?></a><i class="bi bi-chevron-down"></i>
+                            <a href="/<?= $language ?>/destination"><?= lang("text_homepage.destination") ?></a><i class="bi bi-chevron-down"></i>
                             <ul class="sub-menu">
                                 <?php foreach ($navbarDestinations as $navbarDestination) : ?>
                                     <li id="menu-item-2370" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2370">
-                                        <a href="<?= base_url('/destination/' . $navbarDestination['slug']) ?>"><?= $navbarDestination['title'] ?></a><i class="bi bi-chevron-down"></i>
+                                        <a href='<?= base_url("/" . $language  . "/destination/" . $navbarDestination['slug']) ?>'><?= $navbarDestination['title'] ?></a><i class="bi bi-chevron-down"></i>
                                     </li>
                                 <?php endforeach; ?>
                             </ul>
@@ -1189,7 +1189,7 @@
               </li> -->
 
                         <li id="menu-item-2015" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2015">
-                            <a href="/article"><?= lang("text_homepage.article") ?></a>
+                            <a href="/<?= $language ?>/article"><?= lang("text_homepage.blog") ?></a>
                             <!-- <i class="bi bi-chevron-down"></i> -->
                             <!-- <ul class="sub-menu">
                                 <li id="menu-item-1987" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1987">
@@ -1409,21 +1409,13 @@
                                 </div>
                                 <div class="menu-destination-container">
                                     <ul id="menu-destination" class="menu">
-                                        <li id="menu-item-946" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-946">
-                                            <a href="#">Best of Switzerland</a>
-                                        </li>
-                                        <li id="menu-item-947" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-947">
-                                            <a href="#">Heart of England</a>
-                                        </li>
-                                        <li id="menu-item-948" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-948">
-                                            <a href="#">Best of Balkan</a>
-                                        </li>
-                                        <li id="menu-item-949" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-949">
-                                            <a href="#">Best of Iberia</a>
-                                        </li>
-                                        <li id="menu-item-1937" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1937">
-                                            <a href="#">Central Europe</a>
-                                        </li>
+
+                                        <?php foreach ($navbarDestinations as $navbarDestination) : ?>
+                                            <li id="menu-item-2370" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2370">
+                                                <a href='<?= base_url("/" . $language  . "/destination/" . $navbarDestination['slug']) ?>'><?= $navbarDestination['title'] ?></a>
+                                            </li>
+                                        <?php endforeach; ?>
+
                                     </ul>
                                 </div>
                             </div>

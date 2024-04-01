@@ -14,13 +14,13 @@ class Language extends BaseController
 
     public function index()
     {
-        // $uri = current_url(true);
-        // $previousURL = $uri->getPreviousURL() ?? site_url('/');
+        
         $session = session();
         $locale = $this->request->getLocale();
         $session->remove('lang');
         $session->set('lang', $locale);
+        $activeLanguage = session()->get('lang');
         $url = base_url();
-        return redirect()->to($url);
+        return redirect()->to($url."$activeLanguage");
     }
 }
