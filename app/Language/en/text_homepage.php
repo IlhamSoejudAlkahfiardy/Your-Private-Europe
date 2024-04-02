@@ -2,9 +2,12 @@
 
 return [
     // text for navbar
+    'home' => 'Home',
+    'information' => 'Informasi',
     'destination' => 'Destination',
+    'events' => 'Events',
     'blog' => 'Blog',
-    'help_support_navbar' => 'Help & Support',
+    'help_support_navbar' => 'Help',
     'language' => 'Language',
     'services' => 'Services',
 
@@ -12,7 +15,7 @@ return [
     'banner_button' => 'Start Now',
     'trending_destination' => 'Explore Now',
     'all_destination' => 'See All Destination',
-    'about_us' => 'Read More',
+    'button_about_us' => 'Read More',
     'all_faq' => 'Read Other FAQ',
 
     // text for footer -> quick_link

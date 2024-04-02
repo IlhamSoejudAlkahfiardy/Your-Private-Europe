@@ -214,7 +214,7 @@
                                             <div class="row justify-content-center">
                                                 <div class="btn-align">
                                                     <a href="#" target="_blank" class="eg-btn btn--primary-outline btn--lg" style="background-color: #e0bc6d;" onmouseover="this.style.color='#e0bc6d'" onmouseout="this.style.color='white'">
-                                                        <?= lang("text_homepage.about_us") ?>
+                                                        <?= lang("text_homepage.button_about_us") ?>
                                                     </a>
                                                 </div>
                                             </div>
@@ -705,7 +705,7 @@
                                                     <div class="deal-content">
                                                         <div class="review-area"></div>
                                                         <h4>
-                                                            <a href="">
+                                                            <a href="/<?= $language ?>/destination/<?= $destination['slug'] ?>">
                                                                 <?= $destination['title'] ?>
                                                             </a>
                                                         </h4>
@@ -714,7 +714,7 @@
                                                                 <?= $language == 'id' ? $destination['duration_id'] : $destination['duration_en'] ?>
                                                             </span>
                                                         </div>
-                                                        <a href="/destination/<?= $destination['slug'] ?>" class="eg-btn btn--primary-outline btn--md"><?= lang("text_homepage.trending_destination") ?></a>
+                                                        <a href="/<?= $language ?>/destination/<?= $destination['slug'] ?>" class="eg-btn btn--primary-outline btn--md"><?= lang("text_homepage.trending_destination") ?></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -935,7 +935,7 @@
         </div>
     </div>
 
-    <section class="elementor-section elementor-top-section elementor-element elementor-element-8104c8f elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="8104c8f" data-element_type="section">
+    <section class="elementor-section elementor-top-section elementor-element elementor-element-8104c8f elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="8104c8f" data-element_type="section" style="margin-top: 0px !important;">
         <div class="elementor-container elementor-column-gap-default">
             <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-128b5f8" data-id="128b5f8" data-element_type="column">
                 <div class="elementor-widget-wrap elementor-element-populated">
@@ -1042,7 +1042,7 @@
 
 
 </div>
-<section style="margin-top: 200px;;" class="elementor-section elementor-top-section elementor-element elementor-element-86a3b54 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="86a3b54" data-element_type="section">
+<section style="margin-top: 110px;" class="elementor-section elementor-top-section elementor-element elementor-element-86a3b54 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="86a3b54" data-element_type="section">
     <div class="elementor-container elementor-column-gap-default" style="max-width: 1140px;">
         <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-0442f94" data-id="0442f94" data-element_type="column">
             <div class="elementor-widget-wrap elementor-element-populated">

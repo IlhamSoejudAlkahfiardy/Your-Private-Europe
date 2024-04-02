@@ -1042,40 +1042,36 @@
                     <ul id="menu-main-menu" class="ul">
 
                         <li id="menu-item-2339" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2339">
-                            <a href="#"><?= lang("text_homepage.services") ?></a><i class="bi bi-chevron-down"></i>
-                            <ul class="sub-menu">
-
-                                <li id="menu-item-2370" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2370">
-                                    <a href="#">VIP Services</a><i class="bi bi-chevron-down"></i>
-                                </li>
-                                <li id="menu-item-2370" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2370">
-                                    <a href="#">Private Tour</a><i class="bi bi-chevron-down"></i>
-                                </li>
-                                <li id="menu-item-2370" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2370">
-                                    <a href="#">MICE</a><i class="bi bi-chevron-down"></i>
-                                </li>
-
-                            </ul>
+                            <a href="/<?= $language ?>"><?= lang("text_homepage.home") ?></a>
+                        </li>
+                        <li id="menu-item-1995" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1995">
+                            <a href="#">Travel Agent & Corporate</a><i class="bi bi-chevron-down"></i>
                         </li>
                         <li id="menu-item-2339" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2339">
-                            <a href="/<?= $language ?>/destination"><?= lang("text_homepage.destination") ?></a><i class="bi bi-chevron-down"></i>
+                            <a href="#"><?= lang("text_homepage.information") ?></a><i class="bi bi-chevron-down"></i>
                             <ul class="sub-menu">
-                                <?php foreach ($navbarDestinations as $navbarDestination) : ?>
-                                    <li id="menu-item-2370" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2370">
-                                        <a href='<?= base_url("/" . $language  . "/destination/" . $navbarDestination['slug']) ?>'><?= $navbarDestination['title'] ?></a><i class="bi bi-chevron-down"></i>
-                                    </li>
-                                <?php endforeach; ?>
+
+                                <li id="menu-item-2370" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2370">
+                                    <a href="#"><?= lang("text_homepage.services") ?></a><i class="bi bi-chevron-down"></i>
+                                </li>
+                                <li id="menu-item-2370" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2370">
+                                    <a href="/<?= $language ?>/<?= $language == 'id' ? 'destinasi' : 'destination' ?>"><?= lang("text_homepage.destination") ?></a><i class="bi bi-chevron-down"></i>
+                                </li>
+                                <li id="menu-item-2370" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2370">
+                                    <a href="#"><?= lang("text_homepage.events") ?></a><i class="bi bi-chevron-down"></i>
+                                </li>
+                                <li id="menu-item-2370" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2370">
+                                    <a href="#"><?= lang("text_homepage.about_us") ?></a><i class="bi bi-chevron-down"></i>
+                                </li>
+
                             </ul>
                         </li>
-
 
                         <li id="menu-item-2015" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2015">
                             <a href="/<?= $language ?>/article"><?= lang("text_homepage.blog") ?></a>
 
                         </li>
-                        <li id="menu-item-1995" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1995">
-                            <a href="#">Corporate & Travel Agent</a><i class="bi bi-chevron-down"></i>
-                        </li>
+
                         <li id="menu-item-2013" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2013">
                             <a href="#"><?= lang("text_homepage.help_support_navbar") ?></a><i class="bi bi-chevron-down"></i>
                             <ul class="sub-menu">

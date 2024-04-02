@@ -2,9 +2,12 @@
 
 return [
     // text for navbar
+    'home' => 'Home',
+    'information' => 'Informasi',
     'destination' => 'Destinasi',
+    'events' => 'Events',
     'blog' => 'Blog',
-    'help_support_navbar' => 'Pusat Bantuan',
+    'help_support_navbar' => 'Bantuan',
     'language' => 'Bahasa',
     'services' => 'Layanan',
 
@@ -12,15 +15,15 @@ return [
     'banner_button' => 'Mulai Perjalananmu',
     'trending_destination' => 'Jelajahi Sekarang',
     'all_destination' => 'Lihat Semua Destinasi',
-    'about_us' => 'Read More',
+    'button_about_us' => 'Read More',
     'all_faq' => 'Baca Pertanyaan Lainnya',
 
     // text for footer -> quick_link
     'quick_links' => 'QUICK LINKS',
     'home' => 'Beranda',
     'our_tours' => 'Tur Kami',
-    'about_us' => 'Tentang Us',
-    'contact_us' => 'Hubungi Us',
+    'about_us' => 'Tentang Kami',
+    'contact_us' => 'Hubungi Kami',
     'help_center' => 'Pusat Bantuan (FAQ)',
     'corporate' => 'Untuk Corporate & Travel Agent',
 
