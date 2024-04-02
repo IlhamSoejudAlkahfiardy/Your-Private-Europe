@@ -1075,11 +1075,8 @@
                         <li id="menu-item-2013" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2013">
                             <a href="#"><?= lang("text_homepage.help_support_navbar") ?></a><i class="bi bi-chevron-down"></i>
                             <ul class="sub-menu">
-                                <li id="menu-item-1984" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1984">
-                                    <a href="#">Tentang Kami</a><i class="bi bi-chevron-down"></i>
-                                </li>
                                 <li id="menu-item-2017" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2017">
-                                    <a href="#">Hubungi Kami</a><i class="bi bi-chevron-down"></i>
+                                    <a href="/<?= $language ?>/<?= $language == 'id' ? 'hubungi-kami' : 'contact-us' ?>"><?= lang("text_homepage.contact_us") ?></a><i class="bi bi-chevron-down"></i>
                                 </li>
                                 <li id="menu-item-1999" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1999">
                                     <a href="/<?= $language ?>/faq">FAQ</a><i class="bi bi-chevron-down"></i>

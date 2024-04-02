@@ -11,6 +11,11 @@ return [
     'language' => 'Language',
     'services' => 'Services',
 
+    // text for detail company
+    'since_year' => 'INCEPTION YEAR',
+    'passed_country' => 'COUNTRIES IN EUROPE WE ALREADY SERVE',
+    'rating_customer' => 'OUR GUEST SATISFACTION RATING',
+
     // text for homepage
     'banner_button' => 'Start Now',
     'trending_destination' => 'Explore Now',

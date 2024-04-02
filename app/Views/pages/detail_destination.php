@@ -1267,9 +1267,9 @@
                         <span class="main-price">$625</span>
                       </div> -->
 
-                  <button type="submit" class="eg-btn btn--primary btn--lg w-100 mt-3" name="add-to-cart" value="2401">
-                    Hubungi Kami Segera
-                  </button>
+                  <a href="/<?= $language ?>/<?= $language == 'id' ? 'hubungi-kami' : 'contact-us' ?>" class="eg-btn btn--primary btn--lg w-100 mt-3" name="add-to-cart" value="2401">
+                    <?= $language == 'id' ? 'Hubungi Kami' : 'Contact Us' ?>
+                  </a>
                 </form>
               </div>
             </div>

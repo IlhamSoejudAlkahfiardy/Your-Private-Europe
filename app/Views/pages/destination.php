@@ -74,7 +74,7 @@
                             <div>
                                 <p> <?= $language == 'id' ? 'Mulai dari Rp' . number_format($destination['price_id'], 2, ',', '.') : 'Start from $' . $destination['price_en'] ?></p>
                                 <h4>
-                                    <a href="/<?= $language ?>/destination/<?= $destination['slug'] ?>">
+                                    <a href="/<?= $language ?>/<?= $language == 'id' ?'destinasi':'destination' ?>/<?= $destination['slug'] ?>">
                                         <?= $destination['title'] ?>
                                     </a>
                                 </h4>
@@ -91,7 +91,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <a href="/<?= $language ?>/destination/<?= $destination['slug'] ?>" class="eg-btn btn--primary-outline btn--md"><?= lang('text_destination.explore_button') ?></a>
+                            <a href="/<?= $language ?>/<?= $language == 'id' ?'destinasi':'destination' ?>/<?= $destination['slug'] ?>" class="eg-btn btn--primary-outline btn--md"><?= lang('text_destination.explore_button') ?></a>
                         </div>
                     </div>
                 </div>

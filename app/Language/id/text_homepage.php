@@ -11,6 +11,11 @@ return [
     'language' => 'Bahasa',
     'services' => 'Layanan',
 
+    // text for detail company
+    'since_year' => 'TAHUN BERDIRI',
+    'passed_country' => 'DESTINASI NEGARA DI EROPA YANG SUDAH DILAYANI',
+    'rating_customer' => 'RATING KEPUASAN TAMU KAMI',
+
     // text for homepage
     'banner_button' => 'Mulai Perjalananmu',
     'trending_destination' => 'Jelajahi Sekarang',

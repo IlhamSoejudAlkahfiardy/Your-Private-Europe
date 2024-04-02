@@ -18,7 +18,8 @@ $routes->get('/id/destinasi/(:segment)', 'DestinationController::detail/$1');
 $routes->get('/en/destination', 'DestinationController::index');
 $routes->get('/en/destination/(:segment)', 'DestinationController::detail/$1');
 
-$routes->get('/contact-us', 'ContactUsController::index');
+$routes->get('/id/hubungi-kami', 'ContactUsController::index');
+$routes->get('/en/contact-us', 'ContactUsController::index');
 $routes->get('/about-us', 'AboutUsController::index');
 $routes->get('/id/faq', 'FAQController::index');
 $routes->get('/en/faq', 'FAQController::index');
