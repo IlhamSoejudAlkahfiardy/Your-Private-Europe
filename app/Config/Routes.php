@@ -19,7 +19,9 @@ $routes->get('/en/destination', 'DestinationController::index');
 $routes->get('/en/destination/(:segment)', 'DestinationController::detail/$1');
 
 $routes->get('/contact-us', 'ContactUsController::index');
+$routes->get('/dasboard', '\admin\Dashboardctrl::index');
 $routes->get('/about-us', 'AboutUsController::index');
+
 $routes->get('/id/faq', 'FAQController::index');
 $routes->get('/en/faq', 'FAQController::index');
 
@@ -33,3 +35,6 @@ $routes->get('/gallery/detail', 'GalleryController::detail');
 
 // Page not found handler
 $routes->set404Override('App\Controllers\ErrorController::show404');
+
+//admin
+
