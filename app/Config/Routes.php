@@ -28,7 +28,8 @@ $routes->get('/id/article/(:segment)/(:segment)', 'ArticleController::detail/$1/
 $routes->get('/en/article', 'ArticleController::index');
 $routes->get('/en/article/(:segment)/(:segment)', 'ArticleController::detail/$1/$2');
 
-$routes->get('/gallery', 'GalleryController::index');
+$routes->get('/id/our-services', 'ServiceController::index');
+$routes->get('/en/our-services', 'ServiceController::index');
 $routes->get('/gallery/detail', 'GalleryController::detail');
 
 // Page not found handler

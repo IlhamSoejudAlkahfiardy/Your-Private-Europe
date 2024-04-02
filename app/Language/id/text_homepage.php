@@ -15,15 +15,21 @@ return [
     'about_us' => 'Read More',
     'all_faq' => 'Baca Pertanyaan Lainnya',
 
-    // text for footer -> information
-    'information' => 'Informasi',
-    'about_us' => 'Tentang Kami',
-    'help_support' => 'Help & Support',
-    'contact_us' => 'Hubungi Kami',
+    // text for footer -> quick_link
+    'quick_links' => 'QUICK LINKS',
+    'home' => 'Beranda',
+    'our_tours' => 'Tur Kami',
+    'about_us' => 'Tentang Us',
+    'contact_us' => 'Hubungi Us',
+    'help_center' => 'Pusat Bantuan (FAQ)',
+    'corporate' => 'Untuk Corporate & Travel Agent',
 
-    // text for footer -> destination
-    'destination' => 'Destinasi',
+    // text for footer -> quick
+    'other_links' => 'LAINNYA',
+    'terms' => 'Syarat & Ketentuan',
+    'privacy' => 'Kebijakan Privasi',
+    'disclaimer' => 'Disclaimer',
 
-    // text for footer -> reach us
-    'reach_us' => 'Jangkau Kami'
+    // text for footer -> socmed
+    'social_media' => 'Our Social Media',
 ];

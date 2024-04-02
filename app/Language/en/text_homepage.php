@@ -15,15 +15,21 @@ return [
     'about_us' => 'Read More',
     'all_faq' => 'Read Other FAQ',
 
-    // text for footer -> information
-    'information' => 'Information',
+    // text for footer -> quick_link
+    'quick_links' => 'QUICK LINKS',
+    'home' => 'Home',
+    'our_tours' => 'Our Tours',
     'about_us' => 'About Us',
-    'help_support' => 'Help & Support',
     'contact_us' => 'Contact Us',
+    'help_center' => 'Help Center (FAQ)',
+    'corporate' => 'For Corporate & Travel Agent',
 
-    // text for footer -> destination
-    'destination' => 'Destination',
+    // text for footer -> quick
+    'other_links' => 'OTHER LINKS',
+    'terms' => 'Terms & Conditions',
+    'privacy' => 'Privacy Policy',
+    'disclaimer' => 'Disclaimer',
 
-    // text for footer -> reach us
-    'reach_us' => 'Reach Us',
+    // text for footer -> socmed
+    'social_media' => 'Our Social Media',
 ];

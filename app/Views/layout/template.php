@@ -1067,11 +1067,11 @@
                                 <?php endforeach; ?>
                             </ul>
                         </li>
-                        
+
 
                         <li id="menu-item-2015" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2015">
                             <a href="/<?= $language ?>/article"><?= lang("text_homepage.blog") ?></a>
-                            
+
                         </li>
                         <li id="menu-item-1995" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1995">
                             <a href="#">Corporate & Travel Agent</a><i class="bi bi-chevron-down"></i>
@@ -1088,7 +1088,7 @@
                                 <li id="menu-item-1999" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1999">
                                     <a href="/<?= $language ?>/faq">FAQ</a><i class="bi bi-chevron-down"></i>
                                 </li>
-                                
+
                             </ul>
                         </li>
                         <li id="menu-item-2013" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2013">
@@ -1107,13 +1107,13 @@
                 <!-- mobile-search-area -->
 
                 <div class="phone-call sibling2 d-flex justify-content-start align-items-center flex-row d-lg-none d-block mt-5">
-                    
+
                 </div>
             </div>
 
             <div class="nav-right d-flex jsutify-content-end align-items-center gap-5">
                 <div class="phone-call sibling2 justify-content-start align-items-center flex-row d-xl-flex d-none">
-                    
+
                 </div>
                 <div class="mobile-menu-btn d-lg-none d-block">
                     <i class="bi bi-list text-dark"></i>
@@ -1136,19 +1136,78 @@
                         <div class="footer-item">
                             <div id="nav_menu-2" class="destination-widget-item widget_nav_menu">
                                 <div class="destination-widget-title">
-                                    <h3><?= lang("text_homepage.information") ?></h3>
+                                    <h3>
+                                        YOUR PRIVATE EUROPE
+                                    </h3>
+                                </div>
+                                <div class="menu-information-container">
+                                    <p style="color:white">
+                                        PT. MITRAWISATA JELAJAH BUANA
+                                    </p>
+                                    <ul class="contact-list">
+                                        <li>
+                                            <!-- <div class="icon">
+                                                <i class="bi bi-geo-alt"></i>
+                                            </div> -->
+                                            <div class="text">
+                                                <p style="color:#e0bc6d">
+                                                    Europe
+                                                </p>
+                                                <p>
+                                                    Velperplein 23-25
+                                                    6811 AH Arnhem, the Netherlands
+                                                    +(31) 061-6564-256
+                                                </p>
+                                                <p style="color:#e0bc6d">
+                                                    INDONESIA
+                                                </p>
+                                                <p>
+                                                    Dharmahusada Mas VII AB-22
+                                                    60115 Surabaya, Indonesia
+                                                    +(62) 0895-1425-3344
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <i class="bi bi-envelope"></i>
+                                            </div>
+                                            <div class="text">
+                                                <a href="mailto:contact@yourprivateeurope.eu"> contact@yourprivateeurope.eu</a>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 d-flex justify-content-lg-center">
+                        <div class="footer-item">
+                            <div id="nav_menu-2" class="destination-widget-item widget_nav_menu">
+                                <div class="destination-widget-title">
+                                    <h3><?= lang("text_homepage.quick_links") ?></h3>
                                 </div>
                                 <div class="menu-information-container">
                                     <ul id="menu-information" class="menu">
                                         <li id="menu-item-1932" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1932">
-                                            <a href="#"><?= lang("text_homepage.about_us") ?></a>
+                                            <a href="#"><?= lang("text_homepage.home") ?></a>
                                         </li>
-                                        
+
                                         <li id="menu-item-1935" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1935">
-                                            <a href="#"><?= lang("text_homepage.help_support") ?></a>
+                                            <a href="#"><?= lang("text_homepage.our_tours") ?></a>
+                                        </li>
+                                        <li id="menu-item-1936" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1936">
+                                            <a href="#contact-us/"><?= lang("text_homepage.about_us") ?></a>
                                         </li>
                                         <li id="menu-item-1936" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1936">
                                             <a href="#contact-us/"><?= lang("text_homepage.contact_us") ?></a>
+                                        </li>
+                                        <li id="menu-item-1936" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1936">
+                                            <a href="#contact-us/"><?= lang("text_homepage.help_center") ?></a>
+                                        </li>
+                                        <li id="menu-item-1936" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1936">
+                                            <a href="#contact-us/"><?= lang("text_homepage.corporate") ?></a>
                                         </li>
                                     </ul>
                                 </div>
@@ -1159,17 +1218,30 @@
                         <div class="footer-item">
                             <div id="nav_menu-3" class="destination-widget-item widget_nav_menu">
                                 <div class="destination-widget-title">
-                                    <h3><?= lang("text_homepage.destination") ?></h3>
+                                    <h3><?= lang("text_homepage.other_links") ?></h3>
                                 </div>
                                 <div class="menu-destination-container">
                                     <ul id="menu-destination" class="menu">
-
-                                        <?php foreach ($navbarDestinations as $navbarDestination) : ?>
-                                            <li id="menu-item-2370" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2370">
-                                                <a href='<?= base_url("/" . $language  . "/destination/" . $navbarDestination['slug']) ?>'><?= $navbarDestination['title'] ?></a>
-                                            </li>
-                                        <?php endforeach; ?>
-
+                                        <li id="menu-item-2370" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2370">
+                                            <a href='#'>
+                                                <?= lang("text_homepage.other_links") ?>
+                                            </a>
+                                        </li>
+                                        <li id="menu-item-2370" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2370">
+                                            <a href='#'>
+                                                <?= lang("text_homepage.terms") ?>
+                                            </a>
+                                        </li>
+                                        <li id="menu-item-2370" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2370">
+                                            <a href='#'>
+                                                <?= lang("text_homepage.privacy") ?>
+                                            </a>
+                                        </li>
+                                        <li id="menu-item-2370" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2370">
+                                            <a href='#'>
+                                                <?= lang("text_homepage.disclaimer") ?>
+                                            </a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -1179,70 +1251,53 @@
                         <div class="footer-item">
                             <div id="egens_contacts-3" class="destination-widget-item widget_egens_contacts">
                                 <div class="destination-widget-title">
-                                    <h3><?= lang("text_homepage.reach_us") ?></h3>
+                                    <h3><?= lang("text_homepage.social_media") ?></h3>
                                 </div>
                                 <ul class="contact-list">
                                     <li>
                                         <div class="icon">
-                                            <i class="bi bi-telephone"></i>
+                                            <i class="bi bi-instagram"></i>
                                         </div>
                                         <div class="text">
-                                            <a href="tel:+1-202-555-0144">+1-202-555-0144</a>
-                                            <a href="tel:+1-202-555-0152">+1-202-555-0152</a>
+                                            <a href="https://www.instagram.com/yourprivateeurope/">@yourprivateeurope</a>
                                         </div>
                                     </li>
                                     <li>
                                         <div class="icon">
-                                            <i class="bi bi-envelope"></i>
+                                            <i class="bi bi-linkedin"></i>
                                         </div>
                                         <div class="text">
-                                            <a href="mailto:info@example.com">info@example.com</a>
-                                            <a href="mailto:support@example.com">support@example.com</a>
+                                            <a href="https://www.linkedin.com/company/your-private-europe">Your Private Europe | Tour Organizer & DMC Europe</a>
                                         </div>
                                     </li>
                                     <li>
                                         <div class="icon">
-                                            <i class="bi bi-geo-alt"></i>
+                                            <i class="bi bi-facebook"></i>
                                         </div>
                                         <div class="text">
-                                            Dharmahusada Mas VII AB-22 60115 Surabaya, Indonesia
-                                            +(62) 0895-1425-3344
+                                            <a href="https://www.facebook.com/yourprivateeurope/">yourprivateeurope</a>
                                         </div>
                                     </li>
+                                    <li>
+                                        <div class="icon">
+                                            <i class="bi bi-youtube"></i>
+                                        </div>
+                                        <div class="text">
+                                            <a href="#">@yourprivateeurope</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <i class="bi bi-skype"></i>
+                                        </div>
+                                        <div class="text">
+                                            <a href="skype:chris.suhartono?chat">Skype</a>
+                                        </div>
+                                    </li>
+
                                 </ul>
                             </div>
                         </div>
-                    </div>
-                </div>
-
-                <div class="row footer-meta">
-                    <div class="col-lg-6 d-flex justify-content-lg-start justify-content-center align-items-center mb-lg-0 mb-5">
-                        <h4>Stay Connected:</h4>
-
-                        <ul class="footer-social">
-                            <li>
-                                <a href="https://facebook.com"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://twitter.com"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://instagram.com"><i class="fa fa-instagram"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://pinterest.com"><i class="fa fa-pinterest"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-6 d-flex justify-content-lg-end justify-content-center align-items-center">
-                        <h4>Pay Safely With Us!</h4>
-
-                        <ul class="pay-list">
-                            <li><img loading="lazy" src="images/pay1.svg" alt="" /></li>
-                            <li><img loading="lazy" src="images/pay2.svg" alt="" /></li>
-                            <li><img loading="lazy" src="images/pay3.svg" alt="" /></li>
-                            <li><img loading="lazy" src="images/pay4.svg" alt="" /></li>
-                        </ul>
                     </div>
                 </div>
             </div>
