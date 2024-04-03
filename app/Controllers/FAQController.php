@@ -44,4 +44,6 @@ class FAQController extends BaseController
 
         echo view('pages/faq', $data);
     }
+    
+    
 }

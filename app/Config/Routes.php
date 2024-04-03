@@ -33,3 +33,37 @@ $routes->get('/gallery/detail', 'GalleryController::detail');
 
 // Page not found handler
 $routes->set404Override('App\Controllers\ErrorController::show404');
+
+
+//admin
+$routes->get('dashboard', 'admin\Dashboardctrl::index');
+
+$routes->get('admin/faq/index', 'admin\FAQController::index');
+$routes->get('admin/faq/tambah', 'admin\FAQController::tambah');
+$routes->post('admin/faq/proses_tambah', 'admin\FAQController::proses_tambah');
+$routes->get('admin/faq/edit/(:num)', 'admin\FAQController::edit/$1');
+$routes->post('admin/faq/proses_edit/(:num)', 'admin\FAQController::proses_edit/$1');
+$routes->get('admin/faq/delete/(:num)', 'admin\FAQController::delete/$1');
+
+$routes->get('admin/faqC/index', 'admin\FaqC::index');
+$routes->get('admin/faqC/tambah', 'admin\FaqC::tambah');
+$routes->post('admin/faqC/proses_tambah', 'admin\FaqC::proses_tambah');
+$routes->get('admin/faqC/edit/(:num)', 'admin\FaqC::edit/$1');
+$routes->post('admin/faqC/proses_edit/(:num)', 'admin\FaqC::proses_edit/$1');
+$routes->get('admin/faqC/delete/(:num)', 'admin\FaqC::delete/$1');
+
+$routes->get('admin/testimonial/index', 'admin\Testimonialctrl::index');
+$routes->get('admin/testimonial/tambah', 'admin\Testimonialctrl::tambah');
+$routes->post('admin/testimonial/proses_tambah', 'admin\Testimonialctrl::proses_tambah');
+$routes->get('admin/testimonial/edit/(:num)', 'admin\Testimonialctrl::edit/$1');
+$routes->post('admin/testimonial/proses_edit/(:num)', 'admin\Testimonialctrl::proses_edit/$1');
+$routes->get('admin/testimonial/delete/(:num)', 'admin\Testimonialctrl::delete/$1');
+
+
+$routes->get('admin/usp/index', 'admin\Usp::index');
+$routes->get('admin/usp/tambah', 'admin\Usp::tambah');
+$routes->post('admin/usp/proses_tambah', 'admin\Usp::proses_tambah');
+$routes->get('admin/usp/edit/(:num)', 'admin\Usp::edit/$1');
+$routes->post('admin/usp/proses_edit/(:num)', 'admin\Usp::proses_edit/$1');
+$routes->get('admin/usp/delete/(:num)', 'admin\Usp::delete/$1');
+
