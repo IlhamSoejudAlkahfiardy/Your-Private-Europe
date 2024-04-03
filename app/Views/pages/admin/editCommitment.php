@@ -22,23 +22,23 @@
                         <div class="row">
                             <div class="col">
                                 <div class="mb-3">
-                                    <label class="form-label">Nama Instansi Asal<br><span class="custom-color custom-label">nama instansi asal hanya boleh mengandung huruf dan angka</span></label>
+                                    <label class="form-label">Title id<br><span class="custom-color custom-label"></span></label>
                                     <input type="text" class="form-control" id="title_id" name="title_id" value="<?=$all_data_commitment['title_id']; ?>">
                                 </div>
                                 <div class="mb-3">
-                                    <label class="form-label">Perihal <br><span class="custom-color custom-label">nama perihal hanya boleh mengandung huruf dan angka</span></label>
+                                    <label class="form-label">Title En <br><span class="custom-color custom-label"></span></label>
                                     <input type="text" class="form-control" id="title_en" name="title_en" value="<?=$all_data_commitment['title_en']; ?>">
                                 </div>
                                 <div class="mb-3" >
-                                    <label class="form-label">Waktu</label>
+                                    <label class="form-label">Slug</label>
                                     <input type="text" class="form-control " id="slug" name="slug" value="<?=$all_data_commitment['slug']; ?>">
                                 </div>
                                 <div class="mb-3">
-                                    <label class="form-label">Waktu</label>
+                                    <label class="form-label">Alt Image</label>
                                     <input type="text" class="form-control " id="alt_image" name="alt_image" value="<?=$all_data_commitment['alt_image']; ?>"> 
                                 </div>
                                 <div class="mb-3">
-                                    <label class="form-label">File Surat</label>
+                                    <label class="form-label">Gambar</label>
                                     <br>
                                     <img width="150px" class="img-thumbnail" src="<?= base_url() . "assets/images/commitments/" . $all_data_commitment['image']; ?>">
                                     <input class="form-control <?= ($validation->hasError('image')) ? 'is-invalid' : '' ?>" type="file" id="image" name="image">
@@ -46,7 +46,7 @@
                                     
                                 </div>
                                 <p>*File maksimal berukuran 2 Mb</p>
-                                <p>*File harus berekstensi pdf/docx</p>
+                               
                             </div>
                         </div>
                         <div class="row">

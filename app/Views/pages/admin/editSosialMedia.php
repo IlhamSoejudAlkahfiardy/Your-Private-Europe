@@ -22,17 +22,17 @@
                         <div class="row">
                             <div class="col">
                                 <div class="mb-3">
-                                    <label class="form-label">Nama Instansi Asal<br><span class="custom-color custom-label">nama instansi asal hanya boleh mengandung huruf dan angka</span></label>
+                                    <label class="form-label">Title<br><span class="custom-color custom-label">nama instansi asal hanya boleh mengandung huruf dan angka</span></label>
                                     <input type="text" class="form-control" id="title" name="title" value="<?=$all_data_SosialMedia['title']; ?>">
                                 </div>
                                
                                 <div class="mb-3" >
-                                    <label class="form-label">Waktu</label>
+                                    <label class="form-label">Link</label>
                                     <input type="text" class="form-control " id="link" name="link" value="<?=$all_data_SosialMedia['link']; ?>">
                                 </div>
                                
                                 <div class="mb-3">
-                                    <label class="form-label">File Surat</label>
+                                    <label class="form-label">Gambar</label>
                                     <br>
                                     <img width="150px" class="img-thumbnail" src="<?= base_url() . "assets/images/SosialMedia/" . $all_data_SosialMedia['image']; ?>">
                                     <input class="form-control <?= ($validation->hasError('image')) ? 'is-invalid' : '' ?>" type="file" id="image" name="image">
@@ -40,7 +40,7 @@
                                     
                                 </div>
                                 <p>*File maksimal berukuran 2 Mb</p>
-                                <p>*File harus berekstensi pdf/docx</p>
+                             
                             </div>
                         </div>
                         <div class="row">

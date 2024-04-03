@@ -6,7 +6,7 @@
     <div class="container-xl">
         <div class="row g-3 mb-4 align-items-center justify-content-between">
             <div class="col-auto">
-                <h1 class="app-page-title mb-0">Daftar User</h1>
+                <h1 class="app-page-title mb-0">Commitment</h1>
             </div>
             </br>
             <div class="d-grid gap-2 d-md-flex justify-content-md-end">

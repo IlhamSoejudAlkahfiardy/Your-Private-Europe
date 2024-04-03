@@ -22,11 +22,11 @@
                         <div class="row">
                             <div class="col">
                                 <div class="mb-3">
-                                    <label class="form-label">Nama Instansi Asal<br><span class="custom-color custom-label">nama instansi asal hanya boleh mengandung huruf dan angka</span></label>
+                                    <label class="form-label">Title<br><span class="custom-color custom-label">nama instansi asal hanya boleh mengandung huruf dan angka</span></label>
                                     <input type="text" class="form-control" id="title" name="title" value="<?= old('title') ?>">
                                 </div>
                                 <div class="mb-3" >
-                                    <label class="form-label">Waktu</label>
+                                    <label class="form-label">Link</label>
                                     <input type="text" class="form-control " id="link" name="link" value="<?= old('link') ?>" />
                                 </div>                              
                                 <div class="mb-3">
@@ -35,7 +35,7 @@
                                     <?= $validation->getError('image') ?>
                                 </div>
                                 <p>*File maksimal berukuran 2 Mb</p>
-                                <p>*File harus berekstensi pdf/docx</p>
+                               
                             </div>
                         </div>
                         <div class="row">

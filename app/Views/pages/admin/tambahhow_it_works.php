@@ -22,27 +22,27 @@
                         <div class="row">
                             <div class="col">
                             <div class="mb-3">
-                                    <label class="form-label">Nama Instansi Asal<br><span class="custom-color custom-label">nama instansi asal hanya boleh mengandung huruf dan angka</span></label>
+                                    <label class="form-label">Title id<br><span class="custom-color custom-label"></span></label>
                                     <input type="text" class="form-control" id="title_id" name="title_id" value="<?= old('title_id') ?>">
                                 </div>
                                 <div class="mb-3">
-                                    <label class="form-label">Perihal <br><span class="custom-color custom-label">nama perihal hanya boleh mengandung huruf dan angka</span></label>
+                                    <label class="form-label">Title En <br><span class="custom-color custom-label">nama perihal hanya boleh mengandung huruf dan angka</span></label>
                                     <input type="text" class="form-control" id="title_en" name="title_en" value="<?= old('title_en') ?>">
                                 </div>
                                 <div class="mb-3">
-                                    <label class="form-label">Perihal <br><span class="custom-color custom-label">nama perihal hanya boleh mengandung huruf dan angka</span></label>
+                                    <label class="form-label">descriptioni d <br><span class="custom-color custom-label">nama perihal hanya boleh mengandung huruf dan angka</span></label>
                                     <input type="text" class="form-control" id="description_id" name="description_id" value="<?= old('description_id') ?>">
                                 </div>
                                 <div class="mb-3">
-                                    <label class="form-label">Perihal <br><span class="custom-color custom-label">nama perihal hanya boleh mengandung huruf dan angka</span></label>
+                                    <label class="form-label">Pdescription En <br><span class="custom-color custom-label">nama perihal hanya boleh mengandung huruf dan angka</span></label>
                                     <input type="text" class="form-control" id="description_en" name="description_en" value="<?= old('description_en') ?>">
                                 </div>
                                 <div class="mb-3" >
-                                    <label class="form-label">Waktu</label>
+                                    <label class="form-label">Slug</label>
                                     <input type="text" class="form-control " id="slug" name="slug" value="<?= old('slug') ?>" />
                                 </div>
                                 <div class="mb-3">
-                                    <label class="form-label">Waktu</label>
+                                    <label class="form-label">Alt Image</label>
                                     <input type="text" class="form-control " id="alt_image" name="alt_image" value="<?= old('alt_image') ?>" />
                                 </div> 
                                                          
@@ -52,7 +52,7 @@
                                     <?= $validation->getError('image') ?>
                                 </div>
                                 <p>*File maksimal berukuran 2 Mb</p>
-                                <p>*File harus berekstensi pdf/docx</p>
+                               
                             </div>
                         </div>
                         <div class="row">
