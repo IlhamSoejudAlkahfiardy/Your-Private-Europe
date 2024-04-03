@@ -1052,16 +1052,16 @@
                             <ul class="sub-menu">
 
                                 <li id="menu-item-2370" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2370">
-                                    <a href="#"><?= lang("text_homepage.services") ?></a><i class="bi bi-chevron-down"></i>
+                                    <a href="/<?= $language ?>/<?= $language == 'id' ? 'layanan-kami' : 'our-services' ?>"><?= lang("text_homepage.services") ?></a><i class="bi bi-chevron-down"></i>
                                 </li>
                                 <li id="menu-item-2370" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2370">
                                     <a href="/<?= $language ?>/<?= $language == 'id' ? 'destinasi' : 'destination' ?>"><?= lang("text_homepage.destination") ?></a><i class="bi bi-chevron-down"></i>
                                 </li>
                                 <li id="menu-item-2370" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2370">
-                                    <a href="#"><?= lang("text_homepage.events") ?></a><i class="bi bi-chevron-down"></i>
+                                    <a href=""><?= lang("text_homepage.events") ?></a><i class="bi bi-chevron-down"></i>
                                 </li>
                                 <li id="menu-item-2370" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2370">
-                                    <a href="#"><?= lang("text_homepage.about_us") ?></a><i class="bi bi-chevron-down"></i>
+                                    <a href="/<?= $language ?>/<?= $language == 'id' ? 'tentang-kami' : 'about-us' ?>"><?= lang("text_homepage.about_us") ?></a><i class="bi bi-chevron-down"></i>
                                 </li>
 
                             </ul>

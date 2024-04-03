@@ -2,7 +2,6 @@
 
 return [
     // text for navbar
-    'home' => 'Home',
     'information' => 'Informasi',
     'destination' => 'Destination',
     'events' => 'Events',

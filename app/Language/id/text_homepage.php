@@ -2,7 +2,6 @@
 
 return [
     // text for navbar
-    'home' => 'Home',
     'information' => 'Informasi',
     'destination' => 'Destinasi',
     'events' => 'Events',
@@ -20,7 +19,7 @@ return [
     'banner_button' => 'Mulai Perjalananmu',
     'trending_destination' => 'Jelajahi Sekarang',
     'all_destination' => 'Lihat Semua Destinasi',
-    'button_about_us' => 'Read More',
+    'button_about_us' => 'Baca Lebih Lanjut',
     'all_faq' => 'Baca Pertanyaan Lainnya',
 
     // text for footer -> quick_link

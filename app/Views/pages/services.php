@@ -3,7 +3,7 @@
 <?= $this->section('content') ?>
 
 <!-- ========== header end============= -->
-<div class="inner-banner-section">
+<div class="inner-banner-section" style="background-image: url(<?= base_url('assets/images/breadcrumb-bg.jpg') ?>);">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-xl-8 col-md-10 col-sm-12">
@@ -11,7 +11,7 @@
                     <h2>
                         Our Services
                     </h2>
-                    <span>Best Images and Video Gallery</span>
+                    <span>Our Services Gallery</span>
                 </div>
             </div>
         </div>
@@ -30,8 +30,9 @@
                                         <div class="destination-section">
                                             <div class="container text-center">
                                                 <div class="nav d-inline-flex flex-row justify-content-center nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                                    <button class="nav-link active nav-btn-style  mb-20" id="v-pills-information-tab" data-bs-toggle="pill" data-bs-target="#v-pills-information" type="button" role="tab" aria-controls="v-pills-information" aria-selected="true"><i class="bi bi-card-image"></i> Image Gallery</button>
-                                                    <button class="nav-link nav-btn-style mb-20" id="v-pills-plan-tab" data-bs-toggle="pill" data-bs-target="#v-pills-plan" type="button" role="tab" aria-controls="v-pills-plan" aria-selected="true"><i class="bi bi-play-btn"></i> Video Gallery</button>
+                                                    <button class="nav-link active nav-btn-style  mb-20" id="v-pills-information-tab" data-bs-toggle="pill" data-bs-target="#v-pills-information" type="button" role="tab" aria-controls="v-pills-information" aria-selected="true">VIP Services</button>
+                                                    <button class="nav-link nav-btn-style mb-20" id="v-pills-plan-tab" data-bs-toggle="pill" data-bs-target="#v-pills-plan" type="button" role="tab" aria-controls="v-pills-plan" aria-selected="true">Private Tour</button>
+                                                    <button class="nav-link nav-btn-style mb-20" id="v-pills-plan-tab-2" data-bs-toggle="pill" data-bs-target="#v-pills-plan-2" type="button" role="tab" aria-controls="v-pills-plan-2" aria-selected="true">MICE</button>
                                                 </div>
 
                                                 <div class="tab-content mt-40" id="v-pills-tabContent">
@@ -42,25 +43,25 @@
                                                                     <div class="image-view">
                                                                         <a href="https://astrip-wp.b-cdn.net/wp-content/uploads/2022/10/gallery-img1-1.png" class="video-icon image-open"><i class="bi bi-binoculars"></i></a>
                                                                     </div>
-                                                                    <img decoding="async" src="images/gallery-img1-1.png" class="img-fluid" alt="image">
+                                                                    <img loading="lazy" decoding="async" src="<?= base_url('assets/images/services/gallery-img1-1.png')?>" class="img-fluid" alt="image">
                                                                 </div>
                                                                 <div class="image-gallery-single position-relative">
                                                                     <div class="image-view">
-                                                                        <a href="https://astrip-wp.b-cdn.net/wp-content/uploads/2022/10/gallery-img4-1.png" class="video-icon image-open"><i class="bi bi-binoculars"></i></a>
+                                                                        <a href="https://astrip-wp.b-cdn.net/wp-content/uploads/2022/10/gallery-img4-1" class="video-icon image-open"><i class="bi bi-binoculars"></i></a>
                                                                     </div>
-                                                                    <img decoding="async" src="images/gallery-img4-1.png" class="img-fluid" alt="image">
+                                                                    <img loading="lazy" decoding="async" src="<?= base_url('assets/images/services/gallery-img4-1.png')?>" class="img-fluid" alt="image">
                                                                 </div>
                                                                 <div class="image-gallery-single position-relative">
                                                                     <div class="image-view">
                                                                         <a href="https://astrip-wp.b-cdn.net/wp-content/uploads/2022/10/gallery-img7-1.png" class="video-icon image-open"><i class="bi bi-binoculars"></i></a>
                                                                     </div>
-                                                                    <img decoding="async" src="images/gallery-img7-1.png" class="img-fluid" alt="image">
+                                                                    <img loading="lazy" decoding="async" src="<?= base_url('assets/images/services/gallery-img7-1.png')?>" class="img-fluid" alt="image">
                                                                 </div>
                                                                 <div class="image-gallery-single position-relative">
                                                                     <div class="image-view">
                                                                         <a href="https://astrip-wp.b-cdn.net/wp-content/uploads/2022/10/gallery-img10.png" class="video-icon image-open"><i class="bi bi-binoculars"></i></a>
                                                                     </div>
-                                                                    <img decoding="async" src="images/gallery-img10.png" class="img-fluid" alt="image">
+                                                                    <img loading="lazy" decoding="async" src="<?= base_url('assets/images/services/gallery-img10.png')?>" class="img-fluid" alt="image">
                                                                 </div>
                                                             </div>
                                                             <div class="col-lg-4 col-md-4 col-sm-4">
@@ -68,25 +69,25 @@
                                                                     <div class="image-view">
                                                                         <a href="https://astrip-wp.b-cdn.net/wp-content/uploads/2022/10/gallery-img2-1.png" class="video-icon image-open"><i class="bi bi-binoculars"></i></a>
                                                                     </div>
-                                                                    <img decoding="async" src="images/gallery-img2-1.png" class="img-fluid" alt="image">
+                                                                    <img loading="lazy" decoding="async" src="<?= base_url('assets/images/services/gallery-img2-1.png')?>" class="img-fluid" alt="image">
                                                                 </div>
                                                                 <div class="image-gallery-single position-relative">
                                                                     <div class="image-view">
                                                                         <a href="https://astrip-wp.b-cdn.net/wp-content/uploads/2022/10/gallery-img5-1.png" class="video-icon image-open"><i class="bi bi-binoculars"></i></a>
                                                                     </div>
-                                                                    <img decoding="async" src="images/gallery-img5-1.png" class="img-fluid" alt="image">
+                                                                    <img loading="lazy" decoding="async" src="<?= base_url('assets/images/services/gallery-img5-1.png')?>" class="img-fluid" alt="image">
                                                                 </div>
                                                                 <div class="image-gallery-single position-relative">
                                                                     <div class="image-view">
                                                                         <a href="https://astrip-wp.b-cdn.net/wp-content/uploads/2022/10/gallery-img8-1.png" class="video-icon image-open"><i class="bi bi-binoculars"></i></a>
                                                                     </div>
-                                                                    <img decoding="async" src="images/gallery-img8-1.png" class="img-fluid" alt="image">
+                                                                    <img loading="lazy" decoding="async" src="<?= base_url('assets/images/services/gallery-img8-1.png')?>" class="img-fluid" alt="image">
                                                                 </div>
                                                                 <div class="image-gallery-single position-relative">
                                                                     <div class="image-view">
                                                                         <a href="https://astrip-wp.b-cdn.net/wp-content/uploads/2022/10/gallery-img11.png" class="video-icon image-open"><i class="bi bi-binoculars"></i></a>
                                                                     </div>
-                                                                    <img decoding="async" src="images/gallery-img11.png" class="img-fluid" alt="image">
+                                                                    <img loading="lazy" decoding="async" src="<?= base_url('assets/images/services/gallery-img11.png')?>" class="img-fluid" alt="image">
                                                                 </div>
                                                             </div>
                                                             <div class="col-lg-4 col-md-4 col-sm-4">
@@ -94,25 +95,25 @@
                                                                     <div class="image-view">
                                                                         <a href="https://astrip-wp.b-cdn.net/wp-content/uploads/2022/10/gallery-img3.png" class="video-icon image-open"><i class="bi bi-binoculars"></i></a>
                                                                     </div>
-                                                                    <img decoding="async" src="images/gallery-img3.png" class="img-fluid" alt="image">
+                                                                    <img loading="lazy" decoding="async" src="<?= base_url('assets/images/services/gallery-img3.png')?>" class="img-fluid" alt="image">
                                                                 </div>
                                                                 <div class="image-gallery-single position-relative">
                                                                     <div class="image-view">
                                                                         <a href="https://astrip-wp.b-cdn.net/wp-content/uploads/2022/10/gallery-img6.png" class="video-icon image-open"><i class="bi bi-binoculars"></i></a>
                                                                     </div>
-                                                                    <img decoding="async" src="images/gallery-img6.png" class="img-fluid" alt="image">
+                                                                    <img loading="lazy" decoding="async" src="<?= base_url('assets/images/services/gallery-img6.png')?>" class="img-fluid" alt="image">
                                                                 </div>
                                                                 <div class="image-gallery-single position-relative">
                                                                     <div class="image-view">
                                                                         <a href="https://astrip-wp.b-cdn.net/wp-content/uploads/2022/10/gallery-img9.png" class="video-icon image-open"><i class="bi bi-binoculars"></i></a>
                                                                     </div>
-                                                                    <img decoding="async" src="images/gallery-img9.png" class="img-fluid" alt="image">
+                                                                    <img loading="lazy" decoding="async" src="<?= base_url('assets/images/services/gallery-img9.png')?>" class="img-fluid" alt="image">
                                                                 </div>
                                                                 <div class="image-gallery-single position-relative">
                                                                     <div class="image-view">
                                                                         <a href="https://astrip-wp.b-cdn.net/wp-content/uploads/2023/01/gallery-img12.png" class="video-icon image-open"><i class="bi bi-binoculars"></i></a>
                                                                     </div>
-                                                                    <img decoding="async" src="images/gallery-img12.png" class="img-fluid" alt="image">
+                                                                    <img loading="lazy" decoding="async" src="<?= base_url('assets/images/services/gallery-img12.png')?>" class="img-fluid" alt="image">
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -124,33 +125,13 @@
                                                                     <div class="video-play sibling-4">
                                                                         <a href="https://www.youtube.com/watch?v=u31qwQUeGuM" class="popup-youtube video-icon"><i class="bx bx-play"></i></a>
                                                                     </div>
-                                                                    <img decoding="async" src="images/video-gallery1.png" class="img-fluid" alt="video-thumbnail">
+                                                                    <img loading="lazy" decoding="async" src="<?= base_url('assets/images/services/video-gallery1.png')?>" class="img-fluid" alt="video-thumbnail">
                                                                 </div>
                                                                 <div class="video-gallery-single position-relative">
                                                                     <div class="video-play sibling-4">
                                                                         <a href="https://www.youtube.com/watch?v=u31qwQUeGuM" class="popup-youtube video-icon"><i class="bx bx-play"></i></a>
                                                                     </div>
-                                                                    <img decoding="async" src="images/video-gallery2.png" class="img-fluid" alt="video-thumbnail">
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-lg-4 col-md-4 col-sm-4">
-                                                                <div class="video-gallery-single position-relative">
-                                                                    <div class="video-play sibling-4">
-                                                                        <a href="https://www.youtube.com/watch?v=u31qwQUeGuM" class="popup-youtube video-icon"><i class="bx bx-play"></i></a>
-                                                                    </div>
-                                                                    <img decoding="async" src="images/video-gallery3.png" class="img-fluid" alt="video-thumbnail">
-                                                                </div>
-                                                                <div class="video-gallery-single position-relative">
-                                                                    <div class="video-play sibling-4">
-                                                                        <a href="https://www.youtube.com/watch?v=u31qwQUeGuM" class="popup-youtube video-icon"><i class="bx bx-play"></i></a>
-                                                                    </div>
-                                                                    <img decoding="async" src="images/video-gallery4.png" class="img-fluid" alt="video-thumbnail">
-                                                                </div>
-                                                                <div class="video-gallery-single position-relative">
-                                                                    <div class="video-play sibling-4">
-                                                                        <a href="https://www.youtube.com/watch?v=u31qwQUeGuM" class="popup-youtube video-icon"><i class="bx bx-play"></i></a>
-                                                                    </div>
-                                                                    <img decoding="async" src="images/video-gallery5.png" class="img-fluid" alt="video-thumbnail">
+                                                                    <img loading="lazy" decoding="async" src="<?= base_url('assets/images/services/video-gallery2.png')?>" class="img-fluid" alt="video-thumbnail">
                                                                 </div>
                                                             </div>
                                                             <div class="col-lg-4 col-md-4 col-sm-4">
@@ -158,13 +139,85 @@
                                                                     <div class="video-play sibling-4">
                                                                         <a href="https://www.youtube.com/watch?v=u31qwQUeGuM" class="popup-youtube video-icon"><i class="bx bx-play"></i></a>
                                                                     </div>
-                                                                    <img decoding="async" src="images/video-gallery6.png" class="img-fluid" alt="video-thumbnail">
+                                                                    <img loading="lazy" decoding="async" src="<?= base_url('assets/images/services/video-gallery3.png')?>" class="img-fluid" alt="video-thumbnail">
                                                                 </div>
                                                                 <div class="video-gallery-single position-relative">
                                                                     <div class="video-play sibling-4">
                                                                         <a href="https://www.youtube.com/watch?v=u31qwQUeGuM" class="popup-youtube video-icon"><i class="bx bx-play"></i></a>
                                                                     </div>
-                                                                    <img decoding="async" src="images/video-gallery7.png" class="img-fluid" alt="video-thumbnail">
+                                                                    <img loading="lazy" decoding="async" src="<?= base_url('assets/images/services/video-gallery4.png')?>" class="img-fluid" alt="video-thumbnail">
+                                                                </div>
+                                                                <div class="video-gallery-single position-relative">
+                                                                    <div class="video-play sibling-4">
+                                                                        <a href="https://www.youtube.com/watch?v=u31qwQUeGuM" class="popup-youtube video-icon"><i class="bx bx-play"></i></a>
+                                                                    </div>
+                                                                    <img loading="lazy" decoding="async" src="<?= base_url('assets/images/services/video-gallery5.png')?>" class="img-fluid" alt="video-thumbnail">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                                                <div class="video-gallery-single position-relative">
+                                                                    <div class="video-play sibling-4">
+                                                                        <a href="https://www.youtube.com/watch?v=u31qwQUeGuM" class="popup-youtube video-icon"><i class="bx bx-play"></i></a>
+                                                                    </div>
+                                                                    <img loading="lazy" decoding="async" src="<?= base_url('assets/images/services/video-gallery6.png')?>" class="img-fluid" alt="video-thumbnail">
+                                                                </div>
+                                                                <div class="video-gallery-single position-relative">
+                                                                    <div class="video-play sibling-4">
+                                                                        <a href="https://www.youtube.com/watch?v=u31qwQUeGuM" class="popup-youtube video-icon"><i class="bx bx-play"></i></a>
+                                                                    </div>
+                                                                    <img loading="lazy" decoding="async" src="<?= base_url('assets/images/services/video-gallery7.png')?>" class="img-fluid" alt="video-thumbnail">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="v-pills-plan-2" role="tabpanel" aria-labelledby="v-pills-plan-tab-2">
+                                                        <div class="row justify-content-center g-4">
+                                                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                                                <div class="video-gallery-single position-relative">
+                                                                    <div class="video-play sibling-4">
+                                                                        <a href="https://www.youtube.com/watch?v=u31qwQUeGuM" class="popup-youtube video-icon"><i class="bx bx-play"></i></a>
+                                                                    </div>
+                                                                    <img loading="lazy" decoding="async" src="<?= base_url('assets/images/services/video-gallery1.png')?>" class="img-fluid" alt="video-thumbnail">
+                                                                </div>
+                                                                <div class="video-gallery-single position-relative">
+                                                                    <div class="video-play sibling-4">
+                                                                        <a href="https://www.youtube.com/watch?v=u31qwQUeGuM" class="popup-youtube video-icon"><i class="bx bx-play"></i></a>
+                                                                    </div>
+                                                                    <img loading="lazy" decoding="async" src="<?= base_url('assets/images/services/video-gallery2.png')?>" class="img-fluid" alt="video-thumbnail">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                                                <div class="video-gallery-single position-relative">
+                                                                    <div class="video-play sibling-4">
+                                                                        <a href="https://www.youtube.com/watch?v=u31qwQUeGuM" class="popup-youtube video-icon"><i class="bx bx-play"></i></a>
+                                                                    </div>
+                                                                    <img loading="lazy" decoding="async" src="<?= base_url('assets/images/services/video-gallery3.png')?>" class="img-fluid" alt="video-thumbnail">
+                                                                </div>
+                                                                <div class="video-gallery-single position-relative">
+                                                                    <div class="video-play sibling-4">
+                                                                        <a href="https://www.youtube.com/watch?v=u31qwQUeGuM" class="popup-youtube video-icon"><i class="bx bx-play"></i></a>
+                                                                    </div>
+                                                                    <img loading="lazy" decoding="async" src="<?= base_url('assets/images/services/video-gallery4.png')?>" class="img-fluid" alt="video-thumbnail">
+                                                                </div>
+                                                                <div class="video-gallery-single position-relative">
+                                                                    <div class="video-play sibling-4">
+                                                                        <a href="https://www.youtube.com/watch?v=u31qwQUeGuM" class="popup-youtube video-icon"><i class="bx bx-play"></i></a>
+                                                                    </div>
+                                                                    <img loading="lazy" decoding="async" src="<?= base_url('assets/images/services/video-gallery5.png')?>" class="img-fluid" alt="video-thumbnail">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                                                <div class="video-gallery-single position-relative">
+                                                                    <div class="video-play sibling-4">
+                                                                        <a href="https://www.youtube.com/watch?v=u31qwQUeGuM" class="popup-youtube video-icon"><i class="bx bx-play"></i></a>
+                                                                    </div>
+                                                                    <img loading="lazy" decoding="async" src="<?= base_url('assets/images/services/video-gallery6.png')?>" class="img-fluid" alt="video-thumbnail">
+                                                                </div>
+                                                                <div class="video-gallery-single position-relative">
+                                                                    <div class="video-play sibling-4">
+                                                                        <a href="https://www.youtube.com/watch?v=u31qwQUeGuM" class="popup-youtube video-icon"><i class="bx bx-play"></i></a>
+                                                                    </div>
+                                                                    <img loading="lazy" decoding="async" src="<?= base_url('assets/images/services/video-gallery7.png')?>" class="img-fluid" alt="video-thumbnail">
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -207,22 +260,22 @@
                                         <div class="elementor-image-carousel-wrapper swiper-container" dir="ltr">
                                             <div class="elementor-image-carousel swiper-wrapper" aria-live="polite">
                                                 <div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="1 of 6">
-                                                    <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="images/partner6.svg" alt="partner6"></figure>
+                                                    <figure class="swiper-slide-inner"><img loading="lazy" decoding="async" class="swiper-slide-image" src="<?= base_url('assets/images/services/partner6.svg')?>" alt="partner6"></figure>
                                                 </div>
                                                 <div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="2 of 6">
-                                                    <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="images/partner5.svg" alt="partner5"></figure>
+                                                    <figure class="swiper-slide-inner"><img loading="lazy" decoding="async" class="swiper-slide-image" src="<?= base_url('assets/images/services/partner5.svg')?>" alt="partner5"></figure>
                                                 </div>
                                                 <div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="3 of 6">
-                                                    <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="images/partner4.svg" alt="partner4"></figure>
+                                                    <figure class="swiper-slide-inner"><img loading="lazy" decoding="async" class="swiper-slide-image" src="<?= base_url('assets/images/services/partner4.svg')?>" alt="partner4"></figure>
                                                 </div>
                                                 <div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="4 of 6">
-                                                    <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="images/partner3.svg" alt="partner3"></figure>
+                                                    <figure class="swiper-slide-inner"><img loading="lazy" decoding="async" class="swiper-slide-image" src="<?= base_url('assets/images/services/partner3.svg')?>" alt="partner3"></figure>
                                                 </div>
                                                 <div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="5 of 6">
-                                                    <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="images/partner2.svg" alt="partner2"></figure>
+                                                    <figure class="swiper-slide-inner"><img loading="lazy" decoding="async" class="swiper-slide-image" src="<?= base_url('assets/images/services/partner2.svg')?>" alt="partner2"></figure>
                                                 </div>
                                                 <div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="6 of 6">
-                                                    <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="images/partner1.svg" alt="partner1"></figure>
+                                                    <figure class="swiper-slide-inner"><img loading="lazy" decoding="async" class="swiper-slide-image" src="<?= base_url('assets/images/services/partner1.svg')?>" alt="partner1"></figure>
                                                 </div>
                                             </div>
 
