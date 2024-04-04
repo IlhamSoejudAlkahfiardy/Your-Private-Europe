@@ -80,12 +80,12 @@
                 </section>
                 <section class="elementor-section elementor-top-section elementor-element elementor-element-d4c9e73 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="d4c9e73" data-element_type="section">
                     <div class="elementor-container elementor-column-gap-extended">
-                        <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-2ba5177" data-id="2ba5177" data-element_type="column">
-                            <div class="elementor-widget-wrap elementor-element-populated">
+                        <div class="elementor-column elementor-col-33  elementor-top-column  elementor-element elementor-element-2ba5177" data-id="2ba5177" data-element_type="column">
+                            <div class="elementor-widget-wrap elementor-element-populated d-flex flex-column h-100">
                                 <div class="elementor-element elementor-element-548447f elementor-widget elementor-widget-astrip_address" data-id="548447f" data-element_type="widget" data-widget_type="astrip_address.default">
-                                    <div class="elementor-widget-container">
-                                        <div class="justify-content-center">
-                                            <div class="info-single">
+                                    <div class="elementor-widget-container ">
+                                        <div class="justify-content-center ">
+                                            <div class="info-single d-flex flex-column h-100" style="height: 100% !important;">
                                                 <div class="info-icon">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
                                                         <g clip-path="url(#clip0_2_33)">
@@ -109,12 +109,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-1cedcf7" data-id="1cedcf7" data-element_type="column">
-                            <div class="elementor-widget-wrap elementor-element-populated">
+                        <div class="elementor-column elementor-col-33  elementor-top-column  elementor-element elementor-element-1cedcf7" data-id="1cedcf7" data-element_type="column">
+                            <div class="elementor-widget-wrap elementor-element-populated d-flex flex-column h-100">
                                 <div class="elementor-element elementor-element-0544b8e elementor-widget elementor-widget-astrip_address" data-id="0544b8e" data-element_type="widget" data-widget_type="astrip_address.default">
-                                    <div class="elementor-widget-container">
-                                        <div class="justify-content-center">
-                                            <div class="info-single">
+                                    <div class="elementor-widget-container ">
+                                        <div class="justify-content-center ">
+                                            <div class="info-single d-flex flex-column h-100" style="height: 100% !important;">
                                                 <div class="info-icon">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
                                                         <g clip-path="url(#clip0_2_23)">
@@ -140,12 +140,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-a167866" data-id="a167866" data-element_type="column">
-                            <div class="elementor-widget-wrap elementor-element-populated">
+                        <div class="elementor-column elementor-col-33  elementor-top-column  elementor-element elementor-element-a167866" data-id="a167866" data-element_type="column">
+                            <div class="elementor-widget-wrap elementor-element-populated d-flex flex-column h-100">
                                 <div class="elementor-element elementor-element-dd65598 elementor-widget elementor-widget-astrip_address" data-id="dd65598" data-element_type="widget" data-widget_type="astrip_address.default">
-                                    <div class="elementor-widget-container">
-                                        <div class="justify-content-center">
-                                            <div class="info-single">
+                                    <div class="elementor-widget-container ">
+                                        <div class="justify-content-center ">
+                                            <div class="info-single d-flex flex-column h-100" style="height: 100% !important;">
                                                 <div class="info-icon">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
                                                         <g clip-path="url(#clip0_2_29)">

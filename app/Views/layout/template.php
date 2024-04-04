@@ -833,7 +833,7 @@
         }
     </style>
     <!-- <link rel="stylesheet" id="google-fonts-css" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&amp;family=Satisfy&amp;family=Work+Sans:wght@300;400;500;600;700;800;900&amp;display=swap" media="all" /> -->
-    <link rel="stylesheet" id="google-fonts-css" href=href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" media="all" />
+    <link rel="stylesheet" id="google-fonts-css" href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" media="all" />
     <link rel="stylesheet" id="animate-css" href="<?= base_url('assets/css/animate.css') ?>" media="all" />
     <link rel="stylesheet" id="bootstrap-css" href="<?= base_url('assets/css/bootstrap.min.css') ?>" media="all" />
     <link rel="stylesheet" id="boxicons-css" href="<?= base_url('assets/css/boxicons.min.css') ?>" media="all" />
@@ -1040,9 +1040,10 @@
                 </div>
                 <div class="main-nav-wrapper">
                     <ul id="menu-main-menu" class="ul">
-
                         <li id="menu-item-2339" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2339">
-                            <a href="/<?= $language ?>"><?= lang("text_homepage.home") ?></a>
+                            <a href="/<?= $language ?>">
+                                <img style="margin-bottom: 3px;" src="<?= base_url('assets/images/house-solid.svg') ?>" alt="link-home" width="20" height="20">
+                            </a>
                         </li>
                         <li id="menu-item-1995" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1995">
                             <a href="#">Travel Agent & Corporate</a><i class="bi bi-chevron-down"></i>
@@ -1061,31 +1062,31 @@
                                     <a href=""><?= lang("text_homepage.events") ?></a><i class="bi bi-chevron-down"></i>
                                 </li>
                                 <li id="menu-item-2370" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2370">
-                                    <a href="/<?= $language ?>/<?= $language == 'id' ? 'tentang-kami' : 'about-us' ?>"><?= lang("text_homepage.about_us") ?></a><i class="bi bi-chevron-down"></i>
+                                    <a href="/<?= $language ?>/blog"><?= lang("text_homepage.blog") ?></a><i class="bi bi-chevron-down"></i>
                                 </li>
 
                             </ul>
                         </li>
 
-                        <li id="menu-item-2015" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2015">
-                            <a href="/<?= $language ?>/article"><?= lang("text_homepage.blog") ?></a>
-
+                        <li id="menu-item-2013" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2013">
+                            <a href="/<?= $language ?>/<?= $language == 'id' ? 'tentang-kami' : 'about-us' ?>"><?= lang("text_homepage.about_us") ?></a>
                         </li>
 
                         <li id="menu-item-2013" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2013">
-                            <a href="#"><?= lang("text_homepage.help_support_navbar") ?></a><i class="bi bi-chevron-down"></i>
-                            <ul class="sub-menu">
-                                <li id="menu-item-2017" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2017">
-                                    <a href="/<?= $language ?>/<?= $language == 'id' ? 'hubungi-kami' : 'contact-us' ?>"><?= lang("text_homepage.contact_us") ?></a><i class="bi bi-chevron-down"></i>
-                                </li>
-                                <li id="menu-item-1999" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1999">
-                                    <a href="/<?= $language ?>/faq">FAQ</a><i class="bi bi-chevron-down"></i>
-                                </li>
-
-                            </ul>
+                            <a href="/<?= $language ?>/<?= $language == 'id' ? 'hubungi-kami' : 'contact-us' ?>"><?= lang("text_homepage.contact_us") ?></a>
                         </li>
                         <li id="menu-item-2013" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2013">
-                            <a href="#"><?= lang("text_homepage.language") ?></a><i class="bi bi-chevron-down"></i>
+                            <a href="/<?= $language ?>/faq">FAQ</a>
+                        </li>
+                        <li id="menu-item-2013" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2013">
+                            <a href="/<?= $language ?>/faq">
+                                <?php if ($language == 'id') { ?>
+                                    <img loading="lazy" src="<?= base_url('assets/images/language/id_ID.png') ?>" alt="indonesian" width="18" height="12">
+                                <?php } else { ?>
+                                    <img loading="lazy" src="<?= base_url('assets/images/language/en_US.png') ?>" alt="english" width="18" height="12">
+                                <?php } ?>
+                            </a>
+                            <i class="bi bi-chevron-down"></i>
                             <ul class="sub-menu">
                                 <li id="menu-item-1984" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1984">
                                     <a href="<?= site_url('lang/id'); ?>">Indonesian</a><i class="bi bi-chevron-down"></i>

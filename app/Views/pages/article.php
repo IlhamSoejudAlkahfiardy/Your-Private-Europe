@@ -39,7 +39,7 @@
 
                                     <div class="blog-content">
                                         <h3>
-                                            <a href="/<?= $language ?>/article/<?= $article['slug'] . '/' . $article['id'] ?>">
+                                            <a href="/<?= $language ?>/blog/<?= $article['slug'] . '/' . $article['id'] ?>">
                                                 <?= $language == 'id' ? $article['title_id'] : $article['title_en'] ?>
                                             </a>
                                         </h3>
@@ -51,16 +51,8 @@
                                         </p>
 
                                         <div class="blog-meta">
-                                            <a href="/<?= $language ?>/article/<?= $article['slug'] . '/' . $article['id']  ?>" class="read-more-btn">Continue Reading<i class="bi bi-arrow-right"></i></a>
-                                            <ul class="share-list">
-                                                <li><i class="bi bi-share"></i>SHARE: <ul class="blog-social">
-                                                        <li><a href="#"><i class="bx bxl-facebook"></i></a></li>
-                                                        <li><a href="#"><i class="bx bxl-twitter"></i></a></li>
-                                                        <li><a href="#"><i class="bx bxl-instagram"></i></a></li>
-                                                        <li><a href="#"><i class="bx bxl-pinterest"></i></a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
+                                            <a href="/<?= $language ?>/blog/<?= $article['slug'] . '/' . $article['id']  ?>" class="read-more-btn">Continue Reading<i class="bi bi-arrow-right"></i></a>
+
                                         </div>
                                     </div>
                                 </div>
@@ -69,13 +61,13 @@
                     <?php endforeach; ?>
 
                 </div>
-                <nav aria-label="Page navigation" class="pagination-wrap">
+                <!-- <nav aria-label="Page navigation" class="pagination-wrap">
                     <ul class="pagination d-flex justify-content-center gap-md-3 gap-2">
                         <li class="active"><a href="#" aria-current="page" class=" current">01</a></li>
                         <li><a class="" href="#">02</a></li>
                         <li><a class="next " href="#">NEXT <i class="bi bi-arrow-right"></i> </a></li>
                     </ul>
-                </nav>
+                </nav> -->
             </div>
             <div class="col-lg-4">
                 <div class="blog-sidebar ps-lg-4">
@@ -112,7 +104,7 @@
                             </div>
                         </div>
                     </div>
-                    <div id="block-21" class="blog-widget-item widget_block">
+                    <!-- <div id="block-21" class="blog-widget-item widget_block">
                         <div class="wp-block-group is-layout-flow wp-block-group-is-layout-flow">
                             <div class="wp-block-group__inner-container">
                                 <h2 class="wp-block-heading">
@@ -134,7 +126,7 @@
                                 </ul>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <div id="block-23" class="blog-widget-item widget_block">
                         <div class="wp-block-group is-layout-flow wp-block-group-is-layout-flow">
                             <div class="wp-block-group__inner-container">

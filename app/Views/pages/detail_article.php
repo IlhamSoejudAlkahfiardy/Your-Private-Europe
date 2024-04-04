@@ -9,7 +9,7 @@
             font-size: 1rem;
             font-weight: 600;
             color: white;
-            text-shadow: 2px 2px #e0bc6d;
+            text-shadow: 1px 1px #69727d;
         }
     }
 
@@ -19,7 +19,7 @@
             font-size: 3.5rem;
             font-weight: 600;
             color: white;
-            text-shadow: 2px 2px #e0bc6d;
+            text-shadow: 2px 2px #69727d;
         }
     }
 
@@ -29,7 +29,7 @@
             font-size: 4.5rem;
             font-weight: 700;
             color: white;
-            text-shadow: 2px 2px #e0bc6d;
+            text-shadow: 2px 2px #69727d;
         }
     }
 
@@ -39,7 +39,7 @@
             font-size: 5.5rem;
             font-weight: 700;
             color: white;
-            text-shadow: 2px 2px #e0bc6d;
+            text-shadow: 2px 2px #69727d;
         }
     }
 
@@ -49,7 +49,7 @@
             font-size: 5.5rem;
             font-weight: 700;
             color: white;
-            text-shadow: 2px 2px #e0bc6d;
+            text-shadow: 2px 2px #69727d;
         }
     }
 </style>
@@ -90,74 +90,10 @@
                                     <?= $language == 'id' ? $article['description_id'] : $article['description_en'] ?>
 
                                 </div>
-                                <div class="blog-share-area">
-                                    <div class="row">
-                                        <div class="col-md-9">
-                                            <!-- <div class="blog-tag-area">
-                                                <h6>Tags:</h6>
-                                                <a href="#tag/hotel/" rel="tag">Hotel</a><a href="#tag/tours/" rel="tag">Tours</a><a href="#tag/travel/" rel="tag">Travel</a><a href="#tag/vacation/" rel="tag">Vacation</a>
-                                            </div> -->
-                                        </div>
-                                        <div class="col-md-3">
-                                            <div class="blog-share">
-                                                <div class="front">
-                                                    <i class="bi bi-share"></i> <span>SHARE:</span>
-                                                </div>
-                                                <div class="back">
-                                                    <ul class="share-list d-flex justify-content-end flex-row align-items-center gap-3">
-                                                        <li><a href="#"><i class="bx bxl-facebook"></i></a></li>
-                                                        <li><a href="#"><i class="bx bxl-twitter"></i></a></li>
-                                                        <li><a href="#"><i class="bx bxl-instagram"></i></a></li>
-                                                        <li><a href="#"><i class="bx bxl-pinterest"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- <div class="blog-details-author">
-                                    <div class="author-image">
-                                        <img alt="" src="https://secure.gravatar.com/avatar/2ac0b89ced4ce2e492cab4aaf8529ac5?s=80&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/2ac0b89ced4ce2e492cab4aaf8529ac5?s=160&amp;d=mm&amp;r=g 2x" class="avatar avatar-80 photo" height="80" width="80" loading="lazy" decoding="async">
-                                    </div>
-                                    <div class="author-content">
-                                        <h5><a href="#author/shafiqul/">Shafiqul</a></h5>
-                                        <p>Orem ipsum dolor sit &amp;, sdt consectetu adipiscing elit. Aenean commodo ligula eget dolor. Cum socis Theme sed natoque ut Etiam ultricies nisi vel augue.</p>
-                                        <ul class="blog-author-social d-flex justify-content-lg-start justify-content-center flex-row align-items-center gap-4">
-                                            <li><a href="https://www.facebook.com/"><i class="bx bxl-facebook"></i></a></li>
-                                            <li><a href="https://www.twitter.com/"><i class="bx bxl-twitter"></i></a></li>
-                                            <li><a href="https://www.instagram.com/"><i class="bx bxl-instagram"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div> -->
 
                             </div>
                         </div>
                     </article>
-
-                    <!-- <div class="blog-comment-form">
-                        <div class="contact-from-wrapper">
-
-                            <div id="respond" class="comment-respond">
-                                <h3 id="reply-title" class="comment-reply-title">Leave a Comment <small><a rel="nofollow" id="cancel-comment-reply-link" href="/li-river-chinas-orignial-postcard-landcaspe/#respond" style="display:none;">Cancel reply</a></small></h3>
-                                <form action="#wp-comments-post.php" method="post" id="commentform" class="comment-form">
-                                    <p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> <span class="required-field-message">Required fields are marked <span class="required">*</span></span></p>
-                                    <div class="row">
-                                        <div class="col-md-6"><input id="author" name="author" type="text" value="" placeholder="Your Name" aria-required="'true'"></div>
-                                        <div class="col-md-6"> <input id="email" name="email" type="email" value="" placeholder="Your Email" aria-required="'true'"></div>
-                                        <p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes"><label for="wp-comment-cookies-consent">Save my name, email in this browser for the next time I comment.</label></p>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-12"><textarea class=" text__area" id="comment" name="comment" cols="45" rows="8" placeholder="Type Your Comment"></textarea></div>
-                                    </div>
-                                    <p class="form-submit"><input name="submit" type="submit" id="submit" class="eg-btn btn--primary btn--lg submit-btn" value="Submit Comment"> <input type="hidden" name="comment_post_ID" value="2537" id="comment_post_ID">
-                                        <input type="hidden" name="comment_parent" id="comment_parent" value="0">
-                                    </p>
-                                </form>
-                            </div>
-                        </div>
-
-                    </div> -->
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-10">
@@ -193,7 +129,7 @@
                             </div>
                         </div>
                     </div>
-                    <div id="block-21" class="blog-widget-item widget_block">
+                    <!-- <div id="block-21" class="blog-widget-item widget_block">
                         <div class="wp-block-group is-layout-flow wp-block-group-is-layout-flow">
                             <div class="wp-block-group__inner-container">
                                 <h2 class="wp-block-heading">
@@ -215,7 +151,7 @@
                                 </ul>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <div id="block-23" class="blog-widget-item widget_block">
                         <div class="wp-block-group is-layout-flow wp-block-group-is-layout-flow">
                             <div class="wp-block-group__inner-container">

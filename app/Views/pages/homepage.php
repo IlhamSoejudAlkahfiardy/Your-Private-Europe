@@ -5,12 +5,15 @@
     /* Responsiveness for mobile (375px) */
     @media (min-width: 0px) {
         #heading1-homepage {
+            width: 100%;
+            text-align: center;
             font-size: 2.5rem;
             font-weight: 600;
-            text-shadow: 2px 2px #e0bc6d;
+            text-shadow: 1px 1px #69727d;
         }
 
         #heading2-banner-homepage {
+            text-align: center;
             font-size: 1.5rem;
             font-weight: 400;
             color: #fff
@@ -23,12 +26,15 @@
 
     @media (min-width: 425px) {
         #heading1-homepage {
+            width: 100%;
+            text-align: center;
             font-size: 1rem;
             font-weight: 600;
-            text-shadow: 2px 2px #e0bc6d;
+            text-shadow: 2px 2px #69727d;
         }
 
         #heading2-banner-homepage {
+            text-align: center;
             font-size: 1rem;
             font-weight: 400;
             color: #fff
@@ -38,12 +44,15 @@
     /* Responsiveness for tablet (768px) */
     @media (min-width: 376px) and (max-width: 768px) {
         #heading1-homepage {
+            width: 100%;
+            text-align: center;
             font-size: 3.5rem;
             font-weight: 600;
-            text-shadow: 2px 2px #e0bc6d;
+            text-shadow: 2px 2px #69727d;
         }
 
         #heading2-banner-homepage {
+            text-align: center;
             font-size: 2.25rem;
             font-weight: 400;
             color: #fff
@@ -53,12 +62,15 @@
     /* Responsiveness for laptop (1024px) */
     @media (min-width: 769px) and (max-width: 1024px) {
         #heading1-homepage {
+            width: 100%;
+            text-align: center;
             font-size: 4.5rem;
             font-weight: 700;
-            text-shadow: 2px 2px #e0bc6d;
+            text-shadow: 2px 2px #69727d;
         }
 
         #heading2-banner-homepage {
+            text-align: center;
             font-size: 3.25rem;
             font-weight: 500;
             color: #fff
@@ -68,12 +80,15 @@
     /* Responsiveness for large laptop (1440px) */
     @media (min-width: 1025px) and (max-width: 1440px) {
         #heading1-homepage {
+            width: 100%;
+            text-align: center;
             font-size: 5.5rem;
             font-weight: 700;
-            text-shadow: 2px 2px #e0bc6d;
+            text-shadow: 2px 2px #69727d;
         }
 
         #heading2-banner-homepage {
+            text-align: center;
             font-size: 3.25rem;
             font-weight: 500;
             color: #fff
@@ -85,10 +100,11 @@
         #heading1-homepage {
             font-size: 5.5rem;
             font-weight: 700;
-            text-shadow: 2px 2px #e0bc6d;
+            text-shadow: 2px 2px #69727d;
         }
 
         #heading2-banner-homepage {
+            text-align: center;
             font-size: 3.25rem;
             font-weight: 500;
             color: #fff
@@ -110,19 +126,27 @@
                                         <div class="swiper-slide">
                                             <img loading="lazy" decoding="async" src="<?= base_url('assets/images/slide-1.jpg') ?>" alt="" />
                                             <div class=" hero-wrapper">
-                                                <div class="container">
-                                                    <div class="row">
+                                                <div class="container" style="display: flex;justify-content: center;align-items: center;">
+                                                    <div class="row" style="margin: auto; display: flex;justify-content: center;">
                                                         <div class="col-12 col-lg-9">
                                                             <div class="hero-content" id="slider-homepage">
                                                                 <!-- <span id="subtitle-banner-homepage"><?= $language == 'id' ? $homepage['sub_title_id'] : $homepage['sub_title_en'] ?></span> -->
                                                                 <h1 id="heading1-homepage"><?= $language == 'id' ? $homepage['title_id'] : $homepage['title_en']  ?></h1>
-                                                                <h2 id="heading2-banner-homepage">
-                                                                    <a href="#">
-                                                                        <?= $language == 'id' ? $homepage['description_id'] : $homepage['description_en'] ?>
+                                                                <h2 id="heading2-banner-homepage" style="text-shadow: 2px 2px #69727d;">
+                                                                    <a href="/<?= $language ?>/<?= $language == 'id' ? 'layanan-kami' : 'our-services' ?>">
+                                                                        VIP Services
+                                                                    </a>
+                                                                    |
+                                                                    <a href="/<?= $language ?>/<?= $language == 'id' ? 'layanan-kami' : 'our-services' ?>">
+                                                                        Private Tour
+                                                                    </a>
+                                                                    |
+                                                                    <a href="/<?= $language ?>/<?= $language == 'id' ? 'layanan-kami' : 'our-services' ?>">
+                                                                        MICE
                                                                     </a>
                                                                 </h2>
 
-                                                                <div class="btn-group">
+                                                                <div class="btn-group" style="display: flex;justify-content: center;">
                                                                     <div class="dsc-btn">
                                                                         <a href="#" style="background-color: #e0bc6d;" onmouseout="this.style.cursor='default'" onmouseover="this.style.cursor='pointer'">
                                                                             <i aria-hidden="true" class="fab fa-telegram-plane"></i>
@@ -190,7 +214,7 @@
                                                 <div class="coundown d-flex flex-column">
                                                     <div class="d-flex flex-row justify-content-center align-items-center gap-2">
                                                         <div class="plus-icon">
-                                                            <h3 class="odometer" data-odometer-final="2017">�&nbsp;</h3>
+                                                            <h3 class="odometer" data-odometer-final="2017"></h3>
                                                         </div>
                                                     </div>
                                                     <p>
@@ -495,7 +519,7 @@
         </div>
     </section>
 
-    <section style="margin-top: 60px !important;" class="elementor-section elementor-top-section elementor-element elementor-element-86a3b54 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="86a3b54" data-element_type="section">
+    <section style="margin-top: 60px !important; background-color: #F9F9F9;" class="elementor-section elementor-top-section elementor-element elementor-element-86a3b54 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="86a3b54" data-element_type="section">
         <div class="elementor-container elementor-column-gap-default" style="max-width: 1140px;">
             <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-0442f94" data-id="0442f94" data-element_type="column">
                 <div class="elementor-widget-wrap elementor-element-populated">
@@ -539,7 +563,7 @@
             </div>
         </div>
     </section>
-    <section class="elementor-section elementor-top-section elementor-element elementor-element-e2c78fd elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="e2c78fd" data-element_type="section">
+    <section style="background-color: #F9F9F9;" class="elementor-section elementor-top-section elementor-element elementor-element-e2c78fd elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="e2c78fd" data-element_type="section">
         <div class="elementor-container elementor-column-gap-default" style="display: flex;justify-content: center; padding: 50px 0px 0px 0px;">
             <div class="elementor-column elementor-col-66 elementor-top-column elementor-element elementor-element-b17fe2a" data-id="b17fe2a" data-element_type="column" style="width: 100%;">
                 <div class="elementor-widget-wrap elementor-element-populated">
@@ -759,17 +783,17 @@
                             <div class="category-section">
                                 <div class="row justify-content-center g-xxl-5 g-4">
                                     <?php foreach ($commitments as $commitment) : ?>
-                                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-10">
-                                            <div class="category-single1">
+                                        <div class="col-xl-2 col-lg-3 col-md-6 col-sm-10 ">
+                                            <div class="category-single1 d-flex flex-column h-100">
                                                 <div class="icon">
                                                     <img loading="lazy" style="max-width: 44px;" src="<?= base_url('assets/images/commitments/') . $commitment['image'] ?>" alt="<?= $commitment['alt_image'] ?>" srcset="">
                                                 </div>
                                                 <div class="content">
-                                                    <h4>
+                                                    <p style="font-weight: 600;">
                                                         <a href="#">
                                                             <?= $language == 'id' ? $commitment['title_id'] : $commitment['title_en'] ?>
                                                         </a>
-                                                    </h4>
+                                                    </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -784,7 +808,7 @@
         </div>
     </section>
 
-    <section class="elementor-section elementor-top-section elementor-element elementor-element-16674b5 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="16674b5" data-element_type="section" style="margin-top: 60px !important;">
+    <section class="elementor-section elementor-top-section elementor-element elementor-element-16674b5 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="16674b5" data-element_type="section" style="margin-top: 60px !important;background-color: #F9F9F9;">
         <div class="elementor-container elementor-column-gap-default">
             <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-2bd2882" data-id="2bd2882" data-element_type="column">
                 <div class="elementor-widget-wrap elementor-element-populated">
@@ -828,7 +852,7 @@
             </div>
         </div>
     </section>
-    <section class="elementor-section elementor-top-section elementor-element elementor-element-535e7b3 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="535e7b3" data-element_type="section">
+    <section style="background-color: #F9F9F9; margin-top: 0px !important;padding-top: 50px !important;" class="elementor-section elementor-top-section elementor-element elementor-element-535e7b3 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="535e7b3" data-element_type="section">
         <div class="elementor-container elementor-column-gap-default">
             <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-811c3aa" data-id="811c3aa" data-element_type="column">
                 <div class="elementor-widget-wrap elementor-element-populated">
@@ -1078,7 +1102,7 @@
         </div>
     </div>
 
-    <section class="elementor-section elementor-top-section elementor-element elementor-element-8104c8f elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="8104c8f" data-element_type="section" style="margin-top: 0px !important;">
+    <section class="elementor-section elementor-top-section elementor-element elementor-element-8104c8f elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="8104c8f" data-element_type="section" style="margin-top: 0px !important;background-color: #F9F9F9;">
         <div class="elementor-container elementor-column-gap-default">
             <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-128b5f8" data-id="128b5f8" data-element_type="column">
                 <div class="elementor-widget-wrap elementor-element-populated">
@@ -1122,7 +1146,7 @@
             </div>
         </div>
     </section>
-    <section class="elementor-section elementor-top-section elementor-element elementor-element-3f21453 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="3f21453" data-element_type="section">
+    <section style="background-color: #F9F9F9; margin-top: 0px !important;padding-top: 50px !important;" class="elementor-section elementor-top-section elementor-element elementor-element-3f21453 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="3f21453" data-element_type="section">
         <div class="elementor-container elementor-column-gap-no">
             <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-fe9d011" data-id="fe9d011" data-element_type="column">
                 <div class="elementor-widget-wrap elementor-element-populated">

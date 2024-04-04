@@ -17,10 +17,10 @@ return [
 
     // text for homepage
     'banner_button' => 'Mulai Perjalananmu',
-    'trending_destination' => 'Jelajahi Sekarang',
-    'all_destination' => 'Lihat Semua Destinasi',
+    'trending_destination' => 'KUNJUNGI SEKARANG',
+    'all_destination' => 'LIHAT SEMUA DESTINASI',
     'button_about_us' => 'Baca Lebih Lanjut',
-    'all_faq' => 'Baca Pertanyaan Lainnya',
+    'all_faq' => 'BACA PERTANYAAN LAINNYA',
 
     // text for footer -> quick_link
     'quick_links' => 'QUICK LINKS',

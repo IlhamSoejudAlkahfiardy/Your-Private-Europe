@@ -17,10 +17,10 @@ return [
 
     // text for homepage
     'banner_button' => 'Start Now',
-    'trending_destination' => 'Explore Now',
-    'all_destination' => 'See All Destination',
+    'trending_destination' => 'EXPLORE NOW',
+    'all_destination' => 'SEE ALL DESTINATION',
     'button_about_us' => 'Read More',
-    'all_faq' => 'Read Other FAQ',
+    'all_faq' => 'READ OTHER FAQ',
 
     // text for footer -> quick_link
     'quick_links' => 'QUICK LINKS',

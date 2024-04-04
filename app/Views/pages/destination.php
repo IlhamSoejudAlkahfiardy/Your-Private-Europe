@@ -16,7 +16,7 @@
         </div>
     </div>
 </div>
-<section class="elementor-section elementor-top-section elementor-element elementor-element-86a3b54 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="86a3b54" data-element_type="section" style="margin-top: 120px">
+<section class="elementor-section elementor-top-section elementor-element elementor-element-86a3b54 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="86a3b54" data-element_type="section" style="margin-top: 60px">
     <div class="elementor-container elementor-column-gap-default">
         <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-0442f94" data-id="0442f94" data-element_type="column">
             <div class="elementor-widget-wrap elementor-element-populated">
@@ -60,7 +60,7 @@
         </div>
     </div>
 </section>
-<div class="pt-120 pb-120">
+<div class="pt-50 pb-50">
     <div class="container">
         <div class="row g-4">
 
@@ -72,9 +72,9 @@
                         </div>
                         <div class="content h-100 d-flex flex-column" style="justify-content: space-between;">
                             <div>
-                                <p> <?= $language == 'id' ? 'Mulai dari Rp' . number_format($destination['price_id'], 2, ',', '.') : 'Start from $' . $destination['price_en'] ?></p>
+                                <!-- <p> <?= $language == 'id' ? 'Mulai dari Rp' . number_format($destination['price_id'], 2, ',', '.') : 'Start from $' . $destination['price_en'] ?></p> -->
                                 <h4>
-                                    <a href="/<?= $language ?>/<?= $language == 'id' ?'destinasi':'destination' ?>/<?= $destination['slug'] ?>">
+                                    <a href="/<?= $language ?>/<?= $language == 'id' ? 'destinasi' : 'destination' ?>/<?= $destination['slug'] ?>">
                                         <?= $destination['title'] ?>
                                     </a>
                                 </h4>
@@ -91,7 +91,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <a href="/<?= $language ?>/<?= $language == 'id' ?'destinasi':'destination' ?>/<?= $destination['slug'] ?>" class="eg-btn btn--primary-outline btn--md"><?= lang('text_destination.explore_button') ?></a>
+                            <a href="/<?= $language ?>/<?= $language == 'id' ? 'destinasi' : 'destination' ?>/<?= $destination['slug'] ?>" class="eg-btn btn--primary-outline btn--md"><?= lang('text_destination.explore_button') ?></a>
                         </div>
                     </div>
                 </div>
