@@ -6,6 +6,7 @@ use App\Models\FAQModel;
 
 use App\Models\DestinationModel;
 use App\Models\FAQCategoryModel;
+use App\Models\SocialMediaModel;
 use App\Controllers\BaseController;
 
 class FAQController extends BaseController
@@ -14,6 +15,7 @@ class FAQController extends BaseController
     protected $destinationModel;
     protected $FAQModel;
     protected $FAQCategoryModel;
+    protected $socmedModel;
 
     protected $currentUrl;
     protected $language;
@@ -23,6 +25,7 @@ class FAQController extends BaseController
         $this->destinationModel = new DestinationModel();
         $this->FAQModel = new FAQModel();
         $this->FAQCategoryModel = new FAQCategoryModel();
+        $this->socmedModel = new SocialMediaModel();
 
         $this->currentUrl = current_url();
         $this->language = session()->get('lang');
@@ -38,6 +41,7 @@ class FAQController extends BaseController
             'navbarDestinations' => $this->destinationModel->select(['title', 'slug'])->findAll(),
             'faqs' => $this->FAQModel->findAll(),
             'faqCategories' => $this->FAQCategoryModel->findAll(),
+            'socmeds' => $this->socmedModel->findAll(),
         ];
 
         // dd($data['faqCategories']);

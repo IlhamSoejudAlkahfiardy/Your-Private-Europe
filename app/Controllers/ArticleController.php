@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 use App\Models\ArticleModel;
 use App\Models\DestinationModel;
+use App\Models\SocialMediaModel;
 use App\Models\ImageArticleModel;
 use App\Controllers\BaseController;
 
@@ -12,6 +13,7 @@ class ArticleController extends BaseController
     protected $articleModel;
     protected $destinationModel;
     protected $imageArticleModel;
+    protected $socmedModel;
 
     protected $currentUrl;
     protected $language;
@@ -21,6 +23,7 @@ class ArticleController extends BaseController
         $this->articleModel = new ArticleModel();
         $this->destinationModel = new DestinationModel();
         $this->imageArticleModel = new ImageArticleModel();
+        $this->socmedModel = new SocialMediaModel();
         $this->currentUrl = current_url();
         $this->language = session()->get('lang');
     }
@@ -35,6 +38,7 @@ class ArticleController extends BaseController
             'navbarDestinations' => $this->destinationModel->select(['title', 'slug'])->findAll(),
             'articles' => $this->articleModel->findAll(),
             'latestArticle' => $this->articleModel->orderBy('id', 'DESC')->limit(5)->findAll(),
+            'socmeds' => $this->socmedModel->findAll(),
         ];
 
         // dd($data['latestArticle']);
@@ -53,6 +57,7 @@ class ArticleController extends BaseController
             'article' => $this->articleModel->where('slug', $slug)->first(),
             'imageArticles' => $this->imageArticleModel->where('article_id', $id)->findAll(),
             'latestArticle' => $this->articleModel->orderBy('id', 'DESC')->limit(5)->findAll(),
+            'socmeds' => $this->socmedModel->findAll(),
         ];
 
         // dd($data['imageArticles']);

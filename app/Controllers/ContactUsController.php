@@ -3,11 +3,13 @@
 namespace App\Controllers;
 
 use App\Models\DestinationModel;
+use App\Models\SocialMediaModel;
 use App\Controllers\BaseController;
 
 class ContactUsController extends BaseController
 {
     protected $destinationModel;
+    protected $socmedModel;
 
     protected $currentUrl;
     protected $language;
@@ -15,6 +17,7 @@ class ContactUsController extends BaseController
     public function __construct()
     {
         $this->destinationModel = new DestinationModel();
+        $this->socmedModel = new SocialMediaModel();
 
         $this->currentUrl = current_url();
         $this->language = session()->get('lang');
@@ -34,6 +37,7 @@ class ContactUsController extends BaseController
             'currentUrl' => $this->currentUrl,
             'language' => $this->language,
             'navbarDestinations' => $this->destinationModel->select(['title', 'slug'])->findAll(),
+            'socmeds' => $this->socmedModel->findAll(),
         ];
 
         echo view('pages/contact_us', $data);

@@ -2,19 +2,20 @@
 
 namespace App\Controllers;
 
-use App\Controllers\BaseController;
-use App\Models\AboutUsModel;
-use App\Models\CommitmentModel;
-use App\Models\HomepageModel;
-use App\Models\ThreePillarsModel;
-use App\Models\HowItWorksModel;
-use App\Models\InstagramPartnersModel;
-use App\Models\TestimonialModel;
-use App\Models\DestinationModel;
-use App\Models\ImageDestinationModel;
-use App\Models\USPModel;
 use App\Models\FAQModel;
+use App\Models\USPModel;
 use CodeIgniter\HTTP\URI;
+use App\Models\AboutUsModel;
+use App\Models\HomepageModel;
+use App\Models\CommitmentModel;
+use App\Models\HowItWorksModel;
+use App\Models\DestinationModel;
+use App\Models\SocialMediaModel;
+use App\Models\TestimonialModel;
+use App\Models\ThreePillarsModel;
+use App\Controllers\BaseController;
+use App\Models\ImageDestinationModel;
+use App\Models\InstagramPartnersModel;
 
 class HomepageController extends BaseController
 {
@@ -29,6 +30,7 @@ class HomepageController extends BaseController
     protected $destinationModel;
     protected $imageDestinationModel;
     protected $FAQModel;
+    protected $socmedModel;
 
     protected $currentUrl;
     protected $language;
@@ -46,6 +48,7 @@ class HomepageController extends BaseController
         $this->destinationModel = new DestinationModel();
         $this->imageDestinationModel = new ImageDestinationModel();
         $this->FAQModel = new FAQModel();
+        $this->socmedModel = new SocialMediaModel();
 
         $this->currentUrl = current_url();
         $this->language = session()->get('lang');
@@ -69,7 +72,7 @@ class HomepageController extends BaseController
             'description' => $this->homepageModel->select(['seo_description_id', 'seo_description_en'])->first(),
             'currentUrl' => $this->currentUrl,
             'language' => $this->language,
-            'navbarDestinations' => $this->destinationModel->select(['title', 'slug'])->findAll(),
+            'socmeds' => $this->socmedModel->findAll(),
             'homepage' => $this->homepageModel->first(),
             'aboutUs' => $this->aboutUsModel->first(),
             'usp' => $this->USPModel->findAll(),
@@ -77,7 +80,6 @@ class HomepageController extends BaseController
             'threePillars' => $this->threePillarsModel->findAll(),
             'howItWorks' => $this->howItWorksModel->findAll(),
             'testimonials' => $this->testimonialModel->findAll(),
-            // 'instagramPartners' => $this->instagramPartnersModel->findAll(),
             'faqs' => $this->FAQModel->where(['id <=' => 5])->orderBy('id', 'DESC')->findAll(),
             'destinations' => $this->destinationModel->select([
                 'destination.title',

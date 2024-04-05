@@ -20,8 +20,10 @@ $routes->get('/en/destination/(:segment)', 'DestinationController::detail/$1');
 
 $routes->get('/id/hubungi-kami', 'ContactUsController::index');
 $routes->get('/en/contact-us', 'ContactUsController::index');
+
 $routes->get('/id/tentang-kami', 'AboutUsController::index');
 $routes->get('/en/about-us', 'AboutUsController::index');
+
 $routes->get('/id/faq', 'FAQController::index');
 $routes->get('/en/faq', 'FAQController::index');
 
@@ -33,6 +35,8 @@ $routes->get('/en/blog/(:segment)/(:segment)', 'ArticleController::detail/$1/$2'
 $routes->get('/id/layanan-kami', 'ServiceController::index');
 $routes->get('/en/our-services', 'ServiceController::index');
 
+$routes->get('/id/corporate-and-travel-agent', 'CorporateController::index');
+$routes->get('/en/corporate-and-travel-agent', 'CorporateController::index');
 
 
 // Page not found handler

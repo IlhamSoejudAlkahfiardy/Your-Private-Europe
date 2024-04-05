@@ -3,12 +3,14 @@
 namespace App\Controllers;
 
 use App\Models\DestinationModel;
+use App\Models\SocialMediaModel;
 use App\Controllers\BaseController;
 use CodeIgniter\HTTP\ResponseInterface;
 
 class ServiceController extends BaseController
 {
     protected $destinationModel;
+    protected $socmedModel;
 
     protected $currentUrl;
     protected $language;
@@ -19,6 +21,7 @@ class ServiceController extends BaseController
 
         $this->currentUrl = current_url();
         $this->language = session()->get('lang');
+        $this->socmedModel = new SocialMediaModel();
     }
 
     public function index()
@@ -35,6 +38,7 @@ class ServiceController extends BaseController
             'currentUrl' => $this->currentUrl,
             'language' => $this->language,
             'navbarDestinations' => $this->destinationModel->select(['title', 'slug'])->findAll(),
+            'socmeds' => $this->socmedModel->findAll(),
         ];
 
         echo view('pages/services', $data);

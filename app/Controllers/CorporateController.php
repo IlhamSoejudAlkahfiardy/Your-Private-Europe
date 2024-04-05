@@ -2,14 +2,17 @@
 
 namespace App\Controllers;
 
+use App\Models\CorporateModel;
 use App\Models\DestinationModel;
 use App\Models\SocialMediaModel;
 use App\Controllers\BaseController;
+use CodeIgniter\HTTP\ResponseInterface;
 
-class AboutUsController extends BaseController
+class CorporateController extends BaseController
 {
-    protected $socmedModel;
     protected $destinationModel;
+    protected $corporateModel;
+    protected $socmedModel;
 
     protected $currentUrl;
     protected $language;
@@ -17,6 +20,7 @@ class AboutUsController extends BaseController
     public function __construct()
     {
         $this->destinationModel = new DestinationModel();
+        $this->corporateModel = new CorporateModel();
         $this->socmedModel = new SocialMediaModel();
 
         $this->currentUrl = current_url();
@@ -26,20 +30,17 @@ class AboutUsController extends BaseController
     public function index(): void
     {
         $data = [
-            'title' => [
-                'seo_tag_title_id' => 'Tentang Kami',
-                'seo_tag_title_en' => 'About Us'
-            ],
-            'description' => [
-                'seo_description_id' => 'Hubungi kami untuk informasi lebih lanjut',
-                'seo_description_en' => 'Contact us for more information'
-            ],
+            'title' => $this->corporateModel->select(['seo_tag_title_id', 'seo_tag_title_en'])->first(),
+            'description' => $this->corporateModel->select(['seo_description_id', 'seo_description_en'])->first(),
             'currentUrl' => $this->currentUrl,
             'language' => $this->language,
             'navbarDestinations' => $this->destinationModel->select(['title', 'slug'])->findAll(),
+            'corporates' => $this->corporateModel->findAll(),
             'socmeds' => $this->socmedModel->findAll(),
         ];
 
-        echo view('pages/about_us', $data);
+        // dd($data['corporates']);
+
+        echo view('pages/corporate', $data);
     }
 }

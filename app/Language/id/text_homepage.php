@@ -2,21 +2,23 @@
 
 return [
     // text for navbar
-    'information' => 'Informasi',
-    'destination' => 'Destinasi',
-    'events' => 'Events',
-    'blog' => 'Blog',
-    'help_support_navbar' => 'Bantuan',
-    'language' => 'Bahasa',
-    'services' => 'Layanan',
+    'information' => 'INFORMASI',
+    'destination' => 'DESTINASI',
+    'events' => 'EVENTS',
+    'blog' => 'BLOG',
+    'help_support_navbar' => 'BANTUAN',
+    'language' => 'BAHASA',
+    'services' => 'LAYANAN',
+    'about_us_navbar' => 'TENTANG KAMI',
+    'contact_us_navbar' => 'HUBUNGI KAMI',
 
     // text for detail company
-    'since_year' => 'TAHUN BERDIRI',
-    'passed_country' => 'DESTINASI NEGARA DI EROPA YANG SUDAH DILAYANI',
-    'rating_customer' => 'RATING KEPUASAN TAMU KAMI',
+    'since_year' => 'Tahun Berdiri',
+    'passed_country' => 'Destinasi Negara di Eropa Yang Sudah Dilayani',
+    'rating_customer' => 'Rating Kepuasan Tamu Kami',
 
     // text for homepage
-    'banner_button' => 'Mulai Perjalananmu',
+    'banner_button' => 'START NOW',
     'trending_destination' => 'KUNJUNGI SEKARANG',
     'all_destination' => 'LIHAT SEMUA DESTINASI',
     'button_about_us' => 'Baca Lebih Lanjut',

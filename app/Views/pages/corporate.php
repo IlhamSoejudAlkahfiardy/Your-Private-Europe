@@ -2,22 +2,24 @@
 
 <?= $this->section('content') ?>
 
-<div class="inner-banner-section" style="background-image: url(<?= base_url('assets/images/destinations/banner.jpg') ?>);">
+<!-- ========== header end============= -->
+
+<div class="inner-banner-section" style="background-image: url(<?= base_url('assets/images/corporate.jpg') ?>);">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-xl-8 col-md-10 col-sm-12">
                 <div class="breadcrumb-area">
-                    <h2>
-                        <?= lang('text_destination.text_banner') ?>
-                    </h2>
-                    <div class="query-data"></div>
+                    <!-- <span>Welcome to Astrip</span> -->
+                    <h2>Corporate & Travel Agent</h2>
+                    <div class="query-data">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<section class="elementor-section elementor-top-section elementor-element elementor-element-86a3b54 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="86a3b54" data-element_type="section" style="margin-top: 60px">
-    <div class="elementor-container elementor-column-gap-default">
+<section style="margin-top: 60px !important" class="elementor-section elementor-top-section elementor-element elementor-element-86a3b54 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="86a3b54" data-element_type="section">
+    <div class="elementor-container elementor-column-gap-default" style="max-width: 1140px;">
         <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-0442f94" data-id="0442f94" data-element_type="column">
             <div class="elementor-widget-wrap elementor-element-populated">
                 <div class="elementor-element elementor-element-3062334 elementor-widget elementor-widget-astrip_heading" data-id="3062334" data-element_type="widget" data-widget_type="astrip_heading.default">
@@ -25,10 +27,10 @@
                         <div class="justify-content-center">
                             <div class="section-title1">
                                 <span>
-                                    <?= lang('text_destination.text_section') ?>
+                                    <?= $language == 'id' ? $corporates[0]['section_id'] : $corporates[0]['section_en'] ?>
                                 </span>
-                                <h3 style="font-size: 30px; font-weight: bold">
-                                    <?= lang('text_destination.text_title') ?>
+                                <h3 style="font-size: 30px; font-weight: bold;">
+                                    <?= $language == 'id' ? $corporates[0]['section_title_id'] : $corporates[0]['section_title_en'] ?>
                                 </h3>
                                 <div class="heading-ribbon">
                                     <svg width="370" height="18" viewBox="0 0 370 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -60,46 +62,42 @@
         </div>
     </div>
 </section>
-<div class="pt-50 pb-50">
+<div class="destination-details-section pt-50 pb-120">
     <div class="container">
-        <div class="row g-4">
+        <div class="row justify-content-center">
 
-            <?php foreach ($destinations as $destination) : ?>
-                <div class="col-lg-4 col-md-6 col-sm-12" id="card-destination">
-                    <div class="best-plan-single1 d-flex flex-column h-100">
-                        <div class="image">
-                            <img width="425" height="345" src="<?= base_url('assets/images/destinations/') . $destination['image'] ?>" class="attachment-egns-img-one size-egns-img-one wp-post-image" alt="<?= $destination['alt_image'] ?>" decoding="async" loading="lazy" />
-                        </div>
-                        <div class="content h-100 d-flex flex-column" style="justify-content: space-between;">
-                            <div>
-                                <!-- <p> <?= $language == 'id' ? 'Mulai dari Rp' . number_format($destination['price_id'], 2, ',', '.') : 'Start from $' . $destination['price_en'] ?></p> -->
-                                <h4>
-                                    <a href="/<?= $language ?>/<?= $language == 'id' ? 'destinasi' : 'destination' ?>/<?= $destination['slug'] ?>">
-                                        <?= $destination['title'] ?>
-                                    </a>
-                                </h4>
-                                <div class="best-plan-meta">
-                                    <span class="duration" style="font-family: 'Oswald';"><i class="bi bi-clock"></i>
-                                        <?= $language == 'id' ? $destination['duration_id'] : $destination['duration_en'] ?>
-                                    </span>
-                                    <span class="rating"> </span>
+            <div class="col-lg-12">
+                <div class="circle-loader"></div>
+                <div class="row g-4" id="tourFilterData">
+
+                    <?php foreach ($corporates as $corporate) : ?>
+                        <div class="col-12">
+                            <div class="tour-package-standard" style="align-items: start;max-width:100% !important">
+                                <div class="tour-standard-image" style="max-width:768px !important;min-width: 512px !important;">
+
+                                    <img src="<?= base_url('assets/images/corporate/' . $corporate['image']) ?>" class="img-fluid wp-post-image" alt="<?= $corporate['title_en'] ?>" decoding="async" loading="lazy">
                                 </div>
-                                <div class="list-area">
-                                    <h5><?= lang('text_destination.includes') ?> :</h5>
-                                    <ul class="plan-list1">
-                                        <?= $language == 'id' ? $destination['includes_id'] : $destination['includes_en'] ?>
-                                    </ul>
+                                <div class="tour-standard-content">
+                                    <div class="review-area">
+                                    </div>
+                                    <h4>
+                                        <a href="#">
+                                            <?= $language == 'id' ? $corporate['title_id']  : $corporate['title_en'] ?>
+                                        </a>
+                                    </h4>
+
+                                    <div class="list-area">
+                                        <?= $language == 'id' ? $corporate['description_id']  : $corporate['description_en'] ?>
+                                    </div>
                                 </div>
                             </div>
-                            <a style="font-family: 'Oswald';" href="/<?= $language ?>/<?= $language == 'id' ? 'destinasi' : 'destination' ?>/<?= $destination['slug'] ?>" class="eg-btn btn--primary-outline btn--md"><?= lang('text_destination.explore_button') ?></a>
                         </div>
-                    </div>
+                    <?php endforeach; ?>
+
                 </div>
-            <?php endforeach; ?>
 
+            </div>
         </div>
-
-
     </div>
 </div>
 

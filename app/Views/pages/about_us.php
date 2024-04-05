@@ -32,8 +32,8 @@
                                             <div class="row justify-content-center">
                                                 <div class="col-lg-6 ps-lg-5">
                                                     <div class="about3-title text-start" style="padding-right: 0px !important;">
-                                                        <p style="font-size: 19px;font-weight: 600;color:#e0bc6d;">WHO ARE WE?</p>
-                                                        <p style="font-size: 34px;font-weight: 600;">Traveling Expert In Europe</p>
+                                                        <p style="font-family:'Oswald';font-size: 19px;font-weight: 600;color:#e0bc6d;">WHO ARE WE?</p>
+                                                        <p style="font-family:'Oswald';font-size: 34px;font-weight: 600;">Traveling Expert In Europe</p>
                                                         <p style="text-align: justify;">We are a Tour Organizer and Destination Management Company that organizes private &amp; group tours in Europe, especially for tourists from Indonesia and Asia.</p>
                                                         <p style="text-align: justify;" class=" translation-block">Founded by travel enthusiasts who thoroughly understand the cultural backgrounds in Europe, Indonesia, and Asia, our mission is to become a <strong>bridge</strong> between the two continents. In accordance with our motto <em>“Because Europe starts with You"</em>, our commitment is to put your wishes and needs in the first place while visiting Europe and to provide you with an extra maximum service.</p>
                                                         <p style="text-align: justify;" class=" translation-block">What does this mean for you? You can expect flexibility and totality of our services so that you can enjoy your visit in Europe with 100% comfort, <em>care-free</em> and <em>worry-free.</em> We would like to become your trusted <strong>navigator</strong> while in Europe.</p>
@@ -177,7 +177,7 @@
                                         <div class=" justify-content-center">
                                             <div class="section-title1">
                                                 <span>Our Message</span>
-                                                <h2>With All Respect, Let Us Introduce Personally...</h2>
+                                                <h2 style="font-size: 30px;font-family: 'Oswald';">With All Respect, Let Us Introduce Personally...</h2>
 
                                             </div>
                                         </div>

@@ -35,7 +35,7 @@
     <div class="col justify-content-center" style="border:1px solid #F0F0F0;">
       <div class="col-lg-12 destination-tab">
         <div class="nav flex-row justify-content-center nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-          <button style="font-weight: 600;" class="nav-link active nav-btn-style mb-20" id="v-pills-information-tab" data-bs-toggle="pill" data-bs-target="#v-pills-information" type="button" role="tab" aria-controls="v-pills-information" aria-selected="true">
+          <button style="font-weight: 600;font-family:'Oswald'" class="nav-link active nav-btn-style mb-20" id="v-pills-information-tab" data-bs-toggle="pill" data-bs-target="#v-pills-information" type="button" role="tab" aria-controls="v-pills-information" aria-selected="true">
             <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
               <path d="M2.73398 0.0593748C1.75273 0.30625 1.05273 1.05 0.855859 2.05625C0.790234 2.4 0.790234 13.6 0.855859 13.9437C1.02773 14.8188 1.57461 15.4937 2.37461 15.8219C2.78398 15.9906 2.87773 16 4.29023 16C5.51211 16 5.60273 15.9969 5.71211 15.9406C5.85898 15.8656 5.95273 15.7656 6.01523 15.6188C6.14023 15.3125 6.01211 14.9625 5.71211 14.8094C5.60586 14.7531 5.51523 14.75 4.50898 14.75C3.91211 14.7469 3.32773 14.7344 3.21211 14.7219C2.66523 14.65 2.22461 14.2469 2.12461 13.7219C2.08086 13.4906 2.08086 2.50937 2.12461 2.27812C2.22461 1.75313 2.66523 1.35 3.21211 1.27812C3.48711 1.24375 10.8559 1.24375 11.1309 1.27812C11.6777 1.35 12.1184 1.75313 12.2184 2.27812C12.2371 2.38125 12.2496 3.23125 12.2496 4.46562V6.4875L12.3215 6.625C12.359 6.7 12.4434 6.80312 12.509 6.85625C12.609 6.9375 12.6621 6.95312 12.8402 6.9625C13.1527 6.98125 13.3715 6.85312 13.484 6.5875C13.5527 6.41875 13.5559 2.4125 13.4871 2.05625C13.284 1.02812 12.5652 0.278125 11.5684 0.0500002C11.3715 0.00624943 10.8996 0 7.14961 0.00312519C3.25586 0.00312519 2.93711 0.00937462 2.73398 0.0593748Z"></path>
               <path d="M3.67173 3.7999C3.24048 4.02178 3.19048 4.58428 3.57173 4.8874L3.69361 4.98428L7.12798 4.99365C10.4592 4.9999 10.5655 4.9999 10.6811 4.94053C11.1499 4.6999 11.1499 4.0499 10.6811 3.80928C10.5686 3.75303 10.4467 3.7499 7.16548 3.7499C4.14673 3.7499 3.75611 3.75615 3.67173 3.7999Z"></path>
@@ -45,7 +45,7 @@
             </svg>
             HIGHLIGHT
           </button>
-          <button style="font-weight: 600;" class="nav-link nav-btn-style mb-20" id="v-pills-plan-tab" data-bs-toggle="pill" data-bs-target="#v-pills-plan" type="button" role="tab" aria-controls="v-pills-plan" aria-selected="true">
+          <button style="font-weight: 600;font-family:'Oswald'" class="nav-link nav-btn-style mb-20" id="v-pills-plan-tab" data-bs-toggle="pill" data-bs-target="#v-pills-plan" type="button" role="tab" aria-controls="v-pills-plan" aria-selected="true">
             <i class="lar la-user"></i>
             <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_1652_1254)">
@@ -64,7 +64,7 @@
             </svg>
             <?= $language == 'id' ? 'JADWAL' : 'ITINERARY' ?>
           </button>
-          <button style="font-weight: 600;" class="nav-link nav-btn-style mb-20" id="v-pills-location-tab" data-bs-toggle="pill" data-bs-target="#v-pills-location" type="button" role="tab" aria-controls="v-pills-location" aria-selected="true">
+          <button style="font-weight: 600;font-family:'Oswald'" class="nav-link nav-btn-style mb-20" id="v-pills-location-tab" data-bs-toggle="pill" data-bs-target="#v-pills-location" type="button" role="tab" aria-controls="v-pills-location" aria-selected="true">
             <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_1652_1208)">
                 <path d="M12.166 8.94C11.642 10.002 10.932 11.06 10.206 12.01C9.5173 12.9056 8.7809 13.7635 8 14.58C7.21908 13.7635 6.48268 12.9056 5.794 12.01C5.068 11.06 4.358 10.002 3.834 8.94C3.304 7.867 3 6.862 3 6C3 4.67392 3.52678 3.40215 4.46447 2.46447C5.40215 1.52678 6.67392 1 8 1C9.32608 1 10.5979 1.52678 11.5355 2.46447C12.4732 3.40215 13 4.67392 13 6C13 6.862 12.695 7.867 12.166 8.94ZM8 16C8 16 14 10.314 14 6C14 4.4087 13.3679 2.88258 12.2426 1.75736C11.1174 0.632141 9.5913 0 8 0C6.4087 0 4.88258 0.632141 3.75736 1.75736C2.63214 2.88258 2 4.4087 2 6C2 10.314 8 16 8 16Z"></path>
@@ -78,14 +78,14 @@
             </svg>
             <?= $language == 'id' ? 'LAYANAN' : 'INCLUDES' ?>
           </button>
-          <button style="font-weight: 600;" class="nav-link nav-btn-style" id="v-pills-gallery-tab" data-bs-toggle="pill" data-bs-target="#v-pills-gallery" type="button" role="tab" aria-controls="v-pills-gallery" aria-selected="true">
+          <button style="font-weight: 600;font-family:'Oswald'" class="nav-link nav-btn-style" id="v-pills-gallery-tab" data-bs-toggle="pill" data-bs-target="#v-pills-gallery" type="button" role="tab" aria-controls="v-pills-gallery" aria-selected="true">
             <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
               <path d="M3.00592 1.04681C2.2153 1.21868 1.50592 1.81868 1.18717 2.58118C0.987171 3.05931 0.996546 2.77181 1.00592 8.10306L1.0153 12.9531L1.1028 13.1968C1.35592 13.9187 1.81217 14.4406 2.44967 14.7499C2.97467 15.0031 2.51217 14.9843 7.98405 14.9843H12.859L13.1028 14.9124C14.034 14.6437 14.7215 13.9343 14.9372 13.0156C14.9997 12.7593 14.9997 12.6531 14.9934 7.89993L14.984 3.04681L14.8965 2.79681C14.5997 1.95931 14.009 1.37181 13.1715 1.09056L12.9528 1.01556L8.0778 1.00931C4.04655 1.00618 3.16842 1.01243 3.00592 1.04681ZM12.8434 2.07493C13.3622 2.24681 13.7559 2.64056 13.9247 3.15618C13.9778 3.31868 13.984 3.54368 13.9934 6.84368L14.0028 10.3593L12.8528 9.21556C12.2215 8.58431 11.6715 8.05306 11.634 8.03431C11.5372 7.98431 11.2622 7.99056 11.1622 8.04368C11.1153 8.06868 10.5997 8.56868 10.0153 9.15306L8.9528 10.2187L6.74967 8.01868C5.53717 6.80931 4.5153 5.80306 4.4778 5.78431C4.3903 5.74056 4.10905 5.74056 4.02155 5.78431C3.98405 5.80306 3.51217 6.25618 2.97467 6.79368L1.99655 7.76556L2.00905 5.54681C2.01842 3.51243 2.02155 3.31243 2.07467 3.15618C2.19967 2.76868 2.48405 2.41243 2.8153 2.22806C3.02467 2.10931 3.18092 2.05931 3.42155 2.03118C3.52467 2.01868 5.64967 2.00931 8.1403 2.01243C12.4403 2.01556 12.6809 2.01868 12.8434 2.07493ZM7.7653 10.4999L11.2653 13.9999L7.29655 13.9937C3.5528 13.9843 3.31842 13.9812 3.15592 13.9249C2.63717 13.7531 2.2403 13.3562 2.07467 12.8437C2.02467 12.6906 2.01842 12.4937 2.00592 10.9562L1.99342 9.24056L3.1153 8.11868C3.73092 7.50306 4.2403 6.99993 4.24967 6.99993C4.25905 6.99993 5.8403 8.57493 7.7653 10.4999ZM12.7153 10.5437L14.009 11.8374L13.9903 12.2624C13.959 12.8812 13.8278 13.2124 13.4809 13.5437C13.3153 13.7031 12.9778 13.8906 12.7997 13.9218L12.6809 13.9468L11.184 12.4499L9.68717 10.9531L10.5372 10.1031C11.0059 9.63431 11.3965 9.24993 11.4059 9.24993C11.4153 9.24993 12.0028 9.83118 12.7153 10.5437Z"></path>
               <path d="M10.6937 3.08129C10.15 3.26566 9.775 3.63441 9.5875 4.16879C9.5125 4.38441 9.5 4.47191 9.5 4.75004C9.5 5.26254 9.65625 5.64691 10.0031 5.99691C10.575 6.57191 11.5219 6.67191 12.2031 6.23441C12.5469 6.01566 12.7875 5.70316 12.9219 5.30316C13.0344 4.96879 13.0344 4.53129 12.9219 4.19691C12.7344 3.64066 12.3219 3.23441 11.7687 3.06566C11.4531 2.96879 11 2.97504 10.6937 3.08129ZM11.525 4.08129C12.0031 4.27816 12.1219 4.91566 11.7469 5.27191C11.2875 5.70629 10.5312 5.38441 10.5312 4.75004C10.5312 4.46566 10.6781 4.22816 10.9375 4.09066C11.075 4.01879 11.3656 4.01254 11.525 4.08129Z"></path>
             </svg>
             <?= $language == 'id' ? 'HOTEL & PENERBANGAN' : 'HOTEL & FLIGHTS' ?>
           </button>
-          <button style="font-weight: 600;" class="nav-link nav-btn-style" id="v-pills-review-tab" data-bs-toggle="pill" data-bs-target="#v-pills-review" type="button" role="tab" aria-controls="v-pills-review" aria-selected="true">
+          <button style="font-weight: 600;font-family:'Oswald'" class="nav-link nav-btn-style" id="v-pills-review-tab" data-bs-toggle="pill" data-bs-target="#v-pills-review" type="button" role="tab" aria-controls="v-pills-review" aria-selected="true">
             <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_1652_1243)">
                 <path d="M14 1C14.2652 1 14.5196 1.10536 14.7071 1.29289C14.8946 1.48043 15 1.73478 15 2V10C15 10.2652 14.8946 10.5196 14.7071 10.7071C14.5196 10.8946 14.2652 11 14 11H11.5C11.1895 11 10.8833 11.0723 10.6056 11.2111C10.3279 11.35 10.0863 11.5516 9.9 11.8L8 14.333L6.1 11.8C5.91371 11.5516 5.67214 11.35 5.39443 11.2111C5.11672 11.0723 4.81049 11 4.5 11H2C1.73478 11 1.48043 10.8946 1.29289 10.7071C1.10536 10.5196 1 10.2652 1 10V2C1 1.73478 1.10536 1.48043 1.29289 1.29289C1.48043 1.10536 1.73478 1 2 1H14ZM2 0C1.46957 0 0.960859 0.210714 0.585786 0.585786C0.210714 0.960859 0 1.46957 0 2L0 10C0 10.5304 0.210714 11.0391 0.585786 11.4142C0.960859 11.7893 1.46957 12 2 12H4.5C4.65525 12 4.80836 12.0361 4.94721 12.1056C5.08607 12.175 5.20685 12.2758 5.3 12.4L7.2 14.933C7.29315 15.0572 7.41393 15.158 7.55279 15.2274C7.69164 15.2969 7.84475 15.333 8 15.333C8.15524 15.333 8.30836 15.2969 8.44721 15.2274C8.58607 15.158 8.70685 15.0572 8.8 14.933L10.7 12.4C10.7931 12.2758 10.9139 12.175 11.0528 12.1056C11.1916 12.0361 11.3448 12 11.5 12H14C14.5304 12 15.0391 11.7893 15.4142 11.4142C15.7893 11.0391 16 10.5304 16 10V2C16 1.46957 15.7893 0.960859 15.4142 0.585786C15.0391 0.210714 14.5304 0 14 0L2 0Z"></path>
@@ -198,7 +198,7 @@
               <div class="sidebar-booking-form">
                 <input id="productId" type="hidden" value="2401" />
                 <form class="cart" action="#" name="review-rating-from" method="post" enctype="multipart/form-data">
-                  <a href="/<?= $language ?>/<?= $language == 'id' ? 'hubungi-kami' : 'contact-us' ?>" class="eg-btn btn--primary btn--lg w-100 mt-3" name="add-to-cart" value="2401">
+                  <a style="font-family: 'Oswald';" href="/<?= $language ?>/<?= $language == 'id' ? 'hubungi-kami' : 'contact-us' ?>" class="eg-btn btn--primary btn--lg w-100 mt-3" name="add-to-cart" value="2401">
                     <?= $language == 'id' ? 'Hubungi Kami' : 'Contact Us' ?>
                   </a>
                 </form>

@@ -2,21 +2,23 @@
 
 return [
     // text for navbar
-    'information' => 'Informasi',
-    'destination' => 'Destination',
-    'events' => 'Events',
-    'blog' => 'Blog',
-    'help_support_navbar' => 'Help',
+    'information' => 'INFORMATION',
+    'destination' => 'DESTINATION',
+    'events' => 'EVENTS',
+    'blog' => 'BLOG',
+    'help_support_navbar' => 'HELP',
     'language' => 'Language',
-    'services' => 'Services',
+    'services' => 'SERVICES',
+    'about_us_navbar' => 'ABOUT US',
+    'contact_us_navbar' => 'CONTACT US',
 
     // text for detail company
-    'since_year' => 'INCEPTION YEAR',
-    'passed_country' => 'COUNTRIES IN EUROPE WE ALREADY SERVE',
-    'rating_customer' => 'OUR GUEST SATISFACTION RATING',
+    'since_year' => 'Inception Year',
+    'passed_country' => 'Country in Europe We Have Served',
+    'rating_customer' => 'Our Guest Satisfaction Rating',
 
     // text for homepage
-    'banner_button' => 'Start Now',
+    'banner_button' => 'START NOW',
     'trending_destination' => 'EXPLORE NOW',
     'all_destination' => 'SEE ALL DESTINATION',
     'button_about_us' => 'Read More',

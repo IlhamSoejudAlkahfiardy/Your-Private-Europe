@@ -2,16 +2,19 @@
 
 namespace App\Controllers;
 
-use App\Controllers\BaseController;
-use App\Models\DestinationModel;
-use App\Models\ImageDescriptionDestinationModel;
 use App\Models\ItineraryModel;
+use App\Models\DestinationModel;
+use App\Models\SocialMediaModel;
+use App\Controllers\BaseController;
+use App\Models\ImageDescriptionDestinationModel;
 
 class DestinationController extends BaseController
 {
     protected $destinationModel;
     protected $itineraryModel;
     protected $imageDescriptionDestinationModel;
+    protected $socmedModel;
+
     protected $currentUrl;
     protected $language;
 
@@ -20,6 +23,7 @@ class DestinationController extends BaseController
         $this->destinationModel = new DestinationModel();
         $this->imageDescriptionDestinationModel = new ImageDescriptionDestinationModel();
         $this->itineraryModel = new ItineraryModel();
+        $this->socmedModel = new SocialMediaModel();
         $this->currentUrl = current_url();
         $this->language = session()->get('lang');
     }
@@ -39,6 +43,7 @@ class DestinationController extends BaseController
                 'MIN(image_destination.image_name_id) as image_name_id',
                 'MIN(image_destination.image_name_en) as image_name_en'
             ])->join('image_destination', 'image_destination.destination_id = destination.id', 'left')->groupBy('destination.id')->findAll(),
+            'socmeds' => $this->socmedModel->findAll(),
         ];
 
         echo view('pages/destination', $data);
@@ -55,6 +60,7 @@ class DestinationController extends BaseController
             'destination' => $this->destinationModel->join('image_destination', 'image_destination.destination_id = destination.id', 'left')->where('destination.slug', $slug)->findAll(),
             'itineraries' => $this->itineraryModel->where('destination_slug', $slug)->findAll(),
             'imagesDescriptionDestinations' => $this->imageDescriptionDestinationModel->where('destination_id', $this->destinationModel->select('id')->where('slug', $slug)->first()['id'])->findAll(),
+            'socmeds' => $this->socmedModel->findAll(),
         ];
 
         // dd($data['itineraries']);

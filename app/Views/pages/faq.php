@@ -33,7 +33,7 @@
                                                 <span>
                                                     <?= $language == 'id' ? $faqs[0]['faq_section_id'] : $faqs[0]['faq_section_en'] ?>
                                                 </span>
-                                                <h2>
+                                                <h2 style="font-size: 30px;font-family: 'Oswald';">
                                                     <?= $language == 'id' ? $faqs[0]['faq_title_id'] : $faqs[0]['faq_title_en'] ?>
                                                 </h2>
                                                 <div class="heading-ribbon flex justify-center">
@@ -86,7 +86,7 @@
                                                             <div class="accordion-item">
                                                                 <h2 class="accordion-header" id="heading<?= $id ?>">
                                                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse<?= $id ?>" aria-expanded="true" aria-controls="collapse<?= $id ?>">
-                                                                        <p>
+                                                                        <p style="font-weight: normal;">
                                                                             <?= $language == 'id' ? $faq['title_id'] : $faq['title_en'] ?>
                                                                         </p>
                                                                     </button>
