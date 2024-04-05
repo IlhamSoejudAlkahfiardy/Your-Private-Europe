@@ -27,6 +27,11 @@ class ArticleModel extends Model
         'description_en',
         'writer',
     ];
+    public function images()
+    {
+        // Menggunakan method hasMany untuk menunjukkan bahwa satu artikel memiliki banyak gambar
+        return $this->hasMany('App\Models\ImageArticleModel', 'article_id', 'id');
+    }
 
     protected bool $allowEmptyInserts = false;
 

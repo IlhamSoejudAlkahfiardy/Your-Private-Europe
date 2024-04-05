@@ -14,6 +14,12 @@ class ImageArticleModel extends Model
     protected $protectFields    = true;
     protected $allowedFields    = ['article_id', 'slug', 'url'];
 
+    public function article()
+    {
+        // Menggunakan method belongsTo untuk menunjukkan bahwa banyak gambar terkait dengan satu artikel
+        return $this->belongsTo('App\Models\ArticleModel', 'article_id', 'id');
+    }
+
     protected bool $allowEmptyInserts = false;
 
     // Dates
