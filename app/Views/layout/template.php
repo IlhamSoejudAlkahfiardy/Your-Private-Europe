@@ -990,7 +990,6 @@
                     <?php foreach ($socmeds as $socmed) : ?>
                         <li>
                             <a style="display: flex;justify-content: center;align-items: center;" target="_blank" href="<?= $socmed['link'] ?>">
-                                <!-- <i class="fab fa-facebook-f"></i> -->
                                 <img width="10" height="10" src="<?= base_url('assets/images/social_media/' . $socmed['image']) ?>" alt="<?= $socmed['title'] ?>" srcset="">
                             </a>
                         </li>
@@ -1030,7 +1029,7 @@
             width: 200px;
             " /></a>
             </div>
-            <div class="main-nav">
+            <div class="main-nav" style="margin-top: 7px !important;">
                 <div class="mobile-logo-area d-lg-none d-flex justify-content-between align-items-center">
                     <div class="mobile-logo-wrap">
                         <a href="/<?= $language ?>  " title="Astrip">
@@ -1050,37 +1049,37 @@
                             </a>
                         </li>
                         <li id="menu-item-1995" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1995">
-                            <a style="font-family: 'Oswald';font-weight: normal;" href="/<?= $language ?>/corporate-and-travel-agent">TRAVEL AGENT & CORPORATE</a><i class="bi bi-chevron-down"></i>
+                            <a style="font-family: 'Oswald';font-weight: normal;font-size: 16px;" href="/<?= $language ?>/corporate-and-travel-agent">TRAVEL AGENT & CORPORATE</a><i class="bi bi-chevron-down"></i>
                         </li>
                         <li id="menu-item-2339" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2339">
-                            <a style="font-family: 'Oswald';font-weight: normal;" href="#"><?= lang("text_homepage.information") ?></a><i class="bi bi-chevron-down"></i>
+                            <a style="font-family: 'Oswald';font-weight: normal;font-size: 16px;" href="#"><?= lang("text_homepage.information") ?></a><i class="bi bi-chevron-down"></i>
                             <ul class="sub-menu">
 
                                 <li id="menu-item-2370" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2370">
-                                    <a style="font-family: 'Oswald';font-weight: normal;" href="/<?= $language ?>/<?= $language == 'id' ? 'layanan-kami' : 'our-services' ?>"><?= lang("text_homepage.services") ?></a><i class="bi bi-chevron-down"></i>
+                                    <a style="font-family: 'Oswald';font-weight: normal;font-size: 16px;" href="/<?= $language ?>/<?= $language == 'id' ? 'layanan-kami' : 'our-services' ?>"><?= lang("text_homepage.services") ?></a><i class="bi bi-chevron-down"></i>
                                 </li>
                                 <li id="menu-item-2370" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2370">
-                                    <a style="font-family: 'Oswald';font-weight: normal;" href="/<?= $language ?>/<?= $language == 'id' ? 'destinasi' : 'destination' ?>"><?= lang("text_homepage.destination") ?></a><i class="bi bi-chevron-down"></i>
+                                    <a style="font-family: 'Oswald';font-weight: normal;font-size: 16px;" href="/<?= $language ?>/<?= $language == 'id' ? 'destinasi' : 'destination' ?>"><?= lang("text_homepage.destination") ?></a><i class="bi bi-chevron-down"></i>
                                 </li>
                                 <li id="menu-item-2370" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2370">
-                                    <a style="font-family: 'Oswald';font-weight: normal;" href=""><?= lang("text_homepage.events") ?></a><i class="bi bi-chevron-down"></i>
+                                    <a style="font-family: 'Oswald';font-weight: normal;font-size: 16px;" href=""><?= lang("text_homepage.events") ?></a><i class="bi bi-chevron-down"></i>
                                 </li>
                                 <li id="menu-item-2370" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2370">
-                                    <a style="font-family: 'Oswald';font-weight: normal;" href="/<?= $language ?>/blog"><?= lang("text_homepage.blog") ?></a><i class="bi bi-chevron-down"></i>
+                                    <a style="font-family: 'Oswald';font-weight: normal;font-size: 16px;" href="/<?= $language ?>/blog"><?= lang("text_homepage.blog") ?></a><i class="bi bi-chevron-down"></i>
                                 </li>
 
                             </ul>
                         </li>
 
                         <li id="menu-item-2013" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2013">
-                            <a style="font-family: 'Oswald';font-weight: normal;" href="/<?= $language ?>/<?= $language == 'id' ? 'tentang-kami' : 'about-us' ?>"><?= lang("text_homepage.about_us_navbar") ?></a>
+                            <a style="font-family: 'Oswald';font-weight: normal;font-size: 16px;" href="/<?= $language ?>/<?= $language == 'id' ? 'tentang-kami' : 'about-us' ?>"><?= lang("text_homepage.about_us_navbar") ?></a>
                         </li>
 
                         <li id="menu-item-2013" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2013">
-                            <a style="font-family: 'Oswald';font-weight: normal;" href="/<?= $language ?>/<?= $language == 'id' ? 'hubungi-kami' : 'contact-us' ?>"><?= lang("text_homepage.contact_us_navbar") ?></a>
+                            <a style="font-family: 'Oswald';font-weight: normal;font-size: 16px;" href="/<?= $language ?>/<?= $language == 'id' ? 'hubungi-kami' : 'contact-us' ?>"><?= lang("text_homepage.contact_us_navbar") ?></a>
                         </li>
                         <li id="menu-item-2013" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2013">
-                            <a style="font-family: 'Oswald';font-weight: normal;" href="/<?= $language ?>/faq">FAQ</a>
+                            <a style="font-family: 'Oswald';font-weight: normal;font-size: 16px;" href="/<?= $language ?>/faq">FAQ</a>
                         </li>
                         <li id="menu-item-2013" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2013">
                             <a href="/<?= $language ?>/faq">
@@ -1093,10 +1092,10 @@
                             <i class="bi bi-chevron-down"></i>
                             <ul class="sub-menu">
                                 <li id="menu-item-1984" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1984">
-                                    <a style="font-family: 'Oswald';font-weight: normal;" href="<?= site_url('lang/id'); ?>">Indonesian</a><i class="bi bi-chevron-down"></i>
+                                    <a style="font-family: 'Oswald';font-weight: normal;font-size: 16px;" href="<?= site_url('lang/id'); ?>">Indonesian</a><i class="bi bi-chevron-down"></i>
                                 </li>
                                 <li id="menu-item-2017" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2017">
-                                    <a style="font-family: 'Oswald';font-weight: normal;" href="<?= site_url('lang/en'); ?>">English</a><i class="bi bi-chevron-down"></i>
+                                    <a style="font-family: 'Oswald';font-weight: normal;font-size: 16px;" href="<?= site_url('lang/en'); ?>">English</a><i class="bi bi-chevron-down"></i>
                                 </li>
                             </ul>
                         </li>

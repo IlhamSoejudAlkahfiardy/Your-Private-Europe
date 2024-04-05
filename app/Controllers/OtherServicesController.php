@@ -4,10 +4,14 @@ namespace App\Controllers;
 
 use App\Models\DestinationModel;
 use App\Models\SocialMediaModel;
+use App\Controllers\BaseController;
+use App\Models\OtherServicesModel;
+use CodeIgniter\HTTP\ResponseInterface;
 
-class ErrorController extends BaseController
+class OtherServicesController extends BaseController
 {
     protected $destinationModel;
+    protected $otherServicesModel;
     protected $socmedModel;
 
     protected $currentUrl;
@@ -16,28 +20,27 @@ class ErrorController extends BaseController
     public function __construct()
     {
         $this->destinationModel = new DestinationModel();
+        $this->otherServicesModel = new OtherServicesModel();
         $this->socmedModel = new SocialMediaModel();
 
         $this->currentUrl = current_url();
         $this->language = session()->get('lang');
     }
-    public function show404()
+
+    public function index(): void
     {
         $data = [
-            'title' => [
-                'seo_tag_title_id' => 'Halaman Tidak Ditemukan',
-                'seo_tag_title_en' => 'Page Not Found',
-            ],
-            'description' => [
-                'seo_description_id' => 'Halaman yang Anda cari tidak ditemukan. Silakan kembali ke halaman utama.',
-                'seo_description_en' => 'The page you are looking for is not found. Please return to the homepage.',
-            ],
+            'title' => $this->otherServicesModel->select(['seo_tag_title_id', 'seo_tag_title_en'])->first(),
+            'description' => $this->otherServicesModel->select(['seo_description_id', 'seo_description_en'])->first(),
             'currentUrl' => $this->currentUrl,
             'language' => $this->language,
             'navbarDestinations' => $this->destinationModel->select(['title', 'slug'])->findAll(),
+            'otherServices' => $this->otherServicesModel->findAll(),
             'socmeds' => $this->socmedModel->findAll(),
         ];
 
-        return view('pages/errors/error_404', $data);
+        // dd($data['otherServices']);
+
+        echo view('pages/other_services', $data);
     }
 }

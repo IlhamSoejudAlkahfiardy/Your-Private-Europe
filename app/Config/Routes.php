@@ -38,6 +38,8 @@ $routes->get('/en/our-services', 'ServiceController::index');
 $routes->get('/id/corporate-and-travel-agent', 'CorporateController::index');
 $routes->get('/en/corporate-and-travel-agent', 'CorporateController::index');
 
+$routes->get('/id/layanan-lainnya', 'OtherServicesController::index');
+$routes->get('/en/other-services', 'OtherServicesController::index');
 
 // Page not found handler
 $routes->set404Override('App\Controllers\ErrorController::show404');

@@ -386,6 +386,7 @@
                                             </div>
                                         </div>
                                     </div>
+
                                 </div>
                             </div>
 
@@ -576,7 +577,7 @@
                                             <h2 class="accordion-header" id="heading<?= $dataUsp['id'] ?>">
                                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse<?= $dataUsp['id'] ?>" aria-expanded="true" aria-controls="collapse<?= $dataUsp['id'] ?>">
                                                     <p style="font-weight: normal;">
-                                                        <?= $language == 'id' ? strtoupper($dataUsp['title_id']) : strtoupper($dataUsp['title_en']) ?>
+                                                        <?= $language == 'id' ? ucwords($dataUsp['title_id']) : ucwords($dataUsp['title_en']) ?>
                                                     </p>
                                                 </button>
                                             </h2>
@@ -923,16 +924,24 @@
                                                                 <?= $language == 'id' ? $destination['duration_id'] : $destination['duration_en'] ?>
                                                             </span>
                                                         </div>
-                                                        <a style="font-size: 16px; font-weight: 600;font-family: 'Oswald';" href="/<?= $language ?>/<?= $language == 'id' ? 'destinasi' : 'destination' ?>/<?= $destination['slug'] ?>" class="eg-btn btn--primary-outline btn--md"><?= lang("text_homepage.trending_destination") ?></a>
+                                                        <!-- <a style="font-size: 16px; font-weight: 600;font-family: 'Oswald';" onmouseover="this.style.color='#e0bc6d';this.style.backgroundcolor='white'" onmouseout="this.style.color='white';this.style.backgroundcolor='#e0bc6d'" href="/<?= $language ?>/<?= $language == 'id' ? 'destinasi' : 'destination' ?>/<?= $destination['slug'] ?>" class="eg-btn btn--primary-outline btn--md"><?= lang("text_homepage.trending_destination") ?></a> -->
+                                                        <div class="elementor-element elementor-element-15c7e1e elementor-widget elementor-widget-astrip_button" data-id="15c7e1e" data-element_type="widget" data-widget_type="astrip_button.default">
+                                                            <div class="elementor-widget-container">
+                                                                <div class="row justify-content-center">
+                                                                    <div class="btn-align d-flex justify-content-center">
+                                                                        <a href="/<?= $language ?>/<?= $language == 'id' ? 'destinasi' : 'destination' ?>/<?= $destination['slug'] ?>" class="eg-btn btn--primary-outline " style="background-color: #e0bc6d;font-family: 'Oswald';padding:10px 35px;" onmouseover="this.style.color='#e0bc6d'" onmouseout="this.style.color='white'">
+                                                                            <?= lang("text_homepage.trending_destination") ?>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                             <!-- Content End -->
                                         <?php endforeach; ?>
 
-                                        <!-- <a href="/<?= $language ?>/<?= $language == 'id' ? 'destinasi' : 'destination' ?>" class="btn--primary-outline btn--lg">
-                                            <?= lang("text_homepage.all_destination") ?>
-                                        </a> -->
                                     </div>
                                 </div>
                             </div>
@@ -941,21 +950,24 @@
                             <div class="elementor-container elementor-column-gap-default">
                                 <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-b17e34d" data-id="b17e34d" data-element_type="column">
                                     <div class="elementor-widget-wrap elementor-element-populated">
-                                        <div class="elementor-element elementor-element-9b0a438 elementor-widget elementor-widget-astrip_button" data-id="9b0a438" data-element_type="widget" data-widget_type="astrip_button.default">
+
+                                        <div class="elementor-element elementor-element-15c7e1e elementor-widget elementor-widget-astrip_button" data-id="15c7e1e" data-element_type="widget" data-widget_type="astrip_button.default">
                                             <div class="elementor-widget-container">
                                                 <div class="row justify-content-center">
-                                                    <div class="btn-align">
-                                                        <a style="font-size: 18px; font-weight: 500;font-family: 'Oswald';" href="/<?= $language ?>/<?= $language == 'id' ? 'destinasi' : 'destination' ?>" class="btn--primary-outline btn--lg">
+                                                    <div class="btn-align d-flex justify-content-center">
+                                                        <a href="/<?= $language ?>/<?= $language == 'id' ? 'destinasi' : 'destination' ?>" class="eg-btn btn--primary-outline btn--lg" style="background-color: #e0bc6d;font-family: 'Oswald';" onmouseover="this.style.color='#e0bc6d'" onmouseout="this.style.color='white'">
                                                             <?= lang("text_homepage.all_destination") ?>
                                                         </a>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+
                                     </div>
                                 </div>
                             </div>
                         </section>
+
                     </div>
                 </div>
             </div>
@@ -1309,7 +1321,7 @@
                                     <div class="accordion-item">
                                         <h2 class="accordion-header" id="heading<?= $faq['id'] ?>">
                                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse<?= $faq['id'] ?>" aria-expanded="true" aria-controls="collapse<?= $faq['id'] ?>">
-                                                <p>
+                                                <p style="font-weight: 400;">
                                                     <?= $language == 'id' ? $faq['title_id'] : $faq['title_en'] ?>
                                                 </p>
                                             </button>
@@ -1327,19 +1339,22 @@
                     </div>
                 </div>
 
-                <div class="elementor-widget-wrap elementor-element-populated">
-                    <div class="elementor-element elementor-element-9b0a438 elementor-widget elementor-widget-astrip_button" data-id="9b0a438" data-element_type="widget" data-widget_type="astrip_button.default">
+                <div class="elementor-widget-wrap elementor-element-populated" style="margin-top: 60px !important;">
+
+                    <div class="elementor-element elementor-element-15c7e1e elementor-widget elementor-widget-astrip_button" data-id="15c7e1e" data-element_type="widget" data-widget_type="astrip_button.default">
                         <div class="elementor-widget-container">
                             <div class="row justify-content-center">
-                                <div class="btn-align" style="display: flex;justify-content: center;">
-                                    <a style="font-family: 'Oswald';font-weight: normal;" href="/<?= $language ?>/faq" class="eg-btn btn--primary-outline btn--lg">
+                                <div class="btn-align d-flex justify-content-center" style="color: white;">
+                                    <a href="/<?= $language ?>/faq" class="eg-btn btn--primary btn--lg" style="background-color: #e0bc6d;font-family: 'Oswald';" onmouseover="this.style.color='#e0bc6d'" onmouseout="this.style.color='white'">
                                         <?= lang("text_homepage.all_faq") ?>
                                     </a>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
+
             </div>
         </div>
 
