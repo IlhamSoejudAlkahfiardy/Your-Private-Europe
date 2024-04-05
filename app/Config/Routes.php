@@ -65,3 +65,10 @@ $routes->post('/proses_tambah_SosialMedia', 'admin\SosialMediactrl::proses_tamba
 $routes->get('/editSosialMedia/(:num)', 'admin\SosialMediactrl::edit/$1');
 $routes->post('/proses_edit_SosialMedia/(:num)', 'admin\SosialMediactrl::proses_edit/$1');
 $routes->get('/delete_SosialMedia/(:any)', 'admin\SosialMediactrl::delete/$1');
+
+$routes->get('/detail_corporate_agent', 'admin\DetailCorporateAgentctrl::index');
+$routes->get('/tambahdetail_corporate_agent', 'admin\DetailCorporateAgentctrl::tambah');
+$routes->post('/proses_tambah_detail_corporate_agent', 'admin\DetailCorporateAgentctrl::proses_tambah');
+$routes->get('/editdetail_corporate_agent/(:num)', 'admin\DetailCorporateAgentctrl::edit/$1');
+$routes->post('/proses_edit_detail_corporate_agent/(:num)', 'admin\DetailCorporateAgentctrl::proses_edit/$1');
+$routes->get('/delete_detail_corporate_agent/(:any)', 'admin\DetailCorporateAgentctrl::delete/$1');
