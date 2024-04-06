@@ -9,8 +9,9 @@
             <div class="col-xl-8 col-md-10 col-sm-12">
                 <div class="breadcrumb-area">
                     <h2>
-                        About Us </h2>
-                    <span>We are best tour &amp; travel agency in the world.</span>
+                        <?= $language == 'id' ? $aboutUs['heading_id'] : $aboutUs['heading_en'] ?>
+                    </h2>
+                    <!-- <span>We are best tour &amp; travel agency in the world.</span> -->
                 </div>
             </div>
         </div>
@@ -32,17 +33,16 @@
                                             <div class="row justify-content-center">
                                                 <div class="col-lg-6 ps-lg-5">
                                                     <div class="about3-title text-start" style="padding-right: 0px !important;">
-                                                        <p style="font-family:'Oswald';font-size: 19px;font-weight: 600;color:#e0bc6d;">WHO ARE WE?</p>
-                                                        <p style="font-family:'Oswald';font-size: 34px;font-weight: 600;">Traveling Expert In Europe</p>
-                                                        <p style="text-align: justify;">We are a Tour Organizer and Destination Management Company that organizes private &amp; group tours in Europe, especially for tourists from Indonesia and Asia.</p>
-                                                        <p style="text-align: justify;" class=" translation-block">Founded by travel enthusiasts who thoroughly understand the cultural backgrounds in Europe, Indonesia, and Asia, our mission is to become a <strong>bridge</strong> between the two continents. In accordance with our motto <em>“Because Europe starts with You"</em>, our commitment is to put your wishes and needs in the first place while visiting Europe and to provide you with an extra maximum service.</p>
-                                                        <p style="text-align: justify;" class=" translation-block">What does this mean for you? You can expect flexibility and totality of our services so that you can enjoy your visit in Europe with 100% comfort, <em>care-free</em> and <em>worry-free.</em> We would like to become your trusted <strong>navigator</strong> while in Europe.</p>
-                                                        <p style="text-align: justify;"><strong>Sounds good? Contact us now, we are ready to serve you!</strong></p>
+                                                        <p style="font-family:'Oswald';font-size: 19px;font-weight: 600;color:#e0bc6d;"><?= $language == 'id' ? $aboutUs['section_id'] : $aboutUs['section_en'] ?></p>
+                                                        <p style="font-family:'Oswald';font-size: 34px;font-weight: 600;"><?= $language == 'id' ? $aboutUs['title_id'] : $aboutUs['title_en'] ?></p>
+                                                        <p style="text-align: justify;">
+                                                            <?= $language == 'id' ? $aboutUs['description_id'] : $aboutUs['description_en'] ?>
+                                                        </p>
                                                     </div>
 
                                                     <div class="btn-align">
-                                                        <a class="eg-btn btn--primary3-outline sibling-2 btn--lg" href="/<?= $language ?>/<?= $language == 'id' ? 'hubungi-kami' : 'contact-us' ?>">
-                                                            CONTACT US NOW
+                                                        <a style="font-family: 'Oswald';" class="eg-btn btn--primary3-outline sibling-2 btn--lg" href="/<?= $language ?>/<?= $language == 'id' ? 'hubungi-kami' : 'contact-us' ?>">
+                                                            <?= $language == 'id' ? 'HUBUNGI KAMI' : 'CONTACT US NOW' ?>
                                                         </a>
                                                     </div>
 
@@ -94,7 +94,7 @@
                                                             <div class="coundown d-flex flex-column">
                                                                 <div class="d-flex flex-row justify-content-center align-items-center gap-2">
                                                                     <div class="plus-icon">
-                                                                        <h3 class="odometer" data-odometer-final="2017">�&nbsp;</h3>
+                                                                        <h3 class="odometer" data-odometer-final="<?= $aboutUs['year'] ?>">�&nbsp;</h3>
                                                                     </div>
                                                                 </div>
                                                                 <p>
@@ -124,7 +124,7 @@
                                                             <div class="coundown d-flex flex-column">
                                                                 <div class="d-flex flex-row justify-content-center align-items-center gap-2">
                                                                     <div class="plus-icon">
-                                                                        <h3 class="odometer" data-odometer-final="25">�&nbsp;</h3>
+                                                                        <h3 class="odometer" data-odometer-final="<?= $aboutUs['destination_number'] ?>">�&nbsp;</h3>
                                                                     </div>
                                                                 </div>
                                                                 <p>
@@ -146,7 +146,7 @@
                                                             <div class="coundown d-flex flex-column">
                                                                 <div class="d-flex flex-row justify-content-center align-items-center gap-2">
                                                                     <div class="plus-icon">
-                                                                        <h3 class="odometer" data-odometer-final="4.5/5">�&nbsp;</h3>
+                                                                        <h3 class="odometer" data-odometer-final="<?= $aboutUs['rating'] ?>">�&nbsp;</h3>
                                                                     </div>
                                                                 </div>
                                                                 <p>
@@ -176,8 +176,12 @@
 
                                         <div class=" justify-content-center">
                                             <div class="section-title1">
-                                                <span>Our Message</span>
-                                                <h2 style="font-size: 30px;font-family: 'Oswald';">With All Respect, Let Us Introduce Personally...</h2>
+                                                <span>
+                                                    <?= $language == 'id' ? $aboutUs['section_message_id'] : $aboutUs['section_message_en'] ?>
+                                                </span>
+                                                <h2 style="font-size: 30px;font-family: 'Oswald';">
+                                                    <?= $language == 'id' ? $aboutUs['title_message_id'] : $aboutUs['title_message_en'] ?>
+                                                </h2>
 
                                             </div>
                                         </div>
@@ -190,26 +194,30 @@
                                                         </div>
                                                     </div>
                                                     <div style="display: flex;flex-direction: column;align-items: center;margin-top: 50px;">
-                                                        <p style="margin:0px;font-size: 21px;font-weight: bold;">CHRIS SUHARTONO</p>
-                                                        <p style="margin:0px;font-size: 17px;">Founder & Lead Guide</p>
+                                                        <p style="margin:0px;font-size: 21px;font-weight: bold;"> <?= $aboutUs['name'] ?></p>
+                                                        <p style="margin:0px;font-size: 17px;"> <?= $aboutUs['founder'] ?></p>
                                                         <div style="display: flex;gap: 25px;align-items: center;margin:25px 0px;">
-                                                            <i class="bi bi-instagram"></i>
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
-                                                                <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
-                                                            </svg>
-                                                            <i class="bi bi-facebook"></i>
-                                                            <i class="bi bi-linkedin"></i>
+                                                            <a href="https://www.instagram.com/yourprivateeurope/">
+                                                                <i class="bi bi-instagram"></i>
+                                                            </a>
+                                                            <a href="https://twitter.com/ChrisSuhartono">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                                                                    <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+                                                                </svg>
+                                                            </a>
+                                                            <a href="https://www.facebook.com/yourprivateeurope">
+                                                                <i class="bi bi-facebook"></i>
+                                                            </a>
+                                                            <a href="https://www.linkedin.com/company/your-private-europe">
+                                                                <i class="bi bi-linkedin"></i>
+                                                            </a>
                                                         </div>
                                                     </div>
                                                 </div>
 
                                                 <div class="col-lg-7 ps-lg-5">
                                                     <div class=" about3-title text-start" style="padding-right: 0px !important;">
-                                                        <p><strong>Dear Sir/Madam,</strong></p>
-                                                        <p>Nama saya Chris. Selain pendiri Your Private Europe, saya juga salah satu guide pribadi untuk Tour Anda di Eropa. Sebagai tour leader dan guide, saya sudah berpengalaman dan memegang <strong><em>Tour Guide Certificate</em> </strong>dari <strong><a style="color: #4F59B4;font-weight: bold;" href="https://www.etoa.org/">European Tourism Association (ETOA)</a></strong>. Saya sudah tinggal di Eropa lebih dari 17 tahun, tetapi masih menganggap Surabaya dan Indonesia sebagai <em>hometown.</em></p>
-                                                        <p class=" translation-block">The reason why I started Your Private Europe is because I see that there is currently no tour offering available from Asia to Europe that is completely tailor-made, according to your wishes, budgets and schedules. With our concept, you define 100% what you want, and we will help you to make it happen!</p>
-                                                        <p>I am a travel lover and know Europe very well. Having visited 30+ countries and lived in 3 different continents, I am convinced that the service concept we offer is the best way to explore and discover Europe.</p>
-                                                        <p>I invite you to choose our services, and it is my personal commitment to make your visit to Europe to become an unforgettable experience!</p>
+                                                        <?= $language == 'id' ? $aboutUs['message_id'] : $aboutUs['message_en'] ?>
                                                     </div>
 
                                                 </div>

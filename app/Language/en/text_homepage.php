@@ -11,6 +11,7 @@ return [
     'services' => 'SERVICES',
     'about_us_navbar' => 'ABOUT US',
     'contact_us_navbar' => 'CONTACT US',
+    'other_services' => 'OTHER SERVICES',
 
     // text for detail company
     'since_year' => 'Inception Year',

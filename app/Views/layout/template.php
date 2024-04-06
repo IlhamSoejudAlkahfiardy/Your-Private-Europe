@@ -1067,6 +1067,9 @@
                                 <li id="menu-item-2370" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2370">
                                     <a style="font-family: 'Oswald';font-weight: normal;font-size: 16px;" href="/<?= $language ?>/blog"><?= lang("text_homepage.blog") ?></a><i class="bi bi-chevron-down"></i>
                                 </li>
+                                <li id="menu-item-2370" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2370">
+                                    <a style="font-family: 'Oswald';font-weight: normal;font-size: 16px;" href="/<?= $language ?>/<?= $language == 'id' ? 'layanan-lainnya' : 'other-services' ?>"><?= lang("text_homepage.other_services") ?></a><i class="bi bi-chevron-down"></i>
+                                </li>
 
                             </ul>
                         </li>

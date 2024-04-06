@@ -11,6 +11,7 @@ return [
     'services' => 'LAYANAN',
     'about_us_navbar' => 'TENTANG KAMI',
     'contact_us_navbar' => 'HUBUNGI KAMI',
+    'other_services' => 'LAYANAN LAINNYA',
 
     // text for detail company
     'since_year' => 'Tahun Berdiri',
