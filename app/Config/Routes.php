@@ -72,3 +72,19 @@ $routes->post('/proses_tambah_detail_corporate_agent', 'admin\DetailCorporateAge
 $routes->get('/editdetail_corporate_agent/(:num)', 'admin\DetailCorporateAgentctrl::edit/$1');
 $routes->post('/proses_edit_detail_corporate_agent/(:num)', 'admin\DetailCorporateAgentctrl::proses_edit/$1');
 $routes->get('/delete_detail_corporate_agent/(:any)', 'admin\DetailCorporateAgentctrl::delete/$1');
+
+$routes->get('/Article', 'admin\Articlectrl::index');
+$routes->get('/tambahArticle', 'admin\Articlectrl::tambah');
+$routes->post('/proses_tambah_Article', 'admin\Articlectrl::proses_tambah');
+$routes->get('/editArticle/(:num)', 'admin\Articlectrl::edit/$1');
+$routes->post('/proses_edit_Article/(:num)', 'admin\Articlectrl::proses_edit/$1');
+$routes->get('/delete_Article/(:any)', 'admin\Articlectrl::delete/$1');
+
+
+
+$routes->get('/image_articles', 'admin\ImageArticlectrl::index');
+$routes->get('/tambahimage_articles', 'admin\ImageArticlectrl::tambah');
+$routes->post('/proses_tambah_image_articles', 'admin\ImageArticlectrl::proses_tambah');
+$routes->get('/editimage_articles/(:num)', 'admin\ImageArticlectrl::edit/$1');
+$routes->post('/proses_edit_image_articles/(:num)', 'admin\ImageArticlectrl::proses_edit/$1');
+$routes->get('/delete_image_articles/(:any)', 'admin\ImageArticlectrl::delete/$1');
