@@ -4,16 +4,23 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class AboutUsModel extends Model
+class ContactUsModel extends Model
 {
-    protected $table            = 'about_us';
+    protected $table            = 'contact_us';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
     protected $allowedFields    = [
-        
+        'heading_id',
+        'heading_en',
+        'section_id',
+        'section_en',
+        'title_id',
+        'title_en',
+        'phone_number_eu',
+        'phone_number_id',
     ];
 
     protected bool $allowEmptyInserts = false;

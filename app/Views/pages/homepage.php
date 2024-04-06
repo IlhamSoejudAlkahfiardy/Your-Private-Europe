@@ -463,7 +463,7 @@
                                             </div>
                                             <div class="content">
                                                 <h4 style="text-align: center;">
-                                                    <a href="#">
+                                                    <a href="/<?= $language ?>/<?= $language == 'id' ? 'layanan-kami' : 'our-services' ?>">
                                                         VIP Services
                                                     </a>
                                                 </h4>
@@ -481,7 +481,7 @@
                                             </div>
                                             <div class="content">
                                                 <h4 style="text-align: center;">
-                                                    <a href="#">
+                                                    <a href="/<?= $language ?>/<?= $language == 'id' ? 'layanan-kami' : 'our-services' ?>">
                                                         Private Tour
                                                     </a>
                                                 </h4>
@@ -499,7 +499,7 @@
                                             </div>
                                             <div class="content">
                                                 <h4 style="text-align: center;">
-                                                    <a href="#">
+                                                    <a href="/<?= $language ?>/<?= $language == 'id' ? 'layanan-kami' : 'our-services' ?>">
                                                         MICE
                                                     </a>
                                                 </h4>
