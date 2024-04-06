@@ -44,7 +44,7 @@ $routes->get('admin/faq/index', 'admin\FAQController::index');
 $routes->get('admin/faq/tambah', 'admin\FAQController::tambah');
 $routes->post('admin/faq/proses_tambah', 'admin\FAQController::proses_tambah');
 $routes->get('admin/faq/edit/(:num)', 'admin\FAQController::edit/$1');
-$routes->post('admin/faq/proses_edit/(:num)', 'admin\FAQController::proses_edit/$1');
+$routes->put('admin/faq/proses_edit/(:num)', 'admin\FAQController::proses_edit/$1');
 $routes->get('admin/faq/delete/(:num)', 'admin\FAQController::delete/$1');
 
 $routes->get('admin/faqC/index', 'admin\FaqC::index');

@@ -10,8 +10,7 @@
                 <div class="card-body">
                     <form action="<?= base_url('admin/faq/proses_edit/' . $faqData['id']) ?>" method="POST" enctype="multipart/form-data">
                         <?= csrf_field(); ?>
-                        <input type="hidden" name="_method" value="PATCH">
-
+                        <input type="hidden" name="_method" value="PUT">
                         <div class="row">
                             <div class="mb-3">
                                 <label class="form-label">SEO Tag Title (ID)</label>
