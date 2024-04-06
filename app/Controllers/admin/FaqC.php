@@ -64,68 +64,53 @@ public function proses_tambah()
 
 
 
-public function edit($id)
+public function edit($id_faq_category)
 {
-    // Pengecekan apakah pengguna sudah login atau belum
-    $faqc_model = new FAQCategoryModel();
-    $faqcData = $faqc_model->find($id);
-    $validation = \Config\Services::validation();
+    $faqCategoryModel = new FAQCategoryModel();
+    $faqCategoryData = $faqCategoryModel->find($id_faq_category);
 
-    return view('admin/faqC/edit', [
-        'faqcData' => $faqcData,
-        'validation' => $validation
-    ]);
+    if (!$faqCategoryData) {
+        return redirect()->back()->with('error', 'FAQ Category not found');
+    }
+    return view('admin/faqC/edit', ['faqCategoryData' => $faqCategoryData]);
+
 }
 
 
-public function proses_edit($id = null)
+public function proses_edit($id_faq_category = null)
 {
-    // Validasi ID
-    if (!is_numeric($id)) {
-        return redirect()->back();
+    if (!is_numeric($id_faq_category)) {
+        return redirect()->back()->with('error', 'Invalid ID');
     }
 
-    $name_id = $this->request->getVar("name_id");
-    $name_en = $this->request->getVar("name_en");
+    $faqCategoryModel = new FAQCategoryModel();
 
-    // Validasi nama aktivitas Indonesia
-    if (!preg_match('/^[a-zA-Z0-9\s]+$/', $name_id)) {
-        session()->setFlashdata('error', 'Nama Indonesia hanya boleh berisi huruf dan angka.');
-        return redirect()->back()->withInput();
+    $name_id = $this->request->getPost("name_id");
+    $name_en = $this->request->getPost("name_en");
+
+    // Validasi input
+    $validationRules = [
+        'name_id' => 'required',
+        'name_en' => 'required'
+    ];
+
+    if (!$this->validate($validationRules)) {
+        return redirect()->back()->withInput()->with('validation', $this->validator);
     }
-
-    // Validasi nama aktivitas Inggris
-    if (!preg_match('/^[a-zA-Z0-9\s]+$/', $name_en)) {
-        session()->setFlashdata('error', 'Nama Inggris hanya boleh berisi huruf dan angka.');
-        return redirect()->back()->withInput();
-    }
-
-    $faqcModel = new FAQCategoryModel();
 
     try {
-        // Memulai transaksi
-        $faqcModel->transStart();
-
-        // Update data
-        $data = [
+        $faqCategoryModel->update($id_faq_category, [
             'name_id' => $name_id,
             'name_en' => $name_en
-        ];
-        $faqcModel->update($id, $data);
+        ]);
 
-        // Commit transaksi jika berhasil
-        $faqcModel->transCommit();
-
-        session()->setFlashdata('success', 'Data berhasil diperbarui');
-        return redirect()->to(base_url('admin/faqC/index'));
+        return redirect()->to(base_url('admin/faqC/index'))->with('success', 'FAQ Category sukses di update');
     } catch (\Exception $e) {
-        // Rollback transaksi jika terjadi kesalahan
-        $faqcModel->transRollback();
-
-        session()->setFlashdata('error', 'Gagal memperbarui data: ' . $e->getMessage());
-        return redirect()->back()->withInput();
+        return redirect()->back()->withInput()->with('error', 'Gagal untuk mengupdate FAQ Category: ' . $e->getMessage());
     }
 }
+
+
 
 public function delete($id = null)
 {

@@ -8,9 +8,10 @@
         <div class="row g-4 settings-section">
             <div class="app-card app-card-settings shadow-sm p-4">
                 <div class="card-body">
-
                     <form action="<?= base_url('admin/faq/proses_edit/' . $faqData['id']) ?>" method="POST" enctype="multipart/form-data">
                         <?= csrf_field(); ?>
+                        <input type="hidden" name="_method" value="PATCH">
+
                         <div class="row">
                             <div class="mb-3">
                                 <label class="form-label">SEO Tag Title (ID)</label>
@@ -22,11 +23,11 @@
                             </div>
                             <div class="mb-3">
                                 <label class="form-label">SEO Description (ID)</label>
-                                <textarea class="form-control" id="seo_description_id" name="seo_description_id"><?= $faqData['seo_description_id'] ?></textarea>
+                                <input type="text" class="form-control" id="seo_description_id" name="seo_description_id" value="<?= $faqData['seo_description_id'] ?>"></input>
                             </div>
                             <div class="mb-3">
                                 <label class="form-label">SEO Description (EN)</label>
-                                <textarea class="form-control" id="seo_description_en" name="seo_description_en"><?= $faqData['seo_description_en'] ?></textarea>
+                                <input type="text" class="form-control" id="seo_description_en" name="seo_description_en" value="<?= $faqData['seo_description_en'] ?>"></input>
                             </div>
                             <div class="mb-3">
                                 <label class="form-label">FAQ Section (ID)</label>
@@ -46,22 +47,30 @@
                             </div>
                             <div class="mb-3">
                                 <label class="form-label">FAQ Category</label>
-                                <select class="form-select" id="faq_category_id" name="faq_category_id">
-                                <option value="">Select Category</option>
-                                <?php
-                                // Ambil data kategori FAQ dari tabel database
-                                $db = \Config\Database::connect();
-                                $builder = $db->table('faq_category');
-                                $faq_categories = $builder->get()->getResultArray();
-
-                                // Loop melalui setiap kategori FAQ dan buat option dropdown
-                                    foreach ($faq_categories as $category) {
-                                        // Periksa apakah kategori ini yang dipilih sebelumnya
-                                        $selected = (old('faq_category') == $category['id']) ? 'selected' : '';
-                                        echo "<option value='{$category['id']}' $selected>{$category['id']} - {$category['name_id']}</option>";
-                                    }
-                                ?>
+                                <select class="form-select" id="id_faq_category" name="id_faq_category">
+                                    <option value="" hidden></option>
+                                    <?php foreach ($faq_category as $key => $faqc) :?>
+                                        <option value="<?= $faqc['id_faq_category']?>" <?= $faqData['id_faq_category'] == $faqc['id_faq_category'] ? 'selected' : '' ?>>
+                                        <?= $faqc['name_id']?>
+                                    </option>
+                                    <?php endforeach;?>
                                 </select>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Title (ID)</label>
+                                <input type="text" class="form-control" id="title_id" name="title_id" value="<?= $faqData['title_id'] ?>">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Title (EN)</label>
+                                <input type="text" class="form-control" id="title_en" name="title_en" value="<?= $faqData['title_en'] ?>">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Description (ID)</label>
+                                <textarea class="form-control" id="description_id" name="description_id"><?= $faqData['description_id'] ?></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Description (EN)</label>
+                                <textarea class="form-control" id="description_en" name="description_en"><?= $faqData['description_en'] ?></textarea>
                             </div>
                             <div class="row">
                                 <div class="col">

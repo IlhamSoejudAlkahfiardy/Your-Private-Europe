@@ -7,7 +7,7 @@ use CodeIgniter\Model;
 class FAQCategoryModel extends Model
 {
     protected $table            = 'faq_category';
-    protected $primaryKey       = 'id';
+    protected $primaryKey       = 'id_faq_category';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
@@ -39,4 +39,7 @@ class FAQCategoryModel extends Model
     protected $afterFind      = [];
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
+
+
+
 }

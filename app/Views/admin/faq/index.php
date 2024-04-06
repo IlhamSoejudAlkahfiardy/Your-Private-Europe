@@ -35,26 +35,34 @@
                                         <th class="text-center" valign="middle">FAQ Section (EN)</th>
                                         <th class="text-center" valign="middle">FAQ Title (ID)</th>
                                         <th class="text-center" valign="middle">FAQ Title (EN)</th>
-                                        <th class="text-center" valign="middle">FAQ Category (ID)</th>
+                                        <th class="text-center" valign="middle">FAQ Category ID</th>
+                                        <th class="text-center" valign="middle">Title (ID)</th>
+                                        <th class="text-center" valign="middle">Title (En)</th>
+                                        <th class="text-center" valign="middle">Description (ID)</th>
+                                        <th class="text-center" valign="middle">Description (EN)</th>
                                         <th class="text-center" valign="middle">Actions</th>
                                     </tr>
                                 </thead>
 
-                                <tbody>
-                                    <?php foreach ($all_data_faq as $faq) : ?>
+                                <tbody style="text-align: center;">
+                                    <?php foreach ($faq as $faq_item) : ?>
                                         <tr>
-                                            <td><?= $faq['seo_tag_title_id'] ?></td>
-                                            <td><?= $faq['seo_tag_title_en'] ?></td>
-                                            <td><?= $faq['seo_description_id'] ?></td>
-                                            <td><?= $faq['seo_description_en'] ?></td>
-                                            <td><?= $faq['faq_section_id'] ?></td>
-                                            <td><?= $faq['faq_section_en'] ?></td>
-                                            <td><?= $faq['faq_title_id'] ?></td>
-                                            <td><?= $faq['faq_title_en'] ?></td>
-                                            <td><?= $faq['faq_category_id'] ?></td>
+                                            <td><?= $faq_item->seo_tag_title_id ?></td>
+                                            <td><?= $faq_item->seo_tag_title_en ?></td>
+                                            <td><?= $faq_item->seo_description_id ?></td>
+                                            <td><?= $faq_item->seo_description_en ?></td>
+                                            <td><?= $faq_item->faq_section_id ?></td>
+                                            <td><?= $faq_item->faq_section_en ?></td>
+                                            <td><?= $faq_item->faq_title_id ?></td>
+                                            <td><?= $faq_item->faq_title_en ?></td>
+                                            <td><?= $faq_item->name_id ?> / <?= $faq_item->name_en?></td>
+                                            <td><?= $faq_item->title_id ?></td>
+                                            <td><?= $faq_item->title_en ?></td>
+                                            <td><?= $faq_item->description_id ?></td>
+                                            <td><?= $faq_item->description_en ?></td>
                                             <td>
-                                                <a href="<?= base_url('admin/faq/edit') . '/' . $faq['id'] ?>" class="btn btn-primary">Edit</a>
-                                                <a href="<?= base_url('admin/faq/delete') . '/' . $faq['id'] ?>" class="btn btn-danger">Delete</a>
+                                                <a href="<?= base_url('admin/faq/edit') . '/' . $faq_item->id ?>" class="btn btn-primary">Edit</a>
+                                                <a href="<?= base_url('admin/faq/delete') . '/' . $faq_item->id ?>" class="btn btn-danger">Delete</a>
                                             </td>
                                         </tr>
                                     <?php endforeach; ?>
@@ -72,8 +80,8 @@
 </div><!--//app-wrapper-->
 
 <!-- Modal Konfirmasi Hapus -->
-<?php foreach ($all_data_faq as $faq) : ?>
-  <div class="modal fade" id="deleteModal<?= $faq['id'] ?>" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+<?php foreach ($faq as $faq_item) : ?>
+  <div class="modal fade" id="deleteModal<?= $faq_item->id ?>" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -85,7 +93,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
-          <a href="<?= base_url('admin/faq/delete') . '/' . $faq['id'] ?>" class="btn btn-danger">Hapus</a>
+          <a href="<?= base_url('admin/faq/delete') . '/' . $faq_item->id ?>" class="btn btn-danger">Hapus</a>
         </div>
       </div>
     </div>

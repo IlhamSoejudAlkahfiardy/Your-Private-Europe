@@ -9,7 +9,7 @@
             </div>
             </br>
             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                <a href="<?= base_url() . "admin/faqc/tambah" ?>" class="btn btn-primary me-md-2"> + Tambah FAQ Category </a>
+                <a href="<?= base_url() . "admin/faqC/tambah" ?>" class="btn btn-primary me-md-2"> + Tambah FAQ Category </a>
             </div>
         </div><!--//row-->
 
@@ -37,12 +37,12 @@
                                 <tbody style="text-align: center;">
                                     <?php foreach ($all_data_faqcategory as $faqcategory) : ?>
                                         <tr>
-                                            <td><?= $faqcategory['id'] ?></td>
+                                            <td><?= $faqcategory['id_faq_category'] ?></td>
                                             <td><?= $faqcategory['name_id'] ?></td>
                                             <td><?= $faqcategory['name_en'] ?></td>
                                             <td>
-                                                <a href="<?= base_url('admin/faqC/edit') . '/' . $faqcategory['id'] ?>" class="btn btn-primary">Edit</a>
-                                                <a href="<?= base_url('admin/faqC/delete') . '/' . $faqcategory['id'] ?>" class="btn btn-danger">Delete</a>
+                                                <a href="<?= base_url('admin/faqC/edit') . '/' . $faqcategory['id_faq_category'] ?>" class="btn btn-primary">Edit</a>
+                                                <a href="<?= base_url('admin/faqC/delete') . '/' . $faqcategory['id_faq_category'] ?>" class="btn btn-danger">Delete</a>
                                             </td>
                                         </tr>
                                     <?php endforeach; ?>
@@ -61,7 +61,7 @@
 
 <!-- Modal Konfirmasi Hapus -->
 <?php foreach ($all_data_faqcategory as $faqcategory) : ?>
-  <div class="modal fade" id="deleteModal<?= $faqcategory['id'] ?>" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+  <div class="modal fade" id="deleteModal<?= $faqcategory['id_faq_category'] ?>" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -73,7 +73,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
-          <a href="<?= base_url('admin/faqc/delete') . '/' . $faqcategory['id'] ?>" class="btn btn-danger">Hapus</a>
+          <a href="<?= base_url('admin/faqc/delete') . '/' . $faqcategory['id_faq_category'] ?>" class="btn btn-danger">Hapus</a>
         </div>
       </div>
     </div>

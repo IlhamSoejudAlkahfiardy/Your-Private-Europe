@@ -3,22 +3,28 @@
 namespace App\Controllers\admin;
 
 use App\Controllers\BaseController;
+use App\Models\FAQCategoryModel;
 use App\Models\FAQModel;
+use App\Models\TestimonialModel;
+use App\Models\USPModel;
 
 
 class Dashboardctrl extends BaseController
 {
     public function index()
     {
-        // Pengecekan apakah pengguna sudah login atau belum
-        // if (!session()->get('logged_in')) {
-        //     return redirect()->to(base_url('login')); // Ubah 'login' sesuai dengan halaman login kamu
-        // }
-        // $faqModel = new FAQModel();
-       
+        $faqModel = new FAQModel();
+        $faqCModel = new FAQCategoryModel();
+        $TestimonialModel = new TestimonialModel();
+        $UspModel = new USPModel();
 
-        // $data['faqCount'] = $faqModel->countAll();
+
+        $data['faqCount'] = $faqModel->countAll();
+        $data['faqCCount'] = $faqCModel->countAll();
+        $data['testimonialCount'] = $TestimonialModel->countAll();
+        $data['uspCount'] = $UspModel->countAll();
+
        
-        return view('admin/dashboard/index');
+        return view('admin/dashboard/index', $data);
     }
 }

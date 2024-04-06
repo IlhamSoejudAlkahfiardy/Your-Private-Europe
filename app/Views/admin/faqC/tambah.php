@@ -8,7 +8,6 @@
         <div class="row g-4 settings-section">
             <div class="app-card app-card-settings shadow-sm p-4">
                 <div class="card-body">
-
                     <form action="<?= base_url('admin/faqC/proses_tambah') ?>" method="POST" enctype="multipart/form-data">
                         <?= csrf_field(); ?>
                         <div class="row">

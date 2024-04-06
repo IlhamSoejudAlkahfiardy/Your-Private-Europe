@@ -12,7 +12,7 @@ class FAQModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['category_id', 'title_id', 'title_en', 'description_id', 'description_en'];
+    protected $allowedFields    = ['seo_tag_title_id', 'seo_tag_title_en', 'seo_description_id', 'seo_description_en', 'faq_section_id', 'faq_section_en', 'faq_title_id', 'faq_title_en', 'id_faq_category', 'title_id', 'title_en', 'description_id', 'description_en'];
 
     protected bool $allowEmptyInserts = false;
 
@@ -39,4 +39,11 @@ class FAQModel extends Model
     protected $afterFind      = [];
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
+
+    function getAll(){
+        $builder = $this->db->table('faq');
+        $builder->join('faq_category', 'faq_category.id_faq_category = faq.id_faq_category');
+        $query = $builder->get();
+        return $query-> getResult();
+    }
 }

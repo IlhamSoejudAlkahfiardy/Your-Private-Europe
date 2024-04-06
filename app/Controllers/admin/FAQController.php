@@ -23,171 +23,63 @@ class FAQController extends BaseController
     public function index()
     {
         // Pengecekan apakah pengguna sudah login atau belum
-        $faq_model = new FAQModel();
-        $all_data_faq = $faq_model->findAll();
-        $validation = \Config\Services::validation();
-        return view('admin/faq/index', [
-            'all_data_faq' => $all_data_faq,
-            'validation' => $validation
-        ]);
+        $data['faq'] = $this->faqModel->getAll();
+        return view('admin/faq/index', $data);
     }
 
     public function tambah()
-{
-    
-    $faq_model = new FAQModel();
-    $all_data_faq = $faq_model->findAll();
-    $validation = \Config\Services::validation();
-    return view('admin/faq/tambah', [
-        'all_data_faq' => $all_data_faq,
-        'validation' => $validation,
-        'seo_tag_title_id' => '', // Set parameter dengan nilai default kosong
-        'seo_tag_title_en' => '', // Set parameter dengan nilai default kosong
-        'seo_description_id' => '', // Set parameter dengan nilai default kosong
-        'seo_description_en' => '', // Set parameter dengan nilai default kosong
-        'faq_section_id' => '', // Set parameter dengan nilai default kosong
-        'faq_section_en' => '', // Set parameter dengan nilai default kosong
-        'faq_title_id' => '', // Set parameter dengan nilai default kosong
-        'faq_title_en' => '', // Set parameter dengan nilai default kosong
-        'faq_category_id' => '' // Set parameter dengan nilai default kosong
-    ]);
-}
-
-public function proses_tambah()
-{
-    // Set default timezone
-    date_default_timezone_set('Asia/Jakarta');
-
-    // Retrieve file and form data
-    $seo_tag_title_id = $this->request->getVar("seo_tag_title_id");
-    $seo_tag_title_en = $this->request->getVar("seo_tag_title_en");
-    $seo_description_id = $this->request->getVar("seo_description_id");
-    $seo_description_en = $this->request->getVar("seo_description_en");
-    $faq_section_id = $this->request->getVar("faq_section_id");
-    $faq_section_en = $this->request->getVar("faq_section_en");
-    $faq_title_id = $this->request->getVar("faq_title_id");
-    $faq_title_en = $this->request->getVar("faq_title_en");
-    $faq_category_name_id = $this->request->getVar("faq_category_id"); // Changed variable name
-
-    // Pastikan faq_category_id tidak kosong
-    if (!empty($faq_category_name_id)) {
-        // Ambil id dari nama kategori FAQ yang dipilih
-        $db = \Config\Database::connect();
-        $builder = $db->table('faq_category');
-        $category_id_query = $builder->select('id')->where('name_id', $faq_category_name_id)->get()->getRowArray();
-        $faq_category_id = $category_id_query['id'];
-
-        // Siapkan data untuk disimpan ke dalam database
-        $data = [
-            'seo_tag_title_id' => $seo_tag_title_id,
-            'seo_tag_title_en' => $seo_tag_title_en,
-            'seo_description_id' => $seo_description_id,
-            'seo_description_en' => $seo_description_en,
-            'faq_section_id' => $faq_section_id,
-            'faq_section_en' => $faq_section_en,
-            'faq_title_id' => $faq_title_id,
-            'faq_title_en' => $faq_title_en,
-            'faq_category_id' => $faq_category_id, // Use the retrieved id
-        ];
-
-        // Simpan data ke dalam database
-        $faq_model = new FAQModel();
-        $faq_model->save($data);
-
-        // Redirect dengan pesan sukses
-        session()->setFlashdata('success', 'Data berhasil disimpan');
-        return redirect()->to(base_url('admin/faq/index'));
-    } else {
-        // Jika faq_category_id kosong, tampilkan pesan error
-        session()->setFlashdata('error', 'FAQ Category tidak boleh kosong');
-        return redirect()->back();
+    {
+        $data['faq_category'] = $this->faqCategoryModel->findAll();
+        return view('admin/faq/tambah', $data);
     }
-}
 
+    public function proses_tambah()
+    {
+        $data = $this->request->getPost();
+        $this->faqModel->insert($data);
+        return redirect()->to('admin/faq/index')->with('success', 'Data Berhasil Disimpan');
+    }
 
-
-
-
-public function edit($id)
-{
-    // Pengecekan apakah pengguna sudah login atau belum
-    $faq_model = new FAQModel();
-    $faqData = $faq_model->find($id);
-    $validation = \Config\Services::validation();
-
-    return view('admin/faq/edit', [
-        'faqData' => $faqData,
-        'validation' => $validation
-    ]);
-}
+    public function edit($id)
+    {
+        // Validasi ID
+        if (!is_numeric($id) || $id <= 0) {
+            throw new \InvalidArgumentException('Invalid FAQ ID');
+        }
+    
+        // Temukan FAQ berdasarkan ID
+        $faq = $this->faqModel->find($id);
+    
+        // Periksa apakah FAQ ditemukan
+        if ($faq !== null) {
+            // Jika FAQ ditemukan, siapkan data untuk view
+            $data['faqData'] = $faq; // Change $faq to $faqData
+            $data['faq_category'] = $this->faqCategoryModel->findAll();
+    
+            // Tampilkan view edit dengan data yang disiapkan
+            return view('admin/faq/edit', $data);
+        } else {
+            // Jika FAQ tidak ditemukan, lempar PageNotFoundException
+            throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();
+        }
+    }
 
 
 public function proses_edit($id = null)
 {
-    if (!$id) {
-        return redirect()->back();
-    }
-
-    $faqModel = new FAQModel();
-    $faqData = $faqModel->find($id);
-
-    if (!$faqData) {
-        session()->setFlashdata('error', 'Data FAQ tidak ditemukan.');
-        return redirect()->back();
-    }
-
-    $seo_tag_title_id = $this->request->getVar("seo_tag_title_id");
-    $seo_tag_title_en = $this->request->getVar("seo_tag_title_en");
-    $seo_description_id = $this->request->getVar("seo_description_id");
-    $seo_description_en = $this->request->getVar("seo_description_en");
-    $faq_section_id = $this->request->getVar("faq_section_id");
-    $faq_section_en = $this->request->getVar("faq_section_en");
-    $faq_title_id = $this->request->getVar("faq_title_id");
-    $faq_title_en = $this->request->getVar("faq_title_en");
-    $faq_category_id = $this->request->getVar("faq_category_id");
-
-    // Update the FAQ data
-    $data = [
-        'seo_tag_title_id' => $seo_tag_title_id,
-        'seo_tag_title_en' => $seo_tag_title_en,
-        'seo_description_id' => $seo_description_id,
-        'seo_description_en' => $seo_description_en,
-        'faq_section_id' => $faq_section_id,
-        'faq_section_en' => $faq_section_en,
-        'faq_title_id' => $faq_title_id,
-        'faq_title_en' => $faq_title_en,
-        'faq_category_id' => $faq_category_id
-    ];
-
-    // Update the FAQ data in the database
-    $faqModel->update($id, $data);
-
-    session()->setFlashdata('success', 'Data berhasil diperbarui');
-    return redirect()->to(base_url('admin/faq/index'));
+    $data = $this->request->getPost();
+    $this->faqModel->update($id, $data);
+    return redirect()->to('admin/faq/index')->with('success', 'Data Berhasil Diupdate');
 }
 
 public function delete($id = null)
 {
-    if (!$id) {
-        return redirect()->back();
-    }
-
-    $faqModel = new FAQModel();
-    $faqData = $faqModel->find($id);
-
-    if (!$faqData) {
-        session()->setFlashdata('error', 'Data FAQ tidak ditemukan.');
-        return redirect()->back();
-    }
-
-    // Delete the FAQ from the database
-    $faqModel->delete($id);
-
-    session()->setFlashdata('success', 'Data berhasil dihapus');
-    return redirect()->to(base_url('admin/faq/index'));
+    $this->faqModel->delete($id);
+    return redirect()->to('admin/faq/index')->with('success', 'Data Berhasil Dihapus');
 }
 
 
 }
+
 
 

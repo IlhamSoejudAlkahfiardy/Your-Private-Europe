@@ -36,7 +36,9 @@ $routes->set404Override('App\Controllers\ErrorController::show404');
 
 
 //admin
-$routes->get('dashboard', 'admin\Dashboardctrl::index');
+$routes->get('/admin', 'admin\Dashboardctrl::index');
+$routes->get('/admin/dashboard/index', 'admin\Dashboardctrl::index');
+
 
 $routes->get('admin/faq/index', 'admin\FAQController::index');
 $routes->get('admin/faq/tambah', 'admin\FAQController::tambah');
@@ -66,4 +68,5 @@ $routes->post('admin/usp/proses_tambah', 'admin\Usp::proses_tambah');
 $routes->get('admin/usp/edit/(:num)', 'admin\Usp::edit/$1');
 $routes->post('admin/usp/proses_edit/(:num)', 'admin\Usp::proses_edit/$1');
 $routes->get('admin/usp/delete/(:num)', 'admin\Usp::delete/$1');
+
 
