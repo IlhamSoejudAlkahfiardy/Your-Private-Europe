@@ -8,8 +8,9 @@ use App\Models\DestinationModel;
 use App\Models\SocialMediaModel;
 use App\Models\ImageArticleModel;
 use App\Controllers\BaseController;
+use CodeIgniter\HTTP\ResponseInterface;
 
-class ArticleController extends BaseController
+class EventsController extends BaseController
 {
     protected $articleModel;
     protected $destinationModel;
@@ -31,29 +32,13 @@ class ArticleController extends BaseController
         $this->language = session()->get('lang');
     }
 
-    public function index(): void
+    public function index($slug = 'enjoying-natures-beauty-at-the-mountain-peak-an-unforgettable-adventure', $id = 1)
     {
         $data = [
-            'title' => $this->articleModel->select(['seo_tag_title_id', 'seo_tag_title_en'])->first(),
-            'description' => $this->articleModel->select(['seo_description_id', 'seo_description_en'])->first(),
-            'currentUrl' => $this->currentUrl,
-            'language' => $this->language,
-            'navbarDestinations' => $this->destinationModel->select(['title', 'slug'])->findAll(),
-            'articles' => $this->articleModel->findAll(),
-            'latestArticle' => $this->articleModel->orderBy('id', 'DESC')->limit(5)->findAll(),
-            'socmeds' => $this->socmedModel->findAll(),
-            'services' => $this->servicesModel->findAll()
-        ];
-
-        // dd($data['latestArticle']);
-
-        echo view('pages/article', $data);
-    }
-
-    public function detail($slug = '', $id = ''): void
-    {
-        $data = [
-            'title' => $this->articleModel->select(['seo_tag_title_id', 'seo_tag_title_en'])->first(),
+            'title' => [
+                'seo_tag_title_id' => 'Events',
+                'seo_tag_title_en' => 'Events',
+            ],
             'description' => $this->articleModel->select(['seo_description_id', 'seo_description_en'])->first(),
             'currentUrl' => $this->currentUrl,
             'language' => $this->language,
@@ -65,8 +50,8 @@ class ArticleController extends BaseController
             'services' => $this->servicesModel->findAll()
         ];
 
-        // dd($data['imageArticles']);
+        // dd($data);
 
-        echo view('pages/detail_article', $data);
+        echo view('pages/events', $data);
     }
 }

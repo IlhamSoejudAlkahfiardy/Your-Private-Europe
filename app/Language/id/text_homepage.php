@@ -22,7 +22,7 @@ return [
     'banner_button' => 'START NOW',
     'trending_destination' => 'KUNJUNGI SEKARANG',
     'all_destination' => 'LIHAT SEMUA DESTINASI',
-    'button_about_us' => 'Baca Lebih Lanjut',
+    'button_about_us' => 'Tentang Kami',
     'all_faq' => 'BACA PERTANYAAN LAINNYA',
 
     // text for footer -> quick_link

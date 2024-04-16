@@ -958,7 +958,7 @@
 </head>
 
 <body class="home page-template page-template-elementor_header_footer page page-id-234 wp-embed-responsive theme-astrip woocommerce-js elementor-default elementor-template-full-width elementor-kit-8 elementor-page elementor-page-234">
-    <div class="topbar d-xl-flex d-none">
+    <div class="topbar d-xl-flex d-none" style="background-color: #086B7D;">
         <div class="container-lg container-fluid d-flex justify-content-between align-items-center">
             <div class="topbar-left">
                 <ul class="topbar-info-list">
@@ -1062,7 +1062,7 @@
                                     <a style="font-family: 'Oswald';font-weight: normal;font-size: 16px;" href="/<?= $language ?>/<?= $language == 'id' ? 'destinasi' : 'destination' ?>"><?= lang("text_homepage.destination") ?></a><i class="bi bi-chevron-down"></i>
                                 </li>
                                 <li id="menu-item-2370" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2370">
-                                    <a style="font-family: 'Oswald';font-weight: normal;font-size: 16px;" href=""><?= lang("text_homepage.events") ?></a><i class="bi bi-chevron-down"></i>
+                                    <a style="font-family: 'Oswald';font-weight: normal;font-size: 16px;" href="/<?= $language ?>/events"><?= lang("text_homepage.events") ?></a><i class="bi bi-chevron-down"></i>
                                 </li>
                                 <li id="menu-item-2370" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2370">
                                     <a style="font-family: 'Oswald';font-weight: normal;font-size: 16px;" href="/<?= $language ?>/blog"><?= lang("text_homepage.blog") ?></a><i class="bi bi-chevron-down"></i>
@@ -1191,23 +1191,23 @@
                                 <div class="menu-information-container">
                                     <ul id="menu-information" class="menu">
                                         <li id="menu-item-1932" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1932">
-                                            <a href="#"><?= lang("text_homepage.home") ?></a>
+                                            <a href="/<?= $language ?>"><?= lang("text_homepage.home") ?></a>
                                         </li>
 
                                         <li id="menu-item-1935" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1935">
-                                            <a href="#"><?= lang("text_homepage.our_tours") ?></a>
+                                            <a href="/<?= $language ?>/<?= $language == 'id' ? 'destinasi' : 'destination' ?>"><?= lang("text_homepage.our_tours") ?></a>
                                         </li>
                                         <li id="menu-item-1936" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1936">
-                                            <a href="#contact-us/"><?= lang("text_homepage.about_us") ?></a>
+                                            <a href="/<?= $language ?>/<?= $language == 'id' ? 'tentang-kami' : 'about-us' ?>"><?= lang("text_homepage.about_us") ?></a>
                                         </li>
                                         <li id="menu-item-1936" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1936">
-                                            <a href="#contact-us/"><?= lang("text_homepage.contact_us") ?></a>
+                                            <a href="/<?= $language ?>/<?= $language == 'id' ? 'hubungi-kami' : 'contact-us' ?>"><?= lang("text_homepage.contact_us") ?></a>
                                         </li>
                                         <li id="menu-item-1936" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1936">
-                                            <a href="#contact-us/"><?= lang("text_homepage.help_center") ?></a>
+                                            <a href="/<?= $language ?>/faq"><?= lang("text_homepage.help_center") ?></a>
                                         </li>
                                         <li id="menu-item-1936" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1936">
-                                            <a href="#contact-us/"><?= lang("text_homepage.corporate") ?></a>
+                                            <a href="/<?= $language ?>/corporate-and-travel-agent"><?= lang("text_homepage.corporate") ?></a>
                                         </li>
                                     </ul>
                                 </div>
@@ -1222,11 +1222,6 @@
                                 </div>
                                 <div class="menu-destination-container">
                                     <ul id="menu-destination" class="menu">
-                                        <li id="menu-item-2370" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2370">
-                                            <a href='#'>
-                                                <?= lang("text_homepage.other_links") ?>
-                                            </a>
-                                        </li>
                                         <li id="menu-item-2370" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2370">
                                             <a href='#'>
                                                 <?= lang("text_homepage.terms") ?>
@@ -1312,12 +1307,12 @@
                             <a href="3">Your Private Europe</a>
                         </p>
                     </div>
-                    <div class="col-md-6 d-flex justify-content-lg-end justify-content-center align-items-center">
+                    <!-- <div class="col-md-6 d-flex justify-content-lg-end justify-content-center align-items-center">
                         <ul class="f-bottom-list d-flex jusify-content-start align-items-center">
                             <li><a target="_blank" href="#">Privacy Policy</a></li>
                             <li><a target="_blank" href="#">Terms of Use</a></li>
                         </ul>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -1526,6 +1521,10 @@
         };
     </script>
     <script src="<?= base_url('assets/js/frontend.min.js') ?>" id="elementor-frontend-js"></script>
+
+    <!-- Start of HubSpot Embed Code -->
+    <script type="text/javascript" id="hs-script-loader" async defer src="//js-eu1.hs-scripts.com/144464976.js"></script>
+    <!-- End of HubSpot Embed Code -->
 </body>
 
 </html>

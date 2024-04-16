@@ -41,5 +41,11 @@ $routes->get('/en/corporate-and-travel-agent', 'CorporateController::index');
 $routes->get('/id/layanan-lainnya', 'OtherServicesController::index');
 $routes->get('/en/other-services', 'OtherServicesController::index');
 
+$routes->get('/id/layanan-kami/(:any)', 'ServiceController::detail/$1');
+$routes->get('/en/our-services/(:any)', 'ServiceController::detail/$1');
+
+$routes->get('/id/events', 'EventsController::index');
+$routes->get('/en/events', 'EventsController::index');
+
 // Page not found handler
 $routes->set404Override('App\Controllers\ErrorController::show404');

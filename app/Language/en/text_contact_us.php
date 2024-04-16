@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'call_us' => 'Call Us',
     'form_heading' => 'PLEASE FILL IN THIS FORM AS COMPLETE AS POSSIBLE',
     'name' => 'Name',
     'phone' => 'Phone No. / Mobile (e.g. +62-123-456-7890)',

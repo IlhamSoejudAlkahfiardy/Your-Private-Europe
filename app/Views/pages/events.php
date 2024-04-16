@@ -2,71 +2,105 @@
 
 <?= $this->section('content') ?>
 
-<div class="inner-banner-section" style="background-image: url(<?= base_url('assets/images/breadcrumb-bg.jpg') ?>);">
+<style>
+    /* Responsiveness for mobile (375px) */
+    @media (min-width: 425px) {
+        #heading1-detail-article {
+            font-size: 1rem;
+            font-weight: 600;
+            color: white;
+            text-shadow: 1px 1px #69727d;
+        }
+    }
+
+    /* Responsiveness for tablet (768px) */
+    @media (min-width: 376px) and (max-width: 768px) {
+        #heading1-detail-article {
+            font-size: 3.5rem;
+            font-weight: 600;
+            color: white;
+            text-shadow: 2px 2px #69727d;
+        }
+    }
+
+    /* Responsiveness for laptop (1024px) */
+    @media (min-width: 769px) and (max-width: 1024px) {
+        #heading1-detail-article {
+            font-size: 4.5rem;
+            font-weight: 700;
+            color: white;
+            text-shadow: 2px 2px #69727d;
+        }
+    }
+
+    /* Responsiveness for large laptop (1440px) */
+    @media (min-width: 1025px) and (max-width: 1440px) {
+        #heading1-detail-article {
+            font-size: 5.5rem;
+            font-weight: 700;
+            color: white;
+            text-shadow: 2px 2px #69727d;
+        }
+    }
+
+    /* Responsiveness for large desktop (1441px and above) */
+    @media (min-width: 1441px) {
+        #heading1-detail-article {
+            font-size: 5.5rem;
+            font-weight: 700;
+            color: white;
+            text-shadow: 2px 2px #69727d;
+        }
+    }
+</style>
+
+<!-- ========== header end============= -->
+
+<div class="inner-banner-section" style="background-image: url(<?= base_url('assets/images/blogs/') . $article['cover_image'] ?>);">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-xl-8 col-md-10 col-sm-12">
                 <div class="breadcrumb-area">
-                    <h2>
-                        Blog
-                    </h2>
+                    <h1 id="heading1-detail-article">
+                        Events
+                    </h1>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
 <div class="blog-standard-section pt-120 pb-120">
     <div class="container">
-        <div class="row ">
-            <div class="col-lg-8">
-                <div class="blog-standard-area">
+        <div class="row">
+            <div class="col-lg-8  or1">
+                <div class="blog-post-area">
+                    <article aria-label="article" id="post-2537" class="post-2537 post type-post status-publish format-standard has-post-thumbnail hentry category-adventure category-couple-tour tag-hotel tag-tours tag-travel tag-vacation">
+                        <div class="blog-details">
+                            <div class="blog-details-single">
 
-                    <?php foreach ($articles as $article) : ?>
-                        <div class="blog-standard-single">
-                            <article aria-label="article" id="post-2537" class="post-2537 post type-post status-publish format-standard has-post-thumbnail hentry category-adventure category-couple-tour tag-hotel tag-tours tag-travel tag-vacation">
-                                <div>
-                                    <div class="blog-format">
-                                        <a href="#">
-                                            <span class="blog-date">
-                                                <?= $article['date'] ?>
-                                            </span>
-                                        </a>
-                                        <div class="blog-image">
-                                            <a href="#">
-                                                <img loading="lazy" width="870" height="500" src="<?= base_url('assets/images/blogs/' . $article['cover_image']) ?>" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="<?= $article['alt_image'] ?>" decoding="async" fetchpriority="high" sizes="(max-width: 870px) 100vw, 870px"> </a>
-                                        </div>
-                                    </div>
+                                <figure class="wp-block-gallery has-nested-images columns-default is-cropped wp-block-gallery-1 is-layout-flex wp-block-gallery-is-layout-flex">
+                                    <?php foreach ($imageArticles as $imageArticle) : ?>
+                                        <figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="319" height="300" data-id="1665" src="<?= base_url('assets/images/blogs/' . $imageArticle['url']) ?>" alt="" class="wp-image-1665" sizes="(max-width: 319px) 100vw, 319px"></figure>
+                                    <?php endforeach; ?>
+                                </figure>
 
-                                    <div class="blog-content">
-                                        <h3>
-                                            <a href="/<?= $language ?>/blog/<?= $article['slug'] . '/' . $article['id'] ?>">
-                                                <?= $language == 'id' ? $article['title_id'] : $article['title_en'] ?>
-                                            </a>
-                                        </h3>
-                                        <div class="author-area">
-                                            <p><?= lang('text_article.by') ?> <a href="#"><?= $article['writer'] ?></p>
-                                        </div>
-                                        <p>
-                                            <?= $language == 'id' ? substr($article['description_id'], 0, strpos($article['description_id'], '</p>', 150)) . '...' : substr($article['description_en'], 0, strpos($article['description_en'], '</p>', 150)) . '...'  ?>
-                                        </p>
+                                <div class="blog-details-single">
 
-                                        <div class="blog-meta">
-                                            <a href="/<?= $language ?>/blog/<?= $article['slug'] . '/' . $article['id']  ?>" class="read-more-btn"><?= lang('text_article.continue_reading') ?><i class="bi bi-arrow-right"></i></a>
+                                    <?= $language == 'id' ? $article['description_id'] : $article['description_en'] ?>
 
-                                        </div>
-                                    </div>
                                 </div>
-                            </article>
-                        </div>
-                    <?php endforeach; ?>
 
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-6 col-sm-10">
                 <div class="blog-sidebar ps-lg-4">
                     <div id="block-2" class="blog-widget-item widget_block widget_search">
-                        <form role="search" method="get" action="#" class="wp-block-search__button-outside wp-block-search__text-button wp-block-search"><label class="wp-block-search__label" for="wp-block-search__input-1">Search</label>
-                            <div class="wp-block-search__inside-wrapper "><input class="wp-block-search__input" id="wp-block-search__input-1" placeholder="<?= lang('text_article.search_field') ?>" value="" type="search" name="s" required=""><button aria-label="Search" class="wp-block-search__button wp-element-button" type="submit"><?= lang('text_article.search_button') ?></button></div>
+                        <form role="search" method="get" action="#" class="wp-block-search__button-outside wp-block-search__text-button wp-block-search"><label class="wp-block-search__label" for="wp-block-search__input-2">Search</label>
+                            <div class="wp-block-search__inside-wrapper "><input class="wp-block-search__input" id="wp-block-search__input-2" placeholder="<?= lang('text_article.search_field') ?>" value="" type="search" name="s" required=""><button aria-label="Search" class="wp-block-search__button wp-element-button" type="submit"><?= lang('text_article.search_button') ?></button></div>
                         </form>
                     </div>
                     <div id="block-3" class="blog-widget-item widget_block">
@@ -75,7 +109,6 @@
                                 <h2 class="wp-block-heading">
                                     <?= lang('text_article.services') ?>
                                 </h2>
-
                                 <ul class="wp-block-latest-posts__list has-dates wp-block-latest-posts">
                                     <?php foreach($services as $service): ?>
                                     <li>
@@ -98,7 +131,6 @@
 
 
                                 <ul class="wp-block-latest-posts__list has-dates wp-block-latest-posts">
-
                                     <?php foreach ($latestArticle as $article) : ?>
                                         <li>
                                             <div class="wp-block-latest-posts__featured-image alignleft">
@@ -112,7 +144,6 @@
                                             </time>
                                         </li>
                                     <?php endforeach; ?>
-
                                 </ul>
                             </div>
                         </div>
@@ -126,37 +157,33 @@
 
 
                                 <ul class="wp-block-categories-list wp-block-categories">
-                                    <li class="cat-item cat-item-4"><a href="#">Adventure</a>
+                                    <li class="cat-item cat-item-4"><a href="#category/adventure/">Adventure</a>
                                     </li>
-                                    <li class="cat-item cat-item-6"><a href="#">Couple Tour</a>
+                                    <li class="cat-item cat-item-6"><a href="#category/couple-tour/">Couple Tour</a>
                                     </li>
-                                    <li class="cat-item cat-item-7"><a href="#">Family Adventure</a>
+                                    <li class="cat-item cat-item-7"><a href="#category/family-adventure/">Family Adventure</a>
                                     </li>
-                                    <li class="cat-item cat-item-5"><a href="#">Popular Tours</a>
+                                    <li class="cat-item cat-item-5"><a href="#category/popular-tours/">Popular Tours</a>
                                     </li>
-                                    <li class="cat-item cat-item-24"><a href="#">Travel Vaction</a>
+                                    <li class="cat-item cat-item-24"><a href="#category/travel-vaction/">Travel Vaction</a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                     </div> -->
-                    <div id="block-23" class="blog-widget-item widget_block">
+                    <!-- <div id="block-23" class="blog-widget-item widget_block">
                         <div class="wp-block-group is-layout-flow wp-block-group-is-layout-flow">
                             <div class="wp-block-group__inner-container">
-                                <!-- <h2 class="wp-block-heading">
+                                <h2 class="wp-block-heading">
                                     <?= lang('text_article.follow') ?>
-                                </h2> -->
+                                </h2>
 
 
 
-                                <!-- <ul class="wp-block-social-links has-icon-color has-icon-background-color is-layout-flex wp-block-social-links-is-layout-flex">
-                                    <li style="color: #5e5e5e; background-color: #ffffff; " class="wp-social-link wp-social-link-facebook has-white-background-color wp-block-social-link">
-                                        <a href="https://www.facebook.com/" class="wp-block-social-link-anchor"><svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                                <ul class="wp-block-social-links has-icon-color has-icon-background-color is-layout-flex wp-block-social-links-is-layout-flex">
+                                    <li style="color: #5e5e5e; background-color: #ffffff; " class="wp-social-link wp-social-link-facebook has-white-background-color wp-block-social-link"><a href="https://www.facebook.com/" class="wp-block-social-link-anchor"><svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
                                                 <path d="M12 2C6.5 2 2 6.5 2 12c0 5 3.7 9.1 8.4 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.3v7C18.3 21.1 22 17 22 12c0-5.5-4.5-10-10-10z"></path>
-                                            </svg>
-                                            <span class="wp-block-social-link-label screen-reader-text">Facebook</span>
-                                        </a>
-                                    </li>
+                                            </svg><span class="wp-block-social-link-label screen-reader-text">Facebook</span></a></li>
 
                                     <li style="color: #5e5e5e; background-color: #ffffff; " class="wp-social-link wp-social-link-twitter has-white-background-color wp-block-social-link"><a href="https://twitter.com/" class="wp-block-social-link-anchor"><svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
                                                 <path d="M22.23,5.924c-0.736,0.326-1.527,0.547-2.357,0.646c0.847-0.508,1.498-1.312,1.804-2.27 c-0.793,0.47-1.671,0.812-2.606,0.996C18.324,4.498,17.257,4,16.077,4c-2.266,0-4.103,1.837-4.103,4.103 c0,0.322,0.036,0.635,0.106,0.935C8.67,8.867,5.647,7.234,3.623,4.751C3.27,5.357,3.067,6.062,3.067,6.814 c0,1.424,0.724,2.679,1.825,3.415c-0.673-0.021-1.305-0.206-1.859-0.513c0,0.017,0,0.034,0,0.052c0,1.988,1.414,3.647,3.292,4.023 c-0.344,0.094-0.707,0.144-1.081,0.144c-0.264,0-0.521-0.026-0.772-0.074c0.522,1.63,2.038,2.816,3.833,2.85 c-1.404,1.1-3.174,1.756-5.096,1.756c-0.331,0-0.658-0.019-0.979-0.057c1.816,1.164,3.973,1.843,6.29,1.843 c7.547,0,11.675-6.252,11.675-11.675c0-0.178-0.004-0.355-0.012-0.531C20.985,7.47,21.68,6.747,22.23,5.924z"></path>
@@ -169,13 +196,15 @@
                                     <li style="color: #5e5e5e; background-color: #ffffff; " class="wp-social-link wp-social-link-pinterest has-white-background-color wp-block-social-link"><a href="https://www.pinterest.com/" class="wp-block-social-link-anchor"><svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
                                                 <path d="M12.289,2C6.617,2,3.606,5.648,3.606,9.622c0,1.846,1.025,4.146,2.666,4.878c0.25,0.111,0.381,0.063,0.439-0.169 c0.044-0.175,0.267-1.029,0.365-1.428c0.032-0.128,0.017-0.237-0.091-0.362C6.445,11.911,6.01,10.75,6.01,9.668 c0-2.777,2.194-5.464,5.933-5.464c3.23,0,5.49,2.108,5.49,5.122c0,3.407-1.794,5.768-4.13,5.768c-1.291,0-2.257-1.021-1.948-2.277 c0.372-1.495,1.089-3.112,1.089-4.191c0-0.967-0.542-1.775-1.663-1.775c-1.319,0-2.379,1.309-2.379,3.059 c0,1.115,0.394,1.869,0.394,1.869s-1.302,5.279-1.54,6.261c-0.405,1.666,0.053,4.368,0.094,4.604 c0.021,0.126,0.167,0.169,0.25,0.063c0.129-0.165,1.699-2.419,2.142-4.051c0.158-0.59,0.817-2.995,0.817-2.995 c0.43,0.784,1.681,1.446,3.013,1.446c3.963,0,6.822-3.494,6.822-7.833C20.394,5.112,16.849,2,12.289,2"></path>
                                             </svg><span class="wp-block-social-link-label screen-reader-text">Pinterest</span></a></li>
-                                </ul> -->
+                                </ul>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+
 <?= $this->endSection() ?>

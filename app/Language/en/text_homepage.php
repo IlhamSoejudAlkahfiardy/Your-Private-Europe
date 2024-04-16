@@ -22,7 +22,7 @@ return [
     'banner_button' => 'START NOW',
     'trending_destination' => 'EXPLORE NOW',
     'all_destination' => 'SEE ALL DESTINATION',
-    'button_about_us' => 'Read More',
+    'button_about_us' => 'About Us',
     'all_faq' => 'READ OTHER FAQ',
 
     // text for footer -> quick_link

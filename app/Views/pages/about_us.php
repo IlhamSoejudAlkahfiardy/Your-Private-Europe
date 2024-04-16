@@ -33,7 +33,7 @@
                                             <div class="row justify-content-center">
                                                 <div class="col-lg-6 ps-lg-5">
                                                     <div class="about3-title text-start" style="padding-right: 0px !important;">
-                                                        <p style="font-family:'Oswald';font-size: 19px;font-weight: 600;color:#e0bc6d;"><?= $language == 'id' ? $aboutUs['section_id'] : $aboutUs['section_en'] ?></p>
+                                                        <p style="font-family:'Oswald';font-size: 19px;font-weight: 600;color:#086B7D;"><?= $language == 'id' ? $aboutUs['section_id'] : $aboutUs['section_en'] ?></p>
                                                         <p style="font-family:'Oswald';font-size: 34px;font-weight: 600;"><?= $language == 'id' ? $aboutUs['title_id'] : $aboutUs['title_en'] ?></p>
                                                         <p style="text-align: justify;">
                                                             <?= $language == 'id' ? $aboutUs['description_id'] : $aboutUs['description_en'] ?>
@@ -176,7 +176,7 @@
 
                                         <div class=" justify-content-center">
                                             <div class="section-title1">
-                                                <span>
+                                                <span style="color:#086B7D !important;font-weight: 700;letter-spacing: 0px !important;">
                                                     <?= $language == 'id' ? $aboutUs['section_message_id'] : $aboutUs['section_message_en'] ?>
                                                 </span>
                                                 <h2 style="font-size: 30px;font-family: 'Oswald';">

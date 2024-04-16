@@ -7,6 +7,7 @@ use App\Models\USPModel;
 use CodeIgniter\HTTP\URI;
 use App\Models\AboutUsModel;
 use App\Models\HomepageModel;
+use App\Models\ServicesModel;
 use App\Models\CommitmentModel;
 use App\Models\HowItWorksModel;
 use App\Models\DestinationModel;
@@ -31,6 +32,7 @@ class HomepageController extends BaseController
     protected $imageDestinationModel;
     protected $FAQModel;
     protected $socmedModel;
+    protected $servicesModel;
 
     protected $currentUrl;
     protected $language;
@@ -49,6 +51,7 @@ class HomepageController extends BaseController
         $this->imageDestinationModel = new ImageDestinationModel();
         $this->FAQModel = new FAQModel();
         $this->socmedModel = new SocialMediaModel();
+        $this->servicesModel = new ServicesModel();
 
         $this->currentUrl = current_url();
         $this->language = session()->get('lang');
@@ -91,10 +94,11 @@ class HomepageController extends BaseController
                 'MIN(image_destination.image_name_en) as image_name_en',
                 'MIN(image_destination.alt_image) as alt_image',
             ])->join('image_destination', 'image_destination.destination_id = destination.id', 'left')->groupBy('destination.id')->findAll(),
+            'services' => $this->servicesModel->findAll(),
 
         ];
 
-        // dd($data['faqs']);
+        // dd($data['services']);
 
         echo view('pages/homepage', $data);
     }

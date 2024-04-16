@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'call_us' => 'Hubungi Kami',
     'form_heading' => 'ISI INFORMASI ANDA DI FORMULIR INI SELENGKAP-LENGKAPNYA',
     'name' => 'Nama',
     'phone' => 'No. Telp / Ponsel (e.g. +62-123-456-7890)',
