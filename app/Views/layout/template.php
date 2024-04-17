@@ -834,6 +834,7 @@
     </style>
     <!-- <link rel="stylesheet" id="google-fonts-css" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&amp;family=Satisfy&amp;family=Work+Sans:wght@300;400;500;600;700;800;900&amp;display=swap" media="all" /> -->
     <link rel="stylesheet" id="google-fonts-css" href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" media="all" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" id="animate-css" href="<?= base_url('assets/css/animate.css') ?>" media="all" />
     <link rel="stylesheet" id="bootstrap-css" href="<?= base_url('assets/css/bootstrap.min.css') ?>" media="all" />
     <link rel="stylesheet" id="boxicons-css" href="<?= base_url('assets/css/boxicons.min.css') ?>" media="all" />
@@ -958,7 +959,7 @@
 </head>
 
 <body class="home page-template page-template-elementor_header_footer page page-id-234 wp-embed-responsive theme-astrip woocommerce-js elementor-default elementor-template-full-width elementor-kit-8 elementor-page elementor-page-234">
-    <div class="topbar d-xl-flex d-none" style="background-color: #086B7D;">
+    <div class="topbar d-xl-flex d-none" style="background-color: #202338;">
         <div class="container-lg container-fluid d-flex justify-content-between align-items-center">
             <div class="topbar-left">
                 <ul class="topbar-info-list">
@@ -1026,7 +1027,7 @@
             <div class="header-logo header-sticky-logo">
                 <a href="/<?= $language ?>" title="Astrip">
                     <img loading="lazy" class="img-fluid" src="<?= base_url('assets/images/YPE-LOGO-FULL-BLUE-GOLD-2.png') ?>" alt="Astrip" style="
-            width: 200px;
+            width: 300px;
             " /></a>
             </div>
             <div class="main-nav" style="margin-top: 7px !important;">
@@ -1034,7 +1035,7 @@
                     <div class="mobile-logo-wrap">
                         <a href="/<?= $language ?>  " title="Astrip">
                             <img loading="lazy" class="img-fluid" src="<?= base_url('assets/images/YPE-LOGO-FULL-BLUE-GOLD-2.png') ?>" alt="Astrip" style="
-                width: 200px;
+                width: 300px;
                 " /></a>
                     </div>
                     <div class="menu-close-btn">
@@ -1048,41 +1049,57 @@
                                 <img style="margin-bottom: 3px;" src="<?= base_url('assets/images/house-solid.svg') ?>" alt="link-home" width="20" height="20">
                             </a>
                         </li>
-                        <li id="menu-item-1995" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1995">
-                            <a style="font-family: 'Oswald';font-weight: normal;font-size: 16px;" href="/<?= $language ?>/corporate-and-travel-agent">TRAVEL AGENT & CORPORATE</a><i class="bi bi-chevron-down"></i>
-                        </li>
+                        <!-- <li id="menu-item-1995" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1995">
+                            <a style="font-family: 'Open Sans';font-weight: 700;font-size: 16px;" href="/<?= $language ?>/corporate-and-travel-agent">TRAVEL AGENT & CORPORATE</a><i class="bi bi-chevron-down"></i>
+                        </li> -->
+                        <!-- <li id="menu-item-1995" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1995">
+                            <a style="font-family: 'Open Sans';font-weight: 700;font-size: 16px;" href="/<?= $language ?>/<?= $language == 'id' ? 'layanan-kami' : 'our-services' ?>"><?= lang("text_homepage.services") ?></a><i class="bi bi-chevron-down"></i>
+                        </li> -->
                         <li id="menu-item-2339" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2339">
-                            <a style="font-family: 'Oswald';font-weight: normal;font-size: 16px;" href="#"><?= lang("text_homepage.information") ?></a><i class="bi bi-chevron-down"></i>
+                            <a style="font-family: 'Open Sans';font-weight: 700;font-size: 16px;" href="#"><?= lang("text_homepage.services") ?></a><i class="bi bi-chevron-down"></i>
                             <ul class="sub-menu">
 
                                 <li id="menu-item-2370" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2370">
-                                    <a style="font-family: 'Oswald';font-weight: normal;font-size: 16px;" href="/<?= $language ?>/<?= $language == 'id' ? 'layanan-kami' : 'our-services' ?>"><?= lang("text_homepage.services") ?></a><i class="bi bi-chevron-down"></i>
+                                    <a style="font-family: 'Open Sans';font-weight: 700;font-size: 16px;" href="/<?= $language ?>/<?= $language == 'id' ? 'layanan-kami/vip-services' : 'our-services/vip-services' ?>">VIP SERVICES</a><i class="bi bi-chevron-down"></i>
                                 </li>
                                 <li id="menu-item-2370" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2370">
-                                    <a style="font-family: 'Oswald';font-weight: normal;font-size: 16px;" href="/<?= $language ?>/<?= $language == 'id' ? 'destinasi' : 'destination' ?>"><?= lang("text_homepage.destination") ?></a><i class="bi bi-chevron-down"></i>
+                                    <a style="font-family: 'Open Sans';font-weight: 700;font-size: 16px;" href="/<?= $language ?>/<?= $language == 'id' ? 'layanan-kami/private-tour' : 'our-services/private-tour' ?>">PRIVATE TOUR</a><i class="bi bi-chevron-down"></i>
                                 </li>
                                 <li id="menu-item-2370" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2370">
-                                    <a style="font-family: 'Oswald';font-weight: normal;font-size: 16px;" href="/<?= $language ?>/events"><?= lang("text_homepage.events") ?></a><i class="bi bi-chevron-down"></i>
+                                    <a style="font-family: 'Open Sans';font-weight: 700;font-size: 16px;" href="/<?= $language ?>/<?= $language == 'id' ? 'layanan-kami/mice' : 'our-services/mice' ?>">MICE</a><i class="bi bi-chevron-down"></i>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li id="menu-item-2339" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2339">
+                            <a style="font-family: 'Open Sans';font-weight: 700;font-size: 16px;" href="#"><?= lang("text_homepage.information") ?></a><i class="bi bi-chevron-down"></i>
+                            <ul class="sub-menu">
+
+                                <li id="menu-item-2370" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2370">
+                                    <a style="font-family: 'Open Sans';font-weight: 700;font-size: 16px;" href="/<?= $language ?>/<?= $language == 'id' ? 'destinasi' : 'destination' ?>"><?= lang("text_homepage.destination") ?></a><i class="bi bi-chevron-down"></i>
                                 </li>
                                 <li id="menu-item-2370" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2370">
-                                    <a style="font-family: 'Oswald';font-weight: normal;font-size: 16px;" href="/<?= $language ?>/blog"><?= lang("text_homepage.blog") ?></a><i class="bi bi-chevron-down"></i>
+                                    <a style="font-family: 'Open Sans';font-weight: 700;font-size: 16px;" href="/<?= $language ?>/events"><?= lang("text_homepage.events") ?></a><i class="bi bi-chevron-down"></i>
                                 </li>
                                 <li id="menu-item-2370" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2370">
-                                    <a style="font-family: 'Oswald';font-weight: normal;font-size: 16px;" href="/<?= $language ?>/<?= $language == 'id' ? 'layanan-lainnya' : 'other-services' ?>"><?= lang("text_homepage.other_services") ?></a><i class="bi bi-chevron-down"></i>
+                                    <a style="font-family: 'Open Sans';font-weight: 700;font-size: 16px;" href="/<?= $language ?>/blog"><?= lang("text_homepage.blog") ?></a><i class="bi bi-chevron-down"></i>
+                                </li>
+                                <li id="menu-item-2370" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2370">
+                                    <a style="font-family: 'Open Sans';font-weight: 700;font-size: 16px;" href="/<?= $language ?>/<?= $language == 'id' ? 'layanan-lainnya' : 'other-services' ?>"><?= lang("text_homepage.other_services") ?></a><i class="bi bi-chevron-down"></i>
                                 </li>
 
                             </ul>
                         </li>
 
                         <li id="menu-item-2013" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2013">
-                            <a style="font-family: 'Oswald';font-weight: normal;font-size: 16px;" href="/<?= $language ?>/<?= $language == 'id' ? 'tentang-kami' : 'about-us' ?>"><?= lang("text_homepage.about_us_navbar") ?></a>
+                            <a style="font-family: 'Open Sans';font-weight: 700;font-size: 16px;" href="/<?= $language ?>/<?= $language == 'id' ? 'tentang-kami' : 'about-us' ?>"><?= lang("text_homepage.about_us_navbar") ?></a>
                         </li>
 
                         <li id="menu-item-2013" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2013">
-                            <a style="font-family: 'Oswald';font-weight: normal;font-size: 16px;" href="/<?= $language ?>/<?= $language == 'id' ? 'hubungi-kami' : 'contact-us' ?>"><?= lang("text_homepage.contact_us_navbar") ?></a>
+                            <a style="font-family: 'Open Sans';font-weight: 700;font-size: 16px;" href="/<?= $language ?>/<?= $language == 'id' ? 'hubungi-kami' : 'contact-us' ?>"><?= lang("text_homepage.contact_us_navbar") ?></a>
                         </li>
                         <li id="menu-item-2013" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2013">
-                            <a style="font-family: 'Oswald';font-weight: normal;font-size: 16px;" href="/<?= $language ?>/faq">FAQ</a>
+                            <a style="font-family: 'Open Sans';font-weight: 700;font-size: 16px;" href="/<?= $language ?>/faq">FAQ</a>
                         </li>
                         <li id="menu-item-2013" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2013">
                             <a href="/<?= $language ?>/faq">
@@ -1095,10 +1112,10 @@
                             <i class="bi bi-chevron-down"></i>
                             <ul class="sub-menu">
                                 <li id="menu-item-1984" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1984">
-                                    <a style="font-family: 'Oswald';font-weight: normal;font-size: 16px;" href="<?= site_url('lang/id'); ?>">Indonesian</a><i class="bi bi-chevron-down"></i>
+                                    <a style="font-family: 'Open Sans';font-weight: 700;font-size: 16px;" href="<?= site_url('lang/id'); ?>">INDONESIAN</a><i class="bi bi-chevron-down"></i>
                                 </li>
                                 <li id="menu-item-2017" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2017">
-                                    <a style="font-family: 'Oswald';font-weight: normal;font-size: 16px;" href="<?= site_url('lang/en'); ?>">English</a><i class="bi bi-chevron-down"></i>
+                                    <a style="font-family: 'Open Sans';font-weight: 700;font-size: 16px;" href="<?= site_url('lang/en'); ?>">ENGLISH</a><i class="bi bi-chevron-down"></i>
                                 </li>
                             </ul>
                         </li>
@@ -1128,7 +1145,7 @@
 
 
     <footer class="footer-section">
-        <div class="footer-top">
+        <div class="footer-top" style="padding: 45px 45px !important">
             <div class="container-xl container-lg-fluid container">
                 <div class="row gy-5">
 
@@ -1246,7 +1263,7 @@
                         <div class="footer-item">
                             <div id="egens_contacts-3" class="destination-widget-item widget_egens_contacts">
                                 <div class="destination-widget-title">
-                                    <h3><?= lang("text_homepage.social_media") ?></h3>
+                                    <h3><?= strtoupper(lang("text_homepage.social_media")) ?></h3>
                                 </div>
                                 <ul class="contact-list">
                                     <li>

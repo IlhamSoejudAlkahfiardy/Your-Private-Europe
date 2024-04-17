@@ -39,16 +39,16 @@
 
                                     <div class="blog-content">
                                         <h3>
-                                            <a href="/<?= $language ?>/blog/<?= $article['slug'] . '/' . $article['id'] ?>">
+                                            <a style="font-family: 'Open Sans' !important;font-weight: 700;" href="/<?= $language ?>/blog/<?= $article['slug'] . '/' . $article['id'] ?>">
                                                 <?= $language == 'id' ? $article['title_id'] : $article['title_en'] ?>
                                             </a>
                                         </h3>
                                         <div class="author-area">
                                             <p><?= lang('text_article.by') ?> <a href="#"><?= $article['writer'] ?></p>
                                         </div>
-                                        <p>
+                                        <span style="font-family: 'Open Sans' !important;">
                                             <?= $language == 'id' ? substr($article['description_id'], 0, strpos($article['description_id'], '</p>', 150)) . '...' : substr($article['description_en'], 0, strpos($article['description_en'], '</p>', 150)) . '...'  ?>
-                                        </p>
+                                        </span>
 
                                         <div class="blog-meta">
                                             <a href="/<?= $language ?>/blog/<?= $article['slug'] . '/' . $article['id']  ?>" class="read-more-btn"><?= lang('text_article.continue_reading') ?><i class="bi bi-arrow-right"></i></a>

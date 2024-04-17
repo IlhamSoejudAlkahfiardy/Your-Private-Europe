@@ -86,8 +86,9 @@
                                 </figure>
 
                                 <div class="blog-details-single">
-
-                                    <?= $language == 'id' ? $article['description_id'] : $article['description_en'] ?>
+                                    <span style="font-family: 'Open Sans' !important;">
+                                        <?= $language == 'id' ? $article['description_id'] : $article['description_en'] ?>
+                                    </span>
 
                                 </div>
 
@@ -106,18 +107,18 @@
                     <div id="block-3" class="blog-widget-item widget_block">
                         <div class="wp-block-group is-layout-flow wp-block-group-is-layout-flow">
                             <div class="wp-block-group__inner-container">
-                                <h2 class="wp-block-heading">
+                                <h2 style="font-family: 'Open Sans' !important;" class="wp-block-heading">
                                     <?= lang('text_article.services') ?>
                                 </h2>
                                 <ul class="wp-block-latest-posts__list has-dates wp-block-latest-posts">
-                                    <?php foreach($services as $service): ?>
-                                    <li>
-                                        <a class="wp-block-latest-posts__post-title" href="/<?= $language ?>/<?= $language == 'id' ? 'layanan-kami' : 'our-services' ?>/<?= $service['slug'] ?>">
-                                            <?= $service['title_en'] ?>
-                                        </a>
-                                    </li>
+                                    <?php foreach ($services as $service) : ?>
+                                        <li>
+                                            <a class="wp-block-latest-posts__post-title" href="/<?= $language ?>/<?= $language == 'id' ? 'layanan-kami' : 'our-services' ?>/<?= $service['slug'] ?>">
+                                                <?= $service['title_en'] ?>
+                                            </a>
+                                        </li>
                                     <?php endforeach; ?>
-                                    
+
                                 </ul>
                             </div>
                         </div>

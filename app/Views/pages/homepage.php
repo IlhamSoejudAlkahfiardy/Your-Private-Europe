@@ -2,69 +2,136 @@
 
 <?= $this->section('content') ?>
 <style>
+    .eg-btn {
+        font-family: 'Open Sans' !important;
+        font-weight: 600 !important;
+    }
+
+    @media (min-width: 0px) {
+        .heading-section {
+            font-size: 16px !important;
+            font-weight: 700 !important;
+            font-family: 'Open Sans' !important;
+        }
+    }
+
     /* Responsiveness for mobile (375px) */
     @media (min-width: 0px) {
         #heading1-homepage {
 
             width: 100%;
             text-align: center;
-            font-size: 4rem;
-            font-weight: 600;
+            font-size: 30px;
+            font-weight: 500;
             text-shadow: 1px 1px #69727d;
         }
 
         #heading2-banner-homepage {
             text-align: center;
-            font-size: 2.5rem;
-            font-weight: 400;
+            font-size: 17px;
+            font-weight: 700;
             color: #fff
         }
 
         #slider-homepage {
             padding: 0px 15px;
         }
+
+        .title-section {
+            font-size: 22px !important;
+            font-weight: 700 !important;
+            font-family: 'Open Sans' !important;
+        }
+
+        .usp-title {
+            font-size: 14px !important;
+            font-weight: 700 !important;
+            font-family: 'Open Sans' !important;
+        }
+
+        .about-us-desc{
+            font-size: 14px !important;
+            font-weight: 500 !important;
+            font-family: 'Open Sans' !important;
+        }
     }
 
     /* Responsiveness for tablet (768px) */
-    @media (min-width: 376px) and (max-width: 768px) {
+    @media (min-width: 426px) and (max-width: 768px) {
         #heading1-homepage {
 
             width: 100%;
             text-align: center;
-            font-size: 3.5rem;
-            font-weight: 600;
+            font-size: 37px;
+            font-weight: 500;
             text-shadow: 2px 2px #69727d;
         }
 
         #heading2-banner-homepage {
             text-align: center;
-            font-size: 3rem;
-            font-weight: 400;
+            font-size: 18px;
+            font-weight: 700;
             color: #fff
+        }
+
+        .title-section {
+            font-size: 30px !important;
+            font-weight: 700 !important;
+            font-family: 'Open Sans' !important;
+        }
+
+        .usp-title {
+            font-size: 18px !important;
+            font-weight: 700 !important;
+            font-family: 'Open Sans' !important;
+        }
+
+        .about-us-desc{
+            font-size: 16px !important;
+            font-weight: 500 !important;
+            font-family: 'Open Sans' !important;
         }
     }
 
     /* Responsiveness for laptop (1024px) */
-    @media (min-width: 769px) and (max-width: 1024px) {
+    @media (min-width: 769px) {
         #heading1-homepage {
 
             width: 100%;
             text-align: center;
-            font-size: 4.5rem;
-            font-weight: 700;
+            font-size: 45px;
+            font-weight: 500;
             text-shadow: 2px 2px #69727d;
         }
 
         #heading2-banner-homepage {
             text-align: center;
-            font-size: 3.25rem;
-            font-weight: 500;
+            font-size: 26px;
+            font-weight: 700;
             color: #fff
+        }
+
+        .title-section {
+            font-size: 30px !important;
+            font-weight: 700 !important;
+            font-family: 'Open Sans' !important;
+        }
+
+        .usp-title {
+            font-size: 18px !important;
+            font-weight: 700 !important;
+            font-family: 'Open Sans' !important;
+        }
+
+        .about-us-desc{
+            font-size: 16px !important;
+            font-weight: 500 !important;
+            font-family: 'Open Sans' !important;
         }
     }
 
     /* Responsiveness for large laptop (1440px) */
-    @media (min-width: 1025px) and (max-width: 1440px) {
+    /* @media (min-width: 1025px) and (max-width: 1440px) {
         #heading1-homepage {
 
             width: 100%;
@@ -80,10 +147,10 @@
             font-weight: 500;
             color: #fff
         }
-    }
+    } */
 
     /* Responsiveness for large desktop (1441px and above) */
-    @media (min-width: 1441px) {
+    /* @media (min-width: 1441px) {
         #heading1-homepage {
 
             font-size: 5.5rem;
@@ -97,7 +164,7 @@
             font-weight: 500;
             color: #fff
         }
-    }
+    } */
 </style>
 
 <!-- ========== header end============= -->
@@ -119,8 +186,8 @@
                                                         <div class="col-12 col-lg-9">
                                                             <div class="hero-content" id="slider-homepage">
                                                                 <!-- <span id="subtitle-banner-homepage"><?= $language == 'id' ? $homepage['sub_title_id'] : $homepage['sub_title_en'] ?></span> -->
-                                                                <h1 id="heading1-homepage"><?= $language == 'id' ? $homepage['title_id'] : $homepage['title_en']  ?></h1>
-                                                                <h2 id="heading2-banner-homepage" style="text-shadow: 2px 2px #69727d;">
+                                                                <h1 id="heading1-homepage"><?= $language == 'id' ? strtoupper($homepage['title_id']) : strtoupper($homepage['title_en'])  ?></h1>
+                                                                <h2 id="heading2-banner-homepage" style="text-shadow: 2px 2px #69727d;font-family: 'Open Sans';">
 
                                                                     <a href="/<?= $language ?>/<?= $language == 'id' ? 'layanan-kami' : 'our-services' ?>/vip-services">
                                                                         VIP Services
@@ -137,9 +204,9 @@
 
                                                                 <div class="btn-group" style="display: flex;justify-content: center;flex-direction: column; margin-top: 160px !important;">
                                                                     <div class="dsc-btn">
-                                                                        <a href="/<?= $language ?>/<?= $language == 'id' ? 'layanan-kami' : 'our-services' ?>" style="background-color: #e0bc6d; display: flex;justify-content: space-around;align-items:center;" onmouseout="this.style.cursor='default'" onmouseover="this.style.cursor='pointer'">
+                                                                        <a href="/<?= $language ?>/<?= $language == 'id' ? 'layanan-kami' : 'our-services' ?>" style="font-family: 'Open Sans' !important;background-color: #e0bc6d; display: flex;justify-content: space-around;align-items:center;" onmouseout="this.style.cursor='default'" onmouseover="this.style.cursor='pointer'">
                                                                             <i aria-hidden="true" class="fab fa-telegram-plane"></i>
-                                                                            <?= lang("text_homepage.banner_button") ?>
+                                                                            <?= strtoupper(lang("text_homepage.banner_button")) ?>
                                                                         </a>
                                                                     </div>
                                                                     <a target="_blank" href="https://www.trustpilot.com/review/yourprivateeurope.eu?utm_medium=trustbox&utm_source=MicroReviewCount" class="rating-wrap">
@@ -173,7 +240,7 @@
         </div>
     </section>
 
-    <section style="margin-top: 60px !important;" class="elementor-section elementor-top-section elementor-element elementor-element-d1338d8 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="d1338d8" data-element_type="section">
+    <section style="margin-top: 60px !important;background-color: #fff;" class="elementor-section elementor-top-section elementor-element elementor-element-d1338d8 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="d1338d8" data-element_type="section">
         <div class="elementor-container elementor-column-gap-default">
             <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-f4ab0c9" data-id="f4ab0c9" data-element_type="column">
                 <div class="elementor-widget-wrap elementor-element-populated">
@@ -182,12 +249,12 @@
 
 
                             <div class="counter-section">
-                                <div class="counter-wrapper">
+                                <div class="counter-wrapper" style="box-shadow: none !important;">
                                     <div class="row g-3 d-flex justify-content-center">
                                         <div class="col-xl-4 col-lg-3 col-md-4 col-sm-6 col-10">
                                             <div class="counter-single text-center d-flex flex-column hover-border1">
                                                 <div class="counter-icon">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="58" height="58" viewBox="0 0 58 58" fill="none">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 58 58" fill="none">
                                                         <g clip-path="url(#clip0_1_4)">
                                                             <path d="M24.5952 27.0967C24.9237 26.5904 24.7084 24.9308 24.7084 24.9308C12.5069 20.7303 3.37304 15.4559 3.89073 13.3172C4.14222 12.2569 4.49679 11.7958 4.74261 11.7131C5.28636 11.5307 6.52226 12.181 8.03796 13.1779L10.5494 10.2235C9.36335 9.49168 6.42937 7.07992 3.54863 8.02016C2.37843 8.39965 0.823078 9.47242 0.112804 12.4075C-1.5377 19.2882 14.8677 25.4938 23.6674 28.5467L24.594 27.0956L24.5952 27.0967Z" fill="#e0bc6d"></path>
                                                             <path d="M53.152 13.7648C52.7487 13.1984 52.325 12.6422 51.8832 12.112C49.4083 9.12871 46.3059 6.7278 42.7972 5.08032C39.2884 3.43284 35.4595 2.57933 31.5832 2.58057H31.5198C31.4937 2.58057 31.4631 2.58623 31.4314 2.58623C27.5822 2.60781 23.7844 3.47175 20.3047 5.11739C16.825 6.76303 13.7477 9.15046 11.2889 12.112C10.8471 12.6479 10.4245 13.1973 10.0269 13.7648C9.71766 14.1998 9.43333 14.6484 9.15579 15.097C9.7052 15.4437 10.3305 15.8163 11.0306 16.2072C11.2719 15.822 11.5109 15.438 11.7692 15.0642C13.5342 16.2266 15.4271 17.1822 17.4106 17.912C17.2973 18.3346 17.2044 18.7764 17.1025 19.2057C17.7459 19.4901 18.4199 19.7721 19.1098 20.0519C19.2231 19.566 19.3182 19.0743 19.4497 18.6065C22.7824 19.626 26.532 20.2411 30.5082 20.3363V23.0947L30.6407 23.1762L30.8299 24.309L31.1199 26.0445L32.673 26.4433V20.3363C33.4422 20.317 34.1943 20.2672 34.9454 20.2105L35.5118 18.6008L35.727 17.9823C34.7302 18.0774 33.7129 18.1465 32.6684 18.1715V4.8394C37.0683 5.51908 40.8621 10.0787 43.0144 16.5991C41.9722 16.9084 40.8677 17.1655 39.744 17.3819C40.5492 17.7822 41.2348 18.3874 41.7321 19.1366C42.3631 18.9792 43.0008 18.8274 43.6125 18.6382C44.4713 21.9484 44.909 25.3537 44.9153 28.7735H41.5565C41.5191 28.9944 41.4874 29.196 41.45 29.4294C42.7629 29.972 44.3285 30.6154 44.6683 30.7547C45.672 31.1705 46.4231 31.7901 46.9215 32.5536C46.9668 32.0178 47.0166 31.4865 47.0348 30.9371H52.2457C52.1517 31.6168 52.0622 32.2886 51.9432 32.932C52.2774 32.761 52.5618 32.4336 52.7136 31.8083C52.7821 31.5233 52.8076 31.2297 52.7895 30.9371H55.7563C55.4129 35.2515 53.9099 39.393 51.4063 42.9234C49.6068 41.7415 47.676 40.7728 45.6527 40.037C45.7728 39.6077 45.8668 39.1659 45.9745 38.7241C45.2513 39.2802 44.3616 39.576 43.4494 39.5635C43.1048 39.5612 42.7608 39.5317 42.4208 39.4751L42.3449 39.4627C42.0866 39.4423 41.7264 39.4106 39.5299 38.6606C39.7882 38.314 40.0963 37.8529 40.4361 37.3228V36.2376C41.4557 36.591 42.3302 36.8753 42.533 36.8867C43.0994 36.9252 44.546 37.4236 44.9629 35.6938C45.3797 33.964 44.3002 33.3965 43.6941 33.1495C43.3543 33.0113 41.7627 32.3565 40.4361 31.8117V29.6151L39.6794 31.5024C39.0224 31.2305 38.5557 31.0357 38.5557 31.0357C38.5557 31.0357 40.1903 22.0094 39.7429 20.8664C39.2954 19.7234 37.9496 19.4651 37.9496 19.4651L34.3801 29.5664L30.5036 28.5628L28.8452 28.1345L28.2788 24.744L26.4742 23.584C26.4742 23.584 26.5807 26.3798 26.3088 27.8887C26.2739 28.1246 26.2107 28.3555 26.1208 28.5763C26.0902 28.6398 26.0313 28.7157 25.9871 28.7848C25.7445 29.1613 25.4725 29.5182 25.1738 29.8519V29.8519C25.0174 30.0286 24.852 30.2053 24.6934 30.382C24.6765 30.4013 24.6561 30.4206 24.6379 30.4398C24.485 30.6041 24.3366 30.7615 24.1848 30.9077C23.692 31.4061 23.2944 31.7777 23.2944 31.7777L24.8804 32.9524L27.5107 30.9451L28.1055 30.484L29.0525 30.9451L31.4439 32.0937L32.6684 32.6805L32.9392 32.8131L28.963 42.7229C28.963 42.7229 30.2703 43.8908 31.2479 43.1341C32.2255 42.3774 36.4113 34.8011 36.4113 34.8011C36.4113 34.8011 37.1374 35.0719 38.0969 35.414L37.8703 35.9691C37.9972 35.9691 38.1229 35.9498 38.2498 35.9498V38.2222C38.1547 38.1849 38.0663 38.1599 37.9655 38.1214C37.8273 38.0965 37.6811 38.084 37.5418 38.0648C37.1125 38.8226 36.7216 39.4978 36.3739 40.0959C38.6217 40.331 40.844 40.7663 43.0144 41.3964C40.8553 47.9168 37.0626 52.4741 32.6628 53.1561V45.2876C32.0284 45.7334 31.2722 45.9735 30.4968 45.9752V53.172C26.0551 52.5625 22.216 48.0029 20.0376 41.4315C22.3943 40.7363 24.8128 40.2712 27.2593 40.0427L28.1565 37.7963C25.1989 38.0093 22.2738 38.5469 19.4338 39.3992C18.7157 36.6347 18.2949 33.8013 18.1786 30.9473H20.4125L20.979 30.4104C19.2118 29.8062 17.5412 29.1983 15.9674 28.5865C15.9674 28.65 15.9617 28.7134 15.9617 28.7769H7.33876C7.34967 27.4556 7.47169 26.1377 7.70352 24.8369C7.00798 24.4586 6.34415 24.0859 5.7143 23.7041C5.35441 25.4466 5.17073 27.2208 5.16602 29C5.16185 34.4592 6.85892 39.7841 10.0213 44.2341C10.4177 44.8005 10.8414 45.3578 11.2832 45.8891C16.1067 51.6665 23.3397 55.3708 31.4269 55.4138C31.4575 55.4138 31.4892 55.4195 31.522 55.4195H31.5855C35.4608 55.42 39.2887 54.5662 42.7964 52.9187C46.3042 51.2713 49.4056 48.8707 51.8798 45.888C52.3329 45.3567 52.7453 44.8016 53.1474 44.2329C56.3054 39.7803 58.0023 34.4566 58.0035 28.9977C58.0047 23.5388 56.3102 18.2144 53.1542 13.7603L53.152 13.7648ZM18.0234 15.8922C16.2753 15.2522 14.6036 14.4202 13.0391 13.4114C15.9011 10.0032 19.644 7.44638 23.8597 6.01979C21.4332 8.35564 19.4202 11.7813 18.0234 15.8922ZM30.5036 18.1715C26.7291 18.0842 23.1755 17.5088 20.0444 16.5674C22.2228 10.0028 26.0551 5.43752 30.5036 4.82693V18.1715ZM7.42032 30.9473H16.0036C16.1349 34.0368 16.6071 37.1023 17.4117 40.088C15.4281 40.8173 13.5348 41.7721 11.7692 42.9336C9.26931 39.4013 7.76707 35.2608 7.42032 30.9473V30.9473ZM13.0436 44.5886C14.6079 43.5793 16.2796 42.7472 18.028 42.1078C19.4168 46.2165 21.4377 49.6444 23.8688 51.9802C19.654 50.5525 15.9114 47.9963 13.0481 44.5898L13.0436 44.5886ZM39.1141 52.0482C41.5825 49.701 43.6341 46.2358 45.0342 42.0693C46.8203 42.7129 48.5272 43.5582 50.1217 44.5886C47.2171 48.0504 43.4048 50.6337 39.113 52.0482H39.1141ZM39.1141 5.95068C43.4076 7.36559 47.2218 9.94916 50.1285 13.4114C48.7681 14.2832 47.3265 15.0211 45.8238 15.6147L45.6969 15.583L45.6652 15.6781C45.4568 15.7665 45.2495 15.856 45.0342 15.9308C43.6273 11.7711 41.5814 8.30467 39.1141 5.95068V5.95068ZM47.0801 28.7735C47.0739 25.1212 46.5941 21.4851 45.6527 17.9562C47.6757 17.2199 49.6058 16.2501 51.404 15.0664C54.2428 19.077 55.7868 23.86 55.8288 28.7735H47.0801Z" fill="#e0bc6d"></path>
@@ -205,7 +272,7 @@
                                                             <h3 class="odometer" data-odometer-final="2017"></h3>
                                                         </div>
                                                     </div>
-                                                    <p>
+                                                    <p style="font-family:'Open Sans';color:black;font-size:16px;font-weight: 600;;line-height: 24px;">
                                                         <?= lang('text_homepage.since_year') ?>
                                                     </p>
                                                 </div>
@@ -214,7 +281,7 @@
                                         <div class="col-xl-4 col-lg-3 col-md-4 col-sm-6 col-10">
                                             <div class="counter-single text-center d-flex flex-column hover-border1">
                                                 <div class="counter-icon">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="58" height="58" viewBox="0 0 58 58" fill="none">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 58 58" fill="none">
                                                         <g clip-path="url(#clip0_1_8)">
                                                             <path opacity="0.4" d="M14.2061 58C19.6711 58 24.1014 55.778 24.1014 53.0369C24.1014 50.2959 19.6711 48.0738 14.2061 48.0738C8.74107 48.0738 4.31081 50.2959 4.31081 53.0369C4.31081 55.778 8.74107 58 14.2061 58Z" fill="#e0bc6d"></path>
                                                             <path opacity="0.4" d="M46.6347 32.1141C50.9634 32.1141 54.4725 30.3278 54.4725 28.1242C54.4725 25.9206 50.9634 24.1343 46.6347 24.1343C42.306 24.1343 38.7968 25.9206 38.7968 28.1242C38.7968 30.3278 42.306 32.1141 46.6347 32.1141Z" fill="#e0bc6d"></path>
@@ -235,7 +302,7 @@
                                                             <h3 class="odometer" data-odometer-final="25">�&nbsp;</h3>
                                                         </div>
                                                     </div>
-                                                    <p>
+                                                    <p style="font-family:'Open Sans';color:black;font-size:16px;font-weight: 600;;line-height: 24px;">
                                                         <?= lang('text_homepage.passed_country') ?>
                                                     </p>
                                                 </div>
@@ -244,7 +311,7 @@
                                         <div class="col-xl-4 col-lg-3 col-md-4 col-sm-6 col-10">
                                             <div class="counter-single text-center d-flex flex-column hover-border1">
                                                 <div class="counter-icon">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="58" height="58" viewBox="0 0 58 58" fill="none">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 58 58" fill="none">
                                                         <path d="M44.2644 38.4712C48.5751 34.4074 51.2707 28.6482 51.2707 22.2705C51.2707 17.1942 49.6071 12.4131 46.4598 8.44392C43.4069 4.59371 39.1133 1.82647 34.3702 0.651973C33.7636 0.501989 33.1488 0.871966 32.9984 1.47927C32.8481 2.08657 33.2184 2.70078 33.8258 2.85122C42.7631 5.06428 49.0051 13.0498 49.0051 22.2705C49.0051 33.3012 40.0309 42.2753 29.0001 42.2753C17.9695 42.2753 8.99522 33.3012 8.99522 22.2705C8.99522 13.0498 15.2372 5.06428 24.1746 2.85122C24.7819 2.70078 25.1522 2.08657 25.0019 1.47927C24.8515 0.871966 24.2371 0.501422 23.6299 0.651973C18.8868 1.82647 14.5934 4.59371 11.5405 8.44392C8.39318 12.4131 6.72961 17.1942 6.72961 22.2705C6.72961 28.6481 9.42514 34.4074 13.7357 38.4712L7.80498 49.8138C7.51578 50.3669 7.7285 51.0498 8.28066 51.3408L8.32147 51.3623C8.57472 51.4959 8.86907 51.5284 9.14566 51.4536L17.3651 49.2284L20.2291 57.2481C20.3805 57.6719 20.7684 57.9659 21.2174 57.9972C21.2438 57.999 21.27 57.9999 21.2962 57.9999C21.7156 57.9999 22.1034 57.7673 22.2998 57.3921L29.0001 44.5776L35.7006 57.3921C35.8968 57.7675 36.2848 58.0001 36.7041 57.9999C36.7303 57.9999 36.7566 57.999 36.7829 57.9972C37.2319 57.9661 37.6198 57.6719 37.7713 57.2481L40.6352 49.2284L48.8546 51.4538C49.1309 51.5287 49.4254 51.4961 49.6788 51.3625L49.7196 51.3409C50.2718 51.0499 50.4845 50.367 50.1952 49.8139L44.2644 38.4712ZM21.4918 54.0475L19.1466 47.4803C18.9478 46.9237 18.3541 46.6132 17.7837 46.7679L10.993 48.6065L15.5063 39.9748C18.6373 42.3669 22.4183 43.9483 26.5343 44.4038L21.4918 54.0475ZM40.2165 46.7679C39.6461 46.6134 39.0525 46.9237 38.8537 47.4803L36.5084 54.0475L31.4658 44.4038C35.5819 43.9483 39.3629 42.3669 42.4938 39.9748L47.0072 48.6065L40.2165 46.7679Z" fill="#e0bc6d"></path>
                                                         <path d="M29 2.26563C29.6256 2.26563 30.1328 1.75844 30.1328 1.13281C30.1328 0.507177 29.6256 0 29 0C28.3744 0 27.8672 0.507177 27.8672 1.13281C27.8672 1.75844 28.3744 2.26563 29 2.26563Z" fill="#e0bc6d"></path>
                                                         <path d="M12.3937 22.2706C12.3937 31.4273 19.8433 38.877 29.0001 38.877C38.157 38.877 45.6066 31.4274 45.6066 22.2706C45.6066 13.1137 38.157 5.66406 29.0001 5.66406C19.8433 5.66406 12.3937 13.1137 12.3937 22.2706ZM43.341 22.2706C43.341 30.1781 36.9077 36.6113 29.0001 36.6113C21.0926 36.6113 14.6593 30.1781 14.6593 22.2706C14.6593 14.3629 21.0926 7.92969 29.0001 7.92969C36.9077 7.92969 43.341 14.3629 43.341 22.2706Z" fill="#e0bc6d"></path>
@@ -257,7 +324,7 @@
                                                             <h3 class="odometer" data-odometer-final="4.5/5">�&nbsp;</h3>
                                                         </div>
                                                     </div>
-                                                    <p>
+                                                    <p style="font-family:'Open Sans';color:black;font-size:16px;font-weight: 600;;line-height: 24px;">
                                                         <?= lang('text_homepage.rating_customer') ?>
                                                     </p>
                                                 </div>
@@ -314,10 +381,10 @@
                                         <div class="elementor-widget-container">
                                             <div class="justify-content-center">
                                                 <div class="section-title2 d-flex flex-column justify-content-center">
-                                                    <span style="color:#086B7D !important;font-weight: 700;letter-spacing: 0px !important;">
+                                                    <span class="heading-section" style="color:#086B7D !important;letter-spacing: 0px !important;">
                                                         <?= $language == 'id' ? $aboutUs['heading_id'] : $aboutUs['heading_en'] ?>
                                                     </span>
-                                                    <h2 style="color: black;">
+                                                    <h2 class="title-section" style="color: black;">
                                                         <?= $language == 'id' ? $aboutUs['title_id'] : $aboutUs['title_en'] ?>
                                                     </h2>
                                                 </div>
@@ -359,7 +426,7 @@
                                                     display: inline-block;
                                                 }
                                             </style>
-                                            <span style="font-size: 14px !important;color:black !important">
+                                            <span class="about-us-desc" style="color:black !important;font-family:'Open Sans';line-height: 24px;width: 25%;">
                                                 <?= $language == 'id' ? $aboutUs['description_id'] : $aboutUs['description_en'] ?>
                                             </span>
 
@@ -369,8 +436,8 @@
                                         <div class="elementor-widget-container">
                                             <div class="row justify-content-center">
                                                 <div class="btn-align">
-                                                    <a aria-hidden="true" href="/<?= $language ?>/<?= $language == 'id' ? 'tentang-kami' : 'about-us' ?>" class="eg-btn btn--primary-outline btn--lg" style="background-color: #e0bc6d;font-family: 'Oswald';" onmouseover="this.style.color='#e0bc6d'" onmouseout="this.style.color='white'">
-                                                        <?= lang("text_homepage.button_about_us") ?>
+                                                    <a aria-hidden="true" href="/<?= $language ?>/<?= $language == 'id' ? 'tentang-kami' : 'about-us' ?>" class="eg-btn btn--primary-outline btn--lg" style="background-color: #e0bc6d;font-family: 'Open Sans';" onmouseover="this.style.color='#e0bc6d'" onmouseout="this.style.color='white'">
+                                                        <?= strtoupper(lang("text_homepage.button_about_us")) ?>
                                                     </a>
                                                 </div>
                                             </div>
@@ -397,10 +464,10 @@
 
                             <div class=" justify-content-center">
                                 <div class="section-title1">
-                                    <span style="color:#086B7D !important;font-weight: 700;letter-spacing: 0px !important;">
+                                    <span class="heading-section" style="color:#086B7D !important;letter-spacing: 0px !important;">
                                         <?= $language == 'id' ? $homepage['our_services_section_id'] : $homepage['our_services_section_en'] ?>
                                     </span>
-                                    <h2 style="font-size: 30px; font-weight: bold;">
+                                    <h2 class="title-section">
                                         <?= $language == 'id' ? $homepage['our_services_title_id'] : $homepage['our_services_title_en'] ?>
                                     </h2>
                                     <div class="heading-ribbon flex justify-center">
@@ -453,7 +520,7 @@
                                             </div>
                                             <div class="content">
                                                 <h4 style="text-align: center;">
-                                                    <a style="font-weight: normal !important;" href="/<?= $language ?>/<?= $language == 'id' ? 'layanan-kami' : 'our-services' ?>/vip-services">
+                                                    <a style="font-family:'Open Sans';font-weight: normal !important;" href="/<?= $language ?>/<?= $language == 'id' ? 'layanan-kami' : 'our-services' ?>/vip-services">
                                                         VIP Services
                                                     </a>
                                                 </h4>
@@ -469,7 +536,7 @@
                                             </div>
                                             <div class="content">
                                                 <h4 style="text-align: center;">
-                                                    <a style="font-weight: normal !important;" href="/<?= $language ?>/<?= $language == 'id' ? 'layanan-kami' : 'our-services' ?>/private-tour">
+                                                    <a style="font-family:'Open Sans';font-weight: normal !important;" href="/<?= $language ?>/<?= $language == 'id' ? 'layanan-kami' : 'our-services' ?>/private-tour">
                                                         Private Tour
                                                     </a>
                                                 </h4>
@@ -485,7 +552,7 @@
                                             </div>
                                             <div class="content">
                                                 <h4 style="text-align: center;">
-                                                    <a style="font-weight: normal !important;" href="/<?= $language ?>/<?= $language == 'id' ? 'layanan-kami' : 'our-services' ?>/mice">
+                                                    <a style="font-family:'Open Sans';font-weight: normal !important;" href="/<?= $language ?>/<?= $language == 'id' ? 'layanan-kami' : 'our-services' ?>/mice">
                                                         MICE
                                                     </a>
                                                 </h4>
@@ -512,10 +579,10 @@
                         <div class="elementor-widget-container">
                             <div class="justify-content-center">
                                 <div class="section-title1">
-                                    <span aria-hidden="true" style="color:#086B7D !important;font-weight: 700;letter-spacing: 0px !important;">
+                                    <span aria-hidden="true" style="color:#086B7D !important;letter-spacing: 0px !important;" class="heading-section">
                                         <?= $language == 'id' ? $homepage['usp_section_id'] : $homepage['usp_section_en'] ?>
                                     </span>
-                                    <h3 style="font-size: 30px; font-weight: bold;margin-bottom: 15px !important;">
+                                    <h3 class="title-section" style="margin-bottom: 15px !important;">
                                         <?= $language == 'id' ? $homepage['usp_title_id'] : $homepage['usp_title_en'] ?>
                                     </h3>
                                     <div class="heading-ribbon">
@@ -561,8 +628,8 @@
                                         <div class="accordion-item">
                                             <h2 class="accordion-header" id="heading<?= $dataUsp['id'] ?>">
                                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse<?= $dataUsp['id'] ?>" aria-expanded="true" aria-controls="collapse<?= $dataUsp['id'] ?>">
-                                                    <p style="font-weight: normal;">
-                                                        <?= $language == 'id' ? ucwords($dataUsp['title_id']) : ucwords($dataUsp['title_en']) ?>
+                                                    <p class="usp-title" style="font-weight: normal;font-family: 'Open Sans';">
+                                                        <?= $language == 'id' ? strtoupper($dataUsp['title_id']) : strtoupper($dataUsp['title_en']) ?>
                                                     </p>
                                                 </button>
                                             </h2>
@@ -596,10 +663,10 @@
                         <div class="elementor-widget-container">
                             <div class="justify-content-center">
                                 <div class="section-title1">
-                                    <span style="color:#086B7D !important;font-weight: 700;letter-spacing: 0px !important;">
+                                    <span style="color:#086B7D !important;letter-spacing: 0px !important;" class="heading-section">
                                         <?= $language == 'id' ? $homepage['testimonial_section_id'] : $homepage['testimonial_section_en'] ?>
                                     </span>
-                                    <h3 style="font-size: 30px; font-weight: bold;margin-bottom: 15px !important;">
+                                    <h3 class="title-section" style="margin-bottom: 15px !important;">
                                         <?= $language == 'id' ? $homepage['testimonial_title_id'] : $homepage['testimonial_title_en'] ?>
                                     </h3>
                                     <div class="heading-ribbon">
@@ -667,7 +734,7 @@
 
                                                                         </ul>
 
-                                                                        <p style="font-size: 24px; font-weight: 300;font-family: 'Oswald';color:black">
+                                                                        <p style="font-size: 20px; font-weight: 300;font-family: 'Open Sans';color:black">
                                                                             <?= $language == 'id' ? $testimonial['description_id'] : $testimonial['description_en']  ?>
                                                                         </p>
                                                                     </div>
@@ -676,7 +743,7 @@
 
                                                                         </div>
                                                                         <div class="author-text">
-                                                                            <h5 style="color: black !important;">
+                                                                            <h5 style="color: black !important;font-family: 'Open Sans';">
                                                                                 <?= $testimonial['name'] ?>
                                                                             </h5>
 
@@ -720,10 +787,10 @@
                         <div class="elementor-widget-container">
                             <div class="justify-content-center">
                                 <div class="section-title1">
-                                    <span style="color:#086B7D !important;font-weight: 700;letter-spacing: 0px !important;">
+                                    <span style="color:#086B7D !important;letter-spacing: 0px !important;" class="heading-section">
                                         <?= $language == 'id' ? $homepage['commitment_section_id'] : $homepage['commitment_section_en'] ?>
                                     </span>
-                                    <h3 style="font-size: 30px; font-weight: bold;margin-bottom: 15px !important;">
+                                    <h3 class="title-section" style="margin-bottom: 15px !important;">
                                         <?= $language == 'id' ? $homepage['commitment_title_id'] : $homepage['commitment_title_en'] ?>
                                     </h3>
                                     <div class="heading-ribbon">
@@ -768,11 +835,11 @@
                                     <?php foreach ($commitments as $commitment) : ?>
                                         <div class="col-xl-2 col-lg-3 col-md-6 col-sm-10 ">
                                             <div class="category-single1 d-flex flex-column h-100" style="box-shadow: none !important;">
-                                                <div class="icon">
+                                                <div class="icon" style="transition: none !important;border: 0px !important">
                                                     <img loading="lazy" style="max-width: 44px;" src="<?= base_url('assets/images/commitments/') . $commitment['image'] ?>" alt="<?= $commitment['alt_image'] ?>" srcset="">
                                                 </div>
                                                 <div class="content">
-                                                    <p style="font-size: 17px;font-weight: 600;color:black">
+                                                    <p style="font-size: 16px;font-weight: 600;color:black;font-family: 'Open Sans' !important;">
                                                         <?= $language == 'id' ? $commitment['title_id'] : $commitment['title_en'] ?>
                                                     </p>
                                                 </div>
@@ -797,10 +864,10 @@
                         <div class="elementor-widget-container">
                             <div class="justify-content-center">
                                 <div class="section-title1">
-                                    <span aria-hidden="true" style="color:#086B7D !important;font-weight: 700;letter-spacing: 0px !important;">
+                                    <span aria-hidden="true" style="color:#086B7D !important;letter-spacing: 0px !important;" class="heading-section">
                                         <?= $language == 'id' ? $homepage['trending_destination_section_id'] : $homepage['trending_destination_section_en'] ?>
                                     </span>
-                                    <h2 style="font-size: 30px; font-weight: bold;margin-bottom: 15px !important;">
+                                    <h2 class="title-section" style="margin-bottom: 15px !important;">
                                         <?= $language == 'id' ? $homepage['trending_destination_title_id'] : $homepage['trending_destination_title_en'] ?>
                                     </h2>
                                     <div class="heading-ribbon">
@@ -853,12 +920,12 @@
                                                     <div class="deal-content">
                                                         <div class="review-area"></div>
                                                         <h4>
-                                                            <a href="/<?= $language ?>/<?= $language == 'id' ? 'destinasi' : 'destination' ?>/<?= $destination['slug'] ?>">
-                                                                <?= $destination['title'] ?>
+                                                            <a style="font-family: 'Open Sans';" href="/<?= $language ?>/<?= $language == 'id' ? 'destinasi' : 'destination' ?>/<?= $destination['slug'] ?>">
+                                                                <?= strtoupper($destination['title']) ?>
                                                             </a>
                                                         </h4>
                                                         <div class="price">
-                                                            <span style="font-size: 20px; font-weight: 600;font-family: 'Oswald';">
+                                                            <span style="font-size: 20px; font-weight: 600;font-family: 'Open Sans';">
                                                                 <?= $language == 'id' ? $destination['duration_id'] : $destination['duration_en'] ?>
                                                             </span>
                                                         </div>
@@ -920,10 +987,10 @@
                         <div class="elementor-widget-container">
                             <div class="justify-content-center">
                                 <div class="section-title1">
-                                    <span style="color:#086B7D !important;font-weight: 700;letter-spacing: 0px !important;">
+                                    <span style="color:#086B7D !important;letter-spacing: 0px !important;" class="heading-section">
                                         <?= $language == 'id' ? $homepage['upcoming_events_section_id'] : $homepage['upcoming_events_section_en'] ?>
                                     </span>
-                                    <h2 style="font-size: 30px; font-weight: bold;margin-bottom: 15px !important;">
+                                    <h2 class="title-section" style="margin-bottom: 15px !important;">
                                         <?= $language == 'id' ? $homepage['upcoming_events_title_id'] : $homepage['upcoming_events_title_en'] ?>
                                     </h2>
                                     <div class="heading-ribbon">
@@ -1104,10 +1171,10 @@
                         <div class="elementor-widget-container">
                             <div class="justify-content-center">
                                 <div class="section-title1">
-                                    <span aria-hidden="true" style="color:#086B7D !important;font-weight: 700;letter-spacing: 0px !important;">
+                                    <span aria-hidden="true" style="color:#086B7D !important;letter-spacing: 0px !important;" class="heading-section">
                                         <?= $language == 'id' ? $homepage['how_it_works_section_id'] : $homepage['how_it_works_section_en'] ?>
                                     </span>
-                                    <h2 style="font-size: 30px; font-weight: bold;margin-bottom: 15px !important;">
+                                    <h2 class="title-section" style="margin-bottom: 15px !important;">
                                         <?= $language == 'id' ? $homepage['how_it_works_title_id'] : $homepage['how_it_works_title_en'] ?>
                                     </h2>
                                     <div class="heading-ribbon">
@@ -1199,7 +1266,7 @@
                                                                 <div class="content">
 
                                                                     <h4 style="text-align: center;">
-                                                                        <a href="@">
+                                                                        <a>
                                                                             <?= $language == 'id' ? $howItWork['title_id'] : $howItWork['title_en'] ?>
                                                                         </a>
                                                                     </h4>
@@ -1220,38 +1287,38 @@
                                                     </div>
 
                                                     <!-- <div class="show-on-laptop"> -->
-                                                        <?php foreach ($howItWorks as $howItWork) : ?>
-                                                            <div class="swiper-slide show-on-laptop">
-                                                                <div class="best-plan-single1" style="border: none;">
-                                                                    <div class="image" style="display: flex;justify-content: center;">
+                                                    <?php foreach ($howItWorks as $howItWork) : ?>
+                                                        <div class="swiper-slide show-on-laptop">
+                                                            <div class="best-plan-single1" style="border: none;">
+                                                                <div class="image" style="display: flex;justify-content: center;">
 
-                                                                        <div style="width:225px;height: 145px; display: flex;justify-content: center; align-items: center;" class="img-fluid wp-post-image">
-                                                                            <!-- <i class="fa-solid fa-envelope fa-2xl" style="color: #086B7D; "></i> -->
-                                                                            <img loading="lazy" style="max-width: 80px;" src="<?= base_url('assets/images/how_it_works/') . $howItWork['image'] ?>" alt="<?= $howItWork['alt_image'] ?>" srcset="">
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="content">
-
-                                                                        <h4 style="text-align: center;">
-                                                                            <a href="@">
-                                                                                <?= $language == 'id' ? $howItWork['title_id'] : $howItWork['title_en'] ?>
-                                                                            </a>
-                                                                        </h4>
-                                                                        <div class="best-plan-meta">
-
-                                                                            <span class="rating"> </span>
-                                                                        </div>
-                                                                        <div class="list-area">
-
-                                                                            <ul class="plan-list1">
-                                                                                <?= $language == 'id' ? $howItWork['description_id'] : $howItWork['description_en'] ?>
-                                                                            </ul>
-                                                                        </div>
-
+                                                                    <div style="width:225px;height: 145px; display: flex;justify-content: center; align-items: center;" class="img-fluid wp-post-image">
+                                                                        <!-- <i class="fa-solid fa-envelope fa-2xl" style="color: #086B7D; "></i> -->
+                                                                        <img loading="lazy" style="max-width: 80px;" src="<?= base_url('assets/images/how_it_works/') . $howItWork['image'] ?>" alt="<?= $howItWork['alt_image'] ?>" srcset="">
                                                                     </div>
                                                                 </div>
+                                                                <div class="content">
+
+                                                                    <h4 style="text-align: center;">
+                                                                        <a style="font-family: 'Open Sans' !important;font-size: 18px !important;">
+                                                                            <?= $language == 'id' ? strtoupper($howItWork['title_id']) : strtoupper($howItWork['title_en']) ?>
+                                                                        </a>
+                                                                    </h4>
+                                                                    <div class="best-plan-meta">
+
+                                                                        <span class="rating"> </span>
+                                                                    </div>
+                                                                    <div class="list-area">
+
+                                                                        <ul class="plan-list1" style="text-align: center;">
+                                                                            <?= $language == 'id' ? $howItWork['description_id'] : $howItWork['description_en'] ?>
+                                                                        </ul>
+                                                                    </div>
+
+                                                                </div>
                                                             </div>
-                                                        <?php endforeach; ?>
+                                                        </div>
+                                                    <?php endforeach; ?>
                                                     <!-- </div> -->
 
                                                 </div>
@@ -1278,10 +1345,10 @@
                     <div class="elementor-widget-container">
                         <div class="justify-content-center">
                             <div class="section-title1">
-                                <span style="color:#086B7D !important;font-weight: 700;letter-spacing: 0px !important;">
+                                <span style="color:#086B7D !important;letter-spacing: 0px !important;" class="heading-section">
                                     <?= $language == 'id' ? $homepage['faq_section_id'] : $homepage['faq_section_en'] ?>
                                 </span>
-                                <h3 style="font-size: 30px; font-weight: bold;margin-bottom: 15px !important;">
+                                <h3 class="title-section" style="margin-bottom: 15px !important;">
                                     <?= $language == 'id' ? $homepage['faq_title_id'] : $homepage['faq_title_en'] ?>
                                 </h3>
                                 <div class="heading-ribbon">
@@ -1327,7 +1394,7 @@
                                     <div class="accordion-item">
                                         <h2 class="accordion-header" id="heading<?= $faq['id'] ?>">
                                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse<?= $faq['id'] ?>" aria-expanded="true" aria-controls="collapse<?= $faq['id'] ?>">
-                                                <p style="font-weight: 400;">
+                                                <p style="font-weight: 600;font-family: 'Open Sans';font-size: 16px;margin:0px !important">
                                                     <?= $language == 'id' ? $faq['title_id'] : $faq['title_en'] ?>
                                                 </p>
                                             </button>

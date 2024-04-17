@@ -16,7 +16,7 @@
             <div class="row justify-content-center">
               <div class="col-xl-8 col-md-10 col-sm-12">
                 <div class="breadcrumb-area">
-                  <span><?= $data['sub_title'] ?></span>
+                  <span style="font-family: 'Open Sans' !important;"><?= $data['sub_title'] ?></span>
                   <h2><?= $data['title'] ?></h2>
                   <div class="review-area"></div>
                 </div>
@@ -138,6 +138,7 @@
                     </figure>
                   <?php endforeach; ?>
                 </figure>
+
                 <?= $language == 'id' ?  $data['description_id'] :  $data['description_en'] ?>
 
               </div>
@@ -198,7 +199,7 @@
               <div class="sidebar-booking-form">
                 <input id="productId" type="hidden" value="2401" />
                 <form class="cart" action="#" name="review-rating-from" method="post" enctype="multipart/form-data">
-                  <a style="font-family: 'Oswald';" href="/<?= $language ?>/<?= $language == 'id' ? 'hubungi-kami' : 'contact-us' ?>" class="eg-btn btn--primary btn--lg w-100 mt-3" name="add-to-cart" value="2401">
+                  <a style="font-family: 'Open Sans';" href="/<?= $language ?>/<?= $language == 'id' ? 'hubungi-kami' : 'contact-us' ?>" class="eg-btn btn--primary btn--lg w-100 mt-3" name="add-to-cart" value="2401">
                     <?= $language == 'id' ? 'Hubungi Kami' : 'Contact Us' ?>
                   </a>
                 </form>

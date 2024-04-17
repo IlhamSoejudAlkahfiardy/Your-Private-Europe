@@ -5121,7 +5121,7 @@ header.style-5 .main-nav ul li.menu-item-has-children > i {
   border: 1px solid #eee;
   overflow: hidden;
 }
-.category-single1 .icon::before {
+/* .category-single1 .icon::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -5134,7 +5134,7 @@ header.style-5 .main-nav ul li.menu-item-has-children > i {
   opacity: 0;
   transform: scale(0.6);
   transition: all 0.55s ease;
-}
+} */
 .category-single1 .icon svg {
   fill: var(--primary-color1);
   transition: all 0.45s ease;

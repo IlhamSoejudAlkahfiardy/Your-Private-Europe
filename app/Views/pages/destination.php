@@ -2,6 +2,41 @@
 
 <?= $this->section('content') ?>
 
+<style>
+    @media (min-width: 0px) {
+        .heading-section {
+            font-size: 16px !important;
+            font-weight: 700 !important;
+            font-family: 'Open Sans' !important;
+        }
+    }
+
+    @media (min-width: 0px) {
+        .title-section {
+            font-size: 22px !important;
+            font-weight: 700 !important;
+            font-family: 'Open Sans' !important;
+        }
+
+    }
+
+    @media (min-width: 426px) and (max-width: 768px) {
+        .title-section {
+            font-size: 30px !important;
+            font-weight: 700 !important;
+            font-family: 'Open Sans' !important;
+        }
+    }
+
+    @media (min-width: 769px) {
+        .title-section {
+            font-size: 30px !important;
+            font-weight: 700 !important;
+            font-family: 'Open Sans' !important;
+        }
+    }
+</style>
+
 <div class="inner-banner-section" style="background-image: url(<?= base_url('assets/images/destinations/banner.jpg') ?>);">
     <div class="container">
         <div class="row justify-content-center">
@@ -24,10 +59,10 @@
                     <div class="elementor-widget-container">
                         <div class="justify-content-center">
                             <div class="section-title1">
-                                <span style="color:#086B7D !important;font-weight: 700;letter-spacing: 0px !important;">
+                                <span class="heading-section" style="color:#086B7D !important;letter-spacing: 0px !important;">
                                     <?= lang('text_destination.text_section') ?>
                                 </span>
-                                <h3 style="font-size: 30px; font-weight: bold;margin-bottom: 15px !important;">
+                                <h3 class="title-section" style="margin-bottom: 15px !important;">
                                     <?= lang('text_destination.text_title') ?>
                                 </h3>
                                 <div class="heading-ribbon">
@@ -60,7 +95,7 @@
         </div>
     </div>
 </section>
-<div class="pt-50 pb-50">
+<div class="pt-50" style="padding-bottom: 50px !important;">
     <div class="container">
         <div class="row g-4">
 
@@ -74,24 +109,25 @@
                             <div>
                                 <!-- <p> <?= $language == 'id' ? 'Mulai dari Rp' . number_format($destination['price_id'], 2, ',', '.') : 'Start from $' . $destination['price_en'] ?></p> -->
                                 <h4>
-                                    <a href="/<?= $language ?>/<?= $language == 'id' ? 'destinasi' : 'destination' ?>/<?= $destination['slug'] ?>">
+                                    <a style="font-family: 'Open Sans' !important;font-weight: 700 !important;" href="/<?= $language ?>/<?= $language == 'id' ? 'destinasi' : 'destination' ?>/<?= $destination['slug'] ?>">
                                         <?= $destination['title'] ?>
                                     </a>
                                 </h4>
                                 <div class="best-plan-meta">
-                                    <span class="duration" style="font-family: 'Oswald';"><i class="bi bi-clock"></i>
+                                    <span class="duration" style="font-family: 'Open Sans' !important;"><i class="bi bi-clock"></i>
                                         <?= $language == 'id' ? $destination['duration_id'] : $destination['duration_en'] ?>
                                     </span>
                                     <span class="rating"> </span>
                                 </div>
                                 <div class="list-area">
-                                    <h5><?= lang('text_destination.includes') ?> :</h5>
+                                    <h5 style="font-family: 'Open Sans' !important;font-weight: 700 !important;"><?= lang('text_destination.includes') ?> :</h5>
                                     <ul class="plan-list1">
                                         <?= $language == 'id' ? $destination['includes_id'] : $destination['includes_en'] ?>
                                     </ul>
                                 </div>
                             </div>
-                            <a style="font-family: 'Oswald';" href="/<?= $language ?>/<?= $language == 'id' ? 'destinasi' : 'destination' ?>/<?= $destination['slug'] ?>" class="eg-btn btn--primary-outline btn--md"><?= lang('text_destination.explore_button') ?></a>
+                            <a style="font-family: 'Open Sans';" href="/<?= $language ?>/<?= $language == 'id' ? 'destinasi' : 'destination' ?>/<?= $destination['slug'] ?>" class="eg-btn btn--primary-outline btn--md"><?= lang('text_destination.explore_button') ?></a>
+                            
                         </div>
                     </div>
                 </div>
